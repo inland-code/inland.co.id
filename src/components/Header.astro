@@ -37,7 +37,7 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
 <header class="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur supports-[backdrop-filter]:bg-white/75">
   <div class="container-site flex h-16 items-center justify-between gap-4 lg:h-20">
     <a href={homeHref} class="shrink-0" aria-label="Inland — Beranda">
-      <Logo class="h-10 w-auto lg:h-12" />
+      <Logo class="h-10 w-auto lg:h-12" height={48} priority />
     </a>
 
     <!-- Navigasi desktop: dropdown murni CSS (hover + focus-within), tanpa JavaScript. -->
@@ -99,7 +99,7 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
 
   <div id="mobile-menu" popover class="m-0 ml-auto h-dvh max-h-none w-[min(22rem,100%)] overflow-y-auto bg-white p-6 shadow-2xl backdrop:bg-black/40">
     <div class="mb-6 flex items-center justify-between">
-      <Logo class="h-10 w-auto" />
+      <Logo class="h-10 w-auto" height={40} />
       <button type="button" popovertarget="mobile-menu" popovertargetaction="hide" class="inline-flex size-11 items-center justify-center rounded-lg hover:bg-brand-50" aria-label={t(locale, 'nav.close')}>
         <svg class="size-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18" stroke-linecap="round" /></svg>
       </button>

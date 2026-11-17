@@ -1,5 +1,6 @@
 ---
 import Logo from './Logo.astro';
+import SocialLinks from './SocialLinks.astro';
 import type { Locale } from '@/i18n/config';
 import { t } from '@/i18n/ui';
 import { hrefFor } from '@/lib/routes';
@@ -34,8 +35,9 @@ const address = `${site.address.street}, ${site.address.locality}, ${site.addres
 <footer class="bg-navy-950 text-white/80">
   <div class="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
     <div>
-      <div class="inline-block rounded-xl bg-white px-3 py-2"><Logo class="h-10 w-auto" /></div>
+      <div class="inline-block rounded-xl bg-white px-3 py-2"><Logo class="h-12 w-auto" height={48} /></div>
       <p class="mt-4 text-sm leading-relaxed">{site.tagline[locale]}.</p>
+      <div class="mt-5"><SocialLinks /></div>
     </div>
     <div>
       <h2 class="text-sm font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.services')}</h2>

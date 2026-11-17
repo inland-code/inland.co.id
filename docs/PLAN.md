@@ -54,7 +54,8 @@ Status: **Fase 1 selesai** · Terakhir diperbarui: 2026-11-17
    - 20 halaman tidak ada di screenshot (landing renovasi per kota/jenis, landing pembersihan kaca, dll.) → konten sementara ditulis ulang, ditandai `contentStatus: draft`, hanya versi ID.
 2. ✅ 28 foto di-crop dari screenshot ke `src/assets/images/`.
 3. ✅ Warna brand diambil dari piksel: oranye `#EF8619` → coklat `#69431F`, navy `#001F54`.
-4. ⏳ Logo: sementara rekonstruksi SVG — butuh file logo asli.
+4. ✅ Logo resmi dari pemilik (`src/assets/brand/logo-inland.png`) + favicon/ikon dari bagian simbolnya.
+   - ✅ WhatsApp resmi `+62 856 770 0883`, Instagram `@inland_id`.
 5. ⏳ Teks lengkap per section ditranskripsi dari screenshot di Fase 3.
 
 ### Fase 1 — Fondasi proyek ✅

@@ -11,8 +11,8 @@
   "phoneE164": "+628567700883",
   "whatsapp": "628567700883",
   "whatsappMessage": {
-    "id": "Halo Inland, saya ingin konsultasi mengenai proyek saya.",
-    "en": "Hello Inland, I would like to consult about my project."
+    "id": "Halo Inland",
+    "en": "Hello Inland"
   },
   "address": {
     "street": "Jl. Kelor II No 31, Pd. Cabe Ilir",
@@ -21,16 +21,42 @@
     "postalCode": "15418",
     "country": "ID"
   },
-  "areaServed": ["Jakarta", "Bogor", "Depok", "Tangerang", "Tangerang Selatan", "Bekasi"],
+  "areaServed": [
+    "Jakarta",
+    "Bogor",
+    "Depok",
+    "Tangerang",
+    "Tangerang Selatan",
+    "Bekasi"
+  ],
   "openingHours": [
-    { "days": ["Mo", "Tu", "We", "Th", "Fr"], "opens": "08:00", "closes": "17:00" },
-    { "days": ["Sa"], "opens": "08:00", "closes": "13:00" }
+    {
+      "days": [
+        "Mo",
+        "Tu",
+        "We",
+        "Th",
+        "Fr"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "days": [
+        "Sa"
+      ],
+      "opens": "08:00",
+      "closes": "13:00"
+    }
   ],
   "social": {
     "facebook": "",
-    "instagram": "",
+    "instagram": "https://www.instagram.com/inland_id/",
     "youtube": "",
     "tiktok": ""
   },
-  "credit": { "label": "Nusago", "url": "" }
+  "credit": {
+    "label": "Nusago",
+    "url": ""
+  }
 }
