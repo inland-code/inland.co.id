@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-yard",
+  "slug": "jasa-renovasi-halaman-depan-belakang",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Halaman Depan & Belakang Rumah",
+    "description": "Jasa Renovasi Halaman Depan & Belakang oleh Inland: renovasi halaman depan dan belakang: carport, taman, pagar, kanopi, dan area outdoor keluarga. Melayani Jabodetabek, k"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Halaman Depan & Belakang",
+    "body": "Inland menyediakan jasa renovasi halaman depan & belakang profesional di Jabodetabek: renovasi halaman depan dan belakang: carport, taman, pagar, kanopi, dan area outdoor keluarga. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Jasa Renovasi Halaman Depan & Belakang oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

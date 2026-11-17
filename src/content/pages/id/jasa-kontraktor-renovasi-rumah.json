@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-contractor",
+  "slug": "jasa-kontraktor-renovasi-rumah",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Kontraktor Renovasi Rumah Terpercaya",
+    "description": "Jasa Kontraktor Renovasi Rumah oleh Inland: kontraktor renovasi rumah berpengalaman dengan RAB transparan, material berkualitas, dan pengawasan proyek. Melayani Jabodetab"
+  },
+  "hero": {
+    "title": "Jasa Kontraktor Renovasi Rumah",
+    "body": "Inland menyediakan jasa kontraktor renovasi rumah profesional di Jabodetabek: kontraktor renovasi rumah berpengalaman dengan RAB transparan, material berkualitas, dan pengawasan proyek. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "Jasa Kontraktor Renovasi Rumah oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

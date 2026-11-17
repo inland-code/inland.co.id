@@ -1,8 +1,8 @@
 {
   "translationKey": "contact",
-  "slug": "kontak",
+  "slug": "kontak-inland",
   "template": "contact",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Kontak Inland - Konsultasi Gratis via WhatsApp",
     "description": "Hubungi Inland di Pamulang, Tangerang Selatan untuk konsultasi gratis jasa arsitek, kontraktor, dan perawatan gedung. Telepon, email, atau WhatsApp."

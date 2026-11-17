@@ -1,0 +1,30 @@
+{
+  "translationKey": "build-reno-trusted",
+  "slug": "jasa-pembangunan-dan-renovasi-terpercaya",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Pembangunan dan Renovasi Rumah Terpercaya",
+    "description": "Jasa Pembangunan dan Renovasi Terpercaya oleh Inland: pembangunan rumah baru maupun renovasi, dari perencanaan, desain, hingga serah terima kunci. Melayani Jabodetabek, k"
+  },
+  "hero": {
+    "title": "Jasa Pembangunan dan Renovasi Terpercaya",
+    "body": "Inland menyediakan jasa pembangunan dan renovasi terpercaya profesional di Jabodetabek: pembangunan rumah baru maupun renovasi, dari perencanaan, desain, hingga serah terima kunci. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/struktur-bata.jpg",
+    "imageAlt": "Jasa Pembangunan dan Renovasi Terpercaya oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

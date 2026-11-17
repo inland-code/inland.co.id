@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-shophouse",
+  "slug": "jasa-renovasi-ruko",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Ruko - Fasad & Tambah Lantai",
+    "description": "Jasa Renovasi Ruko oleh Inland: renovasi ruko untuk usaha maupun hunian: fasad, penambahan lantai, sekat ruang, dan instalasi. Melayani Jabodetabek, konsultasi gratis."
+  },
+  "hero": {
+    "title": "Jasa Renovasi Ruko",
+    "body": "Inland menyediakan jasa renovasi ruko profesional di Jabodetabek: renovasi ruko untuk usaha maupun hunian: fasad, penambahan lantai, sekat ruang, dan instalasi. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/hero-pengecoran-dak.jpg",
+    "imageAlt": "Jasa Renovasi Ruko oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

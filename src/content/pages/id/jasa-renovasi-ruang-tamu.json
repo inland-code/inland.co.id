@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-living-room",
+  "slug": "jasa-renovasi-ruang-tamu",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Ruang Tamu Modern & Elegan",
+    "description": "Jasa Renovasi Ruang Tamu oleh Inland: renovasi ruang tamu agar lebih lega, modern, dan berkesan: plafon, lantai, dinding, pencahayaan, hingga furnitur. Melayani Jabodetab"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Ruang Tamu",
+    "body": "Inland menyediakan jasa renovasi ruang tamu profesional di Jabodetabek: renovasi ruang tamu agar lebih lega, modern, dan berkesan: plafon, lantai, dinding, pencahayaan, hingga furnitur. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "home/interior-ruang-tamu-mewah.jpg",
+    "imageAlt": "Jasa Renovasi Ruang Tamu oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

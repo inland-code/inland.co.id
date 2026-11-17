@@ -1,25 +1,26 @@
 {
-  "translationKey": "service-glass-cleaning",
+  "translationKey": "landing-glass-cleaning",
   "slug": "jasa-pembersihan-kaca-gedung",
   "template": "service",
   "slugVerified": true,
+  "contentStatus": "draft",
   "seo": {
-    "title": "Jasa Pembersihan Kaca Gedung Tinggi Metode Rope Access",
-    "description": "Jasa pembersihan kaca gedung tinggi Inland dengan teknisi rope access bersertifikat: aman, cepat, dan hemat biaya tanpa scaffolding."
+    "title": "Jasa Pembersihan Kaca Gedung Tinggi Bersertifikasi Rope Access",
+    "description": "Jasa pembersihan kaca gedung tinggi dan bertingkat oleh teknisi rope access bersertifikat. Aman, cepat, hemat biaya tanpa scaffolding."
   },
   "hero": {
-    "title": "Jasa Pembersihan Kaca Gedung Metode Akses Tali oleh Inland",
-    "body": "Gedung bertingkat membutuhkan perawatan khusus, terutama dalam hal pembersihan bagian luar, seperti kaca dan dinding eksterior. Inland menyediakan jasa pembersihan gedung dengan metode akses tali (rope access), teknik aman dan efisien untuk menjangkau area gedung yang sulit diakses tanpa scaffolding.",
-    "image": "kaca/hero-pembersihan-kaca.jpg",
-    "imageAlt": "Teknisi rope access Inland membersihkan kaca gedung tinggi",
+    "title": "Jasa Pembersihan Kaca Gedung Tinggi Bertingkat",
+    "body": "Inland menyediakan jasa pembersihan kaca gedung tinggi dan bertingkat dengan teknisi bersertifikasi rope access. Aman, cepat, dan hemat biaya tanpa scaffolding, untuk perkantoran, apartemen, hotel, dan gedung komersial.",
+    "image": "gallery/perawatan-01.jpg",
+    "imageAlt": "Teknisi rope access Inland membersihkan kaca gedung bertingkat",
     "ctas": [
       {
-        "label": "Tentang Kami",
-        "href": "about",
+        "label": "Layanan Kami",
+        "href": "services",
         "variant": "light"
       },
       {
-        "label": "Hubungi Kami",
+        "label": "Konsultasi Gratis",
         "href": "#whatsapp",
         "variant": "navy"
       }

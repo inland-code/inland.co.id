@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-city-jakarta",
+  "slug": "jasa-renovasi-rumah-jakarta",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Rumah Jakarta - Bergaransi & Transparan",
+    "description": "Jasa renovasi rumah di Jakarta oleh Inland: renovasi interior, fasad, tambah lantai, dan perbaikan struktur dengan RAB transparan. Konsultasi gratis."
+  },
+  "hero": {
+    "title": "Jasa Renovasi Rumah Jakarta",
+    "body": "Inland melayani jasa renovasi rumah di Jakarta dan sekitarnya, mulai dari renovasi interior, fasad, penambahan lantai, hingga perbaikan struktur. Dikerjakan tim berpengalaman dengan rencana anggaran transparan dan jadwal yang jelas.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "Proyek renovasi rumah oleh Inland di Jakarta",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

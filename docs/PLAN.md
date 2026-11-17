@@ -50,7 +50,8 @@ Status: **Fase 1 selesai** · Terakhir diperbarui: 2026-11-17
 ## B. Tahapan
 
 ### Fase 0 — Ekstraksi konten ✅ (dari screenshot)
-1. ✅ Inventaris URL `migration/url-inventory.csv`: 13 URL terverifikasi via indeks Google, 7 masih tebakan (perlu dicek di sitemap asli).
+1. ✅ Inventaris URL `migration/url-inventory.csv`: 40 URL (35 halaman + 5 artikel) dari sitemap Rank Math asli, semuanya terverifikasi.
+   - 20 halaman tidak ada di screenshot (landing renovasi per kota/jenis, landing pembersihan kaca, dll.) → konten sementara ditulis ulang, ditandai `contentStatus: draft`, hanya versi ID.
 2. ✅ 28 foto di-crop dari screenshot ke `src/assets/images/`.
 3. ✅ Warna brand diambil dari piksel: oranye `#EF8619` → coklat `#69431F`, navy `#001F54`.
 4. ⏳ Logo: sementara rekonstruksi SVG — butuh file logo asli.

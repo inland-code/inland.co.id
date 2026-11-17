@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-general",
+  "slug": "jasa-renovasi",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Rumah, Kantor & Bangunan",
+    "description": "Jasa Renovasi oleh Inland: renovasi rumah, kantor, ruko, apartemen, hingga bangunan komersial. Melayani Jabodetabek, konsultasi gratis."
+  },
+  "hero": {
+    "title": "Jasa Renovasi",
+    "body": "Inland menyediakan jasa renovasi profesional di Jabodetabek: renovasi rumah, kantor, ruko, apartemen, hingga bangunan komersial. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "Jasa Renovasi oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

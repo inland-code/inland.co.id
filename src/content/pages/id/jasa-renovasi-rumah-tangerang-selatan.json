@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-city-tangerang-selatan",
+  "slug": "jasa-renovasi-rumah-tangerang-selatan",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Rumah Tangerang Selatan - Bergaransi & Transparan",
+    "description": "Jasa renovasi rumah di Tangerang Selatan oleh Inland: renovasi interior, fasad, tambah lantai, dan perbaikan struktur dengan RAB transparan. Konsultasi gratis."
+  },
+  "hero": {
+    "title": "Jasa Renovasi Rumah Tangerang Selatan",
+    "body": "Inland melayani jasa renovasi rumah di Tangerang Selatan dan sekitarnya, mulai dari renovasi interior, fasad, penambahan lantai, hingga perbaikan struktur. Dikerjakan tim berpengalaman dengan rencana anggaran transparan dan jadwal yang jelas.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "Proyek renovasi rumah oleh Inland di Tangerang Selatan",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

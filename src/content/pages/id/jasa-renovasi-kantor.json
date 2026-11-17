@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-office",
+  "slug": "jasa-renovasi-kantor",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Kantor - Desain & Pengerjaan",
+    "description": "Jasa Renovasi Kantor oleh Inland: renovasi kantor yang produktif dan representatif dengan pengerjaan terjadwal agar operasional tetap berjalan. Melayani Jabodetabek, kons"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Kantor",
+    "body": "Inland menyediakan jasa renovasi kantor profesional di Jabodetabek: renovasi kantor yang produktif dan representatif dengan pengerjaan terjadwal agar operasional tetap berjalan. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "interior/meja-kopi.jpg",
+    "imageAlt": "Jasa Renovasi Kantor oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

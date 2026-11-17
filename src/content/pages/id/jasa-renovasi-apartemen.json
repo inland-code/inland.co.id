@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-apartment",
+  "slug": "jasa-renovasi-apartemen",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Apartemen - Interior & Finishing",
+    "description": "Jasa Renovasi Apartemen oleh Inland: renovasi unit apartemen sesuai aturan pengelola gedung, dari desain interior, kitchen set, hingga finishing. Melayani Jabodetabek, ko"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Apartemen",
+    "body": "Inland menyediakan jasa renovasi apartemen profesional di Jabodetabek: renovasi unit apartemen sesuai aturan pengelola gedung, dari desain interior, kitchen set, hingga finishing. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "interior/ruang-keluarga.jpg",
+    "imageAlt": "Jasa Renovasi Apartemen oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

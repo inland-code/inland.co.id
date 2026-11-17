@@ -1,7 +1,7 @@
 ---
 translationKey: post-konstruksi
 slug: konstruksi-proses-sejarah-dan-peran-penting-dalam-pembangunan-infrastruktur
-slugVerified: false
+slugVerified: true
 title: "Konstruksi: Proses, Sejarah, dan Peran Penting dalam Pembangunan Infrastruktur"
 seo:
   title: "Konstruksi: Proses, Sejarah & Peran dalam Infrastruktur"

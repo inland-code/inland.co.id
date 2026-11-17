@@ -1,8 +1,8 @@
 {
   "translationKey": "service-house-construction",
-  "slug": "jasa-pembangunan-rumah-inland",
+  "slug": "jasa-pembangunan-rumah",
   "template": "service",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Jasa Pembangunan Rumah dari Nol hingga Siap Huni",
     "description": "Jasa bangun rumah Inland: rumah pribadi, villa, hingga cluster perumahan dengan proses transparan, material berkualitas, dan tepat waktu."

@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-bedroom",
+  "slug": "jasa-renovasi-kamar",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Kamar Tidur & Kamar Mandi",
+    "description": "Jasa Renovasi Kamar oleh Inland: renovasi kamar tidur dan kamar mandi yang nyaman dan fungsional, termasuk lemari built-in, plafon, dan lantai. Melayani Jabodetabek, kons"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Kamar",
+    "body": "Inland menyediakan jasa renovasi kamar profesional di Jabodetabek: renovasi kamar tidur dan kamar mandi yang nyaman dan fungsional, termasuk lemari built-in, plafon, dan lantai. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "interior/dapur-island.jpg",
+    "imageAlt": "Jasa Renovasi Kamar oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

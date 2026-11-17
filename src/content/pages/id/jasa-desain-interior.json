@@ -1,8 +1,8 @@
 {
   "translationKey": "service-interior",
-  "slug": "jasa-desain-interior-inland",
+  "slug": "jasa-desain-interior",
   "template": "service",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Jasa Desain Interior Rumah, Kantor & Komersial",
     "description": "Jasa desain interior Inland: konsultasi, desain konseptual, visualisasi 3D, pengadaan furnitur, hingga pengawasan proyek."

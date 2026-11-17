@@ -1,8 +1,8 @@
 {
   "translationKey": "services",
-  "slug": "layanan",
+  "slug": "layanan-kami",
   "template": "services",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Layanan Inland: Arsitek, Kontraktor & Maintenance Gedung",
     "description": "Layanan lengkap Inland: desain interior & rumah, pembangunan & renovasi rumah, serta pembersihan kaca gedung metode rope access."

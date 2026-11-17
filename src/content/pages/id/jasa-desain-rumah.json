@@ -1,8 +1,8 @@
 {
   "translationKey": "service-house-design",
-  "slug": "jasa-desain-rumah-inland",
+  "slug": "jasa-desain-rumah",
   "template": "service",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Jasa Desain Rumah Minimalis, Modern, Klasik & Tropis",
     "description": "Jasa desain rumah Inland: desain konseptual, 3D, rencana detail, tata ruang, dan lanskap untuk rumah minimalis, modern, klasik, dan tropis."

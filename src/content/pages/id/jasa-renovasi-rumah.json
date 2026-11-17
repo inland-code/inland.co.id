@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-house",
+  "slug": "jasa-renovasi-rumah",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Rumah Profesional & Bergaransi",
+    "description": "Jasa Renovasi Rumah oleh Inland: renovasi rumah dari skala kecil hingga besar: dapur, kamar mandi, fasad, penambahan ruang, dan perbaikan struktur. Melayani Jabodetabek, "
+  },
+  "hero": {
+    "title": "Jasa Renovasi Rumah",
+    "body": "Inland menyediakan jasa renovasi rumah profesional di Jabodetabek: renovasi rumah dari skala kecil hingga besar: dapur, kamar mandi, fasad, penambahan ruang, dan perbaikan struktur. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/struktur-bata.jpg",
+    "imageAlt": "Jasa Renovasi Rumah oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

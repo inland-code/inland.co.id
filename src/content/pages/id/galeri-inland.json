@@ -1,8 +1,8 @@
 {
   "translationKey": "gallery",
-  "slug": "galeri",
+  "slug": "galeri-inland",
   "template": "gallery",
-  "slugVerified": false,
+  "slugVerified": true,
   "seo": {
     "title": "Galeri Proyek Inland: Arsitektur & Perawatan Gedung",
     "description": "Galeri proyek Inland: desain arsitektur rumah, interior, konstruksi, hingga pembersihan kaca gedung dengan metode rope access."

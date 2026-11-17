@@ -34,7 +34,7 @@ npm run check             # type check
 - Bahasa Indonesia di root, sama persis dengan situs lama: `/tentang-inland/`
 - Bahasa Inggris di `/en/` dengan slug terjemahan: `/en/about-inland/`
 - Selalu diakhiri `/`
-- Sitemap: `/sitemap_index.xml` → `page-sitemap.xml`, `post-sitemap.xml` (nama sama dengan Yoast)
+- Sitemap: `/sitemap_index.xml` → `page-sitemap.xml`, `post-sitemap.xml` (nama sama dengan Rank Math)
 
 ## Staging vs produksi
 

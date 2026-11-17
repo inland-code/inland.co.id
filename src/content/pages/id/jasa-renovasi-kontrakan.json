@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-rental",
+  "slug": "jasa-renovasi-kontrakan",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Kontrakan & Kos-kosan",
+    "description": "Jasa Renovasi Kontrakan oleh Inland: renovasi rumah kontrakan dan kos-kosan agar lebih layak huni, menarik penyewa, dan meningkatkan nilai sewa. Melayani Jabodetabek, kon"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Kontrakan",
+    "body": "Inland menyediakan jasa renovasi kontrakan profesional di Jabodetabek: renovasi rumah kontrakan dan kos-kosan agar lebih layak huni, menarik penyewa, dan meningkatkan nilai sewa. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "pembangunan/material-bata.jpg",
+    "imageAlt": "Jasa Renovasi Kontrakan oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

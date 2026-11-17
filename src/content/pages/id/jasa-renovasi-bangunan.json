@@ -1,0 +1,30 @@
+{
+  "translationKey": "reno-building",
+  "slug": "jasa-renovasi-bangunan",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Bangunan Komersial & Residensial",
+    "description": "Jasa Renovasi Bangunan oleh Inland: renovasi bangunan komersial dan residensial, termasuk perkuatan struktur, fasad, dan peremajaan gedung. Melayani Jabodetabek, konsulta"
+  },
+  "hero": {
+    "title": "Jasa Renovasi Bangunan",
+    "body": "Inland menyediakan jasa renovasi bangunan profesional di Jabodetabek: renovasi bangunan komersial dan residensial, termasuk perkuatan struktur, fasad, dan peremajaan gedung. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "kaca/fasad-louver.jpg",
+    "imageAlt": "Jasa Renovasi Bangunan oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

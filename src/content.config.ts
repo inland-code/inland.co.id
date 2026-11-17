@@ -45,6 +45,13 @@ const pages = defineCollection({
     template: z.enum(['home', 'about', 'services', 'service', 'contact', 'articles', 'gallery', 'generic']),
     /** true = slug sudah dicocokkan dengan URL live inland.co.id */
     slugVerified: z.boolean().default(false),
+    /**
+     * Asal konten:
+     *  screenshot = ditranskripsi dari screenshot situs lama
+     *  draft      = halaman ada di sitemap lama tapi isinya belum diketahui; ditulis ulang, perlu review
+     *  final      = sudah direview pemilik
+     */
+    contentStatus: z.enum(['screenshot', 'draft', 'final']).default('screenshot'),
     seo,
     hero,
     /** Section halaman — skema rinci per jenis section dibangun di Fase 3. */
