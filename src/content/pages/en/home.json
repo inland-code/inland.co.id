@@ -1,0 +1,30 @@
+{
+  "translationKey": "home",
+  "slug": "",
+  "template": "home",
+  "slugVerified": true,
+  "seo": {
+    "title": "Inland: Architect, Contractor & Building Maintenance",
+    "description": "Inland is a trusted partner for architectural design, home construction and renovation, building maintenance and glass cleaning in Greater Jakarta."
+  },
+  "hero": {
+    "title": "Welcome to Inland",
+    "tagline": "The Best Solution for Construction, Architecture, and Maintenance.",
+    "body": "Inland is your trusted partner in bringing your building vision to life, from architectural design and construction to building maintenance. We make sure every detail of your project is handled with professionalism and dedication.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Modern two-storey house design with carport by Inland",
+    "ctas": [
+      {
+        "label": "About Us",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

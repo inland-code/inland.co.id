@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-house-design",
+  "slug": "jasa-desain-rumah-inland",
+  "template": "service",
+  "slugVerified": false,
+  "seo": {
+    "title": "Jasa Desain Rumah Minimalis, Modern, Klasik & Tropis",
+    "description": "Jasa desain rumah Inland: desain konseptual, 3D, rencana detail, tata ruang, dan lanskap untuk rumah minimalis, modern, klasik, dan tropis."
+  },
+  "hero": {
+    "title": "Jasa Desain Rumah oleh Inland",
+    "body": "Mewujudkan rumah impian adalah langkah besar dalam hidup, dan Inland siap menjadi partner Anda dalam menciptakan hunian yang tidak hanya indah, tetapi juga fungsional dan nyaman. Kami menawarkan layanan desain rumah yang disesuaikan dengan gaya hidup, kebutuhan, dan visi Anda.",
+    "image": "desain-rumah/hero-rumah-2-lantai.jpg",
+    "imageAlt": "Desain rumah modern dua lantai karya Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Desain Interior",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

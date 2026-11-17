@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import type { Locale } from '@/i18n/config';
+import { imageFor } from '@/lib/media';
+
+interface Props {
+  locale: Locale;
+  href: string;
+  title: string;
+  excerpt: string;
+  image: string;
+  imageAlt: string;
+  category: string;
+  date: Date;
+}
+const { locale, href, title, excerpt, image, imageAlt, category, date } = Astro.props;
+const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
+---
+<article class="group flex flex-col overflow-hidden rounded-card bg-white shadow-card ring-1 ring-black/5 transition hover:-translate-y-1">
+  <a href={href} class="relative block aspect-[16/10] overflow-hidden" tabindex="-1" aria-hidden="true">
+    <Image src={imageFor(image)} alt={imageAlt} width={640} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" class="size-full object-cover transition duration-500 group-hover:scale-105" />
+    <span class="absolute top-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wide text-brand-700 uppercase">{category}</span>
+  </a>
+  <div class="flex flex-1 flex-col p-5">
+    <h3 class="text-lg leading-snug font-semibold text-navy-900">
+      <a href={href} class="hover:text-brand-600">{title}</a>
+    </h3>
+    <p class="mt-2 line-clamp-3 text-sm text-muted">{excerpt}</p>
+    <time datetime={date.toISOString()} class="mt-auto pt-4 text-xs text-muted">{fmt.format(date)}</time>
+  </div>
+</article>

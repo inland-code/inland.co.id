@@ -1,0 +1,29 @@
+{
+  "translationKey": "about",
+  "slug": "about-inland",
+  "template": "about",
+  "slugVerified": true,
+  "seo": {
+    "title": "About Inland - Architect, Contractor & Maintenance",
+    "description": "Get to know Inland: an architecture, construction and maintenance company guided by integrity, quality and sustainability."
+  },
+  "hero": {
+    "title": "About Inland",
+    "body": "Inland is a company specialising in architecture, construction, and maintenance, committed to delivering the best solution in every aspect of building. We serve individuals and businesses with a professional, quality-driven approach.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Modern classic house facade designed by Inland",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

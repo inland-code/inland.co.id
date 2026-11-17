@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-maintenance",
+  "slug": "jasa-perawatan-gedung",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Perawatan Gedung Profesional",
+    "description": "Jasa perawatan gedung Inland: pembersihan kaca gedung, perawatan dinding eksterior, pengecatan, dan perbaikan interior."
+  },
+  "hero": {
+    "title": "Jasa Maintenance Profesional",
+    "body": "Perawatan yang tepat sangat penting untuk menjaga kondisi dan nilai bangunan Anda. Inland menyediakan layanan maintenance yang komprehensif untuk memastikan properti Anda tetap dalam kondisi terbaik, aman, dan nyaman digunakan.",
+    "image": "gallery/perawatan-02.jpg",
+    "imageAlt": "Tim Inland membersihkan fasad kaca gedung bertingkat",
+    "ctas": [
+      {
+        "label": "Jasa Pembersihan Kaca Gedung",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

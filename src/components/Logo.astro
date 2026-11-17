@@ -1,0 +1,40 @@
+---
+/**
+ * Rekonstruksi vektor sementara dari logo Inland (diambil dari screenshot).
+ * Ganti dengan file logo asli (SVG) begitu tersedia — cukup ubah komponen ini.
+ */
+interface Props {
+  class?: string;
+  tagline?: boolean;
+  /** 'color' di atas latar terang/foto, 'white' di atas latar oranye/gelap. */
+  tone?: 'color' | 'white';
+}
+const { class: className = '', tagline = true, tone = 'color' } = Astro.props;
+const id = `lg-${Math.random().toString(36).slice(2, 8)}`;
+const fill = tone === 'white' ? '#ffffff' : `url(#${id})`;
+---
+<svg
+  class={className}
+  viewBox="0 0 220 64"
+  role="img"
+  aria-label="Inland — Architect, Build And Maintenance"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <defs>
+    <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EF8619" />
+      <stop offset="1" stop-color="#88521E" />
+    </linearGradient>
+  </defs>
+  <g fill={fill}>
+    <rect x="4" y="26" width="7" height="28" rx="1.2" />
+    <rect x="14" y="18" width="7" height="36" rx="1.2" />
+    <rect x="24" y="10" width="7" height="44" rx="1.2" />
+    <rect x="34" y="4" width="7" height="50" rx="1.2" />
+    <rect x="4" y="50" width="44" height="4" rx="1.2" />
+    <text x="52" y="44" font-family="Georgia, 'Times New Roman', serif" font-size="34" font-weight="700" letter-spacing="1">I<tspan font-size="26">NLAND</tspan></text>
+  </g>
+  {tagline && (
+    <text x="54" y="58" font-family="Arial, sans-serif" font-size="8.5" font-style="italic" fill={tone === 'white' ? '#ffffff' : '#69431F'}>Architect, Build And Maintenance</text>
+  )}
+</svg>

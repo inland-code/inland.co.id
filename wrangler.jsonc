@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "inland-co-id",
+  "compatibility_date": "2026-11-01",
+  // Fase 1: situs 100% statis dilayani dari edge Cloudflare (Workers Static Assets).
+  // Fase 3/7 akan menambahkan "main" (Worker) untuk /api/* (formulir kontak & dashboard).
+  "assets": {
+    "directory": "./dist",
+    "html_handling": "force-trailing-slash",
+    "not_found_handling": "404-page"
+  },
+  "observability": { "enabled": true }
+}

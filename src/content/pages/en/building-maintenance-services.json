@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-maintenance",
+  "slug": "building-maintenance-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Professional Building Maintenance Services",
+    "description": "Inland building maintenance: glass cleaning, exterior wall care, painting and interior repairs for homes and commercial buildings."
+  },
+  "hero": {
+    "title": "Professional Maintenance Services",
+    "body": "Proper maintenance is essential to preserve the condition and value of your building. Inland provides comprehensive maintenance services to keep your property in top condition, safe, and comfortable to use.",
+    "image": "gallery/perawatan-02.jpg",
+    "imageAlt": "Inland team cleaning a high-rise glass facade",
+    "ctas": [
+      {
+        "label": "Building Glass Cleaning",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-interior",
+  "slug": "interior-design-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Interior Design Services for Homes, Offices & Commercial",
+    "description": "Inland interior design: consultation, concept design, 3D visualisation, furniture procurement and project supervision."
+  },
+  "hero": {
+    "title": "Interior Design Services by Inland",
+    "body": "Inland provides interior design services that combine beauty and function to create comfortable spaces that reflect your character. We believe good design is not only about aesthetics but also how a space supports daily activities, at home or at work.",
+    "image": "interior/hero-dapur.jpg",
+    "imageAlt": "Modern white kitchen interior design by Inland",
+    "ctas": [
+      {
+        "label": "See House Design Services",
+        "href": "service-house-design",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

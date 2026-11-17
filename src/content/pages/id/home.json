@@ -1,0 +1,30 @@
+{
+  "translationKey": "home",
+  "slug": "",
+  "template": "home",
+  "slugVerified": true,
+  "seo": {
+    "title": "Inland: Jasa Arsitek, Kontraktor & Perawatan Gedung",
+    "description": "Inland adalah mitra terpercaya untuk jasa arsitek, kontraktor pembangunan & renovasi rumah, serta perawatan gedung dan pembersihan kaca di Jabodetabek."
+  },
+  "hero": {
+    "title": "Selamat Datang di Inland",
+    "tagline": "Solusi Terbaik untuk Konstruksi, Arsitektur, dan Maintenance.",
+    "body": "Inland hadir sebagai mitra terpercaya dalam mewujudkan visi pembangunan Anda, mulai dari desain arsitektur, konstruksi, hingga perawatan gedung. Kami memastikan setiap detail proyek Anda ditangani dengan profesionalisme dan dedikasi tinggi.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Desain rumah modern dua lantai dengan carport hasil karya Inland",
+    "ctas": [
+      {
+        "label": "Tentang Kami",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

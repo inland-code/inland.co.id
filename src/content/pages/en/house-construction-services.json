@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-house-construction",
+  "slug": "house-construction-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "House Construction Services: From Ground Up to Move-In",
+    "description": "Inland house construction: private homes, villas and housing clusters with transparent process, quality materials and on-time delivery."
+  },
+  "hero": {
+    "title": "House Construction Services by Inland",
+    "body": "Building your dream home takes careful planning, technical expertise, and a commitment to quality. Inland is here to guide you through every stage of construction, from the foundation to the final finishing.",
+    "image": "pembangunan/hero-pengecoran-dak.jpg",
+    "imageAlt": "Concrete slab rebar work on an Inland house construction project",
+    "ctas": [
+      {
+        "label": "See Renovation Services",
+        "href": "service-renovation",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

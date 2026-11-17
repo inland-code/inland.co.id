@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-interior",
+  "slug": "jasa-desain-interior-inland",
+  "template": "service",
+  "slugVerified": false,
+  "seo": {
+    "title": "Jasa Desain Interior Rumah, Kantor & Komersial",
+    "description": "Jasa desain interior Inland: konsultasi, desain konseptual, visualisasi 3D, pengadaan furnitur, hingga pengawasan proyek."
+  },
+  "hero": {
+    "title": "Jasa Desain Interior oleh Inland",
+    "body": "Inland menyediakan layanan desain interior yang menggabungkan keindahan dan fungsionalitas untuk menciptakan ruang yang nyaman dan mencerminkan karakter Anda. Kami percaya bahwa desain yang baik tidak hanya soal estetika, tetapi juga bagaimana ruangan tersebut mendukung aktivitas sehari-hari, baik di rumah maupun di tempat kerja.",
+    "image": "interior/hero-dapur.jpg",
+    "imageAlt": "Desain interior dapur putih modern karya Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Desain Rumah",
+        "href": "service-house-design",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

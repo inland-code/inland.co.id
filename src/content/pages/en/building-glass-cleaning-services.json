@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-glass-cleaning",
+  "slug": "building-glass-cleaning-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "High-Rise Glass Cleaning with Rope Access",
+    "description": "Inland high-rise glass cleaning by certified rope access technicians: safe, fast and cost-effective with no scaffolding needed."
+  },
+  "hero": {
+    "title": "Rope Access Building Glass Cleaning by Inland",
+    "body": "High-rise buildings need special care, especially for exterior cleaning such as glass and facade walls. Inland provides building cleaning using rope access, a safe and efficient technique to reach hard-to-access areas without scaffolding.",
+    "image": "kaca/hero-pembersihan-kaca.jpg",
+    "imageAlt": "Inland rope access technicians cleaning high-rise glass",
+    "ctas": [
+      {
+        "label": "About Us",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

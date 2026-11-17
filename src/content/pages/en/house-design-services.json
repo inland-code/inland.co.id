@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-house-design",
+  "slug": "house-design-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "House Design: Minimalist, Modern, Classic & Tropical",
+    "description": "Inland house design: concept design, 3D, detailed plans, space planning and landscape for minimalist, modern, classic and tropical homes."
+  },
+  "hero": {
+    "title": "House Design Services by Inland",
+    "body": "Building your dream home is a big step in life, and Inland is ready to be your partner in creating a home that is not only beautiful but also functional and comfortable. Our house design service is tailored to your lifestyle, needs, and vision.",
+    "image": "desain-rumah/hero-rumah-2-lantai.jpg",
+    "imageAlt": "Modern two-storey house design by Inland",
+    "ctas": [
+      {
+        "label": "See Interior Design Services",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

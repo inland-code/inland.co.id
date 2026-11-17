@@ -1,0 +1,29 @@
+{
+  "translationKey": "gallery",
+  "slug": "galeri",
+  "template": "gallery",
+  "slugVerified": false,
+  "seo": {
+    "title": "Galeri Proyek Inland: Arsitektur & Perawatan Gedung",
+    "description": "Galeri proyek Inland: desain arsitektur rumah, interior, konstruksi, hingga pembersihan kaca gedung dengan metode rope access."
+  },
+  "hero": {
+    "title": "Galeri Inland",
+    "body": "Lihat hasil karya dan proyek yang telah kami selesaikan melalui galeri ini. Dari desain arsitektur hingga konstruksi dan perawatan gedung, setiap gambar menunjukkan komitmen kami terhadap kualitas dan keindahan.",
+    "image": "home/interior-ruang-tamu-mewah.jpg",
+    "imageAlt": "Interior ruang tamu mewah dengan lampu kristal karya Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

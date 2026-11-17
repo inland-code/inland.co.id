@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-architect",
+  "slug": "jasa-arsitek",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Arsitek Profesional - Desain Rumah & Interior",
+    "description": "Jasa arsitek Inland: desain rumah, kantor, gedung, interior, dan eksterior yang estetis dan fungsional sesuai visi Anda."
+  },
+  "hero": {
+    "title": "Jasa Arsitek",
+    "body": "Membangun atau merenovasi sebuah bangunan memerlukan perencanaan yang matang, terutama dalam hal desain. Sebagai penyedia jasa arsitek berpengalaman, Inland menawarkan solusi desain arsitektur yang modern dan fungsional, sesuai dengan visi dan kebutuhan Anda.",
+    "image": "gallery/arsitek-01.jpg",
+    "imageAlt": "Desain rumah modern tiga lantai karya Inland",
+    "ctas": [
+      {
+        "label": "Jasa Desain Interior",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

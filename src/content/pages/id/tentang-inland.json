@@ -1,0 +1,29 @@
+{
+  "translationKey": "about",
+  "slug": "tentang-inland",
+  "template": "about",
+  "slugVerified": true,
+  "seo": {
+    "title": "Tentang Inland - Arsitek, Kontraktor & Maintenance",
+    "description": "Kenali Inland: perusahaan arsitektur, konstruksi, dan maintenance dengan visi, misi, dan nilai integritas, kualitas, serta keberlanjutan."
+  },
+  "hero": {
+    "title": "Tentang Inland",
+    "body": "Inland adalah perusahaan yang bergerak di bidang arsitektur, konstruksi, dan maintenance, berkomitmen untuk memberikan solusi terbaik dalam setiap aspek pembangunan. Kami melayani kebutuhan individu dan bisnis dengan pendekatan profesional dan berorientasi pada kualitas.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Fasad rumah bergaya klasik modern rancangan Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-house-construction",
+  "slug": "jasa-pembangunan-rumah-inland",
+  "template": "service",
+  "slugVerified": false,
+  "seo": {
+    "title": "Jasa Pembangunan Rumah dari Nol hingga Siap Huni",
+    "description": "Jasa bangun rumah Inland: rumah pribadi, villa, hingga cluster perumahan dengan proses transparan, material berkualitas, dan tepat waktu."
+  },
+  "hero": {
+    "title": "Jasa Pembangunan Rumah oleh Inland",
+    "body": "Membangun rumah impian adalah proses yang membutuhkan perencanaan matang, keahlian teknis, dan komitmen terhadap kualitas. Inland hadir untuk membantu Anda melalui setiap tahap pembangunan, dari fondasi hingga penyelesaian akhir.",
+    "image": "pembangunan/hero-pengecoran-dak.jpg",
+    "imageAlt": "Pembesian dak beton pada proyek pembangunan rumah Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Renovasi Rumah",
+        "href": "service-renovation",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

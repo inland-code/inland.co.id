@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-contractor",
+  "slug": "contractor-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Contractor Services: House Construction & Renovation",
+    "description": "Inland contractor services: house construction, renovation, building construction and structural repair, on time and on budget."
+  },
+  "hero": {
+    "title": "Contractor Services",
+    "body": "Turning a design into reality requires precise, professional execution. As an experienced contractor, Inland offers comprehensive construction services, from building new homes to renovation.",
+    "image": "pembangunan/struktur-bata.jpg",
+    "imageAlt": "House construction project by Inland contractor",
+    "ctas": [
+      {
+        "label": "House Construction Services",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

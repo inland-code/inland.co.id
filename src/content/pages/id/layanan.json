@@ -1,0 +1,29 @@
+{
+  "translationKey": "services",
+  "slug": "layanan",
+  "template": "services",
+  "slugVerified": false,
+  "seo": {
+    "title": "Layanan Inland: Arsitek, Kontraktor & Maintenance Gedung",
+    "description": "Layanan lengkap Inland: desain interior & rumah, pembangunan & renovasi rumah, serta pembersihan kaca gedung metode rope access."
+  },
+  "hero": {
+    "title": "Layanan Inland",
+    "body": "Inland menawarkan berbagai layanan di bidang arsitektur, konstruksi, dan maintenance, yang dirancang untuk memenuhi kebutuhan proyek Anda dari awal hingga akhir. Setiap layanan dilakukan oleh tim profesional yang berpengalaman, menjamin hasil terbaik untuk setiap klien.",
+    "image": "services/hero-rope-access-kaca.jpg",
+    "imageAlt": "Teknisi rope access Inland membersihkan kaca gedung",
+    "ctas": [
+      {
+        "label": "Tentang Kami",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

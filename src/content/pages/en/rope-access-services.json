@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-rope-access",
+  "slug": "rope-access-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Certified Rope Access Services for High-Rise Buildings",
+    "description": "Inland rope access for work at height: glass cleaning, glass sealant and facade maintenance by certified technicians."
+  },
+  "hero": {
+    "title": "Professional, Certified Rope Access Services",
+    "body": "Inland provides rope access services for work at height, such as building glass cleaning and sealant installation on high-rise buildings, carried out by certified technicians to the highest safety standards.",
+    "image": "kaca/teknisi-rope-access.jpg",
+    "imageAlt": "Certified rope access technician working at height",
+    "ctas": [
+      {
+        "label": "Building Glass Cleaning",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

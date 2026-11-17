@@ -1,0 +1,29 @@
+{
+  "translationKey": "contact",
+  "slug": "contact",
+  "template": "contact",
+  "slugVerified": true,
+  "seo": {
+    "title": "Contact Inland - Free Consultation via WhatsApp",
+    "description": "Contact Inland in Pamulang, South Tangerang for a free consultation on architecture, construction and building maintenance services."
+  },
+  "hero": {
+    "title": "Contact Us",
+    "body": "We at Inland are always ready to help! If you have questions, want more information about our services, or would like to schedule a consultation, do not hesitate to contact us. We will be happy to answer all your questions.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Modern house designed by Inland",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

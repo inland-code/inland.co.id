@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-renovation",
+  "slug": "jasa-renovasi-rumah-inland",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Renovasi Rumah Interior, Eksterior & Struktural",
+    "description": "Jasa renovasi rumah Inland: renovasi interior, fasad, dapur & kamar mandi, penambahan ruang, perbaikan struktur, dan restorasi rumah lama."
+  },
+  "hero": {
+    "title": "Jasa Renovasi Rumah oleh Inland",
+    "body": "Ingin memberikan tampilan baru pada rumah Anda atau memperbaiki struktur yang sudah tidak memadai? Inland siap membantu Anda mewujudkan renovasi rumah impian, baik untuk pembaruan estetika, penambahan ruang, ataupun perbaikan struktural.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "Proses renovasi dan penambahan lantai rumah oleh Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Pembangunan Rumah",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

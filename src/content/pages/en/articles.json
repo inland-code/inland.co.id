@@ -1,0 +1,29 @@
+{
+  "translationKey": "articles",
+  "slug": "articles",
+  "template": "articles",
+  "slugVerified": true,
+  "seo": {
+    "title": "Articles on Architecture, Construction & Building Care",
+    "description": "Articles, guides and tips on architecture, construction and building maintenance from the Inland professional team."
+  },
+  "hero": {
+    "title": "Inland Articles",
+    "body": "Get the latest information, guides, and tips about architecture, construction, and building maintenance from our professional team. Here you will find articles offering in-depth insight and practical solutions for your project and building maintenance needs.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Modern classic house",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

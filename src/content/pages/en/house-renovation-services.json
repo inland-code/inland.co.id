@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-renovation",
+  "slug": "house-renovation-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "House Renovation: Interior, Exterior & Structural",
+    "description": "Inland house renovation: interiors, facades, kitchens and bathrooms, extensions, structural repair and restoration of older homes."
+  },
+  "hero": {
+    "title": "House Renovation Services by Inland",
+    "body": "Want to give your home a fresh look or fix a structure that is no longer adequate? Inland is ready to help you realise your dream renovation, whether for an aesthetic upgrade, extra space, or structural repair.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "House renovation and storey extension by Inland",
+    "ctas": [
+      {
+        "label": "See House Construction Services",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

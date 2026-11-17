@@ -1,0 +1,30 @@
+{
+  "name": "inland-co-id",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build && node scripts/postbuild.mjs && node scripts/verify-urls.mjs",
+    "preview": "wrangler dev --port 8788",
+    "check": "astro check",
+    "verify:urls": "node scripts/verify-urls.mjs",
+    "deploy": "wrangler deploy",
+    "build:production": "PUBLIC_SITE_ENV=production npm run build"
+  },
+  "dependencies": {
+    "@fontsource-variable/roboto": "^5.3.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.12",
+    "sharp": "^0.35.5",
+    "tailwindcss": "^4.3.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.164.0"
+  }
+}

@@ -1,0 +1,22 @@
+path,type,status,source,note
+/,page,verified,google-index,Beranda
+/tentang-inland/,page,verified,google-index,Tentang Kami
+/artikel/,page,verified,google-index,Daftar artikel
+/jasa-arsitek/,page,verified,google-index,Tidak ada di screenshot; isi dari bagian Jasa Arsitek di halaman Layanan
+/jasa-kontraktor/,page,verified,google-index,Tidak ada di screenshot; isi dari bagian Jasa Kontraktor di halaman Layanan
+/jasa-perawatan-gedung/,page,verified,google-index,Tidak ada di screenshot; menu Jasa Maintenance
+/jasa-renovasi-rumah-inland/,page,verified,google-index,
+/jasa-pembersihan-kaca-gedung/,page,verified,google-index,
+/jasa-rope-access/,page,verified,google-index,Tidak ada di screenshot
+/jasa-sealant-kaca-gedung-jakarta-profesional/,post,verified,google-index,
+/jasa-sealant-kaca-gedung-tinggi-profesional/,post,verified,google-index,
+/arsitektur-kuno-peradaban-dan-karya-besar-dalam-sejarah-arsitektur-dunia/,post,verified,google-index,
+/arsitektur-sejarah-elemen-dan-peranannya-dalam-perkembangan-peradaban-manusia/,post,verified,google-index,
+/layanan/,page,unverified,guess,Judul hero "Layanan Inland"; cek di sitemap asli
+/kontak/,page,unverified,guess,Cek di sitemap asli
+/galeri/,page,unverified,guess,Cek di sitemap asli
+/jasa-desain-interior-inland/,page,unverified,guess,Pola dari /jasa-renovasi-rumah-inland/
+/jasa-desain-rumah-inland/,page,unverified,guess,Pola dari /jasa-renovasi-rumah-inland/
+/jasa-pembangunan-rumah-inland/,page,unverified,guess,Pola dari /jasa-renovasi-rumah-inland/
+/konstruksi-proses-sejarah-dan-peran-penting-dalam-pembangunan-infrastruktur/,post,unverified,guess,Judul artikel diketahui; slug ditebak dari pola WordPress
+/sitemap_index.xml,file,verified,user,Sitemap index Yoast

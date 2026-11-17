@@ -1,0 +1,73 @@
+---
+import Logo from './Logo.astro';
+import type { Locale } from '@/i18n/config';
+import { t } from '@/i18n/ui';
+import { hrefFor } from '@/lib/routes';
+import { whatsappUrl } from '@/lib/links';
+import site from '@/data/site.json';
+
+interface Props { locale: Locale }
+const { locale } = Astro.props;
+
+const serviceKeys = [
+  ['service-architect', { id: 'Jasa Arsitek', en: 'Architect Services' }],
+  ['service-contractor', { id: 'Jasa Kontraktor', en: 'Contractor Services' }],
+  ['service-maintenance', { id: 'Jasa Maintenance', en: 'Maintenance Services' }],
+  ['service-glass-cleaning', { id: 'Pembersihan Kaca Gedung', en: 'Building Glass Cleaning' }],
+] as const;
+const companyKeys = [
+  ['about', 'nav.about'],
+  ['articles', 'nav.articles'],
+  ['gallery', 'nav.gallery'],
+  ['contact', 'nav.contact'],
+] as const;
+
+const services = await Promise.all(serviceKeys.map(async ([k, l]) => ({ href: await hrefFor(k, locale), label: l[locale] })));
+const company = await Promise.all(companyKeys.map(async ([k, l]) => ({ href: await hrefFor(k, locale), label: t(locale, l) })));
+const year = new Date().getFullYear();
+const dayLabels: Record<string, { id: string; en: string }> = {
+  'Mo,Tu,We,Th,Fr': { id: 'Senin – Jumat', en: 'Monday – Friday' },
+  Sa: { id: 'Sabtu', en: 'Saturday' },
+};
+const address = `${site.address.street}, ${site.address.locality}, ${site.address.region} ${site.address.postalCode}`;
+---
+<footer class="bg-navy-950 text-white/80">
+  <div class="container-site grid gap-10 py-14 sm:grid-cols-2 lg:grid-cols-4">
+    <div>
+      <div class="inline-block rounded-xl bg-white px-3 py-2"><Logo class="h-10 w-auto" /></div>
+      <p class="mt-4 text-sm leading-relaxed">{site.tagline[locale]}.</p>
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.services')}</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        {services.map((s) => <li><a class="hover:text-brand-400" href={s.href}>{s.label}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.company')}</h2>
+      <ul class="mt-4 space-y-2 text-sm">
+        {company.map((s) => <li><a class="hover:text-brand-400" href={s.href}>{s.label}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <h2 class="text-sm font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.contact')}</h2>
+      <address class="mt-4 space-y-2 text-sm not-italic">
+        <p>{address}</p>
+        <p><a class="hover:text-brand-400" href={whatsappUrl(locale)} target="_blank" rel="noopener">{site.phoneDisplay}</a></p>
+        <p><a class="hover:text-brand-400" href={`mailto:${site.email}`}>{site.email}</a></p>
+      </address>
+      <h3 class="mt-5 text-xs font-semibold tracking-wide text-white uppercase">{t(locale, 'footer.hours')}</h3>
+      <ul class="mt-2 space-y-1 text-sm">
+        {site.openingHours.map((h) => (
+          <li>{dayLabels[h.days.join(',')]?.[locale] ?? h.days.join(', ')}: {h.opens} – {h.closes} WIB</li>
+        ))}
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-white/10">
+    <p class="container-site py-5 text-center text-xs text-white/60">
+      {t(locale, 'footer.rights')} © {year} {site.name} | {t(locale, 'footer.design')}{' '}
+      {site.credit.url ? <a class="text-brand-400 hover:underline" href={site.credit.url} rel="noopener">{site.credit.label}</a> : <span class="text-brand-400">{site.credit.label}</span>}
+    </p>
+  </div>
+</footer>

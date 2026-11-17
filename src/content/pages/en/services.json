@@ -1,0 +1,29 @@
+{
+  "translationKey": "services",
+  "slug": "services",
+  "template": "services",
+  "slugVerified": true,
+  "seo": {
+    "title": "Inland Services: Architect, Contractor & Building Maintenance",
+    "description": "Inland services: interior and house design, home construction and renovation, and rope access building glass cleaning."
+  },
+  "hero": {
+    "title": "Inland Services",
+    "body": "Inland offers a range of architecture, construction, and maintenance services designed to meet your project needs from start to finish. Every service is delivered by an experienced professional team, ensuring the best result for every client.",
+    "image": "services/hero-rope-access-kaca.jpg",
+    "imageAlt": "Inland rope access technician cleaning building glass",
+    "ctas": [
+      {
+        "label": "About Us",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

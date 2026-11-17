@@ -1,0 +1,29 @@
+{
+  "translationKey": "gallery",
+  "slug": "gallery",
+  "template": "gallery",
+  "slugVerified": true,
+  "seo": {
+    "title": "Inland Project Gallery: Architecture & Building Care",
+    "description": "Inland project gallery: house architecture, interiors, construction and rope access building glass cleaning."
+  },
+  "hero": {
+    "title": "Inland Gallery",
+    "body": "Browse the work and projects we have completed in this gallery. From architectural design to construction and building maintenance, every image shows our commitment to quality and beauty.",
+    "image": "home/interior-ruang-tamu-mewah.jpg",
+    "imageAlt": "Luxury living room interior with crystal chandelier by Inland",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

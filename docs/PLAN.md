@@ -1,13 +1,13 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Disetujui untuk dimulai** · Terakhir diperbarui: 2026-11-17
+Status: **Fase 1 selesai** · Terakhir diperbarui: 2026-11-17
 
 ## Keputusan yang sudah diambil
 
 | # | Topik | Keputusan |
 |---|---|---|
 | 1 | Slug Bahasa Inggris | **Diterjemahkan** (contoh: `/en/about-us/`, `/en/services/interior-design/`), dihubungkan via `hreflang` |
-| 2 | Sumber konten | **Diambil langsung dari https://inland.co.id/** (sitemap → halaman → media) |
+| 2 | Sumber konten | **Dibuat dari nol berdasarkan screenshot** yang diberikan; foto di-crop dari screenshot. Slug URL dicocokkan via indeks Google (lihat `migration/url-inventory.csv`) |
 | 3 | Penyimpanan media | **Di repo** (`src/assets/`), dioptimasi saat build — bukan di Cloudflare R2 |
 | 4 | URL Bahasa Indonesia | **Sama persis** dengan situs WordPress saat ini, termasuk trailing slash, di root tanpa prefix |
 | 5 | Formulir kontak | _Belum diputuskan_ (email saja vs. email + riwayat di D1) |
@@ -49,13 +49,14 @@ Status: **Disetujui untuk dimulai** · Terakhir diperbarui: 2026-11-17
 
 ## B. Tahapan
 
-### Fase 0 — Ekstraksi konten
-1. Crawl `sitemap_index.xml` → semua sub-sitemap → semua URL.
-2. Simpan inventaris `migration/url-inventory.csv` (URL, tipe, judul, meta description, canonical, gambar, tanggal).
-3. Ekstrak konten tiap halaman ke Markdown/JSON terstruktur; unduh semua media ke `src/assets/`.
-4. Ambil token warna brand persis (oranye ±`#EE8820` → coklat ±`#6B4423`, navy ±`#0B1F5C`), logo, favicon.
+### Fase 0 — Ekstraksi konten ✅ (dari screenshot)
+1. ✅ Inventaris URL `migration/url-inventory.csv`: 13 URL terverifikasi via indeks Google, 7 masih tebakan (perlu dicek di sitemap asli).
+2. ✅ 28 foto di-crop dari screenshot ke `src/assets/images/`.
+3. ✅ Warna brand diambil dari piksel: oranye `#EF8619` → coklat `#69431F`, navy `#001F54`.
+4. ⏳ Logo: sementara rekonstruksi SVG — butuh file logo asli.
+5. ⏳ Teks lengkap per section ditranskripsi dari screenshot di Fase 3.
 
-### Fase 1 — Fondasi proyek
+### Fase 1 — Fondasi proyek ✅
 - Astro terbaru, TypeScript, Tailwind v4, Content Collections dengan skema tervalidasi.
 - i18n (ID tanpa prefix, EN `/en/` slug terjemahan).
 - CI GitHub Actions: lint, type-check, build, cek link rusak, verifikasi URL.

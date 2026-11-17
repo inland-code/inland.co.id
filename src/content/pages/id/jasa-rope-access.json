@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-rope-access",
+  "slug": "jasa-rope-access",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Rope Access Bersertifikat untuk Gedung Tinggi",
+    "description": "Jasa rope access Inland untuk pekerjaan di ketinggian: pembersihan kaca, sealant kaca gedung, dan perawatan fasad oleh teknisi bersertifikat."
+  },
+  "hero": {
+    "title": "Jasa Rope Access Profesional dan Bersertifikat",
+    "body": "Inland menyediakan jasa rope access untuk pekerjaan di ketinggian, seperti pembersihan kaca gedung dan pemasangan sealant pada gedung tinggi dan bertingkat, dikerjakan oleh teknisi bersertifikat dengan standar keselamatan tertinggi.",
+    "image": "kaca/teknisi-rope-access.jpg",
+    "imageAlt": "Teknisi rope access bersertifikat bekerja di ketinggian",
+    "ctas": [
+      {
+        "label": "Jasa Pembersihan Kaca Gedung",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-contractor",
+  "slug": "jasa-kontraktor",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Kontraktor Bangun & Renovasi Rumah",
+    "description": "Jasa kontraktor Inland: pembangunan rumah, renovasi, pembangunan gedung, serta perbaikan struktur dengan kualitas dan waktu terjamin."
+  },
+  "hero": {
+    "title": "Jasa Kontraktor",
+    "body": "Mewujudkan desain menjadi kenyataan memerlukan eksekusi yang tepat dan profesional. Sebagai kontraktor berpengalaman, Inland menawarkan layanan konstruksi yang komprehensif, mulai dari pembangunan rumah hingga renovasi.",
+    "image": "pembangunan/struktur-bata.jpg",
+    "imageAlt": "Proyek pembangunan rumah oleh kontraktor Inland",
+    "ctas": [
+      {
+        "label": "Jasa Pembangunan Rumah",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

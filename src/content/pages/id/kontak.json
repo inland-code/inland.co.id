@@ -1,0 +1,29 @@
+{
+  "translationKey": "contact",
+  "slug": "kontak",
+  "template": "contact",
+  "slugVerified": false,
+  "seo": {
+    "title": "Kontak Inland - Konsultasi Gratis via WhatsApp",
+    "description": "Hubungi Inland di Pamulang, Tangerang Selatan untuk konsultasi gratis jasa arsitek, kontraktor, dan perawatan gedung. Telepon, email, atau WhatsApp."
+  },
+  "hero": {
+    "title": "Kontak Kami",
+    "body": "Kami di Inland selalu siap membantu Anda! Jika Anda memiliki pertanyaan, ingin mendapatkan informasi lebih lanjut tentang layanan kami, atau ingin menjadwalkan konsultasi, jangan ragu untuk menghubungi kami. Kami akan dengan senang hati menjawab semua pertanyaan Anda.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Rumah modern hasil desain Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}

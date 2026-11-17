@@ -1,0 +1,29 @@
+{
+  "translationKey": "service-architect",
+  "slug": "architect-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Professional Architect Services - House & Interior Design",
+    "description": "Inland architect services: aesthetic and functional design for homes, offices, buildings, interiors and exteriors."
+  },
+  "hero": {
+    "title": "Architect Services",
+    "body": "Building or renovating requires careful planning, especially in design. As an experienced architecture firm, Inland delivers modern, functional architectural design solutions tailored to your vision and needs.",
+    "image": "gallery/arsitek-01.jpg",
+    "imageAlt": "Modern three-storey house design by Inland",
+    "ctas": [
+      {
+        "label": "Interior Design Services",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "navy"
+      }
+    ]
+  },
+  "sections": []
+}
