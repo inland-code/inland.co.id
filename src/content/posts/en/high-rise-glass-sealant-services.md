@@ -16,6 +16,16 @@ faq:
     a: Yes. The rope access method we use is proven safe and efficient, letting our team reach difficult areas without scaffolding.
   - q: How long does glass sealant last?
     a: Quality sealant installed by the Inland team can last between 5 and 30 years, depending on environmental conditions and the type of sealant used.
+sources:
+  - title: "Minister of Manpower Regulation No. 9 of 2016 on Occupational Safety and Health for Work at Height"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "Government Regulation No. 16 of 2021 implementing the Building Law"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Find the best building glass sealant service with Inland. We provide professional repair and installation of high-rise glass sealant using rope access, protecting your building from leaks and extreme weather. Contact us for a free consultation!
@@ -60,3 +70,5 @@ After application, we test that the sealant has cured and provides the best prot
 
 ## Contact Us for a Free Consultation
 Don’t let leaks or glass damage disrupt your business. With **Inland**’s high-rise glass sealant service you get maximum protection and professional results. [Contact us today](/en/contact/).
+
+**Read also:** [Why building glass leaks and how to fix it](/en/why-building-glass-leaks/) · [What is rope access?](/en/what-is-rope-access/) · [Building glass sealant in Jakarta](/en/building-glass-sealant-jakarta/) · Related services: [rope access](/en/rope-access-services/), [building glass cleaning](/en/building-glass-cleaning-services/), and [building maintenance](/en/building-maintenance-services/).

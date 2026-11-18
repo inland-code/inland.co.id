@@ -16,6 +16,13 @@ faq:
     a: Ancient architecture generally used local materials such as stone, mud brick, and timber, responded to climate and the sun, and carried strong symbolic and religious meaning.
   - q: How does ancient architecture influence modern homes?
     a: Principles such as proportion, symmetry, classical columns, solar orientation, and the use of local materials are still widely used in modern house design.
+sources:
+  - title: "Borobudur Temple Compounds"
+    publisher: "UNESCO World Heritage Centre"
+    url: https://whc.unesco.org/en/list/592
+  - title: "Prambanan Temple Compounds"
+    publisher: "UNESCO World Heritage Centre"
+    url: https://whc.unesco.org/en/list/642
 ---
 
 Ancient architecture is a mirror of civilization. From the pyramids on the Nile to the stone temples of Asia, every building tells a story about the beliefs, technology, and way of life of the people who built it. Understanding it helps us see how design principles still used today — proportion, orientation, and material choice — grew out of thousands of years of experience.
@@ -64,3 +71,5 @@ The Maya, Aztec, and Teotihuacan civilizations built stepped pyramids with stair
 4. **Build to last.** Material quality and craftsmanship determine a building’s lifespan.
 
 At Inland we apply these principles in every project — from [house design](/en/house-design-services/) and [interior design](/en/interior-design-services/) to [house construction](/en/house-construction-services/). Want a home that is beautiful, functional, and built to last? [Talk to our team](/en/contact/).
+
+**Read also:** [Architecture: history, elements, and its role in civilisation](/en/architecture-history-elements-role-civilization/) · [Modern tropical house design](/en/modern-tropical-house-design/)

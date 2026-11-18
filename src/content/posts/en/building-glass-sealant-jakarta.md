@@ -11,6 +11,16 @@ category: layanan
 image: articles/sealant-kaca-gedung-jakarta.jpg
 imageAlt: Inland rope access technicians working on a glass building facade
 publishedAt: 2024-10-25
+sources:
+  - title: "Minister of Manpower Regulation No. 9 of 2016 on Occupational Safety and Health for Work at Height"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "Government Regulation No. 16 of 2021 implementing the Building Law"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 We provide professional glass sealant services designed specifically for high-rise buildings in Jakarta. Using *rope access* techniques, we deliver safe, tidy, long-lasting results without disrupting daily activity in your building.
@@ -61,3 +71,5 @@ After completion we inspect thoroughly to make sure the result meets our quality
 
 ## Contact Us for Glass Sealant Services in Jakarta
 Want to protect your building from Jakarta’s extreme weather? [Contact us](/en/contact/) for a free consultation and start protecting your building with the best *sealant* service in Jakarta.
+
+**Read also:** [Why building glass leaks and how to fix it](/en/why-building-glass-leaks/) · [What is rope access?](/en/what-is-rope-access/) · [High-rise glass sealant services](/en/high-rise-glass-sealant-services/) · Related services: [rope access](/en/rope-access-services/), [building glass cleaning](/en/building-glass-cleaning-services/), and [building maintenance](/en/building-maintenance-services/).

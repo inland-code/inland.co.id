@@ -16,6 +16,16 @@ faq:
     a: Planning, design and cost estimating, procurement, execution, supervision and quality control, and handover followed by maintenance.
   - q: What is reinforced concrete?
     a: Reinforced concrete is concrete strengthened with steel bars so it can resist both compression and tension. It is the basis of most modern buildings.
+sources:
+  - title: "Law No. 2 of 2017 on Construction Services"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
+  - title: "Minister of Public Works Regulation No. 8 of 2023 on Construction Cost Estimation Guidelines (AHSP unit-price analysis)"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023
+  - title: "Government Regulation No. 16 of 2021 implementing the Building Law"
+    publisher: "BPK RI Legal Database (JDIH)"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Construction is the set of activities that turns a design into a real building or piece of infrastructure — from homes and buildings to roads and bridges. Good construction ensures a building is safe, fit for purpose, on time, and on budget.
@@ -71,3 +81,5 @@ Construction is the backbone of development. Good infrastructure opens economic 
 ## Build with Inland
 
 Inland handles [house construction](/en/house-construction-services/) from the ground up to move-in ready, [house renovation](/en/house-renovation-services/), and [building maintenance](/en/building-maintenance-services/) with careful planning, transparent budgets, and close supervision. [Discuss your project](/en/contact/) with our team.
+
+**Read also:** [House construction budget (RAB)](/en/house-construction-budget-rab/) · [How to choose a home contractor](/en/how-to-choose-a-home-contractor/) · [PBG building approval in Indonesia](/en/pbg-building-approval-indonesia/) · Related service: [contractor services](/en/contractor-services/).
