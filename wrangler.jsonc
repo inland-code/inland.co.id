@@ -20,12 +20,9 @@
     //   ACCESS_TEAM_DOMAIN, ACCESS_AUD   -> vars (atau dashboard Cloudflare)
     //   ADMIN_EMAIL, GITHUB_TOKEN        -> `npx wrangler secret put <NAMA>`
   },
-  // Aktifkan setelah membuat database:
-  //   npx wrangler d1 create inland-db
-  //   npx wrangler d1 migrations apply inland-db --remote
-  // lalu salin database_id ke bawah dan hapus komentar.
-  // "d1_databases": [
-  //   { "binding": "DB", "database_name": "inland-db", "database_id": "<ID>", "migrations_dir": "migrations" }
-  // ],
+  // Pesan formulir kontak (riwayat di dashboard). Migrasi baru: `npm run db:migrate`.
+  "d1_databases": [
+    { "binding": "DB", "database_name": "inland-db", "database_id": "d30f651e-4725-4bae-9a12-3bb54a703856", "migrations_dir": "migrations" }
+  ],
   "observability": { "enabled": true }
 }
