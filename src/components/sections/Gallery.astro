@@ -10,7 +10,7 @@ const { groups } = Astro.props;
   <div class="container-site space-y-16">
     {groups.map((g, gi) => (
       <div>
-        <h2 class="text-center text-3xl font-bold tracking-tight text-brand-700">{g.title}</h2>
+        <h2 class="text-center text-3xl font-bold tracking-tight text-accent">{g.title}</h2>
         <ul class="mt-10 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-4">
           {g.images.map((img, i) => {
             const id = `lb-${gi}-${i}`;

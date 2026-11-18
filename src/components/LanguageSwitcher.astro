@@ -15,7 +15,7 @@ const links = locales.map((l) => ({
 }));
 ---
 
-<nav aria-label={t(locale, 'lang.switch')} class="flex items-center rounded-full border border-black/10 p-0.5 text-xs font-semibold">
+<nav aria-label={t(locale, 'lang.switch')} class="flex items-center rounded-full border border-line p-0.5 text-xs font-semibold">
   {links.map((l) => (
     <a
       href={l.href}

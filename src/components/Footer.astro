@@ -97,14 +97,7 @@ const address = `${site.address.street}, ${site.address.locality}, ${site.addres
   </div>
   <div class="border-t border-white/10">
     <p class="container-site py-5 text-center text-xs text-white/60">
-      {t(locale, 'footer.rights')} © {year} {site.name} | {t(locale, 'footer.design')}{' '}
-      {site.credit.url ? (
-        <a class="text-brand-400 hover:underline" href={site.credit.url} rel="noopener">
-          {site.credit.label}
-        </a>
-      ) : (
-        <span class="text-brand-400">{site.credit.label}</span>
-      )}
+      {t(locale, 'footer.rights')} © {year} {site.name}. {t(locale, 'footer.reserved')}
     </p>
   </div>
 </footer>

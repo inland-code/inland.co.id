@@ -11,10 +11,10 @@ const { eyebrow, title, intro, items } = Astro.props;
     <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
     <div class="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
       {items.map((t) => (
-        <figure class="relative flex flex-col rounded-card bg-white p-8 shadow-card ring-1 ring-black/5">
+        <figure class="relative flex flex-col rounded-card bg-card p-8 shadow-card ring-1 ring-line">
           <Icon name="quote" class="size-10 text-brand-200" />
           <blockquote class="mt-4 flex-1 text-lg leading-relaxed text-ink">“{t.quote}”</blockquote>
-          <figcaption class="mt-6 flex items-center gap-3 border-t border-black/5 pt-5">
+          <figcaption class="mt-6 flex items-center gap-3 border-t border-line pt-5">
             <span
               class="inline-flex size-11 items-center justify-center rounded-full bg-brand-gradient font-bold text-white"
               aria-hidden="true"
@@ -22,7 +22,7 @@ const { eyebrow, title, intro, items } = Astro.props;
               {t.name.charAt(0)}
             </span>
             <span>
-              <span class="block font-semibold text-espresso-900">{t.name}</span>
+              <span class="block font-semibold text-heading">{t.name}</span>
               {t.location && <span class="block text-sm text-muted">{t.location}</span>}
             </span>
           </figcaption>

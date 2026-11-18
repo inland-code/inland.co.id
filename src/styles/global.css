@@ -1,5 +1,8 @@
 @import 'tailwindcss';
 
+/* Mode gelap: aktif bila <html> punya class .dark (diatur skrip tema di BaseLayout). */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /*
  * Palet brand Inland — diturunkan langsung dari logo:
  *   oranye logo     #F2821F  (brand-500)
@@ -30,16 +33,43 @@
   --color-espresso-900: #2c1a10;
   --color-espresso-950: #1c110a;
 
+  /* Token semantik — berubah nilai di mode gelap (lihat .dark di bawah). */
   --color-ink: #2a211b;
   --color-muted: #6e625a;
+  --color-heading: #2c1a10;
   --color-surface: #ffffff;
   --color-surface-alt: #fbf6f0;
+  --color-card: #ffffff;
+  --color-line: rgb(44 26 16 / 0.09);
+  --color-accent: #b45a19;
+  --color-accent-strong: #8c4a1e;
   --color-sand: #f4ebe1;
 
   --radius-card: 1rem;
   --shadow-card: 0 1px 2px rgb(44 26 16 / 0.06), 0 14px 34px -14px rgb(112 64 32 / 0.38);
 
   --container-site: 76rem;
+}
+
+/*
+ * Mode gelap: hanya token permukaan/teks yang berubah. Gradien oranye, section espresso,
+ * tombol, dan foto tetap sama sehingga identitas brand terjaga.
+ */
+.dark {
+  color-scheme: dark;
+  --color-ink: #ece2d8;
+  --color-muted: #b9aa9b;
+  --color-heading: #fbf1e6;
+  --color-surface: #140d09;
+  --color-surface-alt: #1e140e;
+  --color-card: #271a12;
+  --color-line: rgb(255 255 255 / 0.1);
+  --color-accent: #f6963f;
+  --color-accent-strong: #f9ad6b;
+  --color-sand: #2f2016;
+  --color-brand-50: #33200f;
+  --color-brand-100: #4a2d16;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.4), 0 14px 34px -14px rgb(0 0 0 / 0.7);
 }
 
 @layer base {

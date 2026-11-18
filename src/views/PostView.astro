@@ -89,11 +89,11 @@ const jsonLd: object[] = [
     <div class="container-site mt-12 max-w-3xl">
       {showToc && (
         <details open class="mb-8 rounded-card bg-surface-alt p-5 ring-1 ring-brand-100">
-          <summary class="cursor-pointer font-semibold text-espresso-900">{t(locale, 'post.toc')}</summary>
+          <summary class="cursor-pointer font-semibold text-heading">{t(locale, 'post.toc')}</summary>
           <ol class="mt-3 space-y-1.5">
             {toc.map((h) => (
               <li class:list={[h.depth === 3 && 'ml-5 text-sm']}>
-                <a href={`#${h.slug}`} class="text-muted hover:text-brand-800">
+                <a href={`#${h.slug}`} class="text-muted hover:text-accent-strong">
                   {h.text}
                 </a>
               </li>
@@ -101,7 +101,7 @@ const jsonLd: object[] = [
           </ol>
         </details>
       )}
-      <div class="space-y-5 text-lg leading-relaxed text-ink [&_a]:text-brand-800 [&_a]:underline [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-espresso-900 [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-espresso-900">
+      <div class="space-y-5 text-lg leading-relaxed text-ink [&_a]:text-brand-800 [&_a]:underline [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-heading [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-heading">
         <Content />
       </div>
     </div>

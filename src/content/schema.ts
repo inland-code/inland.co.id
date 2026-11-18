@@ -340,5 +340,4 @@ export const siteSchema = z.object({
       tiktok: s('TikTok URL'),
     })
     .meta({ title: 'Media sosial' }),
-  credit: z.object({ label: s('Label'), url: s('URL') }).meta({ title: 'Kredit desain' }),
 });

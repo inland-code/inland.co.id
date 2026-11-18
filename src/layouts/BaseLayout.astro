@@ -75,7 +75,18 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
     <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f2821f" />
+    <!-- Terapkan tema sebelum halaman digambar (tanpa kedipan). -->
+    <script is:inline>
+      (() => {
+        try {
+          const s = localStorage.getItem('theme');
+          const dark = s ? s === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.classList.toggle('dark', dark);
+        } catch {}
+      })();
+    </script>
     <meta name="generator" content={Astro.generator} />
 
     <meta property="og:site_name" content={site.name} />
@@ -123,5 +134,15 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
     </main>
     <Footer locale={locale} />
     <WhatsAppFab locale={locale} />
+    <script is:inline>
+      document.querySelectorAll('[data-theme-toggle]').forEach((b) =>
+        b.addEventListener('click', () => {
+          const dark = document.documentElement.classList.toggle('dark');
+          try {
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+          } catch {}
+        }),
+      );
+    </script>
   </body>
 </html>

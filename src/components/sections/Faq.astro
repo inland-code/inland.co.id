@@ -11,8 +11,8 @@ const { eyebrow, title, intro, items, index } = Astro.props;
     <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
     <div class="mt-10 space-y-3">
       {items.map((f, i) => (
-        <details name={`faq-${index}`} open={i === 0} class="group rounded-xl bg-white ring-1 ring-black/5 open:shadow-card">
-          <summary class="flex cursor-pointer list-none items-center gap-4 px-6 py-5 text-lg font-semibold text-espresso-900">
+        <details name={`faq-${index}`} open={i === 0} class="group rounded-xl bg-card ring-1 ring-line open:shadow-card">
+          <summary class="flex cursor-pointer list-none items-center gap-4 px-6 py-5 text-lg font-semibold text-heading">
             <span class="flex-1">{f.q}</span>
             <Icon name="plus" class="size-5 shrink-0 text-brand-600 transition group-open:rotate-45" />
           </summary>

@@ -11,7 +11,7 @@ const resolved = await Promise.all(cards.map(async (c) => ({ ...c, url: c.cta ? 
 <section class="border-b border-brand-100 py-16 last-of-type:border-0 sm:py-20">
   <div class="container-site grid gap-10 lg:grid-cols-2 lg:gap-14">
     <div>
-      <h2 class="text-3xl font-bold tracking-tight text-espresso-900">{title}</h2>
+      <h2 class="text-3xl font-bold tracking-tight text-heading">{title}</h2>
       <p class="mt-5 leading-relaxed text-muted">{text}</p>
       {bars.length > 0 && (
         <ul class="mt-8 space-y-4">
@@ -19,7 +19,7 @@ const resolved = await Promise.all(cards.map(async (c) => ({ ...c, url: c.cta ? 
             <li>
               <div class="flex justify-between text-sm font-medium text-ink">
                 <span>{b.label}</span>
-                <span class="text-brand-700">{b.value}%</span>
+                <span class="text-accent">{b.value}%</span>
               </div>
               <div class="mt-2 h-2 overflow-hidden rounded-full bg-brand-100" role="presentation">
                 <div class="h-full rounded-full bg-gradient-to-r from-brand-400 to-brand-700" style={`width:${b.value}%`}></div>
