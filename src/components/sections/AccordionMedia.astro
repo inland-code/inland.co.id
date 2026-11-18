@@ -20,7 +20,7 @@ const group = `acc-${index}`;
         {/* Akordeon eksklusif bawaan HTML (atribut name), tanpa JavaScript. */}
         {items.map((it, i) => (
           <details name={group} open={i === 0} class:list={['group rounded-xl transition', brand ? 'bg-white/10 ring-1 ring-white/25 open:bg-white/15' : 'bg-white ring-1 ring-black/5 open:shadow-card']}>
-            <summary class:list={['flex cursor-pointer list-none items-center gap-4 px-5 py-4 font-semibold', brand ? 'text-white' : 'text-navy-900']}>
+            <summary class:list={['flex cursor-pointer list-none items-center gap-4 px-5 py-4 font-semibold', brand ? 'text-white' : 'text-espresso-900']}>
               {numbered && <span class:list={['inline-flex size-8 shrink-0 items-center justify-center rounded-full text-sm', brand ? 'bg-white text-brand-800' : 'bg-brand-500 text-white']}>{i + 1}</span>}
               <span class="flex-1">{it.title}</span>
               <Icon name="plus" class="size-5 shrink-0 transition group-open:rotate-45" />
@@ -30,7 +30,7 @@ const group = `acc-${index}`;
         ))}
       </div>
       {cta && ctaUrl && (
-        <a href={ctaUrl} class:list={['mt-8', brand ? 'btn-light' : 'btn-navy']}>
+        <a href={ctaUrl} class:list={['mt-8', brand ? 'btn-light' : 'btn-dark']}>
           {cta.label} <Icon name="arrow" class="size-4" />
         </a>
       )}

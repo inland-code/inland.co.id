@@ -12,13 +12,13 @@ interface Props {
   body: string;
   image: string;
   imageAlt: string;
-  ctas?: { label: string; href: string; variant: 'light' | 'navy' | 'whatsapp' | 'outline' }[];
+  ctas?: { label: string; href: string; variant: 'light' | 'dark' | 'whatsapp' | 'outline' }[];
 }
 const { locale, title, tagline, body, image, imageAlt, ctas = [] } = Astro.props;
 const resolved = await Promise.all(
   ctas.map(async (c) => ({ ...c, url: await resolveHref(c.href, locale), external: c.href === '#whatsapp' })),
 );
-const cls = { light: 'btn-light', navy: 'btn-navy', whatsapp: 'btn-navy', outline: 'btn-outline' } as const;
+const cls = { light: 'btn-light', dark: 'btn-dark', whatsapp: 'btn-dark', outline: 'btn-outline' } as const;
 ---
 <section class="relative grid overflow-hidden bg-brand-gradient lg:min-h-[min(85vh,52rem)] lg:grid-cols-12">
   <div class="relative aspect-[4/3] sm:aspect-[16/9] lg:col-span-5 lg:aspect-auto">

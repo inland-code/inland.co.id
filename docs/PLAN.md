@@ -65,6 +65,8 @@ Status: **Fase 2 berjalan** · Terakhir diperbarui: 2026-11-18
 - Deploy Cloudflare Workers static assets; staging dengan `X-Robots-Tag: noindex`.
 
 ### Fase 2 — Desain sistem & mockup (perlu persetujuan)
+- ✅ Palet diturunkan dari logo: oranye `#F2821F`, coklat `#704020`, espresso `#482818` (menggantikan navy situs lama), netral krem hangat.
+- ✅ Section statistik di Beranda. **Angka sementara** (8+ tahun, 250+ proyek, 180+ klien, 6 kota) — ganti di `src/content/pages/{id,en}/home.json` atau dashboard.
 Identitas & warna tetap, tampilan dimodernkan:
 - Header sticky transparan → solid saat scroll; menu mobile rapi.
 - Hero: tipografi tegas, angka kepercayaan (tahun pengalaman, jumlah proyek), badge layanan.

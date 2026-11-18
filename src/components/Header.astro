@@ -65,7 +65,7 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
                 <div class="grid grid-cols-3 gap-2 rounded-2xl border border-black/5 bg-white p-4 shadow-card">
                   {item.groups.map((g) => (
                     <div>
-                      <a href={g.href} class="block rounded-lg px-3 py-2 text-sm font-semibold text-navy-900 hover:bg-brand-50">{g.label}</a>
+                      <a href={g.href} class="block rounded-lg px-3 py-2 text-sm font-semibold text-espresso-900 hover:bg-brand-50">{g.label}</a>
                       <ul>
                         {g.items.map((it) => (
                           <li>
@@ -118,7 +118,7 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
                   <a href={item.href} class="block rounded-lg px-3 py-2 text-sm font-semibold text-brand-700 hover:bg-brand-50">{item.label}</a>
                   {item.groups.map((g) => (
                     <div class="mt-1">
-                      <a href={g.href} class="block rounded-lg px-3 py-2 text-sm font-semibold text-navy-900 hover:bg-brand-50">{g.label}</a>
+                      <a href={g.href} class="block rounded-lg px-3 py-2 text-sm font-semibold text-espresso-900 hover:bg-brand-50">{g.label}</a>
                       {g.items.map((it) => (
                         <a href={it.href} class="block rounded-lg px-3 py-2 text-sm text-muted hover:bg-brand-50">{it.label}</a>
                       ))}

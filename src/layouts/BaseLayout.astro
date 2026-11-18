@@ -52,7 +52,7 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
     <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="theme-color" content="#ef8619" />
+    <meta name="theme-color" content="#f2821f" />
     <meta name="generator" content={Astro.generator} />
 
     <meta property="og:site_name" content={site.name} />
@@ -79,7 +79,7 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
     })} />
   </head>
   <body class="flex min-h-dvh flex-col">
-    <a href="#main" class="sr-only z-50 rounded bg-navy-900 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-2 focus:left-2">
+    <a href="#main" class="sr-only z-50 rounded bg-espresso-900 px-4 py-2 text-white focus:not-sr-only focus:fixed focus:top-2 focus:left-2">
       {t(locale, 'nav.skip')}
     </a>
     <Header locale={locale} alternates={alternates} currentPath={path} />

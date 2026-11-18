@@ -2,6 +2,7 @@
 import type { Section } from '@/content.config';
 import type { Locale } from '@/i18n/config';
 import Trust from './Trust.astro';
+import Stats from './Stats.astro';
 import ServiceCards from './ServiceCards.astro';
 import AccordionMedia from './AccordionMedia.astro';
 import GalleryTeaser from './GalleryTeaser.astro';
@@ -15,6 +16,7 @@ const { sections, locale } = Astro.props;
 {sections.map((s, i) => {
   switch (s.type) {
     case 'trust': return <Trust {...s} />;
+    case 'stats': return <Stats {...s} locale={locale} />;
     case 'service-cards': return <ServiceCards {...s} locale={locale} />;
     case 'accordion-media': return <AccordionMedia {...s} locale={locale} index={i} />;
     case 'gallery-teaser': return <GalleryTeaser {...s} locale={locale} />;

@@ -1,40 +1,43 @@
 @import 'tailwindcss';
 
 /*
- * Token brand Inland — diambil langsung dari piksel situs lama.
- *   oranye  #EF8619  (atas gradien)
- *   coklat  #69431F  (bawah gradien)
- *   navy    #001F54  (tombol & judul)
+ * Palet brand Inland — diturunkan langsung dari logo:
+ *   oranye logo     #F2821F  (brand-500)
+ *   coklat logo     #704020  (brand-800) → espresso #482818 (espresso-700)
+ * Navy situs lama diganti espresso agar seluruh palet satu keluarga dengan logo.
+ * Netral dibuat hangat (krem/stone) supaya oranye terasa premium, bukan mencolok.
  */
 @theme {
   --font-sans: var(--font-roboto), system-ui, 'Segoe UI', Arial, sans-serif;
 
-  --color-brand-50: #fef6ec;
-  --color-brand-100: #fde8cc;
-  --color-brand-200: #fbcf95;
-  --color-brand-300: #f8b05a;
-  --color-brand-400: #f3982f;
-  --color-brand-500: #ef8619;
-  --color-brand-600: #d97b1a;
-  --color-brand-700: #b3681c;
-  --color-brand-800: #88521e;
-  --color-brand-900: #69431f;
-  --color-brand-950: #3d260f;
+  --color-brand-50: #fff6ed;
+  --color-brand-100: #ffe9d3;
+  --color-brand-200: #fdcfa5;
+  --color-brand-300: #f9ad6b;
+  --color-brand-400: #f6963f;
+  --color-brand-500: #f2821f;
+  --color-brand-600: #d96e17;
+  --color-brand-700: #b45a19;
+  --color-brand-800: #8c4a1e;
+  --color-brand-900: #704020;
+  --color-brand-950: #3d220f;
 
-  --color-navy-50: #eef3fb;
-  --color-navy-100: #d6e1f3;
-  --color-navy-500: #1d3f86;
-  --color-navy-700: #0a2c6b;
-  --color-navy-900: #001f54;
-  --color-navy-950: #00133a;
+  --color-espresso-50: #f7f2ee;
+  --color-espresso-100: #ece1d8;
+  --color-espresso-300: #b9a08c;
+  --color-espresso-500: #6e4b33;
+  --color-espresso-700: #482818;
+  --color-espresso-900: #2c1a10;
+  --color-espresso-950: #1c110a;
 
-  --color-ink: #1f2430;
-  --color-muted: #5b6270;
+  --color-ink: #2a211b;
+  --color-muted: #6e625a;
   --color-surface: #ffffff;
-  --color-surface-alt: #faf7f3;
+  --color-surface-alt: #fbf6f0;
+  --color-sand: #f4ebe1;
 
   --radius-card: 1rem;
-  --shadow-card: 0 1px 2px rgb(16 24 40 / 0.06), 0 12px 32px -12px rgb(105 67 31 / 0.35);
+  --shadow-card: 0 1px 2px rgb(44 26 16 / 0.06), 0 14px 34px -14px rgb(112 64 32 / 0.38);
 
   --container-site: 76rem;
 }
@@ -60,8 +63,16 @@
   }
 }
 
+/* Gradien vertikal seperti pada simbol logo: oranye → coklat. */
 @utility bg-brand-gradient {
-  background-image: linear-gradient(180deg, var(--color-brand-500) 0%, var(--color-brand-700) 55%, var(--color-brand-900) 100%);
+  background-image: linear-gradient(180deg, var(--color-brand-500) 0%, var(--color-brand-700) 58%, var(--color-brand-900) 100%);
+}
+/* Teks bergradien untuk angka statistik. */
+@utility text-brand-gradient {
+  background-image: linear-gradient(180deg, var(--color-brand-400) 0%, var(--color-brand-800) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 @utility container-site {
@@ -87,8 +98,8 @@
 @utility btn-light {
   @apply btn bg-white text-brand-900 shadow-sm hover:bg-brand-50;
 }
-@utility btn-navy {
-  @apply btn bg-navy-900 text-white shadow-sm hover:bg-navy-700;
+@utility btn-dark {
+  @apply btn bg-espresso-900 text-white shadow-sm hover:bg-espresso-700;
 }
 @utility btn-outline {
   @apply btn border border-white/70 text-white hover:bg-white/10;

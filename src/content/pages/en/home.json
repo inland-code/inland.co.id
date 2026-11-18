@@ -22,7 +22,7 @@
       {
         "label": "Contact Us",
         "href": "#whatsapp",
-        "variant": "navy"
+        "variant": "dark"
       }
     ]
   },
@@ -134,6 +134,33 @@
         "label": "See All Our Services",
         "href": "services"
       }
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Inland in Numbers",
+      "title": "Trusted for Homes through High-Rise Buildings",
+      "items": [
+        {
+          "value": 8,
+          "suffix": "+",
+          "label": "Years of Experience"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "Projects Completed"
+        },
+        {
+          "value": 180,
+          "suffix": "+",
+          "label": "Satisfied Clients"
+        },
+        {
+          "value": 6,
+          "suffix": "",
+          "label": "Cities Served in Greater Jakarta"
+        }
+      ]
     },
     {
       "type": "gallery-teaser",

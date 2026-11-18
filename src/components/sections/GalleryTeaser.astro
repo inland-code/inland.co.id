@@ -14,7 +14,7 @@ const ctaUrl = cta ? await resolveHref(cta.href, locale) : undefined;
   <div class="container-site">
     <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
       <SectionHeading eyebrow={eyebrow} title={title} intro={intro} align="left" />
-      {cta && ctaUrl && <a href={ctaUrl} class="btn-navy shrink-0">{cta.label} <Icon name="arrow" class="size-4" /></a>}
+      {cta && ctaUrl && <a href={ctaUrl} class="btn-dark shrink-0">{cta.label} <Icon name="arrow" class="size-4" /></a>}
     </div>
     <ul class="mt-10 grid auto-rows-[12rem] grid-cols-2 gap-3 sm:auto-rows-[14rem] md:grid-cols-4 md:gap-4">
       {images.slice(0, 5).map((g, i) => (

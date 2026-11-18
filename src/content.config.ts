@@ -25,7 +25,7 @@ const seo = z.object({
 const cta = z.object({
   label: z.string(),
   href: z.string(),
-  variant: z.enum(['light', 'navy', 'whatsapp', 'outline']).default('light'),
+  variant: z.enum(['light', 'dark', 'whatsapp', 'outline']).default('light'),
 });
 
 const hero = z.object({
@@ -52,6 +52,12 @@ export const sectionSchema = z.discriminatedUnion('type', [
   z.object({
     type: z.literal('trust'),
     items: z.array(z.object({ icon, title: z.string(), text: z.string() })).min(2).max(4),
+  }),
+  z.object({
+    type: z.literal('stats'),
+    ...sectionHeading,
+    /** Angka bisnis — ganti kapan saja dari konten/dashboard. */
+    items: z.array(z.object({ value: z.number().nonnegative(), suffix: z.string().default(''), label: z.string(), note: z.string().optional() })).min(2).max(4),
   }),
   z.object({
     type: z.literal('service-cards'),

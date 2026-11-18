@@ -22,7 +22,7 @@ const links = locales.map((l) => ({
       lang={l.locale}
       aria-current={l.locale === locale ? 'true' : undefined}
       title={localeMeta[l.locale].label}
-      class:list={['rounded-full px-2.5 py-1 transition', l.locale === locale ? 'bg-navy-900 text-white' : 'text-muted hover:text-ink']}
+      class:list={['rounded-full px-2.5 py-1 transition', l.locale === locale ? 'bg-espresso-900 text-white' : 'text-muted hover:text-ink']}
       data-astro-prefetch="false"
     >
       {localeMeta[l.locale].short}
