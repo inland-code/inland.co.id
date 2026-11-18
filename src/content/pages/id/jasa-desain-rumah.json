@@ -1,0 +1,166 @@
+{
+  "translationKey": "service-house-design",
+  "slug": "jasa-desain-rumah",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Desain Rumah Minimalis, Modern, Klasik & Tropis",
+    "description": "Jasa desain rumah Inland: desain konseptual, 3D, rencana detail, tata ruang, dan lanskap untuk rumah minimalis, modern, klasik, dan tropis."
+  },
+  "hero": {
+    "title": "Jasa Desain Rumah oleh Inland",
+    "body": "Mewujudkan rumah impian adalah langkah besar dalam hidup, dan Inland siap menjadi partner Anda dalam menciptakan hunian yang tidak hanya indah, tetapi juga fungsional dan nyaman. Kami menawarkan layanan desain rumah yang disesuaikan dengan gaya hidup, kebutuhan, dan visi Anda.",
+    "image": "desain-rumah/hero-rumah-2-lantai.jpg",
+    "imageAlt": "Desain rumah modern dua lantai karya Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Desain Interior",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Memilih Inland untuk Desain Rumah Anda?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "home/hero-rumah-modern-carport.jpg",
+      "imageAlt": "Rumah modern atap pelana dengan carport",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Desain Sesuai Keinginan",
+          "text": "Kami memahami bahwa setiap klien memiliki impian unik tentang rumah ideal mereka. Oleh karena itu, setiap desain yang kami buat sepenuhnya dipersonalisasi, mengikuti keinginan, gaya arsitektur, dan kebutuhan spesifik Anda."
+        },
+        {
+          "title": "Fungsionalitas dan Estetika",
+          "text": "Kami menyeimbangkan keindahan tampilan dengan tata ruang yang efisien, sirkulasi udara, dan pencahayaan alami."
+        },
+        {
+          "title": "Beragam Gaya Desain",
+          "text": "Minimalis, modern, klasik, hingga tropis — kami berpengalaman merancang berbagai gaya arsitektur."
+        },
+        {
+          "title": "Kualitas Material Terbaik",
+          "text": "Kami merekomendasikan material yang tepat untuk iklim dan anggaran Anda agar rumah awet dan nyaman."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Layanan Desain Rumah Kami",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "about/hero-rumah-klasik.jpg",
+      "imageAlt": "Rumah bergaya klasik modern",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Desain",
+          "text": "Setiap proyek dimulai dengan konsultasi mendalam untuk memahami keinginan dan kebutuhan Anda. Kami membahas gaya hidup, preferensi desain, dan fungsi ruang yang Anda butuhkan untuk mewujudkan rumah impian."
+        },
+        {
+          "title": "Desain Konseptual",
+          "text": "Kami menerjemahkan kebutuhan Anda menjadi konsep denah dan tampak bangunan sebagai dasar pengembangan desain."
+        },
+        {
+          "title": "Desain 3D dan Rencana Detail",
+          "text": "Visualisasi 3D eksterior dan interior serta gambar kerja detail yang siap digunakan untuk pembangunan."
+        },
+        {
+          "title": "Perencanaan Tata Ruang dan Sirkulasi Udara",
+          "text": "Tata ruang dirancang efisien dengan sirkulasi udara dan cahaya alami yang baik untuk iklim tropis."
+        },
+        {
+          "title": "Desain Lanskap (Opsional)",
+          "text": "Taman, carport, dan area luar dirancang menyatu dengan bangunan utama."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Tipe Rumah yang Kami Desain",
+      "items": [
+        {
+          "title": "Rumah Minimalis",
+          "text": "Desain yang sederhana namun elegan, dengan penekanan pada ruang yang efisien dan material yang bersih dan modern."
+        },
+        {
+          "title": "Rumah Modern",
+          "text": "Gaya arsitektur dengan garis tegas, tata letak terbuka, dan penggunaan teknologi terbaru untuk menciptakan rumah yang fungsional dan bergaya."
+        },
+        {
+          "title": "Rumah Klasik",
+          "text": "Desain rumah dengan sentuhan arsitektur tradisional, memberikan kesan elegan dan mewah dengan detail ornamen yang indah."
+        },
+        {
+          "title": "Rumah Tropis",
+          "text": "Rumah yang dirancang untuk iklim tropis, dengan sirkulasi udara yang baik, banyak jendela, dan elemen alam yang menonjol."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kami",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "gallery/arsitek-01.jpg",
+      "imageAlt": "Desain rumah modern tiga lantai",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Awal",
+          "text": "Kami mendiskusikan kebutuhan, anggaran, dan preferensi Anda dalam desain rumah, memastikan bahwa setiap aspek sesuai dengan visi Anda."
+        },
+        {
+          "title": "Pengembangan Desain",
+          "text": "Konsep dikembangkan menjadi denah, tampak, dan visualisasi 3D yang lengkap."
+        },
+        {
+          "title": "Revisi dan Penyempurnaan",
+          "text": "Kami menyempurnakan desain bersama Anda hingga setiap detail sesuai harapan."
+        },
+        {
+          "title": "Finalisasi Desain",
+          "text": "Gambar kerja final dan rincian material diserahkan, siap untuk tahap pembangunan."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Gaya rumah apa saja yang bisa didesain Inland?",
+          "a": "Minimalis, modern, klasik, tropis, maupun perpaduannya, disesuaikan dengan keinginan dan kondisi lahan Anda."
+        },
+        {
+          "q": "Apa saja hasil yang saya terima dari jasa desain rumah?",
+          "a": "Konsep desain, denah, tampak, visualisasi 3D eksterior dan interior, serta gambar kerja detail yang siap digunakan untuk pembangunan."
+        },
+        {
+          "q": "Apakah Inland juga bisa membangun rumah dari desain tersebut?",
+          "a": "Bisa. Inland menyediakan jasa kontraktor sehingga desain dapat langsung dilanjutkan ke tahap pembangunan oleh tim yang sama."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Siap Mewujudkan Rumah Impian Anda?",
+      "text": "Mulailah perjalanan Anda bersama kami di Inland. Kami siap membantu Anda merancang rumah impian yang indah, fungsional, dan sesuai dengan kebutuhan Anda. Hubungi kami untuk konsultasi desain rumah yang personal dan berkualitas.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

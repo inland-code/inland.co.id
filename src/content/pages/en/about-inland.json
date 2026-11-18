@@ -1,0 +1,155 @@
+{
+  "translationKey": "about",
+  "slug": "about-inland",
+  "template": "about",
+  "slugVerified": true,
+  "seo": {
+    "title": "About Inland - Architect, Contractor & Maintenance",
+    "description": "Get to know Inland: an architecture, construction and maintenance company guided by integrity, quality and sustainability."
+  },
+  "hero": {
+    "title": "About Inland",
+    "body": "Inland is a company specialising in architecture, construction, and maintenance, committed to delivering the best solution in every aspect of building. We serve individuals and businesses with a professional, quality-driven approach.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Modern classic house facade designed by Inland",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "value-cards",
+      "items": [
+        {
+          "title": "Vision",
+          "text": "To lead the architecture, construction, and maintenance industry by delivering results that exceed client expectations."
+        },
+        {
+          "title": "Mission",
+          "bullets": [
+            {
+              "title": "Design Innovation",
+              "text": "Delivering modern, creative, and functional architectural design for homes and businesses."
+            },
+            {
+              "title": "Quality Construction",
+              "text": "Completing construction projects to the highest standards of safety, comfort, and aesthetics."
+            },
+            {
+              "title": "Reliable Maintenance",
+              "text": "Providing efficient, dependable building maintenance that keeps buildings looking and working at their best."
+            }
+          ]
+        },
+        {
+          "title": "Values",
+          "bullets": [
+            {
+              "title": "Integrity",
+              "text": "We earn our clients’ trust through honest and transparent service."
+            },
+            {
+              "title": "Quality",
+              "text": "We are committed to high-quality results in every project we take on."
+            },
+            {
+              "title": "Sustainability",
+              "text": "Every design and build we deliver takes environmental sustainability into account."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Why Inland?",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "about/interior-ruang-makan.jpg",
+      "imageAlt": "Modern dining room interior with staircase designed by Inland",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Broad Experience",
+          "text": "Over the years we have handled projects ranging from private homes to commercial buildings."
+        },
+        {
+          "title": "Professional Team",
+          "text": "Our architects, contractors, and technicians are trained and experienced, including certified rope access technicians for work at height."
+        },
+        {
+          "title": "Tailored Approach",
+          "text": "Every project is designed around your needs, style, and budget — never a one-size-fits-all solution."
+        },
+        {
+          "title": "Modern Technology",
+          "text": "We use 3D visualisation, modern materials, and up-to-date equipment for more precise, efficient results."
+        }
+      ],
+      "eyebrow": "Why us"
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Inland in Numbers",
+      "title": "Trusted for Homes through High-Rise Buildings",
+      "items": [
+        {
+          "value": 8,
+          "suffix": "+",
+          "label": "Years of Experience"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "Projects Completed"
+        },
+        {
+          "value": 180,
+          "suffix": "+",
+          "label": "Satisfied Clients"
+        },
+        {
+          "value": 6,
+          "suffix": "",
+          "label": "Cities Served in Greater Jakarta"
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Testimonials",
+      "title": "What Our Clients Say",
+      "items": [
+        {
+          "quote": "Inland brought our dream home to life with a modern, elegant design. Construction went smoothly and the result exceeded our expectations.",
+          "name": "Jonathan",
+          "location": "Jakarta"
+        },
+        {
+          "quote": "We are very satisfied with Inland’s building glass cleaning service. The result was highly professional and on time.",
+          "name": "Martha",
+          "location": "Bandung"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Start Your Consultation Today",
+      "text": "Ready to start your project? Click the button below to talk directly with our team and get the solution you need.",
+      "button": {
+        "label": "Free Consultation",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "translationKey": "service-house-construction",
+  "slug": "jasa-pembangunan-rumah",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Pembangunan Rumah dari Nol hingga Siap Huni",
+    "description": "Jasa bangun rumah Inland: rumah pribadi, villa, hingga cluster perumahan dengan proses transparan, material berkualitas, dan tepat waktu."
+  },
+  "hero": {
+    "title": "Jasa Pembangunan Rumah oleh Inland",
+    "body": "Membangun rumah impian adalah proses yang membutuhkan perencanaan matang, keahlian teknis, dan komitmen terhadap kualitas. Inland hadir untuk membantu Anda melalui setiap tahap pembangunan, dari fondasi hingga penyelesaian akhir.",
+    "image": "pembangunan/hero-pengecoran-dak.jpg",
+    "imageAlt": "Pembesian dak beton pada proyek pembangunan rumah Inland",
+    "ctas": [
+      {
+        "label": "Lihat Jasa Renovasi Rumah",
+        "href": "service-renovation",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Memilih Inland untuk Pembangunan Rumah Anda?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "pembangunan/struktur-bata.jpg",
+      "imageAlt": "Proyek pembangunan rumah dua lantai dengan dinding bata",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Pengalaman dan Keahlian",
+          "text": "Dengan bertahun-tahun pengalaman di industri konstruksi, kami telah berhasil menyelesaikan berbagai proyek pembangunan rumah dengan berbagai skala dan gaya. Tim kami terdiri dari arsitek, insinyur, dan tenaga ahli yang siap memberikan hasil terbaik."
+        },
+        {
+          "title": "Transparansi dan Komunikasi Terbuka",
+          "text": "Rencana anggaran dan progres proyek kami laporkan secara berkala sehingga Anda selalu tahu perkembangan pembangunan."
+        },
+        {
+          "title": "Kualitas Material dan Konstruksi",
+          "text": "Kami menggunakan material berkualitas dan metode konstruksi yang tepat untuk bangunan yang kokoh dan awet."
+        },
+        {
+          "title": "Tepat Waktu dan Anggaran",
+          "text": "Jadwal kerja yang terukur dan pengawasan ketat menjaga proyek selesai sesuai waktu dan anggaran yang disepakati."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Layanan Pembangunan Rumah Kami",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material bata dan batu di lokasi proyek",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Pembangunan Rumah Baru",
+          "text": "Kami menangani pembangunan rumah dari nol hingga siap huni. Proses ini mencakup persiapan lahan, pembangunan fondasi, konstruksi struktur, hingga finishing. Setiap langkah dilakukan dengan teliti untuk memastikan kualitas dan kepuasan maksimal."
+        },
+        {
+          "title": "Pengembangan Rumah Kustom",
+          "text": "Rumah dibangun sesuai desain khusus Anda, termasuk penyesuaian tata ruang dan material."
+        },
+        {
+          "title": "Pengawasan Proyek",
+          "text": "Pengawas lapangan memastikan setiap pekerjaan sesuai gambar kerja dan standar kualitas."
+        },
+        {
+          "title": "Desain dan Konsultasi Konstruksi",
+          "text": "Belum punya desain? Tim arsitek kami siap membantu dari perencanaan hingga gambar kerja."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Proyek yang Kami Tangani",
+      "items": [
+        {
+          "title": "Pembangunan Rumah Pribadi",
+          "text": "Kami membangun rumah hunian yang nyaman, fungsional, dan estetis, sesuai dengan preferensi pribadi Anda."
+        },
+        {
+          "title": "Pembangunan Villa atau Rumah Liburan",
+          "text": "Kami juga berpengalaman dalam membangun properti liburan, memastikan desain yang menarik dan suasana yang menyatu dengan alam."
+        },
+        {
+          "title": "Pembangunan Cluster atau Perumahan",
+          "text": "Untuk proyek skala besar seperti pembangunan perumahan atau cluster, kami memiliki tim dan sumber daya yang memadai untuk menyelesaikannya dengan efisiensi tinggi."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Tahapan Pembangunan Rumah di Inland",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "pembangunan/progres-dinding.jpg",
+      "imageAlt": "Progres pembangunan dinding rumah",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Awal",
+          "text": "Kami memulai dengan memahami visi Anda tentang rumah impian. Kami mendiskusikan detail seperti ukuran, gaya, tata letak, dan anggaran."
+        },
+        {
+          "title": "Perencanaan dan Desain",
+          "text": "Desain, gambar kerja, dan rencana anggaran biaya (RAB) disusun dan disepakati bersama."
+        },
+        {
+          "title": "Pembangunan",
+          "text": "Pekerjaan dimulai dari persiapan lahan dan fondasi hingga struktur, atap, dan finishing."
+        },
+        {
+          "title": "Pengawasan dan Kontrol Kualitas",
+          "text": "Setiap tahap diperiksa untuk memastikan kualitas dan kesesuaian dengan rencana."
+        },
+        {
+          "title": "Penyelesaian dan Serah Terima",
+          "text": "Rumah diserahkan dalam kondisi siap huni setelah pemeriksaan akhir bersama Anda."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apakah Inland melayani pembangunan rumah dari nol?",
+          "a": "Ya. Kami menangani pembangunan dari persiapan lahan, fondasi, struktur, atap, hingga finishing dan serah terima."
+        },
+        {
+          "q": "Bagaimana cara mengetahui estimasi biaya pembangunan?",
+          "a": "Setelah konsultasi dan survei, kami menyusun rencana anggaran biaya (RAB) yang rinci dan transparan sebelum pekerjaan dimulai."
+        },
+        {
+          "q": "Di area mana saja Inland melayani pembangunan rumah?",
+          "a": "Jakarta, Bogor, Depok, Tangerang, Tangerang Selatan, dan Bekasi."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Siap Membangun Rumah Impian Anda?",
+      "text": "Bersama Inland, Anda dapat mewujudkan rumah impian dengan proses yang mudah, transparan, dan berkualitas. Hubungi kami sekarang untuk memulai perjalanan Anda membangun rumah yang sesuai dengan visi dan kebutuhan Anda.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "translationKey": "service-rope-access",
+  "slug": "rope-access-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Certified Rope Access Services for High-Rise Buildings",
+    "description": "Inland rope access for work at height: glass cleaning, glass sealant and facade maintenance by certified technicians."
+  },
+  "hero": {
+    "title": "Professional, Certified Rope Access Services",
+    "body": "Inland provides rope access services for work at height, such as building glass cleaning and sealant installation on high-rise buildings, carried out by certified technicians to the highest safety standards.",
+    "image": "kaca/teknisi-rope-access.jpg",
+    "imageAlt": "Certified rope access technician working at height",
+    "ctas": [
+      {
+        "label": "Building Glass Cleaning",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "service-cards",
+      "title": "Our Rope Access Services",
+      "items": [
+        {
+          "icon": "rope",
+          "title": "Glass Cleaning",
+          "text": "High-rise glass and facade cleaning with no scaffolding."
+        },
+        {
+          "icon": "shield",
+          "title": "Glass Sealant",
+          "text": "Replacing and repairing sealant to stop glass leaks."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Facade Care & Repair",
+          "text": "Painting, ACP repair, and facade inspection at height."
+        }
+      ],
+      "eyebrow": "Rope Access",
+      "intro": "Rope access is a safe, fast, and cost-effective way to carry out building work at height."
+    },
+    {
+      "type": "accordion-media",
+      "title": "Advantages of Rope Access",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Rope access technicians on a louvred facade",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Fast and Efficient",
+          "text": "Rope access lets our technicians move freely around the building, saving the time needed to erect and dismantle scaffolding — faster cleaning without compromising quality."
+        },
+        {
+          "title": "Proven Safety",
+          "text": "Certified technicians work with standard safety equipment and twin-rope systems."
+        },
+        {
+          "title": "Cost Saving",
+          "text": "No scaffolding or extra gondolas means a more efficient budget."
+        },
+        {
+          "title": "Suits Any Building",
+          "text": "Offices, apartments, hotels, and facades with complex shapes."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Rope Access Cleaning Process",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Rope access technician working at height",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Site Survey & Consultation",
+          "text": "We survey the building to assess cleaning needs and surfaces and choose the best tools and techniques."
+        },
+        {
+          "title": "Planning & Scheduling",
+          "text": "Work is scheduled to avoid disrupting building activity."
+        },
+        {
+          "title": "Rope Access Cleaning",
+          "text": "Technicians work systematically from top to bottom with safe equipment and cleaning agents."
+        },
+        {
+          "title": "Supervision & Quality Control",
+          "text": "A supervisor checks the result in every area."
+        },
+        {
+          "title": "Completion & Report",
+          "text": "A report with documentation is handed to building management."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Safety Is Our Priority",
+      "text": "We understand the importance of safety when working at height. Inland applies the highest safety standards on every building cleaning project. Our technicians are fully equipped with protective gear and follow strict safety procedures to protect themselves and everyone around them."
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is rope access?",
+          "a": "Rope access is a method of working at height using twin-rope systems, letting technicians reach building facades without scaffolding or gondolas."
+        },
+        {
+          "q": "What work can be done with rope access?",
+          "a": "Glass and facade cleaning, glass sealant installation and repair, painting, and facade inspection and repair."
+        },
+        {
+          "q": "Is it cheaper than scaffolding?",
+          "a": "Usually, yes — there is no scaffolding to erect and dismantle, saving time and cost."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Need Work Done at Height?",
+      "text": "Talk to Inland’s certified rope access team. Free survey and quote.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

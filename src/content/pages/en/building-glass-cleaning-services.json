@@ -1,0 +1,145 @@
+{
+  "translationKey": "service-glass-cleaning",
+  "slug": "building-glass-cleaning-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "High-Rise Glass Cleaning with Rope Access",
+    "description": "Inland high-rise glass cleaning by certified rope access technicians: safe, fast and cost-effective with no scaffolding needed."
+  },
+  "hero": {
+    "title": "Rope Access Building Glass Cleaning by Inland",
+    "body": "High-rise buildings need special care, especially for exterior cleaning such as glass and facade walls. Inland provides building cleaning using rope access, a safe and efficient technique to reach hard-to-access areas without scaffolding.",
+    "image": "kaca/hero-pembersihan-kaca.jpg",
+    "imageAlt": "Inland rope access technicians cleaning high-rise glass",
+    "ctas": [
+      {
+        "label": "About Us",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Advantages of Rope Access",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Rope access technicians on a louvred facade",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Fast and Efficient",
+          "text": "Rope access lets our technicians move freely around the building, saving the time needed to erect and dismantle scaffolding — faster cleaning without compromising quality."
+        },
+        {
+          "title": "Proven Safety",
+          "text": "Certified technicians work with standard safety equipment and twin-rope systems."
+        },
+        {
+          "title": "Cost Saving",
+          "text": "No scaffolding or extra gondolas means a more efficient budget."
+        },
+        {
+          "title": "Suits Any Building",
+          "text": "Offices, apartments, hotels, and facades with complex shapes."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Building Cleaning Services We Offer",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "services/hero-rope-access-kaca.jpg",
+      "imageAlt": "Technician cleaning glass panels",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Building Glass Cleaning",
+          "text": "Building glass gets dirty from dust, pollution, and moss. Our high-quality glass cleaning leaves your building looking clean, bright, and professional."
+        },
+        {
+          "title": "Exterior Wall Cleaning",
+          "text": "ACP, granite, and painted walls cleaned of stains and mould."
+        },
+        {
+          "title": "Sunshade & Decorative Facade Cleaning",
+          "text": "Hard-to-reach facade elements cleaned safely using rope access."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Rope Access Cleaning Process",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Rope access technician working at height",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Site Survey & Consultation",
+          "text": "We survey the building to assess cleaning needs and surfaces and choose the best tools and techniques."
+        },
+        {
+          "title": "Planning & Scheduling",
+          "text": "Work is scheduled to avoid disrupting building activity."
+        },
+        {
+          "title": "Rope Access Cleaning",
+          "text": "Technicians work systematically from top to bottom with safe equipment and cleaning agents."
+        },
+        {
+          "title": "Supervision & Quality Control",
+          "text": "A supervisor checks the result in every area."
+        },
+        {
+          "title": "Completion & Report",
+          "text": "A report with documentation is handed to building management."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Safety Is Our Priority",
+      "text": "We understand the importance of safety when working at height. Inland applies the highest safety standards on every building cleaning project. Our technicians are fully equipped with protective gear and follow strict safety procedures to protect themselves and everyone around them."
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Is rope access safe?",
+          "a": "Yes. Work is carried out by certified technicians using twin-rope systems, standard safety equipment, and strict procedures."
+        },
+        {
+          "q": "Will cleaning disrupt building activity?",
+          "a": "No. We schedule the work with building management so normal activity can continue."
+        },
+        {
+          "q": "Which buildings can you clean?",
+          "a": "Offices, apartments, hotels, hospitals, and commercial buildings with glass, ACP, or granite facades."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "A Cleaner, More Professional Building with Inland",
+      "text": "Regular cleaning protects your building’s appearance and value. Contact us for a free consultation and our best quote for safe, efficient rope access cleaning.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets';
+import logo from '@/assets/brand/logo-inland.png';
+
+/** Logo resmi Inland (PNG transparan 272×141). Dioptimasi ke WebP 1x/2x/3x saat build. */
+interface Props {
+  class?: string;
+  /** Tinggi tampilan dalam px (dipakai untuk menghitung srcset densitas). */
+  height?: number;
+  priority?: boolean;
+}
+const { class: className = '', height = 48, priority = false } = Astro.props;
+---
+<Image
+  src={logo}
+  alt="Inland — Architect, Build And Maintenance"
+  height={height}
+  densities={[1, 2, 3]}
+  class={className}
+  loading={priority ? 'eager' : 'lazy'}
+  fetchpriority={priority ? 'high' : 'auto'}
+/>

@@ -1,0 +1,155 @@
+{
+  "translationKey": "about",
+  "slug": "tentang-inland",
+  "template": "about",
+  "slugVerified": true,
+  "seo": {
+    "title": "Tentang Inland - Arsitek, Kontraktor & Maintenance",
+    "description": "Kenali Inland: perusahaan arsitektur, konstruksi, dan maintenance dengan visi, misi, dan nilai integritas, kualitas, serta keberlanjutan."
+  },
+  "hero": {
+    "title": "Tentang Inland",
+    "body": "Inland adalah perusahaan yang bergerak di bidang arsitektur, konstruksi, dan maintenance, berkomitmen untuk memberikan solusi terbaik dalam setiap aspek pembangunan. Kami melayani kebutuhan individu dan bisnis dengan pendekatan profesional dan berorientasi pada kualitas.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Fasad rumah bergaya klasik modern rancangan Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "value-cards",
+      "items": [
+        {
+          "title": "Visi",
+          "text": "Menjadi pemimpin di industri arsitektur, konstruksi, dan maintenance dengan memberikan hasil yang melebihi ekspektasi klien."
+        },
+        {
+          "title": "Misi",
+          "bullets": [
+            {
+              "title": "Inovasi Desain",
+              "text": "Menghadirkan desain arsitektur yang modern, kreatif, dan fungsional untuk hunian dan bisnis."
+            },
+            {
+              "title": "Konstruksi Berkualitas",
+              "text": "Menyelesaikan proyek konstruksi dengan standar tertinggi dalam hal keamanan, kenyamanan, dan estetika."
+            },
+            {
+              "title": "Layanan Maintenance Terpercaya",
+              "text": "Menyediakan layanan perawatan gedung yang efisien dan handal, menjaga tampilan dan fungsi bangunan tetap optimal."
+            }
+          ]
+        },
+        {
+          "title": "Value",
+          "bullets": [
+            {
+              "title": "Integritas",
+              "text": "Kami selalu menjaga kepercayaan klien dengan memberikan pelayanan yang jujur dan transparan."
+            },
+            {
+              "title": "Kualitas",
+              "text": "Komitmen kami adalah memberikan hasil berkualitas tinggi dalam setiap proyek yang kami kerjakan."
+            },
+            {
+              "title": "Keberlanjutan",
+              "text": "Kami memastikan setiap desain dan pembangunan memperhatikan aspek keberlanjutan lingkungan."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Inland?",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "about/interior-ruang-makan.jpg",
+      "imageAlt": "Interior ruang makan modern dengan tangga hasil desain Inland",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Pengalaman Luas",
+          "text": "Dengan pengalaman bertahun-tahun, kami telah menangani berbagai proyek mulai dari rumah pribadi hingga gedung komersial."
+        },
+        {
+          "title": "Tim Profesional",
+          "text": "Arsitek, kontraktor, dan teknisi kami terlatih dan berpengalaman, termasuk teknisi rope access bersertifikat untuk pekerjaan di ketinggian."
+        },
+        {
+          "title": "Pendekatan Kustom",
+          "text": "Setiap proyek dirancang khusus sesuai kebutuhan, gaya, dan anggaran Anda, bukan solusi seragam untuk semua."
+        },
+        {
+          "title": "Teknologi Terkini",
+          "text": "Kami memanfaatkan visualisasi 3D, material modern, dan peralatan terbaru agar hasil lebih presisi dan efisien."
+        }
+      ],
+      "eyebrow": "Keunggulan"
+    },
+    {
+      "type": "stats",
+      "eyebrow": "Inland dalam Angka",
+      "title": "Dipercaya untuk Proyek Hunian hingga Gedung Tinggi",
+      "items": [
+        {
+          "value": 8,
+          "suffix": "+",
+          "label": "Tahun Pengalaman"
+        },
+        {
+          "value": 250,
+          "suffix": "+",
+          "label": "Proyek Selesai"
+        },
+        {
+          "value": 180,
+          "suffix": "+",
+          "label": "Klien Puas"
+        },
+        {
+          "value": 6,
+          "suffix": "",
+          "label": "Kota Layanan di Jabodetabek"
+        }
+      ]
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Testimoni",
+      "title": "Kata Klien Kami",
+      "items": [
+        {
+          "quote": "Inland berhasil mewujudkan rumah impian kami dengan desain yang modern dan elegan. Proses pembangunan berjalan lancar, dan hasilnya melebihi ekspektasi kami.",
+          "name": "Jonathan",
+          "location": "Jakarta"
+        },
+        {
+          "quote": "Kami sangat puas dengan layanan pembersihan kaca gedung dari Inland. Hasilnya sangat profesional dan tepat waktu.",
+          "name": "Martha",
+          "location": "Bandung"
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Mulai Konsultasi Sekarang",
+      "text": "Siap memulai proyek Anda? Klik tombol di bawah ini untuk berkonsultasi langsung dengan tim kami dan dapatkan solusi yang Anda butuhkan.",
+      "button": {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

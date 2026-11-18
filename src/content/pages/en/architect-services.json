@@ -1,0 +1,106 @@
+{
+  "translationKey": "service-architect",
+  "slug": "architect-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Professional Architect Services - House & Interior Design",
+    "description": "Inland architect services: aesthetic and functional design for homes, offices, buildings, interiors and exteriors."
+  },
+  "hero": {
+    "title": "Architect Services",
+    "body": "Building or renovating requires careful planning, especially in design. As an experienced architecture firm, Inland delivers modern, functional architectural design solutions tailored to your vision and needs.",
+    "image": "gallery/arsitek-01.jpg",
+    "imageAlt": "Modern three-storey house design by Inland",
+    "ctas": [
+      {
+        "label": "Interior Design Services",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Architect Services",
+      "text": "Building or renovating requires careful planning, especially in design. As an experienced architecture firm, Inland offers modern, functional architectural design tailored to your vision and needs. We combine creativity, aesthetics, and technology to create buildings that are not only beautiful but also comfortable and efficient.",
+      "bars": [
+        {
+          "label": "Residential Architecture",
+          "value": 98
+        },
+        {
+          "label": "Office Architecture",
+          "value": 95
+        },
+        {
+          "label": "Building Architecture",
+          "value": 93
+        },
+        {
+          "label": "Interior Design",
+          "value": 97
+        },
+        {
+          "label": "Exterior Design",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Interior Design Services",
+          "text": "Our interior design focuses on aesthetics and comfort, creating spaces in harmony with your lifestyle or business needs. We deliver tailored solutions that match each client’s taste and character, from first concept to completion.",
+          "cta": {
+            "label": "View Interior Design",
+            "href": "service-interior"
+          }
+        },
+        {
+          "title": "House Design Services",
+          "text": "We design homes that are not only beautiful but comfortable and efficient to live in. Each design follows your wishes — modern, minimalist, classic, or tropical — while staying functional and suited to the local environment.",
+          "cta": {
+            "label": "View House Design",
+            "href": "service-house-design"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Spaces We Design",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Homes",
+          "text": "From living rooms and bedrooms to kitchens, designs that fit your lifestyle."
+        },
+        {
+          "icon": "office",
+          "title": "Offices",
+          "text": "Productive, inspiring workplaces through functional, attractive design."
+        },
+        {
+          "icon": "store",
+          "title": "Commercial & Buildings",
+          "text": "Shops, cafés, restaurants, and buildings that attract attention and improve visitor experience."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Discuss Your Building Design",
+      "text": "Tell us about your project and Inland’s architects will help shape a beautiful, functional design within your budget.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

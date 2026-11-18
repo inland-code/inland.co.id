@@ -1,0 +1,129 @@
+{
+  "translationKey": "gallery",
+  "slug": "gallery",
+  "template": "gallery",
+  "slugVerified": true,
+  "seo": {
+    "title": "Inland Project Gallery: Architecture & Building Care",
+    "description": "Inland project gallery: house architecture, interiors, construction and rope access building glass cleaning."
+  },
+  "hero": {
+    "title": "Inland Gallery",
+    "body": "Browse the work and projects we have completed in this gallery. From architectural design to construction and building maintenance, every image shows our commitment to quality and beauty.",
+    "image": "home/interior-ruang-tamu-mewah.jpg",
+    "imageAlt": "Luxury living room interior with crystal chandelier by Inland",
+    "ctas": [
+      {
+        "label": "Our Services",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "gallery",
+      "groups": [
+        {
+          "title": "Architecture & Construction",
+          "images": [
+            {
+              "image": "gallery/arsitek-01.jpg",
+              "alt": "Modern three-storey house design with breeze-block facade",
+              "caption": "Modern House Design"
+            },
+            {
+              "image": "gallery/arsitek-02.jpg",
+              "alt": "Modern house carport with breeze-block wall",
+              "caption": "Facade & Carport Detail"
+            },
+            {
+              "image": "desain-rumah/hero-rumah-2-lantai.jpg",
+              "alt": "Modern two-storey house with timber accents",
+              "caption": "Two-Storey Home"
+            },
+            {
+              "image": "home/hero-rumah-modern-carport.jpg",
+              "alt": "Modern gable-roof house with carport",
+              "caption": "Gable-Roof Home"
+            },
+            {
+              "image": "about/hero-rumah-klasik.jpg",
+              "alt": "Modern classic house",
+              "caption": "Modern Classic Home"
+            },
+            {
+              "image": "home/interior-ruang-tamu-mewah.jpg",
+              "alt": "Luxury living room interior",
+              "caption": "Living Room Interior"
+            },
+            {
+              "image": "about/interior-ruang-makan.jpg",
+              "alt": "Dining room interior with staircase",
+              "caption": "Dining Room Interior"
+            },
+            {
+              "image": "interior/hero-dapur.jpg",
+              "alt": "Modern white kitchen",
+              "caption": "Kitchen Design"
+            },
+            {
+              "image": "pembangunan/struktur-bata.jpg",
+              "alt": "Two-storey house under construction",
+              "caption": "House Construction"
+            }
+          ]
+        },
+        {
+          "title": "Building Maintenance",
+          "images": [
+            {
+              "image": "gallery/perawatan-01.jpg",
+              "alt": "Rope access technician cleaning building glass",
+              "caption": "Glass Cleaning"
+            },
+            {
+              "image": "gallery/perawatan-02.jpg",
+              "alt": "Rope access team on a high-rise facade",
+              "caption": "Facade Care"
+            },
+            {
+              "image": "services/hero-rope-access-kaca.jpg",
+              "alt": "Technician cleaning glass panels",
+              "caption": "Rope Access"
+            },
+            {
+              "image": "kaca/hero-pembersihan-kaca.jpg",
+              "alt": "Glass cleaning team on a tall glass building",
+              "caption": "High-Rise Glass"
+            },
+            {
+              "image": "kaca/fasad-louver.jpg",
+              "alt": "Technicians on a louvred facade",
+              "caption": "Louvred Facade"
+            },
+            {
+              "image": "sealant/aplikasi-sealant.jpg",
+              "alt": "Technician applying glass sealant",
+              "caption": "Sealant Application"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Contact Us for a Consultation",
+      "text": "If you have questions or would like to discuss a project you are planning, do not hesitate to contact us. We are ready to help you realise your vision.",
+      "button": {
+        "label": "Free Consultation",
+        "href": "#whatsapp"
+      }
+    }
+  ]
+}

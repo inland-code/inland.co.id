@@ -1,0 +1,62 @@
+{
+  "name": "Inland",
+  "legalName": "Inland",
+  "url": "https://inland.co.id",
+  "tagline": {
+    "id": "Jasa Arsitek, Kontraktor & Perawatan Gedung",
+    "en": "Architect, Contractor & Building Maintenance Services"
+  },
+  "email": "info@inland.co.id",
+  "phoneDisplay": "+62 856 770 0883",
+  "phoneE164": "+628567700883",
+  "whatsapp": "628567700883",
+  "whatsappMessage": {
+    "id": "Halo Inland",
+    "en": "Hello Inland"
+  },
+  "address": {
+    "street": "Jl. Kelor II No 31, Pd. Cabe Ilir",
+    "locality": "Pamulang",
+    "region": "Tangerang Selatan, Banten",
+    "postalCode": "15418",
+    "country": "ID"
+  },
+  "areaServed": [
+    "Jakarta",
+    "Bogor",
+    "Depok",
+    "Tangerang",
+    "Tangerang Selatan",
+    "Bekasi"
+  ],
+  "openingHours": [
+    {
+      "days": [
+        "Mo",
+        "Tu",
+        "We",
+        "Th",
+        "Fr"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    },
+    {
+      "days": [
+        "Sa"
+      ],
+      "opens": "08:00",
+      "closes": "13:00"
+    }
+  ],
+  "social": {
+    "facebook": "",
+    "instagram": "https://www.instagram.com/inland_id/",
+    "youtube": "",
+    "tiktok": ""
+  },
+  "credit": {
+    "label": "Nusago",
+    "url": ""
+  }
+}

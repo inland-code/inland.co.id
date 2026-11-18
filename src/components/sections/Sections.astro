@@ -1,0 +1,39 @@
+---
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import Trust from './Trust.astro';
+import Stats from './Stats.astro';
+import ServiceCards from './ServiceCards.astro';
+import AccordionMedia from './AccordionMedia.astro';
+import GalleryTeaser from './GalleryTeaser.astro';
+import Testimonials from './Testimonials.astro';
+import LatestPosts from './LatestPosts.astro';
+import Cta from './Cta.astro';
+import ValueCards from './ValueCards.astro';
+import ServiceDetail from './ServiceDetail.astro';
+import Banner from './Banner.astro';
+import Gallery from './Gallery.astro';
+import Contact from './Contact.astro';
+import Faq from './Faq.astro';
+
+interface Props { sections: Section[]; locale: Locale }
+const { sections, locale } = Astro.props;
+---
+{sections.map((s, i) => {
+  switch (s.type) {
+    case 'trust': return <Trust {...s} />;
+    case 'stats': return <Stats {...s} locale={locale} />;
+    case 'service-cards': return <ServiceCards {...s} locale={locale} />;
+    case 'accordion-media': return <AccordionMedia {...s} locale={locale} index={i} />;
+    case 'gallery-teaser': return <GalleryTeaser {...s} locale={locale} />;
+    case 'testimonials': return <Testimonials {...s} />;
+    case 'latest-posts': return <LatestPosts {...s} locale={locale} />;
+    case 'cta': return <Cta {...s} locale={locale} />;
+    case 'value-cards': return <ValueCards {...s} />;
+    case 'service-detail': return <ServiceDetail {...s} locale={locale} />;
+    case 'banner': return <Banner {...s} locale={locale} />;
+    case 'gallery': return <Gallery {...s} />;
+    case 'contact': return <Contact {...s} locale={locale} />;
+    case 'faq': return <Faq {...s} index={i} />;
+  }
+})}

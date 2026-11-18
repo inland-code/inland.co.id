@@ -1,0 +1,102 @@
+{
+  "translationKey": "service-contractor",
+  "slug": "jasa-kontraktor",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Kontraktor Bangun & Renovasi Rumah",
+    "description": "Jasa kontraktor Inland: pembangunan rumah, renovasi, pembangunan gedung, serta perbaikan struktur dengan kualitas dan waktu terjamin."
+  },
+  "hero": {
+    "title": "Jasa Kontraktor",
+    "body": "Mewujudkan desain menjadi kenyataan memerlukan eksekusi yang tepat dan profesional. Sebagai kontraktor berpengalaman, Inland menawarkan layanan konstruksi yang komprehensif, mulai dari pembangunan rumah hingga renovasi.",
+    "image": "pembangunan/struktur-bata.jpg",
+    "imageAlt": "Proyek pembangunan rumah oleh kontraktor Inland",
+    "ctas": [
+      {
+        "label": "Jasa Pembangunan Rumah",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Jasa Kontraktor",
+      "text": "Mewujudkan desain menjadi kenyataan memerlukan eksekusi yang tepat dan profesional. Sebagai kontraktor berpengalaman, Inland menawarkan layanan konstruksi yang komprehensif, mulai dari pembangunan rumah hingga renovasi. Kami berkomitmen untuk menghadirkan bangunan berkualitas tinggi, dengan ketepatan waktu dan anggaran yang sesuai dengan kebutuhan klien. Inland adalah mitra ideal untuk mewujudkan proyek konstruksi impian Anda.",
+      "bars": [
+        {
+          "label": "Jasa Pembangunan Rumah",
+          "value": 98
+        },
+        {
+          "label": "Jasa Renovasi Rumah",
+          "value": 97
+        },
+        {
+          "label": "Jasa Pembangunan Gedung",
+          "value": 93
+        },
+        {
+          "label": "Perbaikan dan Perawatan Struktur",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Pembangunan Rumah",
+          "text": "Kami menangani pembangunan rumah dari nol hingga siap huni, memastikan setiap detail dikerjakan sesuai dengan standar yang telah disepakati. Proses kami transparan, mulai dari perencanaan, pelaksanaan, hingga penyelesaian, sehingga Anda dapat mengikuti setiap perkembangan proyek.",
+          "cta": {
+            "label": "Lihat Layanan Pembangunan Rumah",
+            "href": "service-house-construction"
+          }
+        },
+        {
+          "title": "Jasa Renovasi Rumah",
+          "text": "Ingin memperbarui atau memperbesar rumah Anda? Layanan renovasi rumah kami menawarkan solusi untuk mengubah hunian Anda menjadi lebih nyaman dan berkelas. Kami memastikan setiap renovasi dilakukan dengan perhatian penuh terhadap kualitas dan ketepatan waktu.",
+          "cta": {
+            "label": "Lihat Layanan Renovasi Rumah",
+            "href": "service-renovation"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Proyek yang Kami Tangani",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Pembangunan Rumah Pribadi",
+          "text": "Rumah hunian yang nyaman, fungsional, dan estetis sesuai preferensi pribadi Anda."
+        },
+        {
+          "icon": "contractor",
+          "title": "Renovasi Rumah & Gedung",
+          "text": "Pembaruan tampilan, penambahan ruang, hingga perbaikan struktural."
+        },
+        {
+          "icon": "office",
+          "title": "Cluster & Perumahan",
+          "text": "Tim dan sumber daya yang memadai untuk proyek skala besar dengan efisiensi tinggi."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Siap Memulai Proyek Konstruksi?",
+      "text": "Dapatkan rencana kerja dan anggaran yang transparan dari tim kontraktor Inland.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

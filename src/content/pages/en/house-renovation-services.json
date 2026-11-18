@@ -1,0 +1,166 @@
+{
+  "translationKey": "service-renovation",
+  "slug": "house-renovation-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "House Renovation: Interior, Exterior & Structural",
+    "description": "Inland house renovation: interiors, facades, kitchens and bathrooms, extensions, structural repair and restoration of older homes."
+  },
+  "hero": {
+    "title": "House Renovation Services by Inland",
+    "body": "Want to give your home a fresh look or fix a structure that is no longer adequate? Inland is ready to help you realise your dream renovation, whether for an aesthetic upgrade, extra space, or structural repair.",
+    "image": "pembangunan/progres-dinding.jpg",
+    "imageAlt": "House renovation and storey extension by Inland",
+    "ctas": [
+      {
+        "label": "See House Construction Services",
+        "href": "service-house-construction",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Why Choose Inland for Your Renovation?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "pembangunan/struktur-bata.jpg",
+      "imageAlt": "House renovation and extension",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Personal Approach",
+          "text": "Every renovation starts with understanding your needs — a living room refresh, a bigger kitchen, or a full overhaul. We design the right solution for you."
+        },
+        {
+          "title": "High-Quality Transformation",
+          "text": "Neat, durable results with quality materials."
+        },
+        {
+          "title": "Experience Across Renovation Types",
+          "text": "From light refreshes, facades, and kitchens to extra storeys and structural repair."
+        },
+        {
+          "title": "On-Time Delivery",
+          "text": "Clear schedules and regular supervision keep renovations on time."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Renovation Services We Offer",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
+      "imageAlt": "Concrete slab rebar for a storey extension",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Interior Renovation",
+          "text": "Change your layout or update your interior with a focus on comfort, function, and beauty — from kitchens and bathrooms to family rooms."
+        },
+        {
+          "title": "Exterior Renovation",
+          "text": "New facades, terraces, fences, carports, and roofs for a fresh look."
+        },
+        {
+          "title": "Extensions",
+          "text": "Extra bedrooms, larger kitchens, or an added storey for a growing family."
+        },
+        {
+          "title": "Structural Repair",
+          "text": "Fixing cracks, leaks, and strengthening structures so your home is safe again."
+        },
+        {
+          "title": "Older Home Restoration",
+          "text": "Bringing older homes back to life while keeping their character."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Types of Renovation We Do",
+      "items": [
+        {
+          "title": "Small to Large Renovations",
+          "text": "Whether updating one room or overhauling the whole house, we have the right solution."
+        },
+        {
+          "title": "Facade Renovation",
+          "text": "A more modern, attractive exterior while keeping the original structure."
+        },
+        {
+          "title": "Kitchen & Bathroom",
+          "text": "Remodelling the two areas that are most often a renovation priority."
+        },
+        {
+          "title": "Older Homes",
+          "text": "New life for older houses with structural repair and updated interiors and exteriors."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Renovation Process",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Renovation materials on site",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Initial Consultation",
+          "text": "We discuss which areas you want to update, your budget, and your goals."
+        },
+        {
+          "title": "Renovation Plan",
+          "text": "We prepare the design, scope of work, and a transparent budget."
+        },
+        {
+          "title": "Renovation Works",
+          "text": "Our team works to schedule while keeping your home clean and safe."
+        },
+        {
+          "title": "Final Inspection & Handover",
+          "text": "We inspect the result with you before handover."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What kinds of renovation does Inland handle?",
+          "a": "Interiors, facades, kitchens and bathrooms, extensions or added storeys, structural repair, and restoration of older homes."
+        },
+        {
+          "q": "Can I stay at home during the renovation?",
+          "a": "It depends on the scope. We plan the schedule and work areas to keep disruption to a minimum."
+        },
+        {
+          "q": "Do you survey before renovating?",
+          "a": "Yes. Our team surveys the site to assess the building before preparing the plan and budget."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Your Dream Renovation Starts Here",
+      "text": "Ready to transform your home? Inland’s experienced team will help you renovate to your vision, budget, and needs.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

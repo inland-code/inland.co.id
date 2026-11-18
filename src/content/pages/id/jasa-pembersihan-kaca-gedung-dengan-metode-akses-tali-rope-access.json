@@ -1,0 +1,145 @@
+{
+  "translationKey": "service-glass-cleaning",
+  "slug": "jasa-pembersihan-kaca-gedung-dengan-metode-akses-tali-rope-access",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Pembersihan Kaca Gedung Tinggi Metode Rope Access",
+    "description": "Jasa pembersihan kaca gedung tinggi Inland dengan teknisi rope access bersertifikat: aman, cepat, dan hemat biaya tanpa scaffolding."
+  },
+  "hero": {
+    "title": "Jasa Pembersihan Kaca Gedung Metode Akses Tali oleh Inland",
+    "body": "Gedung bertingkat membutuhkan perawatan khusus, terutama dalam hal pembersihan bagian luar, seperti kaca dan dinding eksterior. Inland menyediakan jasa pembersihan gedung dengan metode akses tali (rope access), teknik aman dan efisien untuk menjangkau area gedung yang sulit diakses tanpa scaffolding.",
+    "image": "kaca/hero-pembersihan-kaca.jpg",
+    "imageAlt": "Teknisi rope access Inland membersihkan kaca gedung tinggi",
+    "ctas": [
+      {
+        "label": "Tentang Kami",
+        "href": "about",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Keunggulan Metode Akses Tali",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Teknisi rope access di fasad louver gedung",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Efisien dan Cepat",
+          "text": "Metode akses tali memungkinkan teknisi kami untuk bergerak lebih leluasa di sekitar gedung, menghemat waktu yang biasanya dibutuhkan untuk pemasangan dan pembongkaran scaffolding. Ini membuat proses pembersihan lebih cepat tanpa mengurangi kualitas hasil."
+        },
+        {
+          "title": "Keamanan Terjamin",
+          "text": "Teknisi bersertifikat bekerja dengan peralatan standar keselamatan dan sistem tali ganda."
+        },
+        {
+          "title": "Menghemat Biaya",
+          "text": "Tanpa scaffolding atau gondola tambahan, biaya pekerjaan menjadi lebih efisien."
+        },
+        {
+          "title": "Fleksibel untuk Berbagai Jenis Gedung",
+          "text": "Cocok untuk gedung perkantoran, apartemen, hotel, hingga fasad dengan bentuk rumit."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Layanan Pembersihan Gedung yang Kami Tawarkan",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "services/hero-rope-access-kaca.jpg",
+      "imageAlt": "Teknisi membersihkan panel kaca gedung",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Pembersihan Kaca Gedung",
+          "text": "Kaca gedung sering kali kotor karena debu, polusi, atau lumut. Kami menawarkan pembersihan kaca berkualitas tinggi, menjadikan gedung Anda tampak bersih, terang, dan profesional."
+        },
+        {
+          "title": "Pembersihan Dinding Eksterior",
+          "text": "Dinding ACP, granit, maupun cat eksterior dibersihkan dari noda dan jamur."
+        },
+        {
+          "title": "Pembersihan Pelindung Matahari (Sunshades) dan Fasad Dekoratif",
+          "text": "Elemen fasad yang sulit dijangkau dibersihkan dengan aman menggunakan rope access."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Pembersihan dengan Metode Akses Tali",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Teknisi rope access berseragam oranye bekerja di ketinggian",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Survey Lokasi dan Konsultasi",
+          "text": "Kami akan melakukan survei terhadap kondisi gedung untuk menilai kebutuhan pembersihan, jenis permukaan yang akan dibersihkan, dan menentukan alat serta teknik terbaik yang akan digunakan."
+        },
+        {
+          "title": "Perencanaan dan Jadwal Pembersihan",
+          "text": "Jadwal disusun agar tidak mengganggu aktivitas gedung."
+        },
+        {
+          "title": "Pembersihan dengan Metode Akses Tali",
+          "text": "Teknisi bekerja sistematis dari atas ke bawah dengan peralatan dan bahan pembersih yang aman."
+        },
+        {
+          "title": "Pengawasan dan Kontrol Kualitas",
+          "text": "Supervisor memeriksa hasil di setiap area."
+        },
+        {
+          "title": "Penyelesaian dan Laporan Pembersihan",
+          "text": "Laporan dan dokumentasi pekerjaan diserahkan kepada pengelola gedung."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Keamanan adalah Prioritas Kami",
+      "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Inland menerapkan standar keselamatan tertinggi dalam setiap proyek pembersihan gedung yang kami lakukan. Teknisi kami dibekali dengan peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat untuk memastikan keselamatan mereka dan lingkungan di sekitarnya."
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apakah metode rope access aman?",
+          "a": "Ya. Pekerjaan dilakukan oleh teknisi bersertifikat dengan sistem tali ganda dan peralatan keselamatan standar, serta prosedur kerja yang ketat."
+        },
+        {
+          "q": "Apakah pembersihan mengganggu aktivitas gedung?",
+          "a": "Tidak. Jadwal pembersihan disusun bersama pengelola gedung agar aktivitas tetap berjalan normal."
+        },
+        {
+          "q": "Gedung seperti apa yang bisa dibersihkan?",
+          "a": "Perkantoran, apartemen, hotel, rumah sakit, dan gedung komersial dengan fasad kaca, ACP, maupun granit."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Gedung Anda Terlihat Lebih Bersih dan Profesional dengan Inland",
+      "text": "Pembersihan gedung yang rutin akan menjaga tampilan dan nilai properti Anda. Inland siap membantu Anda dengan layanan pembersihan gedung berkualitas tinggi menggunakan metode akses tali yang aman dan efisien. Hubungi kami sekarang untuk mendapatkan konsultasi gratis dan penawaran harga terbaik.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

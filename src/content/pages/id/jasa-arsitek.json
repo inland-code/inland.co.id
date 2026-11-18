@@ -1,0 +1,106 @@
+{
+  "translationKey": "service-architect",
+  "slug": "jasa-arsitek",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Jasa Arsitek Profesional - Desain Rumah & Interior",
+    "description": "Jasa arsitek Inland: desain rumah, kantor, gedung, interior, dan eksterior yang estetis dan fungsional sesuai visi Anda."
+  },
+  "hero": {
+    "title": "Jasa Arsitek",
+    "body": "Membangun atau merenovasi sebuah bangunan memerlukan perencanaan yang matang, terutama dalam hal desain. Sebagai penyedia jasa arsitek berpengalaman, Inland menawarkan solusi desain arsitektur yang modern dan fungsional, sesuai dengan visi dan kebutuhan Anda.",
+    "image": "gallery/arsitek-01.jpg",
+    "imageAlt": "Desain rumah modern tiga lantai karya Inland",
+    "ctas": [
+      {
+        "label": "Jasa Desain Interior",
+        "href": "service-interior",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Jasa Arsitek",
+      "text": "Membangun atau merenovasi sebuah bangunan memerlukan perencanaan yang matang, terutama dalam hal desain. Sebagai penyedia jasa arsitek berpengalaman, Inland menawarkan solusi desain arsitektur yang modern dan fungsional, sesuai dengan visi dan kebutuhan Anda. Kami menggabungkan kreativitas, estetika, dan teknologi untuk menciptakan bangunan yang tidak hanya indah dipandang, tetapi juga nyaman dan efisien.",
+      "bars": [
+        {
+          "label": "Desain Arsitektur Rumah",
+          "value": 98
+        },
+        {
+          "label": "Desain Arsitektur Kantor",
+          "value": 95
+        },
+        {
+          "label": "Desain Arsitektur Gedung",
+          "value": 93
+        },
+        {
+          "label": "Desain Interior",
+          "value": 97
+        },
+        {
+          "label": "Desain Eksterior",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Desain Interior",
+          "text": "Desain interior kami berfokus pada estetika dan kenyamanan, menciptakan suasana ruang yang selaras dengan gaya hidup atau kebutuhan bisnis Anda. Kami memberikan solusi kustom yang sesuai dengan selera dan karakter setiap klien, mulai dari konsep awal hingga penyelesaian.",
+          "cta": {
+            "label": "Lihat Layanan Desain Interior",
+            "href": "service-interior"
+          }
+        },
+        {
+          "title": "Jasa Desain Rumah",
+          "text": "Kami mendesain rumah yang tidak hanya indah dipandang, tetapi juga nyaman dan efisien untuk ditinggali. Setiap desain disesuaikan dengan keinginan Anda, apakah itu gaya modern, minimalis, klasik, atau tropis. Kami memastikan desain arsitektur yang fungsional dan sesuai dengan kondisi lingkungan setempat.",
+          "cta": {
+            "label": "Lihat Layanan Desain Rumah",
+            "href": "service-house-design"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Ruang yang Kami Desain",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Rumah Tinggal",
+          "text": "Dari ruang tamu, kamar tidur, hingga dapur, kami menghadirkan desain yang menyatu dengan gaya hidup Anda."
+        },
+        {
+          "icon": "office",
+          "title": "Kantor",
+          "text": "Menciptakan lingkungan kerja yang produktif dan inspiratif melalui desain yang fungsional dan menarik."
+        },
+        {
+          "icon": "store",
+          "title": "Gedung & Komersial",
+          "text": "Desain toko, kafe, restoran, hingga gedung yang menarik perhatian dan meningkatkan pengalaman pengunjung."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Konsultasikan Desain Bangunan Anda",
+      "text": "Ceritakan rencana proyek Anda, dan tim arsitek Inland akan membantu merumuskan desain yang indah, fungsional, dan sesuai anggaran.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

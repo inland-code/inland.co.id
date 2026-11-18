@@ -1,0 +1,180 @@
+---
+/**
+ * Satu route dinamis untuk SEMUA halaman & artikel, kedua bahasa.
+ * Path diambil dari konten (slug + locale), jadi URL WordPress lama dipertahankan persis,
+ * dan dashboard nanti cukup menulis file konten tanpa menyentuh kode.
+ */
+import type { GetStaticPaths } from 'astro';
+import { render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PageHero from '@/components/PageHero.astro';
+import PostCard from '@/components/PostCard.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import Sections from '@/components/sections/Sections.astro';
+import { Image } from 'astro:assets';
+import { getRoutes, alternatesFor, hrefFor, type Route } from '@/lib/routes';
+import { imageFor } from '@/lib/media';
+import { breadcrumbSchema, absoluteUrl, ORG_ID, faqSchema, serviceSchema } from '@/lib/seo';
+import { t } from '@/i18n/ui';
+
+export const getStaticPaths = (async () => {
+  const routes = await getRoutes();
+  return routes.map((route) => ({
+    params: { slug: route.path.replace(/^\/|\/$/g, '') || undefined },
+    props: { route },
+  }));
+}) satisfies GetStaticPaths;
+
+const { route } = Astro.props as { route: Route };
+const { locale } = route;
+const alternates = await alternatesFor(route.translationKey);
+const homePath = await hrefFor('home', locale);
+const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
+
+// Daftar artikel (untuk template "articles").
+const allRoutes = await getRoutes();
+const postsFor = (l: typeof locale) =>
+  allRoutes
+    .filter((r): r is Extract<Route, { kind: 'post' }> => r.kind === 'post' && r.locale === l)
+    .sort((a, b) => b.entry.data.publishedAt.getTime() - a.entry.data.publishedAt.getTime());
+// Artikel EN belum ada → tampilkan artikel ID (berlabel bahasa) daripada halaman kosong.
+const postRoutes = postsFor(locale).length ? postsFor(locale) : postsFor('id');
+const articlesPath = await hrefFor('articles', locale);
+const rendered = route.kind === 'post' ? await render(route.entry) : null;
+const Content = rendered?.Content ?? null;
+const toc = (rendered?.headings ?? []).filter((h) => h.depth === 2 || h.depth === 3);
+
+// JSON-LD tambahan: FAQPage dari section/frontmatter FAQ, Service untuk halaman layanan.
+const extraLd: object[] = [];
+if (route.kind === 'page') {
+  const faqs = route.entry.data.sections.flatMap((s) => (s.type === 'faq' ? s.items : []));
+  if (faqs.length) extraLd.push(faqSchema(faqs));
+  if (route.entry.data.template === 'service') {
+    extraLd.push(serviceSchema({ name: route.entry.data.hero.title, description: route.entry.data.seo.description, path: route.path, locale }));
+  }
+} else if (route.entry.data.faq.length) {
+  extraLd.push(faqSchema(route.entry.data.faq));
+}
+---
+{route.kind === 'page' ? (
+  <BaseLayout
+    locale={locale}
+    title={route.entry.data.seo.title}
+    description={route.entry.data.seo.description}
+    path={route.path}
+    alternates={alternates}
+    ogImage={imageFor(route.entry.data.seo.ogImage ?? route.entry.data.hero.image)}
+    noindex={route.entry.data.seo.noindex}
+    jsonLd={[
+      {
+        '@type': route.entry.data.template === 'contact' ? 'ContactPage' : route.entry.data.template === 'about' ? 'AboutPage' : 'WebPage',
+        '@id': `${absoluteUrl(route.path)}#webpage`,
+        url: absoluteUrl(route.path),
+        name: route.entry.data.seo.title,
+        description: route.entry.data.seo.description,
+        inLanguage: locale === 'id' ? 'id-ID' : 'en',
+        isPartOf: { '@id': `${absoluteUrl('/')}#website` },
+        about: { '@id': ORG_ID },
+      },
+      ...(route.slug ? [breadcrumbSchema([{ name: t(locale, 'breadcrumb.home'), path: homePath }, { name: route.entry.data.hero.title, path: route.path }])] : []),
+      ...extraLd,
+    ]}
+  >
+    <PageHero locale={locale} {...route.entry.data.hero} />
+
+    {route.entry.data.template === 'articles' ? (
+      <section class="container-site py-16">
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          {postRoutes.map((p) => (
+            <PostCard
+              locale={locale}
+              href={p.path}
+              title={p.entry.data.title}
+              excerpt={p.entry.data.excerpt}
+              image={p.entry.data.image}
+              imageAlt={p.entry.data.imageAlt}
+              category={p.entry.data.category}
+              date={p.entry.data.publishedAt}
+              headingLevel={2}
+            />
+          ))}
+        </div>
+      </section>
+    ) : route.entry.data.sections.length === 0 ? (
+      <section class="container-site py-16">
+        <p class="rounded-card border border-dashed border-brand-300 bg-brand-50 p-6 text-center text-sm text-brand-900">
+          {t(locale, 'placeholder.sections')}
+        </p>
+      </section>
+    ) : (
+      <Sections sections={route.entry.data.sections} locale={locale} />
+    )}
+  </BaseLayout>
+) : (
+  <BaseLayout
+    locale={locale}
+    title={route.entry.data.seo.title}
+    description={route.entry.data.seo.description}
+    path={route.path}
+    alternates={alternates}
+    ogImage={imageFor(route.entry.data.image)}
+    ogType="article"
+    noindex={route.entry.data.seo.noindex}
+    publishedTime={route.entry.data.publishedAt}
+    modifiedTime={route.entry.data.updatedAt}
+    jsonLd={[
+      {
+        '@type': 'BlogPosting',
+        '@id': `${absoluteUrl(route.path)}#article`,
+        headline: route.entry.data.title,
+        description: route.entry.data.seo.description,
+        url: absoluteUrl(route.path),
+        mainEntityOfPage: absoluteUrl(route.path),
+        inLanguage: locale === 'id' ? 'id-ID' : 'en',
+        datePublished: route.entry.data.publishedAt.toISOString(),
+        dateModified: (route.entry.data.updatedAt ?? route.entry.data.publishedAt).toISOString(),
+        author: { '@type': 'Organization', name: route.entry.data.author, url: absoluteUrl('/') },
+        publisher: { '@id': ORG_ID },
+      },
+      breadcrumbSchema([
+        { name: t(locale, 'breadcrumb.home'), path: homePath },
+        { name: t(locale, 'nav.articles'), path: articlesPath },
+        { name: route.entry.data.title, path: route.path },
+      ]),
+      ...extraLd,
+    ]}
+  >
+    <article class="pb-20">
+          <header class="bg-brand-gradient">
+            <div class="container-site grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
+              <div>
+                <div class="[&_a]:text-white/90 [&_a:hover]:text-white [&_*]:text-white/80">
+                  <Breadcrumbs items={[{ name: t(locale, 'breadcrumb.home'), path: homePath }, { name: t(locale, 'nav.articles'), path: articlesPath }, { name: route.entry.data.title, path: route.path }]} />
+                </div>
+                <h1 class="mt-5 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl">{route.entry.data.title}</h1>
+                <p class="mt-4 text-white/90">{route.entry.data.excerpt}</p>
+                <p class="mt-5 text-sm text-white/80">
+                  {t(locale, 'post.publishedOn')} <time datetime={route.entry.data.publishedAt.toISOString()}>{fmt.format(route.entry.data.publishedAt)}</time> · {route.entry.data.author}
+                </p>
+              </div>
+              <Image src={imageFor(route.entry.data.image)} alt={route.entry.data.imageAlt} priority width={720} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full rounded-card object-cover shadow-card" />
+            </div>
+          </header>
+          <div class="container-site mt-12 max-w-3xl space-y-5 text-lg leading-relaxed text-ink [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-espresso-900 [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-espresso-900 [&_a]:text-brand-800 [&_a]:underline">
+            {toc.filter((h) => h.depth === 2).length >= 3 && (
+              <details open class="not-prose rounded-card bg-surface-alt p-5 text-base ring-1 ring-brand-100">
+                <summary class="cursor-pointer font-semibold text-espresso-900">{locale === 'id' ? 'Daftar Isi' : 'Table of Contents'}</summary>
+                <ol class="mt-3 space-y-1.5">
+                  {toc.map((h) => (
+                    <li class:list={[h.depth === 3 && 'ml-5 text-sm']}>
+                      <a href={`#${h.slug}`} class="text-muted no-underline hover:text-brand-700">{h.text}</a>
+                    </li>
+                  ))}
+                </ol>
+              </details>
+            )}
+            {Content && <Content />}
+          </div>
+        </article>
+  </BaseLayout>
+)}

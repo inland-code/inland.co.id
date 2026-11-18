@@ -1,0 +1,29 @@
+{
+  "translationKey": "articles",
+  "slug": "artikel",
+  "template": "articles",
+  "slugVerified": true,
+  "seo": {
+    "title": "Artikel Arsitektur, Konstruksi & Perawatan Bangunan",
+    "description": "Artikel, panduan, dan tips seputar arsitektur, konstruksi, dan perawatan bangunan dari tim profesional Inland."
+  },
+  "hero": {
+    "title": "Artikel Inland",
+    "body": "Dapatkan informasi, panduan, dan tips terbaru seputar dunia arsitektur, konstruksi, dan perawatan bangunan dari tim profesional kami. Di halaman ini, Anda akan menemukan berbagai artikel yang memberikan wawasan mendalam dan solusi praktis untuk kebutuhan proyek dan pemeliharaan bangunan Anda.",
+    "image": "about/hero-rumah-klasik.jpg",
+    "imageAlt": "Rumah bergaya klasik modern",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Hubungi Kami",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": []
+}

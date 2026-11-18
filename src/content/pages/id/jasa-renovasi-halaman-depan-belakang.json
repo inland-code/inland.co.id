@@ -1,0 +1,121 @@
+{
+  "translationKey": "reno-yard",
+  "slug": "jasa-renovasi-halaman-depan-belakang",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "draft",
+  "seo": {
+    "title": "Jasa Renovasi Halaman Depan & Belakang Rumah",
+    "description": "Renovasi halaman depan dan belakang rumah: carport, taman, pagar, kanopi, dan area outdoor keluarga. Melayani Jabodetabek."
+  },
+  "hero": {
+    "title": "Jasa Renovasi Halaman Depan & Belakang",
+    "body": "Inland menyediakan jasa renovasi halaman depan & belakang profesional di Jabodetabek: renovasi halaman depan dan belakang: carport, taman, pagar, kanopi, dan area outdoor keluarga. Setiap proyek dikerjakan tim berpengalaman dengan perencanaan matang, anggaran transparan, dan hasil yang rapi.",
+    "image": "home/hero-rumah-modern-carport.jpg",
+    "imageAlt": "Jasa Renovasi Halaman Depan & Belakang oleh Inland",
+    "ctas": [
+      {
+        "label": "Layanan Kami",
+        "href": "services",
+        "variant": "light"
+      },
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Memilih Inland untuk Renovasi Halaman Depan & Belakang?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "pembangunan/struktur-bata.jpg",
+      "imageAlt": "Proyek renovasi halaman depan & belakang oleh Inland",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Tim Berpengalaman",
+          "text": "Tim arsitek dan tukang Inland terbiasa menangani proyek renovasi halaman depan & belakang di Jabodetabek, dari skala kecil hingga besar."
+        },
+        {
+          "title": "RAB Transparan",
+          "text": "Rencana anggaran biaya rinci sebelum pekerjaan dimulai, tanpa biaya tersembunyi."
+        },
+        {
+          "title": "Material Berkualitas",
+          "text": "Material dipilih sesuai fungsi dan anggaran, dengan hasil pengerjaan yang rapi dan awet."
+        },
+        {
+          "title": "Tepat Waktu",
+          "text": "Jadwal kerja jelas dan progres dilaporkan secara berkala."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Lingkup Pekerjaan",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Renovasi Interior",
+          "text": "Dapur, kamar mandi, kamar tidur, ruang keluarga, plafon, dan lantai."
+        },
+        {
+          "icon": "architect",
+          "title": "Renovasi Eksterior",
+          "text": "Fasad, teras, pagar, carport, kanopi, dan atap."
+        },
+        {
+          "icon": "contractor",
+          "title": "Tambah Ruang & Lantai",
+          "text": "Perluasan bangunan dan penambahan lantai dengan perhitungan struktur."
+        },
+        {
+          "icon": "shield",
+          "title": "Perbaikan Struktur",
+          "text": "Atasi retak, rembes, dan kebocoran secara tuntas."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "pembangunan/progres-dinding.jpg",
+      "imageAlt": "Progres pekerjaan renovasi",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Survei & Konsultasi",
+          "text": "Tim kami datang ke lokasi untuk memahami kondisi bangunan dan kebutuhan Anda."
+        },
+        {
+          "title": "Desain & RAB",
+          "text": "Kami menyusun desain dan rencana anggaran yang jelas untuk Anda setujui."
+        },
+        {
+          "title": "Pelaksanaan",
+          "text": "Pekerjaan dilakukan sesuai jadwal dengan pengawasan rutin."
+        },
+        {
+          "title": "Serah Terima",
+          "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Konsultasi Renovasi Halaman Depan & Belakang Gratis",
+      "text": "Ceritakan rencana Anda dan dapatkan survei serta estimasi biaya renovasi halaman depan & belakang dari tim Inland.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

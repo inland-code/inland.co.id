@@ -1,0 +1,161 @@
+{
+  "translationKey": "service-interior",
+  "slug": "interior-design-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Interior Design Services for Homes, Offices & Commercial",
+    "description": "Inland interior design: consultation, concept design, 3D visualisation, furniture procurement and project supervision."
+  },
+  "hero": {
+    "title": "Interior Design Services by Inland",
+    "body": "Inland provides interior design services that combine beauty and function to create comfortable spaces that reflect your character. We believe good design is not only about aesthetics but also how a space supports daily activities, at home or at work.",
+    "image": "interior/hero-dapur.jpg",
+    "imageAlt": "Modern white kitchen interior design by Inland",
+    "ctas": [
+      {
+        "label": "See House Design Services",
+        "href": "service-house-design",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Why Choose Inland for Your Interior Design?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "interior/ruang-keluarga.jpg",
+      "imageAlt": "Modern family room with marble panelling",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Personal Approach",
+          "text": "Every space has its own story and needs. We work with you to understand your preferences, lifestyle, and how each room is used, so the design truly reflects you."
+        },
+        {
+          "title": "Refined Design",
+          "text": "We blend current trends with timeless principles for spaces that stay elegant for years."
+        },
+        {
+          "title": "Quality Materials",
+          "text": "We select durable materials suited to each space so interiors stay beautiful and easy to maintain."
+        },
+        {
+          "title": "Precise Details",
+          "text": "Lighting, colour, texture, and furniture layout are planned carefully so every corner feels cohesive."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Services We Offer",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "interior/dapur-island.jpg",
+      "imageAlt": "Kitchen with marble island",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Design Consultation",
+          "text": "We begin every project by understanding your needs in depth and helping you define a design concept that fits your vision and goals."
+        },
+        {
+          "title": "Concept Design",
+          "text": "Moodboards, colour palettes, and layout concepts give a clear direction before details are developed."
+        },
+        {
+          "title": "3D Visualisation",
+          "text": "See a realistic preview of your space in 3D before work begins, making decisions easier."
+        },
+        {
+          "title": "Furniture & Décor Procurement",
+          "text": "We help select and source furniture, lighting, and décor that match the concept."
+        },
+        {
+          "title": "Project Supervision",
+          "text": "Our team supervises on site so the result matches the design, quality standards, and schedule."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Spaces We Design",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Homes",
+          "text": "From living rooms and bedrooms to kitchens, we create designs that fit your lifestyle."
+        },
+        {
+          "icon": "office",
+          "title": "Offices",
+          "text": "Productive, inspiring workplaces through functional and attractive interior design."
+        },
+        {
+          "icon": "store",
+          "title": "Commercial Spaces",
+          "text": "Shops, cafés, and restaurants designed to attract customers and enhance their experience."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Process",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "interior/meja-kopi.jpg",
+      "imageAlt": "Glossy black coffee table in a family room",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Initial Consultation",
+          "text": "We listen to your vision and needs and discuss the style and concept you want."
+        },
+        {
+          "title": "Design & Visualisation",
+          "text": "We develop detailed designs and 3D visuals, refining them with you until they are right."
+        },
+        {
+          "title": "Implementation",
+          "text": "An experienced team brings the design to life under close supervision until the space is ready."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What does Inland’s interior design service include?",
+          "a": "Design consultation, concept and moodboards, 3D visualisation, working drawings, material recommendations, furniture and décor procurement, and on-site supervision."
+        },
+        {
+          "q": "Can I see the design before work starts?",
+          "a": "Yes. We prepare 3D visuals so you can review and revise the design before any work begins."
+        },
+        {
+          "q": "Which spaces do you design?",
+          "a": "Homes, apartments, offices, and commercial spaces such as shops, cafés, and restaurants."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Book an Interior Design Consultation",
+      "text": "Ready to create your dream space? Contact the Inland team for a tailored, high-quality interior design consultation.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}

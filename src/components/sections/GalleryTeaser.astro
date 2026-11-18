@@ -1,0 +1,30 @@
+---
+import { Picture } from 'astro:assets';
+import Icon from '@/components/icons/Icon.astro';
+import SectionHeading from './SectionHeading.astro';
+import type { Section } from '@/content.config';
+import type { Locale } from '@/i18n/config';
+import { imageFor } from '@/lib/media';
+import { resolveHref } from '@/lib/links';
+type Props = Extract<Section, { type: 'gallery-teaser' }> & { locale: Locale };
+const { eyebrow, title, intro, images, cta, locale } = Astro.props;
+const ctaUrl = cta ? await resolveHref(cta.href, locale) : undefined;
+---
+<section class="py-20 sm:py-24">
+  <div class="container-site">
+    <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+      <SectionHeading eyebrow={eyebrow} title={title} intro={intro} align="left" />
+      {cta && ctaUrl && <a href={ctaUrl} class="btn-dark shrink-0">{cta.label} <Icon name="arrow" class="size-4" /></a>}
+    </div>
+    <ul class="mt-10 grid auto-rows-[12rem] grid-cols-2 gap-3 sm:auto-rows-[14rem] md:grid-cols-4 md:gap-4">
+      {images.slice(0, 5).map((g, i) => (
+        <li class:list={['group relative overflow-hidden rounded-card', i === 0 && 'col-span-2 row-span-2']}>
+          <Picture formats={["avif", "webp"]} src={imageFor(g.image)} alt={g.alt} width={i === 0 ? 900 : 480} sizes={i === 0 ? '(min-width: 768px) 50vw, 100vw' : '(min-width: 768px) 25vw, 50vw'} class="size-full object-cover transition duration-500 group-hover:scale-105" />
+          {g.caption && (
+            <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4 pt-10 text-sm font-medium text-white">{g.caption}</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>

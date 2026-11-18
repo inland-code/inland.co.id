@@ -1,0 +1,95 @@
+{
+  "translationKey": "service-maintenance",
+  "slug": "building-maintenance-services",
+  "template": "service",
+  "slugVerified": true,
+  "seo": {
+    "title": "Professional Building Maintenance Services",
+    "description": "Inland building maintenance: glass cleaning, exterior wall care, painting and interior repairs for homes and commercial buildings."
+  },
+  "hero": {
+    "title": "Professional Maintenance Services",
+    "body": "Proper maintenance is essential to preserve the condition and value of your building. Inland provides comprehensive maintenance services to keep your property in top condition, safe, and comfortable to use.",
+    "image": "gallery/perawatan-02.jpg",
+    "imageAlt": "Inland team cleaning a high-rise glass facade",
+    "ctas": [
+      {
+        "label": "Building Glass Cleaning",
+        "href": "service-glass-cleaning",
+        "variant": "light"
+      },
+      {
+        "label": "Contact Us",
+        "href": "#whatsapp",
+        "variant": "dark"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Professional Maintenance Services",
+      "text": "Proper maintenance is essential to protect the condition and value of your building. Inland provides comprehensive maintenance to keep your property in top condition, safe, and comfortable to use, with solutions tailored to everything from homes to commercial buildings.",
+      "bars": [
+        {
+          "label": "Building Glass Cleaning",
+          "value": 98
+        },
+        {
+          "label": "Exterior Wall Care",
+          "value": 97
+        },
+        {
+          "label": "Interior Painting & Repair",
+          "value": 93
+        }
+      ],
+      "cards": [
+        {
+          "title": "Building Glass Cleaning",
+          "text": "Building glass cleaning is one of our flagship services. We use modern equipment and safe methods to keep your glass clean and your building looking its best — for offices, apartments, and other high-rise buildings.",
+          "cta": {
+            "label": "View Glass Cleaning",
+            "href": "service-glass-cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Our Maintenance Services",
+      "items": [
+        {
+          "icon": "rope",
+          "title": "Building Glass Cleaning",
+          "text": "High-rise glass cleaning using safe, efficient rope access."
+        },
+        {
+          "icon": "shield",
+          "title": "Exterior Wall Care",
+          "text": "Facade cleaning and care to keep your building well maintained."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Interior Painting & Repair",
+          "text": "Repainting and minor repairs to keep spaces comfortable."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Safety Is Our Priority",
+      "text": "We understand how important safety is when working at height. Our technicians are fully equipped with protective gear and follow strict safety procedures."
+    },
+    {
+      "type": "cta",
+      "title": "Schedule Your Building Maintenance",
+      "text": "Contact us for a site survey and our best quote.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
+}
