@@ -25,5 +25,130 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Architect Services",
+      "text": "Building or renovating requires careful planning, especially in design. As an experienced architecture firm, Inland offers modern, functional architectural design tailored to your vision and needs. We combine creativity, aesthetics, and technology to create buildings that are not only beautiful but also comfortable and efficient.",
+      "bars": [
+        {
+          "label": "Residential Architecture",
+          "value": 98
+        },
+        {
+          "label": "Office Architecture",
+          "value": 95
+        },
+        {
+          "label": "Building Architecture",
+          "value": 93
+        },
+        {
+          "label": "Interior Design",
+          "value": 97
+        },
+        {
+          "label": "Exterior Design",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Interior Design Services",
+          "text": "Our interior design focuses on aesthetics and comfort, creating spaces in harmony with your lifestyle or business needs. We deliver tailored solutions that match each client’s taste and character, from first concept to completion.",
+          "cta": {
+            "label": "View Interior Design",
+            "href": "service-interior"
+          }
+        },
+        {
+          "title": "House Design Services",
+          "text": "We design homes that are not only beautiful but comfortable and efficient to live in. Each design follows your wishes — modern, minimalist, classic, or tropical — while staying functional and suited to the local environment.",
+          "cta": {
+            "label": "View House Design",
+            "href": "service-house-design"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-detail",
+      "title": "Contractor Services",
+      "text": "Turning a design into reality takes precise, professional execution. As an experienced contractor, Inland offers comprehensive construction services, from building new homes to renovation. We are committed to high-quality buildings delivered on time and on budget, making Inland the ideal partner for your construction project.",
+      "bars": [
+        {
+          "label": "House Construction",
+          "value": 98
+        },
+        {
+          "label": "House Renovation",
+          "value": 97
+        },
+        {
+          "label": "Building Construction",
+          "value": 93
+        },
+        {
+          "label": "Structural Repair & Maintenance",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "House Construction Services",
+          "text": "We build homes from the ground up to move-in ready, making sure every detail meets the agreed standards. Our process is transparent from planning through execution to completion, so you can follow every step of progress.",
+          "cta": {
+            "label": "View House Construction",
+            "href": "service-house-construction"
+          }
+        },
+        {
+          "title": "House Renovation Services",
+          "text": "Want to refresh or extend your home? Our renovation service transforms your home into a more comfortable, refined place, with full attention to quality and timing.",
+          "cta": {
+            "label": "View House Renovation",
+            "href": "service-renovation"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-detail",
+      "title": "Professional Maintenance Services",
+      "text": "Proper maintenance is essential to protect the condition and value of your building. Inland provides comprehensive maintenance to keep your property in top condition, safe, and comfortable to use, with solutions tailored to everything from homes to commercial buildings.",
+      "bars": [
+        {
+          "label": "Building Glass Cleaning",
+          "value": 98
+        },
+        {
+          "label": "Exterior Wall Care",
+          "value": 97
+        },
+        {
+          "label": "Interior Painting & Repair",
+          "value": 93
+        }
+      ],
+      "cards": [
+        {
+          "title": "Building Glass Cleaning",
+          "text": "Building glass cleaning is one of our flagship services. We use modern equipment and safe methods to keep your glass clean and your building looking its best — for offices, apartments, and other high-rise buildings.",
+          "cta": {
+            "label": "View Glass Cleaning",
+            "href": "service-glass-cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Contact Us for a Consultation",
+      "text": "If you have questions or would like to discuss a project you are planning, do not hesitate to contact us. We are ready to help you realise your vision.",
+      "button": {
+        "label": "Free Consultation",
+        "href": "#whatsapp"
+      }
+    }
+  ]
 }

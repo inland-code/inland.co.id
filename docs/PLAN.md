@@ -1,6 +1,6 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 2 berjalan** · Terakhir diperbarui: 2026-11-18
+Status: **Fase 3 selesai** · Terakhir diperbarui: 2026-11-18
 
 ## Keputusan yang sudah diambil
 
@@ -76,7 +76,11 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Artikel: daftar isi otomatis, waktu baca, breadcrumb, artikel terkait, kotak penulis (E-E-A-T).
 - Mockup Beranda dulu → disetujui → diterapkan ke semua halaman.
 
-### Fase 3 — Pembangunan halaman
+### Fase 3 — Pembangunan halaman ✅
+- ✅ 35 halaman ID + 15 halaman EN dengan section lengkap; 5 artikel (2 artikel sealant lengkap, 3 lainnya masih ringkasan).
+- ✅ Formulir kontak: Worker `/api/contact` → D1 → WhatsApp. **Butuh** `wrangler d1 create inland-db` + migrasi saat deploy.
+- ⏳ Artikel EN belum ada (halaman `/en/articles/` menampilkan artikel ID).
+- ⏳ 3 artikel (arsitektur kuno, sejarah arsitektur, konstruksi) baru berisi ringkasan — isi lengkap belum ada di screenshot.
 - Beranda, Tentang Kami, Layanan Kami, Kontak, Artikel (list + detail), Galeri.
 - Layanan: Desain Interior, Desain Rumah, Pembangunan Rumah, Renovasi Rumah, Pembersihan Kaca Gedung, halaman Sealant.
 - Accordion `<details>` native (tanpa JS), carousel CSS scroll-snap (tanpa library).

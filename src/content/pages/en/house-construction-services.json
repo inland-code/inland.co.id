@@ -25,5 +25,119 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Why Choose Inland to Build Your Home?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "pembangunan/struktur-bata.jpg",
+      "imageAlt": "Two-storey house under construction",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Experience and Expertise",
+          "text": "With years in the construction industry, we have completed home building projects of many sizes and styles. Our team of architects, engineers, and specialists is ready to deliver the best result."
+        },
+        {
+          "title": "Transparency and Open Communication",
+          "text": "We report budgets and progress regularly so you always know where the project stands."
+        },
+        {
+          "title": "Quality Materials and Workmanship",
+          "text": "Quality materials and the right construction methods for a solid, durable home."
+        },
+        {
+          "title": "On Time and On Budget",
+          "text": "Measured schedules and close supervision keep the project on time and on budget."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our House Construction Services",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Bricks and stone on a construction site",
+      "numbered": true,
+      "items": [
+        {
+          "title": "New Home Construction",
+          "text": "We build homes from the ground up to move-in ready, covering site preparation, foundations, structure, and finishing, with care at every step."
+        },
+        {
+          "title": "Custom Home Development",
+          "text": "Your home built to your own design, including layout and material adjustments."
+        },
+        {
+          "title": "Project Supervision",
+          "text": "Site supervisors make sure all work follows the drawings and quality standards."
+        },
+        {
+          "title": "Design & Construction Consulting",
+          "text": "No design yet? Our architects can help from planning to working drawings."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Projects We Handle",
+      "items": [
+        {
+          "title": "Private Homes",
+          "text": "Comfortable, functional, and beautiful homes built to your preferences."
+        },
+        {
+          "title": "Villas & Holiday Homes",
+          "text": "Attractive holiday properties designed to blend with nature."
+        },
+        {
+          "title": "Clusters & Housing Estates",
+          "text": "The team and resources to deliver large-scale housing efficiently."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "How We Build Your Home",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "pembangunan/progres-dinding.jpg",
+      "imageAlt": "House walls under construction",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Initial Consultation",
+          "text": "We start by understanding your vision: size, style, layout, and budget."
+        },
+        {
+          "title": "Planning & Design",
+          "text": "Designs, working drawings, and a cost plan are prepared and agreed together."
+        },
+        {
+          "title": "Construction",
+          "text": "From site preparation and foundations to structure, roof, and finishing."
+        },
+        {
+          "title": "Supervision & Quality Control",
+          "text": "Every stage is inspected for quality and compliance with the plan."
+        },
+        {
+          "title": "Completion & Handover",
+          "text": "Your home is handed over move-in ready after a final joint inspection."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to Build Your Dream Home?",
+      "text": "With Inland, building your home is simple, transparent, and high quality. Contact us today to get started.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

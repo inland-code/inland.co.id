@@ -25,5 +25,123 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Why Choose Inland for Your House Design?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "home/hero-rumah-modern-carport.jpg",
+      "imageAlt": "Modern gable-roof house with carport",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Designed Around You",
+          "text": "Every client has a unique picture of their ideal home, so every design we create is fully personalised to your wishes, architectural style, and specific needs."
+        },
+        {
+          "title": "Function and Beauty",
+          "text": "We balance good looks with efficient layouts, airflow, and natural light."
+        },
+        {
+          "title": "A Range of Styles",
+          "text": "Minimalist, modern, classic, or tropical — we design across architectural styles."
+        },
+        {
+          "title": "The Right Materials",
+          "text": "We recommend materials suited to the climate and your budget for a lasting, comfortable home."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our House Design Services",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "about/hero-rumah-klasik.jpg",
+      "imageAlt": "Modern classic house",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Design Consultation",
+          "text": "Each project starts with an in-depth consultation about your lifestyle, design preferences, and the spaces you need."
+        },
+        {
+          "title": "Concept Design",
+          "text": "Your needs become floor plan and elevation concepts as the basis for design development."
+        },
+        {
+          "title": "3D Design & Detailed Drawings",
+          "text": "3D exterior and interior visuals plus detailed working drawings ready for construction."
+        },
+        {
+          "title": "Space Planning & Ventilation",
+          "text": "Efficient layouts with good cross-ventilation and natural light for the tropical climate."
+        },
+        {
+          "title": "Landscape Design (Optional)",
+          "text": "Gardens, carports, and outdoor areas designed to work with the main building."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "House Styles We Design",
+      "items": [
+        {
+          "title": "Minimalist",
+          "text": "Simple yet elegant, with efficient spaces and clean, modern materials."
+        },
+        {
+          "title": "Modern",
+          "text": "Strong lines, open layouts, and current technology for a functional, stylish home."
+        },
+        {
+          "title": "Classic",
+          "text": "Traditional architectural touches with elegant ornamental detail."
+        },
+        {
+          "title": "Tropical",
+          "text": "Designed for the tropics with great airflow, generous windows, and natural elements."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Process",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "gallery/arsitek-01.jpg",
+      "imageAlt": "Modern three-storey house design",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Initial Consultation",
+          "text": "We discuss your needs, budget, and preferences to make sure every aspect matches your vision."
+        },
+        {
+          "title": "Design Development",
+          "text": "The concept is developed into plans, elevations, and full 3D visuals."
+        },
+        {
+          "title": "Revisions & Refinement",
+          "text": "We refine the design with you until every detail is right."
+        },
+        {
+          "title": "Final Design",
+          "text": "Final working drawings and material specifications are handed over, ready to build."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to Design Your Dream Home?",
+      "text": "Start your journey with Inland. We will help you design a home that is beautiful, functional, and right for you.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

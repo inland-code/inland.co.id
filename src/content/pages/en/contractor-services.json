@@ -25,5 +25,78 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Contractor Services",
+      "text": "Turning a design into reality takes precise, professional execution. As an experienced contractor, Inland offers comprehensive construction services, from building new homes to renovation. We are committed to high-quality buildings delivered on time and on budget, making Inland the ideal partner for your construction project.",
+      "bars": [
+        {
+          "label": "House Construction",
+          "value": 98
+        },
+        {
+          "label": "House Renovation",
+          "value": 97
+        },
+        {
+          "label": "Building Construction",
+          "value": 93
+        },
+        {
+          "label": "Structural Repair & Maintenance",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "House Construction Services",
+          "text": "We build homes from the ground up to move-in ready, making sure every detail meets the agreed standards. Our process is transparent from planning through execution to completion, so you can follow every step of progress.",
+          "cta": {
+            "label": "View House Construction",
+            "href": "service-house-construction"
+          }
+        },
+        {
+          "title": "House Renovation Services",
+          "text": "Want to refresh or extend your home? Our renovation service transforms your home into a more comfortable, refined place, with full attention to quality and timing.",
+          "cta": {
+            "label": "View House Renovation",
+            "href": "service-renovation"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Projects We Handle",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Private Homes",
+          "text": "Comfortable, functional, and beautiful homes built to your preferences."
+        },
+        {
+          "icon": "contractor",
+          "title": "Home & Building Renovation",
+          "text": "Refreshed looks, added space, and structural repairs."
+        },
+        {
+          "icon": "office",
+          "title": "Clusters & Housing",
+          "text": "The team and resources for large-scale projects delivered efficiently."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Ready to Start Your Construction Project?",
+      "text": "Get a transparent schedule and budget from Inland’s contractor team.",
+      "button": {
+        "label": "Get in Touch",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }
