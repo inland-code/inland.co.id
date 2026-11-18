@@ -48,5 +48,5 @@ GitHub Actions hanya menjalankan pemeriksaan (format, type check, test, build).
 
 ## Staging vs produksi
 
-Hanya build dengan `PUBLIC_SITE_ENV=production` yang bisa diindeks. Build lain otomatis `noindex`
+Build Cloudflare Workers Builds dari branch `main` (atau `PUBLIC_SITE_ENV=production`) bisa diindeks; `PUBLIC_SITE_ENV=staging` memaksa noindex. Build lain otomatis `noindex`
 (meta robots + `X-Robots-Tag` + `robots.txt Disallow`).

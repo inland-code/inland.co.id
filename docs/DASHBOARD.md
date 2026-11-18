@@ -70,7 +70,7 @@ Akun yang diizinkan diatur di `wrangler.jsonc` → `ADMIN_GITHUB_USERS` (dipisah
 ### 5. Deploy
 
 Cloudflare Workers Builds sudah terhubung ke repo: setiap push ke `main` otomatis di-build & di-deploy.
-Saat pindah ke domain asli, tambahkan build variable `PUBLIC_SITE_ENV=production`.
+Domain asli sudah terpasang: build `main` di Workers Builds otomatis mode produksi (boleh diindeks).
 
 ## Pengembangan lokal
 

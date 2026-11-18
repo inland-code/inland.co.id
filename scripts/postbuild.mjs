@@ -65,7 +65,10 @@ const csp = [
 
 let headers = readFileSync(headersFile, 'utf8');
 headers = headers.replace(/^\/\*\n/m, `/*\n  Content-Security-Policy: ${csp}\n`);
-if (process.env.PUBLIC_SITE_ENV === 'production') {
+// Sama dengan src/lib/env.ts: build Workers Builds dari main = produksi kecuali PUBLIC_SITE_ENV menyatakan lain.
+const env = process.env;
+const production = env.PUBLIC_SITE_ENV ? env.PUBLIC_SITE_ENV === 'production' : env.WORKERS_CI === '1' && env.WORKERS_CI_BRANCH === 'main';
+if (production) {
   console.log('[postbuild] produksi: header indexable dipertahankan.');
 } else {
   headers = `/*\n  X-Robots-Tag: noindex, nofollow\n\n${headers}`;
