@@ -34,7 +34,7 @@ jobs:
           restore-keys: astro-assets-
 
       - name: Type check
-        run: npx astro check
+        run: npm run check
 
       - name: Build + verifikasi URL lama
         run: npm run build

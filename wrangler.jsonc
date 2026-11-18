@@ -2,12 +2,24 @@
   "$schema": "./node_modules/wrangler/config-schema.json",
   "name": "inland-co-id",
   "compatibility_date": "2026-11-01",
-  // Fase 1: situs 100% statis dilayani dari edge Cloudflare (Workers Static Assets).
-  // Fase 3/7 akan menambahkan "main" (Worker) untuk /api/* (formulir kontak & dashboard).
+  "main": "./worker/index.ts",
+  // Situs statis dilayani dari edge Cloudflare; Worker hanya berjalan untuk /api/*.
   "assets": {
     "directory": "./dist",
+    "binding": "ASSETS",
     "html_handling": "force-trailing-slash",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/api/*"]
   },
+  "vars": {
+    "WHATSAPP_NUMBER": "628567700883"
+  },
+  // Aktifkan setelah membuat database:
+  //   npx wrangler d1 create inland-db
+  //   npx wrangler d1 migrations apply inland-db --remote
+  // lalu salin database_id ke bawah dan hapus komentar.
+  // "d1_databases": [
+  //   { "binding": "DB", "database_name": "inland-db", "database_id": "<ID>", "migrations_dir": "migrations" }
+  // ],
   "observability": { "enabled": true }
 }
