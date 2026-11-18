@@ -52,6 +52,19 @@ async function handleContact(request: Request, env: Env, ctx: ExecutionContext):
   const message = cleanMultiline(form.get('message'), LIMITS.message);
   if (!name || !message) return redirect(`${back}?error=required#form`);
 
+  // Anti-spam Cloudflare Turnstile (hanya bila secret diatur).
+  if (env.TURNSTILE_SECRET) {
+    const body = new FormData();
+    body.set('secret', env.TURNSTILE_SECRET);
+    body.set('response', clean(form.get('cf-turnstile-response'), 2048));
+    const ip = request.headers.get('CF-Connecting-IP');
+    if (ip) body.set('remoteip', ip);
+    const verify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body })
+      .then((r) => r.json() as Promise<{ success: boolean }>)
+      .catch(() => ({ success: false }));
+    if (!verify.success) return redirect(`${back}?error=captcha#form`);
+  }
+
   if (env.DB) {
     const cf = (request as Request & { cf?: { country?: string; city?: string } }).cf;
     const insert = env.DB.prepare(

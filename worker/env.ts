@@ -3,6 +3,8 @@ export interface Env {
   /** D1 untuk pesan formulir kontak. */
   DB?: D1Database;
   WHATSAPP_NUMBER: string;
+  /** Secret opsional: Cloudflare Turnstile. Jika diisi, formulir wajib lolos verifikasi. */
+  TURNSTILE_SECRET?: string;
 
   /* ---- Dashboard: login dengan GitHub (OAuth App) ---- */
   /** Client ID OAuth App GitHub (boleh publik). */

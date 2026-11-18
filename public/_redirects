@@ -11,3 +11,11 @@
 /xmlrpc.php         /                  301
 /sitemap.xml        /sitemap_index.xml 301
 /wp-sitemap.xml     /sitemap_index.xml 301
+
+# File media WordPress lama (terindeks di Google Gambar) -> galeri.
+/wp-content/*       /galeri-inland/    301
+/wp-includes/*      /                  301
+# Sitemap Rank Math lain yang tidak lagi dipakai.
+/category-sitemap.xml  /sitemap_index.xml 301
+/local-sitemap.xml     /sitemap_index.xml 301
+/author-sitemap.xml    /sitemap_index.xml 301
