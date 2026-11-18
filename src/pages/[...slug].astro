@@ -10,6 +10,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import PageHero from '@/components/PageHero.astro';
 import PostCard from '@/components/PostCard.astro';
 import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import Sections from '@/components/sections/Sections.astro';
 import { Image } from 'astro:assets';
 import { getRoutes, alternatesFor, hrefFor, type Route } from '@/lib/routes';
 import { imageFor } from '@/lib/media';
@@ -86,7 +87,9 @@ const Content = route.kind === 'post' ? (await render(route.entry)).Content : nu
           {t(locale, 'placeholder.sections')}
         </p>
       </section>
-    ) : null}
+    ) : (
+      <Sections sections={route.entry.data.sections} locale={locale} />
+    )}
   </BaseLayout>
 ) : (
   <BaseLayout

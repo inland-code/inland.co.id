@@ -1,19 +1,19 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 1 selesai** · Terakhir diperbarui: 2026-11-17
+Status: **Fase 2 berjalan** · Terakhir diperbarui: 2026-11-18
 
 ## Keputusan yang sudah diambil
 
 | # | Topik | Keputusan |
 |---|---|---|
 | 1 | Slug Bahasa Inggris | **Diterjemahkan** (contoh: `/en/about-us/`, `/en/services/interior-design/`), dihubungkan via `hreflang` |
-| 2 | Sumber konten | **Dibuat dari nol berdasarkan screenshot** yang diberikan; foto di-crop dari screenshot. Slug URL dicocokkan via indeks Google (lihat `migration/url-inventory.csv`) |
+| 2 | Sumber konten | **Dibuat dari nol berdasarkan screenshot** yang diberikan; foto di-crop dari screenshot. Slug URL dari sitemap Rank Math asli (lihat `migration/url-inventory.csv`) |
 | 3 | Penyimpanan media | **Di repo** (`src/assets/`), dioptimasi saat build — bukan di Cloudflare R2 |
 | 4 | URL Bahasa Indonesia | **Sama persis** dengan situs WordPress saat ini, termasuk trailing slash, di root tanpa prefix |
-| 5 | Formulir kontak | _Belum diputuskan_ (email saja vs. email + riwayat di D1) |
-| 6 | Font | _Belum diputuskan_ (tetap Roboto vs. font modern) |
-| 7 | DNS domain | _Belum dikonfirmasi_ (sudah di Cloudflare atau belum) |
-| 8 | Pengguna dashboard | _Belum dikonfirmasi_ |
+| 5 | Formulir kontak | **Diarahkan ke WhatsApp** (pesan terisi otomatis) **dan tercatat di dashboard** (Worker `/api/contact` → Cloudflare D1 → redirect `wa.me`). D1 hanya untuk data formulir; media tetap di repo |
+| 6 | Font | **Roboto** (self-hosted, variable woff2) |
+| 7 | DNS domain | Nameserver **belum** di Cloudflare. Pengembangan & uji di subdomain `*.workers.dev` (noindex); domain disambungkan di Fase 9 setelah semua selesai |
+| 8 | Pengguna dashboard | **Hanya pemilik** (1 akun email). Login via Cloudflare Access (OTP email), tanpa sistem password sendiri |
 
 ---
 
@@ -78,7 +78,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Beranda, Tentang Kami, Layanan Kami, Kontak, Artikel (list + detail), Galeri.
 - Layanan: Desain Interior, Desain Rumah, Pembangunan Rumah, Renovasi Rumah, Pembersihan Kaca Gedung, halaman Sealant.
 - Accordion `<details>` native (tanpa JS), carousel CSS scroll-snap (tanpa library).
-- Formulir kontak: Worker + Cloudflare Turnstile.
+- Formulir kontak: Worker + Cloudflare Turnstile → simpan ke D1 → buka WhatsApp dengan pesan terisi (nama, kebutuhan, pesan). Riwayat tampil di dashboard.
 - Perbaikan konten: judul salah di halaman Renovasi, tipografi halaman Sealant, konsistensi nomor telepon (NAP).
 
 ### Fase 4 — SEO lanjutan
@@ -103,7 +103,8 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Cache: `/_astro/*` immutable 1 tahun; HTML di-cache di edge dengan purge otomatis per deploy; Early Hints, HTTP/3, Brotli, Tiered Cache.
 
 ### Fase 7 — Dashboard custom `/admin`
-- Login via Cloudflare Access (Zero Trust, gratis ≤ 50 user).
+- Login via Cloudflare Access (Zero Trust), policy hanya untuk email pemilik.
+- Menu "Pesan Masuk": riwayat formulir kontak dari D1 (status: baru / dihubungi / selesai).
 - Editor halaman berbasis field (layout terkunci), editor artikel (rich text, kategori, gambar unggulan, jadwal terbit).
 - Media library: upload, kompres otomatis, alt text, peringatan ukuran.
 - Panel SEO per halaman + preview Google/WhatsApp.

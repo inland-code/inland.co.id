@@ -26,5 +26,193 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "chat",
+          "title": "Free Consultation",
+          "text": "Discuss your project needs at no cost."
+        },
+        {
+          "icon": "architect",
+          "title": "Design to Construction",
+          "text": "One team for architecture, building and renovation."
+        },
+        {
+          "icon": "shield",
+          "title": "Certified Rope Access",
+          "text": "Work at height to proper safety standards."
+        },
+        {
+          "icon": "clock",
+          "title": "On Time & On Budget",
+          "text": "Transparent schedules and costs."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "eyebrow": "Services",
+      "title": "Our Services",
+      "intro": "End-to-end solutions for your building: from design drawings and construction to routine maintenance.",
+      "items": [
+        {
+          "icon": "architect",
+          "title": "Architect Services",
+          "href": "service-architect",
+          "text": "We offer architectural design covering interiors and exteriors for homes, offices, and buildings. With creativity and attention to detail, we create designs that are both beautiful and functional.",
+          "links": [
+            {
+              "label": "Interior Design",
+              "href": "service-interior"
+            },
+            {
+              "label": "House Design",
+              "href": "service-house-design"
+            }
+          ]
+        },
+        {
+          "icon": "contractor",
+          "title": "Contractor Services",
+          "href": "service-contractor",
+          "text": "Inland provides construction services, from building homes to renovating buildings. With a professional team and high-quality materials, we deliver projects on time and on budget.",
+          "links": [
+            {
+              "label": "House Construction",
+              "href": "service-house-construction"
+            },
+            {
+              "label": "House Renovation",
+              "href": "service-renovation"
+            }
+          ]
+        },
+        {
+          "icon": "maintenance",
+          "title": "Maintenance Services",
+          "href": "service-maintenance",
+          "text": "We provide building maintenance, including glass cleaning using safe rope access methods, designed to keep your building clean and safe on a regular basis.",
+          "links": [
+            {
+              "label": "Building Glass Cleaning",
+              "href": "service-glass-cleaning"
+            },
+            {
+              "label": "Rope Access",
+              "href": "service-rope-access"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "eyebrow": "Why us",
+      "title": "Why Inland?",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "home/interior-ruang-tamu-mewah.jpg",
+      "imageAlt": "Luxury living room interior with crystal chandelier designed by Inland",
+      "items": [
+        {
+          "title": "Professional & Experienced",
+          "text": "Our team of architects, contractors, and technicians is ready to bring your project to life."
+        },
+        {
+          "title": "Excellent Service",
+          "text": "We support you from the first consultation to handover, with open communication and fast responses."
+        },
+        {
+          "title": "Attention to Detail",
+          "text": "Every stage is handled carefully, from material selection to finishing, for a neat and durable result."
+        }
+      ],
+      "cta": {
+        "label": "See All Our Services",
+        "href": "services"
+      }
+    },
+    {
+      "type": "gallery-teaser",
+      "eyebrow": "Portfolio",
+      "title": "Our Work",
+      "intro": "A selection of design, construction and building maintenance projects we have completed.",
+      "images": [
+        {
+          "image": "gallery/arsitek-01.jpg",
+          "alt": "Modern three-storey house design",
+          "caption": "Modern House Design"
+        },
+        {
+          "image": "home/interior-ruang-tamu-mewah.jpg",
+          "alt": "Luxury living room interior",
+          "caption": "Interior Design"
+        },
+        {
+          "image": "kaca/hero-pembersihan-kaca.jpg",
+          "alt": "Rope access glass cleaning",
+          "caption": "Glass Cleaning"
+        },
+        {
+          "image": "pembangunan/struktur-bata.jpg",
+          "alt": "House construction project",
+          "caption": "House Construction"
+        },
+        {
+          "image": "interior/hero-dapur.jpg",
+          "alt": "Modern white kitchen design",
+          "caption": "Kitchen Design"
+        },
+        {
+          "image": "gallery/perawatan-02.jpg",
+          "alt": "Rope access team on a building facade",
+          "caption": "Building Maintenance"
+        }
+      ],
+      "cta": {
+        "label": "View Gallery",
+        "href": "gallery"
+      }
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Testimonials",
+      "title": "What Our Clients Say",
+      "items": [
+        {
+          "quote": "Inland brought our dream home to life with a modern, elegant design. Construction went smoothly and the result exceeded our expectations.",
+          "name": "Jonathan",
+          "location": "Jakarta"
+        },
+        {
+          "quote": "We are very satisfied with Inland’s building glass cleaning service. The result was highly professional and on time.",
+          "name": "Martha",
+          "location": "Bandung"
+        }
+      ]
+    },
+    {
+      "type": "latest-posts",
+      "eyebrow": "Articles",
+      "title": "Latest Insights & Tips",
+      "limit": 3,
+      "cta": {
+        "label": "All Articles",
+        "href": "articles"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Start Your Consultation Today",
+      "text": "Ready to start your project? Click the button below to talk directly with our team and get the solution you need.",
+      "button": {
+        "label": "Free Consultation",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

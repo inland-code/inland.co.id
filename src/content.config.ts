@@ -37,6 +37,68 @@ const hero = z.object({
   ctas: z.array(cta).default([]),
 });
 
+/* ---------- Section halaman (blok yang bisa disusun dari dashboard) ---------- */
+
+const icon = z.enum(['architect', 'contractor', 'maintenance', 'home', 'office', 'store', 'shield', 'clock', 'chat', 'ruler', 'check', 'rope', 'sparkle']);
+const link = z.object({ label: z.string(), href: z.string() });
+
+const sectionHeading = {
+  eyebrow: z.string().optional(),
+  title: z.string(),
+  intro: z.string().optional(),
+};
+
+export const sectionSchema = z.discriminatedUnion('type', [
+  z.object({
+    type: z.literal('trust'),
+    items: z.array(z.object({ icon, title: z.string(), text: z.string() })).min(2).max(4),
+  }),
+  z.object({
+    type: z.literal('service-cards'),
+    ...sectionHeading,
+    items: z.array(
+      z.object({ icon, title: z.string(), text: z.string(), href: z.string().optional(), links: z.array(link).default([]) }),
+    ),
+  }),
+  z.object({
+    type: z.literal('accordion-media'),
+    ...sectionHeading,
+    tone: z.enum(['brand', 'light']).default('brand'),
+    imageSide: z.enum(['left', 'right']).default('right'),
+    image: z.string(),
+    imageAlt: z.string(),
+    numbered: z.boolean().default(false),
+    items: z.array(z.object({ title: z.string(), text: z.string() })).min(1),
+    cta: link.optional(),
+  }),
+  z.object({
+    type: z.literal('gallery-teaser'),
+    ...sectionHeading,
+    images: z.array(z.object({ image: z.string(), alt: z.string(), caption: z.string().optional() })).min(3),
+    cta: link.optional(),
+  }),
+  z.object({
+    type: z.literal('testimonials'),
+    ...sectionHeading,
+    items: z.array(z.object({ quote: z.string(), name: z.string(), location: z.string().optional() })).min(1),
+  }),
+  z.object({
+    type: z.literal('latest-posts'),
+    ...sectionHeading,
+    limit: z.number().int().min(1).max(6).default(3),
+    cta: link.optional(),
+  }),
+  z.object({
+    type: z.literal('cta'),
+    title: z.string(),
+    text: z.string(),
+    button: link,
+    tone: z.enum(['brand', 'light']).default('light'),
+  }),
+]);
+
+export type Section = z.infer<typeof sectionSchema>;
+
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/pages', generateId: fileId }),
   schema: z.object({
@@ -54,8 +116,7 @@ const pages = defineCollection({
     contentStatus: z.enum(['screenshot', 'draft', 'final']).default('screenshot'),
     seo,
     hero,
-    /** Section halaman — skema rinci per jenis section dibangun di Fase 3. */
-    sections: z.array(z.record(z.string(), z.unknown())).default([]),
+    sections: z.array(sectionSchema).default([]),
     updatedAt: z.coerce.date().optional(),
   }),
 });

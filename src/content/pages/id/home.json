@@ -26,5 +26,193 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "chat",
+          "title": "Konsultasi Gratis",
+          "text": "Diskusikan kebutuhan proyek Anda tanpa biaya."
+        },
+        {
+          "icon": "architect",
+          "title": "Desain hingga Konstruksi",
+          "text": "Satu tim untuk arsitektur, bangun, dan renovasi."
+        },
+        {
+          "icon": "shield",
+          "title": "Rope Access Bersertifikat",
+          "text": "Pekerjaan di ketinggian dengan standar keselamatan."
+        },
+        {
+          "icon": "clock",
+          "title": "Tepat Waktu & Anggaran",
+          "text": "Rencana kerja dan biaya yang transparan."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "eyebrow": "Layanan",
+      "title": "Layanan Kami",
+      "intro": "Solusi menyeluruh untuk bangunan Anda: dari gambar desain, proses konstruksi, hingga perawatan rutin.",
+      "items": [
+        {
+          "icon": "architect",
+          "title": "Jasa Arsitek",
+          "href": "service-architect",
+          "text": "Kami menawarkan layanan desain arsitektur yang mencakup interior dan eksterior untuk rumah, kantor, dan gedung. Dengan kreativitas dan perhatian pada detail, kami menciptakan desain yang estetis dan fungsional.",
+          "links": [
+            {
+              "label": "Jasa Desain Interior",
+              "href": "service-interior"
+            },
+            {
+              "label": "Jasa Desain Rumah",
+              "href": "service-house-design"
+            }
+          ]
+        },
+        {
+          "icon": "contractor",
+          "title": "Jasa Kontraktor",
+          "href": "service-contractor",
+          "text": "Inland menyediakan layanan konstruksi, mulai dari pembangunan rumah hingga renovasi gedung. Dengan tim profesional dan material berkualitas tinggi, kami memastikan proyek selesai tepat waktu dan sesuai anggaran.",
+          "links": [
+            {
+              "label": "Jasa Pembangunan Rumah",
+              "href": "service-house-construction"
+            },
+            {
+              "label": "Jasa Renovasi Rumah",
+              "href": "service-renovation"
+            }
+          ]
+        },
+        {
+          "icon": "maintenance",
+          "title": "Jasa Maintenance",
+          "href": "service-maintenance",
+          "text": "Kami menawarkan jasa perawatan gedung, termasuk pembersihan kaca gedung menggunakan metode akses tali yang aman. Layanan ini dirancang untuk menjaga kebersihan dan keamanan bangunan Anda secara berkala.",
+          "links": [
+            {
+              "label": "Jasa Pembersihan Kaca Gedung",
+              "href": "service-glass-cleaning"
+            },
+            {
+              "label": "Jasa Rope Access",
+              "href": "service-rope-access"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "eyebrow": "Keunggulan",
+      "title": "Mengapa Inland?",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "home/interior-ruang-tamu-mewah.jpg",
+      "imageAlt": "Interior ruang tamu mewah dengan lampu kristal hasil desain Inland",
+      "items": [
+        {
+          "title": "Profesional & Berpengalaman",
+          "text": "Tim kami terdiri dari arsitek, kontraktor, dan teknisi berpengalaman yang siap mewujudkan proyek Anda."
+        },
+        {
+          "title": "Pelayanan Terbaik",
+          "text": "Kami mendampingi Anda sejak konsultasi pertama hingga serah terima, dengan komunikasi yang terbuka dan respons yang cepat."
+        },
+        {
+          "title": "Fokus pada Detail",
+          "text": "Setiap tahap dikerjakan dengan teliti, dari pemilihan material hingga finishing, agar hasil akhir rapi dan tahan lama."
+        }
+      ],
+      "cta": {
+        "label": "Lihat Semua Layanan Kami",
+        "href": "services"
+      }
+    },
+    {
+      "type": "gallery-teaser",
+      "eyebrow": "Portofolio",
+      "title": "Hasil Karya Kami",
+      "intro": "Sebagian proyek desain, konstruksi, dan perawatan gedung yang telah kami kerjakan.",
+      "images": [
+        {
+          "image": "gallery/arsitek-01.jpg",
+          "alt": "Desain rumah modern tiga lantai",
+          "caption": "Desain Rumah Modern"
+        },
+        {
+          "image": "home/interior-ruang-tamu-mewah.jpg",
+          "alt": "Interior ruang tamu mewah",
+          "caption": "Desain Interior"
+        },
+        {
+          "image": "kaca/hero-pembersihan-kaca.jpg",
+          "alt": "Pembersihan kaca gedung dengan rope access",
+          "caption": "Pembersihan Kaca Gedung"
+        },
+        {
+          "image": "pembangunan/struktur-bata.jpg",
+          "alt": "Proyek pembangunan rumah",
+          "caption": "Pembangunan Rumah"
+        },
+        {
+          "image": "interior/hero-dapur.jpg",
+          "alt": "Desain dapur putih modern",
+          "caption": "Desain Dapur"
+        },
+        {
+          "image": "gallery/perawatan-02.jpg",
+          "alt": "Tim rope access di fasad gedung",
+          "caption": "Perawatan Gedung"
+        }
+      ],
+      "cta": {
+        "label": "Lihat Galeri",
+        "href": "gallery"
+      }
+    },
+    {
+      "type": "testimonials",
+      "eyebrow": "Testimoni",
+      "title": "Kata Klien Kami",
+      "items": [
+        {
+          "quote": "Inland berhasil mewujudkan rumah impian kami dengan desain yang modern dan elegan. Proses pembangunan berjalan lancar, dan hasilnya melebihi ekspektasi kami.",
+          "name": "Jonathan",
+          "location": "Jakarta"
+        },
+        {
+          "quote": "Kami sangat puas dengan layanan pembersihan kaca gedung dari Inland. Hasilnya sangat profesional dan tepat waktu.",
+          "name": "Martha",
+          "location": "Bandung"
+        }
+      ]
+    },
+    {
+      "type": "latest-posts",
+      "eyebrow": "Artikel",
+      "title": "Wawasan & Tips Terbaru",
+      "limit": 3,
+      "cta": {
+        "label": "Semua Artikel",
+        "href": "articles"
+      }
+    },
+    {
+      "type": "cta",
+      "title": "Mulai Konsultasi Sekarang",
+      "text": "Siap memulai proyek Anda? Klik tombol di bawah ini untuk berkonsultasi langsung dengan tim kami dan dapatkan solusi yang Anda butuhkan.",
+      "button": {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }
