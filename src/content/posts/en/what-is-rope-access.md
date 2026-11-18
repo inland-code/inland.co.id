@@ -63,6 +63,8 @@ Cleaning skyscraper glass, replacing sealant on the 20th floor, or inspecting a 
 
 In Indonesia, work at height is regulated by **[Minister of Manpower Regulation No. 9 of 2016](https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016)** on Occupational Safety and Health for Work at Height. It covers worker competency, planning, work procedures, and equipment. Internationally, associations such as **IRATA** issue rope access technician certifications that are widely recognised by the industry.
 
+Rope access technicians prove their competence with a Kemnaker K3 certificate and licence (the TKPK scheme, Levels 1–3). Training and certification are run by [Rope Access Center](https://ropeaccesscenter.id/en/training/), the rope access training brand of the Inland group.
+
 Key rope access safety principles:
 
 - Always use **two independent ropes**.

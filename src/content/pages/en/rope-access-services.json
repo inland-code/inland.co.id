@@ -133,6 +133,16 @@
     },
     {
       "type": "cta",
+      "title": "Certified Technicians & Kemnaker Training",
+      "text": "Need Kemnaker-certified TKPK/TKBT training for your team, standby rescue, or extra rope access technicians? Talk to Rope Access Center (RAC), the rope access training and services brand of the Inland group.",
+      "button": {
+        "label": "Visit Rope Access Center",
+        "href": "https://ropeaccesscenter.id/en/training/"
+      },
+      "tone": "brand"
+    },
+    {
+      "type": "cta",
       "title": "Need Work Done at Height?",
       "text": "Talk to Inland’s certified rope access team. Free survey and quote.",
       "button": {

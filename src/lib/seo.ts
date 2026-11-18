@@ -21,6 +21,13 @@ export function organizationSchema() {
     email: site.email,
     telephone: site.phoneE164,
     slogan: 'Architect, Build And Maintenance',
+    // Brand pelatihan & jasa rope access dalam grup Inland.
+    subOrganization: {
+      '@type': 'EducationalOrganization',
+      name: 'Rope Access Center',
+      alternateName: 'RAC',
+      url: 'https://ropeaccesscenter.id',
+    },
     address: {
       '@type': 'PostalAddress',
       streetAddress: site.address.street,

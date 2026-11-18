@@ -63,6 +63,8 @@ Membersihkan kaca gedung pencakar langit, mengganti sealant di lantai 20, atau m
 
 Pekerjaan di ketinggian di Indonesia diatur dalam **[Permenaker Nomor 9 Tahun 2016](https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016)** tentang Keselamatan dan Kesehatan Kerja dalam Pekerjaan pada Ketinggian. Regulasi ini mengatur kompetensi tenaga kerja, perencanaan, prosedur kerja, dan peralatan. Di tingkat internasional, asosiasi seperti **IRATA** juga menerbitkan sertifikasi teknisi rope access yang banyak diakui industri.
 
+Kompetensi teknisi akses tali dibuktikan dengan sertifikat dan lisensi K3 dari Kemnaker (skema TKPK Tingkat 1–3). Pelatihan dan sertifikasinya diselenggarakan oleh [Rope Access Center](https://ropeaccesscenter.id/pelatihan/), brand pelatihan rope access dari grup Inland.
+
 Prinsip keselamatan utama rope access:
 
 - Selalu menggunakan **dua tali independen**.
