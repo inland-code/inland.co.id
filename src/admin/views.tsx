@@ -3,15 +3,17 @@ import { parse as parseYaml, stringify as stringifyYaml } from 'yaml';
 import { marked } from 'marked';
 import { pageSchema, postSchema, siteSchema } from '@/content/schema';
 import { api, type FileEntry, type Me, type Message, type Run } from './api';
-import { ObjectFields } from './form';
+import { ObjectFields, TechnicalFields } from './form';
 import { MediaGrid } from './media';
 import { navigate, useStatic, useToast } from './state';
 
 /* ---------------- util ---------------- */
+const PAGE_TECH = ['translationKey', 'slug', 'template', 'slugVerified', 'contentStatus'];
+const POST_TECH = ['translationKey', 'slug', 'slugVerified'];
 const btn = 'inline-flex items-center gap-2 rounded-lg px-4 py-2 text-sm font-semibold transition disabled:opacity-50';
 const btnDark = `${btn} bg-espresso-900 text-white hover:bg-espresso-700`;
 const btnLight = `${btn} bg-white text-espresso-900 ring-1 ring-black/15 hover:bg-brand-50`;
-const card = 'rounded-2xl bg-white p-6 shadow-sm ring-1 ring-black/5';
+const card = 'min-w-0 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-black/5 sm:p-6';
 const today = () => new Date().toISOString().slice(0, 10);
 const publicPath = (locale: string, slug: string) => `${locale === 'en' ? '/en' : ''}/${slug ? `${slug}/` : ''}`;
 const fileLocale = (path: string) => path.split('/')[3] ?? 'id';
@@ -88,7 +90,7 @@ export function Overview({ me }: { me: Me }) {
           {runs.loading ? <Loading /> : runs.error ? <ErrorBox text={runs.error} /> : (
             <ul class="mt-3 divide-y divide-black/5 text-sm">
               {(runs.data ?? []).map((r) => (
-                <li class="flex items-center justify-between gap-3 py-2">
+                <li class="flex flex-col gap-1 py-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                   <span class="min-w-0 truncate">{r.head_commit || `Run #${r.id}`}</span>
                   <span class="flex shrink-0 items-center gap-3 text-xs text-muted">
                     {new Date(r.created_at).toLocaleString('id-ID')}
@@ -98,7 +100,7 @@ export function Overview({ me }: { me: Me }) {
               ))}
             </ul>
           )}
-          <p class="mt-3 text-xs text-muted">Setiap penyimpanan membuat commit ke <code>{me.repo}</code> ({me.branch}); situs diperbarui otomatis setelah build berhasil (±1–3 menit).</p>
+          <p class="mt-3 text-xs break-words text-muted">Setiap penyimpanan membuat commit ke <code class="break-all">{me.repo}</code> ({me.branch}); situs diperbarui otomatis setelah build berhasil (±1–3 menit).</p>
         </div>
       </div>
       <div class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -188,10 +190,11 @@ export function PageEditor({ path }: { path: string }) {
         <a class={btnLight} href={publicPath(loc, String(data.slug ?? ''))} target="_blank" rel="noopener">Lihat di situs ↗</a>
         <button class={btnDark} disabled={saving || !st.dirty || !parsed?.success} onClick={save}>{saving ? 'Menyimpan…' : st.dirty ? 'Simpan & terbitkan' : 'Tersimpan'}</button>
       </Header>
-      <p class="mb-4 text-xs text-muted">{path} · {loc.toUpperCase()}</p>
+      <p class="mb-4 text-xs break-all text-muted">{path} · {loc.toUpperCase()}</p>
       {parsed && !parsed.success && <div class="mb-4"><Issues issues={parsed.error.issues} /></div>}
       <div class={card}>
-        <ObjectFields schema={statics.page} value={data} onChange={(v) => set((s) => ({ ...s, data: v as Record<string, unknown>, dirty: true }))} hide={['updatedAt']} />
+        <ObjectFields schema={statics.page} value={data} onChange={(v) => set((s) => ({ ...s, data: v as Record<string, unknown>, dirty: true }))} hide={['updatedAt', ...PAGE_TECH]} />
+        <TechnicalFields schema={statics.page} value={data} onChange={(v) => set((s) => ({ ...s, data: v as Record<string, unknown>, dirty: true }))} keys={PAGE_TECH} />
       </div>
     </>
   );
@@ -324,7 +327,8 @@ export function PostEditor({ path }: { path: string }) {
           <p class="mt-2 text-xs text-muted">Gunakan ## untuk subjudul (otomatis masuk Daftar Isi), **tebal**, *miring*, [tautan](/jasa-arsitek/).</p>
         </div>
         <div class={`${card} xl:col-span-2`}>
-          <ObjectFields schema={statics.post} value={fm} onChange={(v) => update({ fm: v as Record<string, unknown>, body })} hide={['contentPending']} />
+          <ObjectFields schema={statics.post} value={fm} onChange={(v) => update({ fm: v as Record<string, unknown>, body })} hide={['contentPending', ...POST_TECH]} />
+          <TechnicalFields schema={statics.post} value={fm} onChange={(v) => update({ fm: v as Record<string, unknown>, body })} keys={POST_TECH} />
         </div>
       </div>
     </>

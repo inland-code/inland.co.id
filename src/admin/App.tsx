@@ -70,7 +70,7 @@ export default function App() {
   return (
     <StaticCtx.Provider value={schema}>
       <ToastCtx.Provider value={toast}>
-        <div class="min-h-dvh bg-surface-alt lg:grid lg:grid-cols-[15rem_1fr]">
+        <div class="min-h-dvh bg-surface-alt lg:grid lg:grid-cols-[15rem_minmax(0,1fr)]">
           <aside class="bg-espresso-950 text-white/80 lg:sticky lg:top-0 lg:h-dvh">
             <div class="flex items-center justify-between px-5 py-5 lg:block">
               <p class="text-lg font-bold text-white">Inland <span class="text-brand-400">Dashboard</span></p>
@@ -84,7 +84,7 @@ export default function App() {
               <a href="/api/auth/logout" class="block shrink-0 rounded-lg px-3 py-2 text-sm text-white/60 hover:bg-white/10">Keluar</a>
             </nav>
           </aside>
-          <main class="mx-auto w-full max-w-6xl p-5 sm:p-8">{view}</main>
+          <main class="mx-auto w-full max-w-6xl min-w-0 overflow-x-hidden p-4 sm:p-8">{view}</main>
         </div>
         <div class="fixed right-4 bottom-4 z-50 space-y-2" aria-live="polite">
           {toasts.map((t) => (

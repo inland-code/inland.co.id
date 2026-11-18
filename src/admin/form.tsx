@@ -153,12 +153,12 @@ export function Field({ schema, value, onChange, name, required = true }: { sche
   );
 }
 
-export function ObjectFields({ schema, value, onChange, hide = [] }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange; hide?: string[] }) {
+export function ObjectFields({ schema, value, onChange, hide = [], only }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange; hide?: string[]; only?: string[] }) {
   const req = new Set(schema.required ?? []);
   return (
     <div class="space-y-4">
       {Object.entries(schema.properties ?? {})
-        .filter(([k]) => !hide.includes(k))
+        .filter(([k]) => !hide.includes(k) && (!only || only.includes(k)))
         .map(([k, s]) => (
           <Field
             key={k}
@@ -245,4 +245,17 @@ function AddItem({ schema, onAdd, label: l }: { schema: JsonSchema; onAdd: (v: V
 function UnionField({ schema, value, onChange }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange }) {
   const v = variants(schema)!.find((x) => typeName(x) === value?.type) ?? variants(schema)![0]!;
   return <ObjectFields schema={v} value={value} onChange={onChange} hide={['type']} />;
+}
+
+/** Kolom teknis (slug, kunci terjemahan, dll.) dilipat agar tidak terubah tanpa sengaja. */
+export function TechnicalFields({ schema, value, onChange, keys }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange; keys: string[] }) {
+  return (
+    <details class="mt-6 rounded-xl border border-amber-200 bg-amber-50/60 p-4">
+      <summary class="cursor-pointer text-sm font-semibold text-amber-900">Pengaturan teknis (jangan diubah tanpa perlu)</summary>
+      <p class="mt-2 text-xs text-amber-900/80">Mengubah slug akan mengubah alamat URL halaman dan bisa merusak SEO. Kunci terjemahan menghubungkan versi ID &amp; EN.</p>
+      <div class="mt-4">
+        <ObjectFields schema={schema} value={value} onChange={onChange} only={keys} />
+      </div>
+    </details>
+  );
 }
