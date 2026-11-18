@@ -134,6 +134,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Which house styles can Inland design?",
+          "a": "Minimalist, modern, classic, tropical, or a blend, tailored to your wishes and your plot."
+        },
+        {
+          "q": "What do I receive from the house design service?",
+          "a": "Design concept, floor plans, elevations, 3D exterior and interior visuals, and detailed working drawings ready for construction."
+        },
+        {
+          "q": "Can Inland also build the house?",
+          "a": "Yes. Inland also provides contractor services, so the same team can take your design straight into construction."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Ready to Design Your Dream Home?",
       "text": "Start your journey with Inland. We will help you design a home that is beautiful, functional, and right for you.",

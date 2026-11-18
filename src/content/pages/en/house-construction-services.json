@@ -130,6 +130,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Does Inland build homes from scratch?",
+          "a": "Yes. We handle everything from site preparation, foundations, structure, and roofing to finishing and handover."
+        },
+        {
+          "q": "How do I get a cost estimate?",
+          "a": "After a consultation and site survey, we prepare a detailed, transparent cost plan before work begins."
+        },
+        {
+          "q": "Which areas do you serve?",
+          "a": "Jakarta, Bogor, Depok, Tangerang, South Tangerang, and Bekasi."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Ready to Build Your Dream Home?",
       "text": "With Inland, building your home is simple, transparent, and high quality. Contact us today to get started.",

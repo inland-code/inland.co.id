@@ -72,3 +72,25 @@ export function graph(...nodes: object[]) {
 }
 
 export { ORG_ID, WEBSITE_ID };
+
+export function faqSchema(items: { q: string; a: string }[]) {
+  return {
+    '@type': 'FAQPage',
+    mainEntity: items.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  };
+}
+
+export function serviceSchema(opts: { name: string; description: string; path: string; image?: string; locale: Locale }) {
+  return {
+    '@type': 'Service',
+    '@id': `${absoluteUrl(opts.path)}#service`,
+    name: opts.name,
+    serviceType: opts.name,
+    description: opts.description,
+    url: absoluteUrl(opts.path),
+    ...(opts.image ? { image: opts.image } : {}),
+    inLanguage: opts.locale === 'id' ? 'id-ID' : 'en',
+    provider: { '@id': ORG_ID },
+    areaServed: site.areaServed.map((name) => ({ '@type': 'City', name })),
+  };
+}

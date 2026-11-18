@@ -11,6 +11,11 @@ category: layanan
 image: articles/sealant-kaca-gedung-tinggi.jpg
 imageAlt: Teknisi Inland memasang sealant kaca gedung tinggi dengan rope access
 publishedAt: 2024-10-10
+faq:
+  - q: Apakah rope access aman untuk gedung tinggi?
+    a: Ya, metode rope access yang kami gunakan sudah teruji aman dan efisien, memungkinkan tim kami menjangkau area yang sulit tanpa memerlukan perancah.
+  - q: Berapa lama sealant kaca dapat bertahan?
+    a: Sealant berkualitas yang dipasang oleh tim Inland dapat bertahan antara 5 hingga 30 tahun, tergantung pada kondisi lingkungan dan jenis sealant yang digunakan.
 ---
 
 Temukan jasa sealant kaca gedung terbaik dengan Inland. Kami menawarkan solusi profesional untuk perbaikan dan pemasangan sealant kaca gedung tinggi dengan metode rope access, memastikan perlindungan dari kebocoran dan cuaca ekstrem. Hubungi kami untuk konsultasi gratis sekarang!

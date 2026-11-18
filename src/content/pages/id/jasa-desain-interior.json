@@ -129,6 +129,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apa saja yang termasuk dalam jasa desain interior Inland?",
+          "a": "Konsultasi desain, konsep dan moodboard, visualisasi 3D, gambar kerja, rekomendasi material, pengadaan furnitur dan dekorasi, hingga pengawasan pelaksanaan."
+        },
+        {
+          "q": "Apakah saya bisa melihat hasil desain sebelum dikerjakan?",
+          "a": "Bisa. Kami menyiapkan visualisasi 3D sehingga Anda dapat melihat dan merevisi desain sebelum pengerjaan dimulai."
+        },
+        {
+          "q": "Ruang apa saja yang bisa didesain?",
+          "a": "Rumah tinggal, apartemen, kantor, dan ruang komersial seperti toko, kafe, dan restoran."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Konsultasi Desain Interior Sekarang",
       "text": "Ingin mewujudkan ruang impian Anda? Mulai perjalanan Anda bersama kami. Hubungi tim Inland untuk mendapatkan konsultasi desain interior yang kustom dan berkualitas.",

@@ -129,6 +129,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What does Inland’s interior design service include?",
+          "a": "Design consultation, concept and moodboards, 3D visualisation, working drawings, material recommendations, furniture and décor procurement, and on-site supervision."
+        },
+        {
+          "q": "Can I see the design before work starts?",
+          "a": "Yes. We prepare 3D visuals so you can review and revise the design before any work begins."
+        },
+        {
+          "q": "Which spaces do you design?",
+          "a": "Homes, apartments, offices, and commercial spaces such as shops, cafés, and restaurants."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Book an Interior Design Consultation",
       "text": "Ready to create your dream space? Contact the Inland team for a tailored, high-quality interior design consultation.",

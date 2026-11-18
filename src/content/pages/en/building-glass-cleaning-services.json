@@ -113,6 +113,25 @@
       "text": "We understand the importance of safety when working at height. Inland applies the highest safety standards on every building cleaning project. Our technicians are fully equipped with protective gear and follow strict safety procedures to protect themselves and everyone around them."
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "Is rope access safe?",
+          "a": "Yes. Work is carried out by certified technicians using twin-rope systems, standard safety equipment, and strict procedures."
+        },
+        {
+          "q": "Will cleaning disrupt building activity?",
+          "a": "No. We schedule the work with building management so normal activity can continue."
+        },
+        {
+          "q": "Which buildings can you clean?",
+          "a": "Offices, apartments, hotels, hospitals, and commercial buildings with glass, ACP, or granite facades."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "A Cleaner, More Professional Building with Inland",
       "text": "Regular cleaning protects your building’s appearance and value. Contact us for a free consultation and our best quote for safe, efficient rope access cleaning.",

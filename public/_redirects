@@ -1,6 +1,6 @@
 # URL warisan WordPress -> padanan baru (301 permanen, menjaga SEO).
-/feed/              /artikel/          301
-/feed               /artikel/          301
+/feed/              /feed.xml          301
+/feed               /feed.xml          301
 /comments/feed/     /artikel/          301
 /category/*         /artikel/          301
 /tag/*              /artikel/          301

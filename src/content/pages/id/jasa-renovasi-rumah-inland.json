@@ -134,6 +134,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Renovasi apa saja yang dikerjakan Inland?",
+          "a": "Renovasi interior, fasad, dapur dan kamar mandi, penambahan ruang atau lantai, perbaikan struktur, hingga restorasi rumah lama."
+        },
+        {
+          "q": "Apakah rumah tetap bisa ditinggali selama renovasi?",
+          "a": "Tergantung lingkup pekerjaan. Kami akan mengatur jadwal dan area kerja agar gangguan seminimal mungkin."
+        },
+        {
+          "q": "Apakah ada survei sebelum renovasi?",
+          "a": "Ya. Tim kami melakukan survei lokasi untuk menilai kondisi bangunan sebelum menyusun rencana dan anggaran."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Renovasi Rumah Impian Anda Dimulai di Sini",
       "text": "Apakah Anda siap mengubah rumah Anda menjadi lebih baik? Inland memiliki tim profesional yang berpengalaman untuk membantu mewujudkan renovasi sesuai dengan visi Anda. Hubungi kami sekarang untuk mendapatkan konsultasi dan rencana renovasi yang sesuai dengan anggaran dan kebutuhan Anda.",

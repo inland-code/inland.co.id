@@ -14,6 +14,7 @@ import ServiceDetail from './ServiceDetail.astro';
 import Banner from './Banner.astro';
 import Gallery from './Gallery.astro';
 import Contact from './Contact.astro';
+import Faq from './Faq.astro';
 
 interface Props { sections: Section[]; locale: Locale }
 const { sections, locale } = Astro.props;
@@ -33,5 +34,6 @@ const { sections, locale } = Astro.props;
     case 'banner': return <Banner {...s} locale={locale} />;
     case 'gallery': return <Gallery {...s} />;
     case 'contact': return <Contact {...s} locale={locale} />;
+    case 'faq': return <Faq {...s} index={i} />;
   }
 })}

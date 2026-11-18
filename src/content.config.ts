@@ -134,6 +134,11 @@ export const sectionSchema = z.discriminatedUnion('type', [
     cta: link.optional(),
   }),
   z.object({
+    type: z.literal('faq'),
+    ...sectionHeading,
+    items: z.array(z.object({ q: z.string(), a: z.string() })).min(1),
+  }),
+  z.object({
     type: z.literal('cta'),
     title: z.string(),
     text: z.string(),
@@ -182,6 +187,8 @@ const posts = defineCollection({
     updatedAt: z.coerce.date().optional(),
     author: z.string().default('Tim Inland'),
     draft: z.boolean().default(false),
+    /** FAQ di akhir artikel → FAQPage JSON-LD. */
+    faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     /** Konten masih placeholder — isi lengkap diambil ulang di Fase 3. */
     contentPending: z.boolean().default(false),
   }),

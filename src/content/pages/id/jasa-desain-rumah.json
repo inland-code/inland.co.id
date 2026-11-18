@@ -134,6 +134,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Gaya rumah apa saja yang bisa didesain Inland?",
+          "a": "Minimalis, modern, klasik, tropis, maupun perpaduannya, disesuaikan dengan keinginan dan kondisi lahan Anda."
+        },
+        {
+          "q": "Apa saja hasil yang saya terima dari jasa desain rumah?",
+          "a": "Konsep desain, denah, tampak, visualisasi 3D eksterior dan interior, serta gambar kerja detail yang siap digunakan untuk pembangunan."
+        },
+        {
+          "q": "Apakah Inland juga bisa membangun rumah dari desain tersebut?",
+          "a": "Bisa. Inland menyediakan jasa kontraktor sehingga desain dapat langsung dilanjutkan ke tahap pembangunan oleh tim yang sama."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Siap Mewujudkan Rumah Impian Anda?",
       "text": "Mulailah perjalanan Anda bersama kami di Inland. Kami siap membantu Anda merancang rumah impian yang indah, fungsional, dan sesuai dengan kebutuhan Anda. Hubungi kami untuk konsultasi desain rumah yang personal dan berkualitas.",

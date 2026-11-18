@@ -134,6 +134,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What kinds of renovation does Inland handle?",
+          "a": "Interiors, facades, kitchens and bathrooms, extensions or added storeys, structural repair, and restoration of older homes."
+        },
+        {
+          "q": "Can I stay at home during the renovation?",
+          "a": "It depends on the scope. We plan the schedule and work areas to keep disruption to a minimum."
+        },
+        {
+          "q": "Do you survey before renovating?",
+          "a": "Yes. Our team surveys the site to assess the building before preparing the plan and budget."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Your Dream Renovation Starts Here",
       "text": "Ready to transform your home? Inland’s experienced team will help you renovate to your vision, budget, and needs.",

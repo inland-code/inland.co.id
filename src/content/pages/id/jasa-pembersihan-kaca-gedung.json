@@ -135,6 +135,25 @@
       "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Inland menerapkan standar keselamatan tertinggi dalam setiap proyek pembersihan gedung yang kami lakukan. Teknisi kami dibekali dengan peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat untuk memastikan keselamatan mereka dan lingkungan di sekitarnya."
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apakah metode rope access aman?",
+          "a": "Ya. Pekerjaan dilakukan oleh teknisi bersertifikat dengan sistem tali ganda dan peralatan keselamatan standar, serta prosedur kerja yang ketat."
+        },
+        {
+          "q": "Apakah pembersihan mengganggu aktivitas gedung?",
+          "a": "Tidak. Jadwal pembersihan disusun bersama pengelola gedung agar aktivitas tetap berjalan normal."
+        },
+        {
+          "q": "Gedung seperti apa yang bisa dibersihkan?",
+          "a": "Perkantoran, apartemen, hotel, rumah sakit, dan gedung komersial dengan fasad kaca, ACP, maupun granit."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Gedung Anda Terlihat Lebih Bersih dan Profesional dengan Inland",
       "text": "Pembersihan gedung yang rutin akan menjaga tampilan dan nilai properti Anda. Inland siap membantu Anda dengan layanan pembersihan gedung berkualitas tinggi menggunakan metode akses tali yang aman dan efisien. Hubungi kami sekarang untuk mendapatkan konsultasi gratis dan penawaran harga terbaik.",

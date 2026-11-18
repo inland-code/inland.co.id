@@ -113,6 +113,25 @@
       "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Inland menerapkan standar keselamatan tertinggi dalam setiap proyek pembersihan gedung yang kami lakukan. Teknisi kami dibekali dengan peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat untuk memastikan keselamatan mereka dan lingkungan di sekitarnya."
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apa itu rope access?",
+          "a": "Rope access adalah metode kerja di ketinggian menggunakan sistem tali ganda, sehingga teknisi dapat menjangkau fasad gedung tanpa scaffolding atau gondola."
+        },
+        {
+          "q": "Pekerjaan apa saja yang bisa dilakukan dengan rope access?",
+          "a": "Pembersihan kaca dan fasad, pemasangan dan perbaikan sealant kaca, pengecatan, serta inspeksi dan perbaikan fasad."
+        },
+        {
+          "q": "Apakah lebih hemat dibanding scaffolding?",
+          "a": "Umumnya ya, karena tidak memerlukan pemasangan dan pembongkaran scaffolding sehingga waktu dan biaya lebih efisien."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Butuh Pekerjaan di Ketinggian?",
       "text": "Konsultasikan kebutuhan gedung Anda dengan tim rope access bersertifikat Inland. Survei dan penawaran harga gratis.",

@@ -113,6 +113,25 @@
       "text": "We understand the importance of safety when working at height. Inland applies the highest safety standards on every building cleaning project. Our technicians are fully equipped with protective gear and follow strict safety procedures to protect themselves and everyone around them."
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Frequently Asked Questions",
+      "items": [
+        {
+          "q": "What is rope access?",
+          "a": "Rope access is a method of working at height using twin-rope systems, letting technicians reach building facades without scaffolding or gondolas."
+        },
+        {
+          "q": "What work can be done with rope access?",
+          "a": "Glass and facade cleaning, glass sealant installation and repair, painting, and facade inspection and repair."
+        },
+        {
+          "q": "Is it cheaper than scaffolding?",
+          "a": "Usually, yes — there is no scaffolding to erect and dismantle, saving time and cost."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Need Work Done at Height?",
       "text": "Talk to Inland’s certified rope access team. Free survey and quote.",

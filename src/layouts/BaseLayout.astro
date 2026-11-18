@@ -71,6 +71,7 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
 
     <link rel="alternate" type="text/plain" title="LLMs" href="/llms.txt" />
     <link rel="sitemap" type="application/xml" href="/sitemap_index.xml" />
+    <link rel="alternate" type="application/rss+xml" title="Inland — Artikel" href="/feed.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(structured)} />
 
     <!-- Prefetch/prerender halaman internal saat hover (Speculation Rules, tanpa JS tambahan). -->

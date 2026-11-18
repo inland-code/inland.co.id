@@ -130,6 +130,25 @@
       ]
     },
     {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan yang Sering Diajukan",
+      "items": [
+        {
+          "q": "Apakah Inland melayani pembangunan rumah dari nol?",
+          "a": "Ya. Kami menangani pembangunan dari persiapan lahan, fondasi, struktur, atap, hingga finishing dan serah terima."
+        },
+        {
+          "q": "Bagaimana cara mengetahui estimasi biaya pembangunan?",
+          "a": "Setelah konsultasi dan survei, kami menyusun rencana anggaran biaya (RAB) yang rinci dan transparan sebelum pekerjaan dimulai."
+        },
+        {
+          "q": "Di area mana saja Inland melayani pembangunan rumah?",
+          "a": "Jakarta, Bogor, Depok, Tangerang, Tangerang Selatan, dan Bekasi."
+        }
+      ]
+    },
+    {
       "type": "cta",
       "title": "Siap Membangun Rumah Impian Anda?",
       "text": "Bersama Inland, Anda dapat mewujudkan rumah impian dengan proses yang mudah, transparan, dan berkualitas. Hubungi kami sekarang untuk memulai perjalanan Anda membangun rumah yang sesuai dengan visi dan kebutuhan Anda.",
