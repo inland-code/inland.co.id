@@ -1,6 +1,6 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 7 selesai (menunggu setup akun)** · Terakhir diperbarui: 2026-11-18
+Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir diperbarui: 2026-11-18
 
 ## Keputusan yang sudah diambil
 
@@ -79,8 +79,8 @@ Identitas & warna tetap, tampilan dimodernkan:
 ### Fase 3 — Pembangunan halaman ✅
 - ✅ 35 halaman ID + 15 halaman EN dengan section lengkap; 5 artikel (2 artikel sealant lengkap, 3 lainnya masih ringkasan).
 - ✅ Formulir kontak: Worker `/api/contact` → D1 → WhatsApp. **Butuh** `wrangler d1 create inland-db` + migrasi saat deploy.
-- ⏳ Artikel EN belum ada (halaman `/en/articles/` menampilkan artikel ID).
-- ⏳ 3 artikel (arsitektur kuno, sejarah arsitektur, konstruksi) baru berisi ringkasan — isi lengkap belum ada di screenshot.
+- ✅ Artikel EN tersedia (Fase 8).
+- ✅ 3 artikel (arsitektur kuno, sejarah arsitektur, konstruksi) ditulis lengkap di Fase 8 (isi asli tidak ada di screenshot — mohon direview).
 - Beranda, Tentang Kami, Layanan Kami, Kontak, Artikel (list + detail), Galeri.
 - Layanan: Desain Interior, Desain Rumah, Pembangunan Rumah, Renovasi Rumah, Pembersihan Kaca Gedung, halaman Sealant.
 - Accordion `<details>` native (tanpa JS), carousel CSS scroll-snap (tanpa library).
@@ -129,7 +129,9 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Pengaturan global: NAP, WhatsApp, sosial media, menu, redirect manager.
 - Draft (branch) → URL preview → Publish.
 
-### Fase 8 — Terjemahan Bahasa Inggris
+### Fase 8 — Terjemahan Bahasa Inggris ✅
+- ✅ 15 halaman EN (Fase 3) + 5 artikel EN dengan slug terjemahan, hreflang ID↔EN, FAQPage schema, label kategori per bahasa.
+- ✅ 3 artikel ID yang sebelumnya ringkasan kini berisi teks lengkap + FAQ.
 - Draf terjemahan EN semua halaman + slug terjemahan; review di dashboard.
 
 ### Fase 9 — QA & peluncuran

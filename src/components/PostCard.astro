@@ -17,12 +17,18 @@ interface Props {
 }
 const { locale, href, title, excerpt, image, imageAlt, category, date, headingLevel = 3 } = Astro.props;
 const Heading = headingLevel === 2 ? 'h2' : 'h3';
+const categoryLabel: Record<string, { id: string; en: string }> = {
+  layanan: { id: 'Layanan', en: 'Services' },
+  arsitektur: { id: 'Arsitektur', en: 'Architecture' },
+  konstruksi: { id: 'Konstruksi', en: 'Construction' },
+  maintenance: { id: 'Maintenance', en: 'Maintenance' },
+};
 const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
 ---
 <article class="group flex flex-col overflow-hidden rounded-card bg-white shadow-card ring-1 ring-black/5 transition hover:-translate-y-1">
   <a href={href} class="relative block aspect-[16/10] overflow-hidden" tabindex="-1" aria-hidden="true">
     <Image src={imageFor(image)} alt={imageAlt} width={640} sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw" class="size-full object-cover transition duration-500 group-hover:scale-105" />
-    <span class="absolute top-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wide text-brand-700 uppercase">{category}</span>
+    <span class="absolute top-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold tracking-wide text-brand-700 uppercase">{categoryLabel[category]?.[locale] ?? category}</span>
   </a>
   <div class="flex flex-1 flex-col p-5">
     <Heading class="text-lg leading-snug font-semibold text-espresso-900">
