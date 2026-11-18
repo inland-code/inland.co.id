@@ -134,10 +134,46 @@
       ]
     },
     {
+      "type": "table",
+      "title": "Faktor yang Menentukan Biaya Renovasi",
+      "columns": [
+        "Faktor",
+        "Pengaruh terhadap biaya"
+      ],
+      "rows": [
+        [
+          "Luas dan lingkup pekerjaan",
+          "Renovasi satu ruangan jauh berbeda dengan renovasi total atau tambah lantai"
+        ],
+        [
+          "Kondisi bangunan lama",
+          "Retak, rembes, atau struktur lemah perlu diperbaiki lebih dulu"
+        ],
+        [
+          "Spesifikasi material",
+          "Keramik, sanitair, kusen, dan cat punya rentang harga yang lebar"
+        ],
+        [
+          "Perubahan struktur / tambah lantai",
+          "Butuh perhitungan struktur dan umumnya perizinan (PBG)"
+        ],
+        [
+          "Akses lokasi dan aturan lingkungan",
+          "Jalan sempit atau aturan cluster memengaruhi jadwal dan biaya angkut"
+        ]
+      ],
+      "note": "Inland menyusun Rencana Anggaran Biaya (RAB) rinci setelah survei, sehingga Anda tahu biaya setiap pekerjaan sebelum renovasi dimulai.",
+      "eyebrow": "Biaya"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Pertanyaan yang Sering Diajukan",
       "items": [
+        {
+          "q": "Berapa biaya renovasi rumah?",
+          "a": "Biaya sangat bergantung pada luas, lingkup, kondisi bangunan, dan material. Setelah survei, Inland memberikan RAB rinci per item pekerjaan sehingga Anda bisa menyesuaikan dengan anggaran."
+        },
         {
           "q": "Renovasi apa saja yang dikerjakan Inland?",
           "a": "Renovasi interior, fasad, dapur dan kamar mandi, penambahan ruang atau lantai, perbaikan struktur, hingga restorasi rumah lama."

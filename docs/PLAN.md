@@ -138,3 +138,10 @@ Identitas & warna tetap, tampilan dimodernkan:
 1. Staging: verifikasi 100% URL, Lighthouse, Rich Results Test, uji multi-perangkat.
 2. Cutover: salin semua DNS record (**termasuk MX email**), pasang custom domain, hapus `noindex`.
 3. Pasca-live: submit sitemap ke Google Search Console & Bing (IndexNow), pantau 404 selama 2–4 minggu.
+
+## Pengembangan konten kompetitif (setelah Fase 8)
+- ✅ Riset kompetitor 5 kata kunci (renovasi Jakarta, pembersihan kaca rope access, sealant kaca, desain interior, bangun rumah Tangsel).
+- ✅ Tabel estimasi biaya (kisaran **pasar** Jabodetabek 2026, bukan penawaran Inland) + FAQ harga di: pembersihan kaca (2 halaman), pembangunan rumah, desain interior (ID & EN); tabel faktor biaya di renovasi.
+- ✅ 7 halaman kota: daftar wilayah/kecamatan, pertimbangan lokal unik per kota, FAQ lokal.
+- ✅ Gambar OG bermerek, CSP dengan hash, Turnstile opsional, redirect media WordPress lama.
+- ⏳ Perlu data pemilik: harga Inland sendiri, garansi, sertifikasi (K3/IRATA), legalitas, foto proyek asli, angka statistik.

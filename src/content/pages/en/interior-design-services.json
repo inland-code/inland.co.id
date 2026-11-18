@@ -129,10 +129,42 @@
       ]
     },
     {
+      "type": "table",
+      "title": "Interior Design Cost Guide",
+      "columns": [
+        "Pricing model",
+        "Market range*",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Design fee per m²",
+          "IDR 150,000 – 1,000,000 / m²",
+          "Depends on complexity and level of luxury"
+        ],
+        [
+          "Percentage of build budget",
+          "5% – 8% of budget",
+          "HDII fee guideline, common for larger projects"
+        ],
+        [
+          "Design + build (turnkey)",
+          "From approx. IDR 2.5 million / m²",
+          "Includes custom furniture and installation"
+        ]
+      ],
+      "note": "*General Greater Jakarta market ranges for 2026 compiled from various providers — not an official Inland quote. Exact pricing follows a site survey.",
+      "eyebrow": "Cost"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Frequently Asked Questions",
       "items": [
+        {
+          "q": "How much does interior design cost?",
+          "a": "As a market guide, design fees are around IDR 150,000–1,000,000 per m² or 5–8% of the project budget, while design-and-build packages start around IDR 2.5 million per m². Inland tailors the package to your needs and budget."
+        },
         {
           "q": "What does Inland’s interior design service include?",
           "a": "Design consultation, concept and moodboards, 3D visualisation, working drawings, material recommendations, furniture and décor procurement, and on-site supervision."

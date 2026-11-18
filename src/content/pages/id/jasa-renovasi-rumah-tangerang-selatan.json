@@ -55,6 +55,22 @@
       ]
     },
     {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Tangerang Selatan",
+      "intro": "Kantor Inland berada di Pamulang, sehingga survei di Tangerang Selatan bisa dijadwalkan dengan cepat.",
+      "areas": [
+        "Pamulang",
+        "Ciputat",
+        "Ciputat Timur",
+        "Pondok Aren",
+        "Serpong",
+        "Serpong Utara",
+        "Setu"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
+    },
+    {
       "type": "service-cards",
       "title": "Lingkup Pekerjaan",
       "items": [
@@ -82,10 +98,37 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Tangerang Selatan",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi rumah di Tangerang Selatan",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Dekat dengan kantor kami",
+          "text": "Kantor Inland di Pamulang memudahkan survei, pengawasan, dan respons cepat selama renovasi di Tangerang Selatan."
+        },
+        {
+          "title": "Kawasan perumahan besar",
+          "text": "Kawasan seperti BSD, Bintaro, dan Alam Sutera umumnya mewajibkan izin renovasi dan mengatur jam kerja. Kami mengurus koordinasinya dengan pengelola."
+        },
+        {
+          "title": "Rumah lama perlu peremajaan",
+          "text": "Banyak rumah lama di Pamulang dan Ciputat membutuhkan perbaikan atap, struktur, dan instalasi listrik/air. Kami memeriksa kondisinya sebelum renovasi."
+        },
+        {
+          "title": "Tambah lantai dan ruang",
+          "text": "Kebutuhan keluarga yang bertambah sering diatasi dengan menambah lantai atau ruang. Kami menghitung struktur agar aman."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
-      "image": "pembangunan/progres-dinding.jpg",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
       "numbered": true,
       "items": [
@@ -104,6 +147,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Tangerang Selatan",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Tangerang Selatan?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Tangerang Selatan dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Di mana lokasi kantor Inland?",
+          "a": "Kantor kami di Jl. Kelor II No 31, Pd. Cabe Ilir, Pamulang, Tangerang Selatan. Lokasi ini memudahkan kami melayani seluruh Tangerang Selatan dengan cepat."
         }
       ]
     },

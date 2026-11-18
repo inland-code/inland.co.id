@@ -113,10 +113,46 @@
       "text": "We understand the importance of safety when working at height. Inland applies the highest safety standards on every building cleaning project. Our technicians are fully equipped with protective gear and follow strict safety procedures to protect themselves and everyone around them."
     },
     {
+      "type": "table",
+      "title": "Building Glass Cleaning Cost Guide",
+      "columns": [
+        "Type of work",
+        "Market range*",
+        "Notes"
+      ],
+      "rows": [
+        [
+          "Routine glass cleaning (rope access)",
+          "IDR 15,000 – 25,000 / m²",
+          "Approx. 5–20 storeys, light–moderate dirt"
+        ],
+        [
+          "High-rise / difficult access",
+          "IDR 25,000 – 50,000 / m²",
+          "Extreme height, stepped or curved facades"
+        ],
+        [
+          "Mould / heavy scale on glass",
+          "IDR 50,000 – 80,000 / m²",
+          "Special chemicals and repeated passes"
+        ]
+      ],
+      "note": "*General Greater Jakarta market ranges for 2026 compiled from various providers — not an official Inland quote. Exact pricing follows a site survey. Cost drivers: glass area, level of dirt, height, facade shape, and schedule.",
+      "eyebrow": "Cost"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Frequently Asked Questions",
       "items": [
+        {
+          "q": "How much does building glass cleaning cost per m²?",
+          "a": "As a guide, Greater Jakarta market rates are typically IDR 15,000–50,000 per m², higher for mould-stained glass. Inland quotes an exact price after surveying the area, glass condition, and building height."
+        },
+        {
+          "q": "How often should building glass be cleaned?",
+          "a": "Usually every 3–6 months; buildings near main roads, industrial areas, or the coast often need more frequent cleaning."
+        },
         {
           "q": "Is rope access safe?",
           "a": "Yes. Work is carried out by certified technicians using twin-rope systems, standard safety equipment, and strict procedures."

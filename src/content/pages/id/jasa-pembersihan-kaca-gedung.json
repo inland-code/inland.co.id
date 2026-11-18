@@ -135,10 +135,46 @@
       "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Inland menerapkan standar keselamatan tertinggi dalam setiap proyek pembersihan gedung yang kami lakukan. Teknisi kami dibekali dengan peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat untuk memastikan keselamatan mereka dan lingkungan di sekitarnya."
     },
     {
+      "type": "table",
+      "title": "Estimasi Biaya Pembersihan Kaca Gedung",
+      "columns": [
+        "Jenis pekerjaan",
+        "Kisaran harga pasar*",
+        "Keterangan"
+      ],
+      "rows": [
+        [
+          "Pembersihan kaca rutin (rope access)",
+          "Rp15.000 – Rp25.000 / m²",
+          "Gedung ±5–20 lantai, kotoran ringan–sedang"
+        ],
+        [
+          "Gedung tinggi / akses sulit",
+          "Rp25.000 – Rp50.000 / m²",
+          "Ketinggian ekstrem, fasad bertingkat atau berlekuk"
+        ],
+        [
+          "Kaca berjamur / berkerak",
+          "Rp50.000 – Rp80.000 / m²",
+          "Butuh bahan khusus dan pengerjaan berulang"
+        ]
+      ],
+      "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi. Faktor penentu: total luas kaca, tingkat kotoran, ketinggian, bentuk fasad, dan jadwal kerja.",
+      "eyebrow": "Biaya"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Pertanyaan yang Sering Diajukan",
       "items": [
+        {
+          "q": "Berapa biaya pembersihan kaca gedung per m²?",
+          "a": "Sebagai gambaran, harga pasar di Jabodetabek umumnya Rp15.000–Rp50.000 per m², dan bisa lebih tinggi untuk kaca berjamur. Inland memberikan harga pasti setelah survei luas, kondisi kaca, dan ketinggian gedung."
+        },
+        {
+          "q": "Seberapa sering kaca gedung perlu dibersihkan?",
+          "a": "Umumnya setiap 3–6 bulan. Gedung di dekat jalan raya, area industri, atau pesisir biasanya perlu jadwal lebih rapat."
+        },
         {
           "q": "Apakah metode rope access aman?",
           "a": "Ya. Pekerjaan dilakukan oleh teknisi bersertifikat dengan sistem tali ganda dan peralatan keselamatan standar, serta prosedur kerja yang ketat."

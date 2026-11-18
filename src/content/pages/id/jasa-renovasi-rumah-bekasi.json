@@ -32,7 +32,7 @@
       "title": "Mengapa Memilih Inland untuk Renovasi Rumah di Bekasi?",
       "tone": "light",
       "imageSide": "right",
-      "image": "pembangunan/struktur-bata.jpg",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
       "imageAlt": "Proyek renovasi rumah di bekasi oleh Inland",
       "numbered": false,
       "items": [
@@ -53,6 +53,30 @@
           "text": "Jadwal kerja jelas dan progres dilaporkan secara berkala."
         }
       ]
+    },
+    {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Bekasi",
+      "intro": "Melayani Kota Bekasi dan sebagian Kabupaten Bekasi.",
+      "areas": [
+        "Bekasi Barat",
+        "Bekasi Timur",
+        "Bekasi Utara",
+        "Bekasi Selatan",
+        "Jatiasih",
+        "Jatisampurna",
+        "Medan Satria",
+        "Mustika Jaya",
+        "Pondok Gede",
+        "Pondok Melati",
+        "Rawalumbu",
+        "Bantargebang",
+        "Tambun",
+        "Cibitung",
+        "Cikarang"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
     },
     {
       "type": "service-cards",
@@ -82,8 +106,35 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Bekasi",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi rumah di Bekasi",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Antisipasi banjir dan genangan",
+          "text": "Sebagian wilayah Bekasi rawan banjir. Renovasi bisa mencakup peninggian lantai, perbaikan drainase, dan material yang tahan air."
+        },
+        {
+          "title": "Rembesan dan lembap",
+          "text": "Dinding yang rembes dan lantai lembap ditangani dengan waterproofing dan perbaikan dari sumbernya, bukan hanya dicat ulang."
+        },
+        {
+          "title": "Perumahan dan cluster",
+          "text": "Kami menyesuaikan desain dan jadwal kerja dengan aturan pengelola perumahan di Bekasi."
+        },
+        {
+          "title": "Hunian dekat kawasan industri",
+          "text": "Untuk hunian di sekitar kawasan industri Cikarang dan Cibitung, kami juga menangani renovasi rumah sewa dan mes karyawan."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
       "image": "pembangunan/progres-dinding.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
@@ -104,6 +155,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Bekasi",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Bekasi?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Bekasi dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Bisakah renovasi sekaligus meninggikan lantai rumah di Bekasi?",
+          "a": "Bisa. Peninggian lantai biasanya digabung dengan perbaikan saluran air dan penyesuaian kusen pintu agar rumah lebih aman dari genangan."
         }
       ]
     },

@@ -130,10 +130,51 @@
       ]
     },
     {
+      "type": "table",
+      "title": "House Construction Cost per m²",
+      "columns": [
+        "Build class",
+        "Market range*",
+        "Typical specification"
+      ],
+      "rows": [
+        [
+          "Standard",
+          "IDR 3 – 4.5 million / m²",
+          "Standard materials, simple finishing"
+        ],
+        [
+          "Mid-range",
+          "IDR 4.5 – 5.5 million / m²",
+          "Mid-grade materials, neater finishing"
+        ],
+        [
+          "Premium",
+          "IDR 6 – 7 million / m²",
+          "Modern/custom design, premium materials"
+        ],
+        [
+          "Labour only",
+          "IDR 1.3 – 1.5 million / m²",
+          "Materials supplied by the owner"
+        ]
+      ],
+      "note": "*General Greater Jakarta market ranges for 2026 compiled from various providers — not an official Inland quote. Exact pricing follows a site survey. Excludes land, design, and building approval (PBG).",
+      "eyebrow": "Cost"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Frequently Asked Questions",
       "items": [
+        {
+          "q": "How much does it cost to build a house per m² in Greater Jakarta?",
+          "a": "2026 market ranges are roughly IDR 3–5.5 million per m² for standard to mid-range builds and IDR 6–7 million per m² for premium. Inland prepares a detailed cost plan for your design and specification."
+        },
+        {
+          "q": "Does the price include the building permit?",
+          "a": "Per-m² prices usually exclude the building approval (PBG). Our team can help prepare the drawings and technical documents required."
+        },
         {
           "q": "Does Inland build homes from scratch?",
           "a": "Yes. We handle everything from site preparation, foundations, structure, and roofing to finishing and handover."

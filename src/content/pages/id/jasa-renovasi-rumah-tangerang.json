@@ -55,6 +55,32 @@
       ]
     },
     {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Tangerang",
+      "intro": "Melayani Kota Tangerang dan sebagian Kabupaten Tangerang.",
+      "areas": [
+        "Ciledug",
+        "Karawaci",
+        "Cipondoh",
+        "Pinang",
+        "Tangerang",
+        "Batuceper",
+        "Benda",
+        "Cibodas",
+        "Periuk",
+        "Karang Tengah",
+        "Larangan",
+        "Neglasari",
+        "Jatiuwung",
+        "Kelapa Dua (Gading Serpong)",
+        "Cikupa",
+        "Curug",
+        "Pasar Kemis"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
+    },
+    {
       "type": "service-cards",
       "title": "Lingkup Pekerjaan",
       "items": [
@@ -82,8 +108,35 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Tangerang",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi rumah di Tangerang",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Perumahan dan cluster",
+          "text": "Banyak hunian di Tangerang berada di kawasan perumahan dengan aturan pengelola. Kami mengurus koordinasi izin renovasi dan menyesuaikan jam kerja."
+        },
+        {
+          "title": "Antisipasi genangan",
+          "text": "Sebagian wilayah Tangerang rawan genangan. Peninggian lantai, perbaikan drainase, dan waterproofing bisa sekaligus dikerjakan saat renovasi."
+        },
+        {
+          "title": "Renovasi fasad rumah tipe standar",
+          "text": "Rumah tipe standar di perumahan bisa tampil jauh lebih modern dengan renovasi fasad, kanopi, dan carport tanpa membongkar total."
+        },
+        {
+          "title": "Ruko dan tempat usaha",
+          "text": "Kami juga menangani renovasi ruko dan tempat usaha di koridor bisnis Tangerang."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
       "image": "pembangunan/progres-dinding.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
@@ -104,6 +157,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Tangerang",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Tangerang?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Tangerang dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Apakah Inland melayani Gading Serpong dan Karawaci?",
+          "a": "Ya. Kami melayani Kota Tangerang termasuk Karawaci, serta Kabupaten Tangerang seperti Kelapa Dua (Gading Serpong), Cikupa, dan Curug."
         }
       ]
     },

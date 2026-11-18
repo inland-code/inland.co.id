@@ -55,6 +55,26 @@
       ]
     },
     {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Depok",
+      "intro": "Melayani renovasi rumah di seluruh 11 kecamatan Kota Depok.",
+      "areas": [
+        "Beji",
+        "Pancoran Mas",
+        "Cimanggis",
+        "Sukmajaya",
+        "Sawangan",
+        "Limo",
+        "Cinere",
+        "Cilodong",
+        "Tapos",
+        "Bojongsari",
+        "Cipayung"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
+    },
+    {
       "type": "service-cards",
       "title": "Lingkup Pekerjaan",
       "items": [
@@ -82,8 +102,35 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Depok",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
+      "imageAlt": "Material renovasi rumah di Depok",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Rumah tumbuh di perumahan",
+          "text": "Banyak rumah di Depok dibangun bertahap. Kami membantu merencanakan penambahan ruang atau lantai agar menyatu dengan bangunan lama dan strukturnya aman."
+        },
+        {
+          "title": "Aturan perumahan dan cluster",
+          "text": "Perumahan dan cluster biasanya punya aturan fasad, jam kerja tukang, dan izin renovasi. Kami menyesuaikan jadwal dan desain dengan aturan pengelola."
+        },
+        {
+          "title": "Saluran air dan drainase",
+          "text": "Perbaikan saluran dan resapan air menjadi bagian penting renovasi agar halaman dan lantai tidak tergenang saat hujan."
+        },
+        {
+          "title": "Rumah kos dan kontrakan",
+          "text": "Depok dekat kampus; renovasi kamar kos dan kontrakan dapat meningkatkan kenyamanan penyewa dan nilai sewa."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
       "image": "pembangunan/progres-dinding.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
@@ -104,6 +151,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Depok",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Depok?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Depok dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Apakah Inland bisa renovasi rumah kos atau kontrakan di Depok?",
+          "a": "Bisa. Kami menangani renovasi kamar, kamar mandi, dan fasad rumah kos atau kontrakan, termasuk penambahan kamar, dengan jadwal yang meminimalkan gangguan bagi penghuni."
         }
       ]
     },

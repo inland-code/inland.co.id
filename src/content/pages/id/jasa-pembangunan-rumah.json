@@ -130,10 +130,51 @@
       ]
     },
     {
+      "type": "table",
+      "title": "Estimasi Biaya Bangun Rumah per m²",
+      "columns": [
+        "Kelas bangunan",
+        "Kisaran harga pasar*",
+        "Gambaran spesifikasi"
+      ],
+      "rows": [
+        [
+          "Standar",
+          "Rp3 – 4,5 juta / m²",
+          "Material standar, finishing sederhana"
+        ],
+        [
+          "Menengah",
+          "Rp4,5 – 5,5 juta / m²",
+          "Material menengah, finishing lebih rapi"
+        ],
+        [
+          "Premium",
+          "Rp6 – 7 juta / m²",
+          "Desain modern/kustom, material premium"
+        ],
+        [
+          "Borongan tenaga saja",
+          "Rp1,3 – 1,5 juta / m²",
+          "Tanpa material (material disediakan pemilik)"
+        ]
+      ],
+      "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi. Belum termasuk harga tanah, desain, dan perizinan (PBG).",
+      "eyebrow": "Biaya"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Pertanyaan yang Sering Diajukan",
       "items": [
+        {
+          "q": "Berapa biaya bangun rumah per m² di Jabodetabek?",
+          "a": "Kisaran pasar tahun 2026 sekitar Rp3–5,5 juta per m² untuk kelas standar hingga menengah, dan Rp6–7 juta per m² untuk kelas premium. Inland menyusun RAB rinci sesuai desain dan spesifikasi Anda."
+        },
+        {
+          "q": "Apakah biaya sudah termasuk izin bangunan?",
+          "a": "Biaya per m² umumnya belum termasuk Persetujuan Bangunan Gedung (PBG). Tim kami dapat membantu menyiapkan gambar dan dokumen teknis yang dibutuhkan."
+        },
         {
           "q": "Apakah Inland melayani pembangunan rumah dari nol?",
           "a": "Ya. Kami menangani pembangunan dari persiapan lahan, fondasi, struktur, atap, hingga finishing dan serah terima."

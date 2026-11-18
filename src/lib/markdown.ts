@@ -57,6 +57,16 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
     case 'banner':
     case 'cta':
       return `## ${s.title}\n\n${s.text}`;
+    case 'table':
+      return (
+        h(s.title) +
+        (s.intro ? `${s.intro}\n\n` : '') +
+        `| ${s.columns.join(' | ')} |\n| ${s.columns.map(() => '---').join(' | ')} |\n` +
+        s.rows.map((r) => `| ${r.join(' | ')} |`).join('\n') +
+        (s.note ? `\n\n*${s.note}*` : '')
+      );
+    case 'areas':
+      return h(s.title) + (s.intro ? `${s.intro}\n\n` : '') + s.areas.join(', ') + (s.note ? `\n\n${s.note}` : '');
     case 'contact':
     case 'latest-posts':
       return '';

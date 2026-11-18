@@ -160,6 +160,19 @@ export const sectionSchema = z.discriminatedUnion('type', [
     items: z.array(z.object({ q: s('Pertanyaan'), a: text('Jawaban') }).meta({ title: 'Tanya-jawab' })).min(1).meta({ title: 'Tanya-jawab' }),
   }).meta({ title: 'FAQ' }),
   z.object({
+    type: z.literal('table'),
+    ...heading,
+    columns: z.array(s('Judul kolom')).min(2).max(4).meta({ title: 'Kolom' }),
+    rows: z.array(z.array(s('Sel')).min(2).max(4).meta({ title: 'Baris' })).min(1).meta({ title: 'Baris' }),
+    note: text('Catatan di bawah tabel').optional(),
+  }).meta({ title: 'Tabel (estimasi biaya, perbandingan)' }),
+  z.object({
+    type: z.literal('areas'),
+    ...heading,
+    areas: z.array(s('Wilayah')).min(2).meta({ title: 'Wilayah / kecamatan' }),
+    note: text('Catatan').optional(),
+  }).meta({ title: 'Wilayah layanan' }),
+  z.object({
     type: z.literal('cta'),
     title: s('Judul'),
     text: text('Teks'),

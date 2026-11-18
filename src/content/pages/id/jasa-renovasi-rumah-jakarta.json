@@ -55,6 +55,20 @@
       ]
     },
     {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Jakarta",
+      "intro": "Tim Inland melayani renovasi rumah di seluruh wilayah administrasi DKI Jakarta.",
+      "areas": [
+        "Jakarta Selatan",
+        "Jakarta Timur",
+        "Jakarta Barat",
+        "Jakarta Utara",
+        "Jakarta Pusat"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
+    },
+    {
       "type": "service-cards",
       "title": "Lingkup Pekerjaan",
       "items": [
@@ -82,10 +96,37 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Jakarta",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi rumah di Jakarta",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Lahan sempit dan rumah berdempetan",
+          "text": "Banyak rumah di Jakarta berdiri di lahan terbatas dengan tetangga rapat. Kami mengatur jadwal kerja, pengiriman material, dan kebersihan agar renovasi tidak mengganggu lingkungan."
+        },
+        {
+          "title": "Antisipasi genangan",
+          "text": "Sebagian wilayah Jakarta rawan genangan saat hujan deras. Renovasi bisa sekaligus meninggikan lantai, memperbaiki saluran air, dan memperkuat waterproofing."
+        },
+        {
+          "title": "Tambah lantai di lahan terbatas",
+          "text": "Menambah lantai sering menjadi solusi rumah di Jakarta. Kami menghitung kekuatan struktur lama sebelum menambah beban, dan membantu dokumen teknis untuk perizinan (PBG)."
+        },
+        {
+          "title": "Akses jalan dan izin lingkungan",
+          "text": "Untuk gang sempit, material diangkut bertahap. Kami juga membantu koordinasi dengan RT/RW dan pengelola lingkungan sebelum pekerjaan dimulai."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
-      "image": "pembangunan/progres-dinding.jpg",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
       "numbered": true,
       "items": [
@@ -104,6 +145,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Jakarta",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Jakarta?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Jakarta dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Apakah perlu izin untuk renovasi rumah di Jakarta?",
+          "a": "Renovasi ringan tanpa mengubah struktur umumnya cukup diinformasikan kepada RT/RW atau pengelola lingkungan. Perubahan struktur, penambahan luas, atau tambah lantai umumnya memerlukan Persetujuan Bangunan Gedung (PBG). Kami membantu menyiapkan gambar teknisnya."
         }
       ]
     },

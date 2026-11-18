@@ -129,10 +129,42 @@
       ]
     },
     {
+      "type": "table",
+      "title": "Estimasi Biaya Jasa Desain Interior",
+      "columns": [
+        "Model biaya",
+        "Kisaran harga pasar*",
+        "Keterangan"
+      ],
+      "rows": [
+        [
+          "Fee desain per m²",
+          "Rp150.000 – Rp1.000.000 / m²",
+          "Tergantung kompleksitas dan tingkat kemewahan"
+        ],
+        [
+          "Persentase dari RAB",
+          "5% – 8% dari RAB",
+          "Acuan standar fee HDII, umum untuk proyek besar"
+        ],
+        [
+          "Desain + produksi (terima jadi)",
+          "Mulai ±Rp2,5 juta / m²",
+          "Termasuk furnitur custom dan instalasi"
+        ]
+      ],
+      "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi.",
+      "eyebrow": "Biaya"
+    },
+    {
       "type": "faq",
       "eyebrow": "FAQ",
       "title": "Pertanyaan yang Sering Diajukan",
       "items": [
+        {
+          "q": "Berapa biaya jasa desain interior?",
+          "a": "Sebagai gambaran pasar, fee desain sekitar Rp150 ribu–Rp1 juta per m² atau 5–8% dari anggaran proyek, sedangkan paket desain dan produksi mulai sekitar Rp2,5 juta per m². Inland menyesuaikan paket dengan kebutuhan dan anggaran Anda."
+        },
         {
           "q": "Apa saja yang termasuk dalam jasa desain interior Inland?",
           "a": "Konsultasi desain, konsep dan moodboard, visualisasi 3D, gambar kerja, rekomendasi material, pengadaan furnitur dan dekorasi, hingga pengawasan pelaksanaan."

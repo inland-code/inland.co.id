@@ -32,7 +32,7 @@
       "title": "Mengapa Memilih Inland untuk Renovasi Rumah di Bogor?",
       "tone": "light",
       "imageSide": "right",
-      "image": "pembangunan/struktur-bata.jpg",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
       "imageAlt": "Proyek renovasi rumah di bogor oleh Inland",
       "numbered": false,
       "items": [
@@ -53,6 +53,27 @@
           "text": "Jadwal kerja jelas dan progres dilaporkan secara berkala."
         }
       ]
+    },
+    {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di Bogor",
+      "intro": "Melayani Kota Bogor dan wilayah Kabupaten Bogor di sekitarnya.",
+      "areas": [
+        "Bogor Tengah",
+        "Bogor Utara",
+        "Bogor Selatan",
+        "Bogor Barat",
+        "Bogor Timur",
+        "Tanah Sareal",
+        "Cibinong",
+        "Sentul",
+        "Bojonggede",
+        "Cileungsi",
+        "Gunung Putri",
+        "Parung"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
     },
     {
       "type": "service-cards",
@@ -82,8 +103,35 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di Bogor",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi rumah di Bogor",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Curah hujan tinggi",
+          "text": "Bogor dikenal sebagai Kota Hujan. Renovasi kami memberi perhatian khusus pada atap, talang, kemiringan, dan waterproofing agar rumah bebas bocor dan rembes."
+        },
+        {
+          "title": "Kelembapan dan jamur",
+          "text": "Udara lembap membuat dinding mudah berjamur. Kami merekomendasikan cat dan pelapis anti lembap serta ventilasi yang baik."
+        },
+        {
+          "title": "Kontur tanah berbukit",
+          "text": "Di area berkontur, fondasi dan dinding penahan tanah harus direncanakan dengan benar sebelum menambah ruang atau lantai."
+        },
+        {
+          "title": "Rumah peristirahatan dan villa",
+          "text": "Kami juga menangani renovasi rumah peristirahatan dan villa agar lebih nyaman dan bernilai sewa lebih tinggi."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
       "image": "pembangunan/progres-dinding.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
@@ -104,6 +152,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di Bogor",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di Bogor?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di Bogor dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Apa yang paling sering direnovasi pada rumah di Bogor?",
+          "a": "Perbaikan atap dan talang, waterproofing dinding, serta perbaikan akibat kelembapan adalah pekerjaan yang paling sering, karena curah hujan di Bogor tinggi sepanjang tahun."
         }
       ]
     },

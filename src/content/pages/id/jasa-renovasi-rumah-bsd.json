@@ -55,6 +55,23 @@
       ]
     },
     {
+      "type": "areas",
+      "eyebrow": "Area Layanan",
+      "title": "Wilayah yang Kami Layani di BSD",
+      "intro": "Melayani kawasan BSD City dan sekitarnya, dekat dengan kantor Inland di Pamulang.",
+      "areas": [
+        "BSD City",
+        "Serpong",
+        "Serpong Utara",
+        "Setu",
+        "Pagedangan",
+        "Cisauk",
+        "Gading Serpong",
+        "Alam Sutera"
+      ],
+      "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
+    },
+    {
       "type": "service-cards",
       "title": "Lingkup Pekerjaan",
       "items": [
@@ -82,8 +99,35 @@
     },
     {
       "type": "accordion-media",
-      "title": "Proses Kerja Kami",
+      "title": "Hal yang Perlu Diperhatikan Saat Renovasi di BSD",
       "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
+      "imageAlt": "Material renovasi rumah di BSD",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Aturan pengelola kawasan",
+          "text": "Kawasan BSD umumnya mewajibkan izin renovasi, mengatur jam kerja, dan meminta deposit kebersihan. Kami mengurus proses ini bersama Anda."
+        },
+        {
+          "title": "Fasad modern sesuai karakter kawasan",
+          "text": "Renovasi fasad kami jaga agar tetap selaras dengan ketentuan dan karakter cluster."
+        },
+        {
+          "title": "Renovasi interior premium",
+          "text": "Banyak pemilik rumah di BSD memilih renovasi dapur, kamar mandi, dan ruang keluarga dengan material premium dan desain interior terpadu."
+        },
+        {
+          "title": "Dekat dengan kantor kami",
+          "text": "Lokasi kantor kami di Pamulang memudahkan survei, pengawasan, dan respons cepat."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kerja Kami",
+      "tone": "light",
       "imageSide": "right",
       "image": "pembangunan/progres-dinding.jpg",
       "imageAlt": "Progres pekerjaan renovasi",
@@ -104,6 +148,25 @@
         {
           "title": "Serah Terima",
           "text": "Hasil diperiksa bersama sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan Seputar Renovasi Rumah di BSD",
+      "items": [
+        {
+          "q": "Apakah Inland melayani renovasi rumah di BSD?",
+          "a": "Ya. Tim kami melayani renovasi interior, fasad, tambah ruang atau lantai, hingga perbaikan struktur di BSD dan sekitarnya. Survei dan konsultasi gratis."
+        },
+        {
+          "q": "Berapa lama renovasi rumah biasanya?",
+          "a": "Umumnya 2–6 minggu untuk renovasi ringan hingga sedang, dan 2–4 bulan untuk renovasi besar atau tambah lantai. Jadwal pasti disusun setelah survei."
+        },
+        {
+          "q": "Apakah renovasi di BSD perlu izin pengelola?",
+          "a": "Umumnya ya. Pengelola kawasan biasanya meminta izin renovasi dengan gambar kerja, menetapkan jam kerja tukang, dan deposit kebersihan. Tim Inland membantu menyiapkan dokumennya."
         }
       ]
     },
