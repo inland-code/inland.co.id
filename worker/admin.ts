@@ -1,5 +1,5 @@
 import type { Env } from './env';
-import { AuthError, requireAdmin } from './access';
+import { AuthError, requireAdmin } from './auth';
 import { GitHub, GitHubError, bytesToBase64 } from './github';
 
 /**

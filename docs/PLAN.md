@@ -13,7 +13,7 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 | 5 | Formulir kontak | **Diarahkan ke WhatsApp** (pesan terisi otomatis) **dan tercatat di dashboard** (Worker `/api/contact` → Cloudflare D1 → redirect `wa.me`). D1 hanya untuk data formulir; media tetap di repo |
 | 6 | Font | **Roboto** (self-hosted, variable woff2) |
 | 7 | DNS domain | Nameserver **belum** di Cloudflare. Pengembangan & uji di subdomain `*.workers.dev` (noindex); domain disambungkan di Fase 9 setelah semua selesai |
-| 8 | Pengguna dashboard | **Hanya pemilik** (1 akun email). Login via Cloudflare Access (OTP email), tanpa sistem password sendiri |
+| 8 | Pengguna dashboard | **Hanya pemilik.** Login dengan akun GitHub (OAuth App, gratis) — Cloudflare Zero Trust tidak dipakai karena mewajibkan kartu kredit |
 
 ---
 
@@ -117,10 +117,10 @@ Identitas & warna tetap, tampilan dimodernkan:
 
 ### Fase 7 — Dashboard custom `/admin` ✅ (kode selesai, perlu setup akun — lihat `docs/DASHBOARD.md`)
 - ✅ Preact SPA hanya di `/admin`; form dibuat otomatis dari skema zod (`src/content/schema.ts`) → validasi sama dengan build.
-- ✅ API Worker `/api/admin/*`: verifikasi JWT Cloudflare Access + email pemilik, commit via GitHub fine-grained token, media upload, pesan D1, status deploy.
+- ✅ API Worker `/api/admin/*`: login GitHub OAuth + cookie sesi bertanda tangan, commit via GitHub fine-grained token, media upload, pesan D1, status deploy.
 - ✅ Diuji end-to-end (Playwright + mock GitHub): edit halaman, validasi, artikel baru, unggah gambar, pesan masuk, data bisnis, redirect; konten hasil dashboard lolos build.
-- ⏳ Setup: D1, `GITHUB_TOKEN`, `ADMIN_EMAIL`, Cloudflare Access, secret deploy GitHub Actions.
-- Login via Cloudflare Access (Zero Trust), policy hanya untuk email pemilik.
+- ✅ D1 dibuat & terhubung. ⏳ Setup: `GITHUB_TOKEN`, OAuth App GitHub, `SESSION_SECRET` (lihat docs/DASHBOARD.md).
+- Login dengan akun GitHub (OAuth App), hanya akun/email yang diizinkan.
 - Menu "Pesan Masuk": riwayat formulir kontak dari D1 (status: baru / dihubungi / selesai).
 - Editor halaman berbasis field (layout terkunci), editor artikel (rich text, kategori, gambar unggulan, jadwal terbit).
 - Media library: upload, kompres otomatis, alt text, peringatan ukuran.

@@ -1,4 +1,4 @@
-/** Klien API dashboard. Semua panggilan ke Worker /api/admin/* (dilindungi Cloudflare Access). */
+/** Klien API dashboard. Semua panggilan ke Worker /api/admin/* (dilindungi login GitHub + cookie sesi). */
 
 export class ApiError extends Error {
   constructor(message: string, readonly status: number) {

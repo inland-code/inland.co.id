@@ -7,9 +7,9 @@ membaca pesan formulir kontak, dan mengubah data bisnis — tanpa menyentuh kode
 
 ```
 Browser (/admin, hanya pemilik)
-   │  Cloudflare Access (login OTP email)
+   │  Login dengan GitHub (OAuth App, gratis)
    ▼
-Worker /api/admin/*  ── verifikasi token Access + email pemilik
+Worker /api/admin/*  ── verifikasi cookie sesi bertanda tangan + akun GitHub yang diizinkan
    ├─ baca/tulis konten ──► GitHub API (commit ke branch main)
    │                          └─► GitHub Actions: build + audit SEO + deploy (±1–3 menit)
    └─ pesan masuk ─────────► Cloudflare D1
@@ -32,44 +32,39 @@ Worker /api/admin/*  ── verifikasi token Access + email pemilik
 
 ## Setup (sekali saja)
 
-### 1. Database D1 (pesan formulir)
-```bash
-npx wrangler d1 create inland-db
-# salin database_id ke wrangler.jsonc (blok d1_databases), hapus komentarnya
-npm run db:migrate
-```
+### 1. Database D1 — ✅ sudah dibuat (`inland-db`, APAC) dan terhubung di `wrangler.jsonc`.
 
-### 2. Token GitHub (fine-grained, khusus repo ini)
+### 2. Token GitHub untuk menyimpan perubahan
 GitHub → Settings → Developer settings → **Fine-grained personal access tokens** → Generate new token
 - Resource owner: `inland-code` · Repository access: **Only select repositories** → `inland.co.id`
-- Permissions: **Contents: Read and write**, **Actions: Read-only** (Metadata otomatis read-only)
+- Permissions: **Contents: Read and write**, **Actions: Read-only**
 - Expiration: maks. 1 tahun — catat tanggalnya untuk diperpanjang.
 
-```bash
-npx wrangler secret put GITHUB_TOKEN   # tempel token
-npx wrangler secret put ADMIN_EMAIL    # email pemilik yang boleh login
-```
+### 3. OAuth App GitHub untuk login dashboard (gratis, tanpa kartu kredit)
+GitHub → Settings → Developer settings → **OAuth Apps** → **New OAuth App**
+- Application name: `Inland Dashboard`
+- Homepage URL: `https://inland-co-id.inlandgrup.workers.dev`
+- Authorization callback URL: `https://inland-co-id.inlandgrup.workers.dev/api/auth/callback`
+- Simpan **Client ID**, lalu **Generate a new client secret** dan simpan.
 
-### 3. Cloudflare Access (login pemilik)
-Zero Trust → Settings → Authentication: aktifkan **One-time PIN**.
+Setelah domain pindah ke `inland.co.id`, ganti kedua URL di atas ke domain baru.
 
-**Selama staging (`*.workers.dev`):** Workers & Pages → `inland-co-id` → Settings → Domains & Routes →
-aktifkan **Cloudflare Access** pada workers.dev. Seluruh staging hanya bisa dibuka pemilik (aman, staging memang noindex).
+### 4. Secret di Cloudflare
+Workers & Pages → `inland-co-id` → Settings → Variables and Secrets → **Add** (pilih tipe **Secret** untuk semuanya):
 
-**Setelah domain `inland.co.id` tersambung:** Zero Trust → Access → Applications → Add → *Self-hosted*
-- Destinations: `inland.co.id/admin` dan `inland.co.id/api/admin`
-- Policy: Allow → Emails → email pemilik
+| Nama | Isi |
+|---|---|
+| `GITHUB_TOKEN` | token dari langkah 2 |
+| `GITHUB_OAUTH_CLIENT_ID` | Client ID dari langkah 3 |
+| `GITHUB_OAUTH_CLIENT_SECRET` | Client secret dari langkah 3 |
+| `SESSION_SECRET` | teks acak panjang (≥ 32 karakter) |
+| `ADMIN_EMAIL` | email akun GitHub pemilik (opsional; akun `inland-code` sudah diizinkan lewat `ADMIN_GITHUB_USERS`) |
 
-Lalu salin **Application Audience (AUD) tag** dan nama tim, isi sebagai variable Worker:
-`ACCESS_TEAM_DOMAIN` = `<tim>.cloudflareaccess.com`, `ACCESS_AUD` = `<AUD>`
-(di `wrangler.jsonc` → `vars`, atau Settings → Variables di dashboard Cloudflare).
+Akun yang diizinkan diatur di `wrangler.jsonc` → `ADMIN_GITHUB_USERS` (dipisah koma).
 
-### 4. Deploy otomatis dari GitHub
-Repo → Settings → Secrets and variables → Actions:
-- Secrets: `CLOUDFLARE_API_TOKEN` (template *Edit Cloudflare Workers*), `CLOUDFLARE_ACCOUNT_ID`
-- Variables: `DEPLOY_ENABLED` = `true`
-
-Dashboard meng-commit ke branch `main`; workflow CI membangun & men-deploy setiap push ke `main`.
+### 5. Deploy
+Cloudflare Workers Builds sudah terhubung ke repo: setiap push ke `main` otomatis di-build & di-deploy.
+Saat pindah ke domain asli, tambahkan build variable `PUBLIC_SITE_ENV=production`.
 
 ## Pengembangan lokal
 ```bash
@@ -80,7 +75,8 @@ npx wrangler dev --var ADMIN_DEV_BYPASS:1 --var GITHUB_TOKEN:<token-uji>
 `ADMIN_DEV_BYPASS` hanya berlaku untuk host `localhost`/`127.0.0.1`, tidak pernah di produksi.
 
 ## Keamanan
-- API menolak semua permintaan tanpa token Access yang valid (tanda tangan, audience, kedaluwarsa, email pemilik).
+- API menolak semua permintaan tanpa cookie sesi yang valid (HMAC-SHA256, kedaluwarsa 7 hari, HttpOnly, Secure, SameSite=Lax).
+- Login hanya untuk akun GitHub di `ADMIN_GITHUB_USERS` atau email terverifikasi di `ADMIN_EMAIL`; parameter `state` OAuth mencegah login palsu.
 - Permintaan yang mengubah data wajib dari origin yang sama (anti-CSRF).
 - Hanya path konten tertentu yang bisa ditulis: `src/content/**`, `src/assets/images/**`, `src/data/site.json`, `public/_redirects`.
 - Penyimpanan memakai `sha` file sehingga tidak menimpa perubahan lain secara diam-diam (konflik → pesan error).
