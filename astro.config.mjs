@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
+import preact from '@astrojs/preact';
 
 export default defineConfig({
   site: 'https://inland.co.id',
@@ -38,6 +39,8 @@ export default defineConfig({
       },
     },
   ],
+  // Preact hanya dipakai dashboard /admin (client:only); halaman publik tetap tanpa JS.
+  integrations: [preact()],
   vite: {
     plugins: [tailwindcss()],
   },

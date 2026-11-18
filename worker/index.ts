@@ -4,14 +4,11 @@
  *   Worker ini hanya dijalankan untuk /api/* (lihat run_worker_first di wrangler.jsonc).
  * - POST /api/contact : simpan formulir ke D1 lalu redirect 303 ke WhatsApp dengan pesan terisi.
  *   Bekerja tanpa JavaScript di browser (form HTML biasa).
+ * - /api/admin/* : API dashboard (lihat worker/admin.ts).
  */
 
-interface Env {
-  ASSETS: Fetcher;
-  /** Opsional sampai database D1 dibuat & di-bind di wrangler.jsonc. */
-  DB?: D1Database;
-  WHATSAPP_NUMBER: string;
-}
+import type { Env } from './env';
+import { handleAdmin } from './admin';
 
 const LIMITS = { name: 80, phone: 20, service: 60, message: 1000, page: 200 } as const;
 
@@ -85,6 +82,7 @@ export default {
       if (request.method !== 'POST') return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'POST' } });
       return handleContact(request, env, ctx);
     }
+    if (url.pathname.startsWith('/api/admin/')) return handleAdmin(request, env, url);
     if (url.pathname.startsWith('/api/')) return new Response('Not Found', { status: 404 });
     return env.ASSETS.fetch(request);
   },

@@ -1,6 +1,6 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 6 selesai** · Terakhir diperbarui: 2026-11-18
+Status: **Fase 7 selesai (menunggu setup akun)** · Terakhir diperbarui: 2026-11-18
 
 ## Keputusan yang sudah diambil
 
@@ -115,7 +115,11 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Speculation Rules API untuk prefetch.
 - Cache: `/_astro/*` immutable 1 tahun; HTML di-cache di edge dengan purge otomatis per deploy; Early Hints, HTTP/3, Brotli, Tiered Cache.
 
-### Fase 7 — Dashboard custom `/admin`
+### Fase 7 — Dashboard custom `/admin` ✅ (kode selesai, perlu setup akun — lihat `docs/DASHBOARD.md`)
+- ✅ Preact SPA hanya di `/admin`; form dibuat otomatis dari skema zod (`src/content/schema.ts`) → validasi sama dengan build.
+- ✅ API Worker `/api/admin/*`: verifikasi JWT Cloudflare Access + email pemilik, commit via GitHub fine-grained token, media upload, pesan D1, status deploy.
+- ✅ Diuji end-to-end (Playwright + mock GitHub): edit halaman, validasi, artikel baru, unggah gambar, pesan masuk, data bisnis, redirect; konten hasil dashboard lolos build.
+- ⏳ Setup: D1, `GITHUB_TOKEN`, `ADMIN_EMAIL`, Cloudflare Access, secret deploy GitHub Actions.
 - Login via Cloudflare Access (Zero Trust), policy hanya untuk email pemilik.
 - Menu "Pesan Masuk": riwayat formulir kontak dari D1 (status: baru / dihubungi / selesai).
 - Editor halaman berbasis field (layout terkunci), editor artikel (rich text, kategori, gambar unggulan, jadwal terbit).

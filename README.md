@@ -29,6 +29,10 @@ npm run check             # type check
 | `migration/url-inventory.csv` | Daftar URL situs lama — build gagal jika ada yang hilang |
 | `public/_headers`, `public/_redirects` | Cache, header keamanan, redirect URL warisan WordPress |
 
+## Dashboard
+
+Panduan lengkap: [`docs/DASHBOARD.md`](docs/DASHBOARD.md). Skema konten & label form: `src/content/schema.ts`.
+
 ## Aturan URL
 
 - Bahasa Indonesia di root, sama persis dengan situs lama: `/tentang-inland/`

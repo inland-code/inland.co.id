@@ -13,7 +13,7 @@ const files = [];
 (function walk(dir) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
-    if (statSync(p).isDirectory()) { if (name !== '_astro') walk(p); }
+    if (statSync(p).isDirectory()) { if (name !== '_astro' && name !== 'admin') walk(p); }
     else if (name === 'index.html') files.push(p);
   }
 })(dist);

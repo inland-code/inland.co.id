@@ -25,3 +25,8 @@
 /*.md
   Content-Type: text/markdown; charset=utf-8
   X-Robots-Tag: noindex
+
+# Dashboard: jangan diindeks/di-cache publik (akses dibatasi Cloudflare Access).
+/admin/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
