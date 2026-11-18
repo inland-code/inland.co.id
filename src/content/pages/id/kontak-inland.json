@@ -25,5 +25,23 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "contact",
+      "infoTitle": "Informasi Kontak",
+      "socialTitle": "Ikuti Kami di Media Sosial",
+      "socialText": "Temukan kami di media sosial untuk mendapatkan update terbaru dan informasi menarik lainnya:",
+      "formTitle": "Formulir Kontak",
+      "formText": "Silakan isi formulir di bawah ini, dan tim kami akan menghubungi Anda secepatnya:"
+    },
+    {
+      "type": "banner",
+      "title": "Kami Siap Membantu Anda!",
+      "text": "Apakah Anda siap untuk memulai proyek baru atau memerlukan bantuan dengan pemeliharaan bangunan Anda? Hubungi kami hari ini dan dapatkan konsultasi gratis!",
+      "button": {
+        "label": "WhatsApp Kami untuk Bantuan Cepat",
+        "href": "#whatsapp"
+      }
+    }
+  ]
 }

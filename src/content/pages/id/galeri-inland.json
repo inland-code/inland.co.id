@@ -25,5 +25,105 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "gallery",
+      "groups": [
+        {
+          "title": "Layanan Arsitek & Kontraktor",
+          "images": [
+            {
+              "image": "gallery/arsitek-01.jpg",
+              "alt": "Desain rumah modern tiga lantai dengan fasad roster",
+              "caption": "Desain Rumah Modern"
+            },
+            {
+              "image": "gallery/arsitek-02.jpg",
+              "alt": "Carport rumah modern dengan dinding roster",
+              "caption": "Detail Fasad & Carport"
+            },
+            {
+              "image": "desain-rumah/hero-rumah-2-lantai.jpg",
+              "alt": "Rumah modern dua lantai dengan aksen kayu",
+              "caption": "Rumah Dua Lantai"
+            },
+            {
+              "image": "home/hero-rumah-modern-carport.jpg",
+              "alt": "Rumah modern atap pelana dengan carport",
+              "caption": "Rumah Atap Pelana"
+            },
+            {
+              "image": "about/hero-rumah-klasik.jpg",
+              "alt": "Rumah bergaya klasik modern",
+              "caption": "Rumah Klasik Modern"
+            },
+            {
+              "image": "home/interior-ruang-tamu-mewah.jpg",
+              "alt": "Interior ruang tamu mewah",
+              "caption": "Interior Ruang Tamu"
+            },
+            {
+              "image": "about/interior-ruang-makan.jpg",
+              "alt": "Interior ruang makan dengan tangga",
+              "caption": "Interior Ruang Makan"
+            },
+            {
+              "image": "interior/hero-dapur.jpg",
+              "alt": "Dapur putih modern",
+              "caption": "Desain Dapur"
+            },
+            {
+              "image": "pembangunan/struktur-bata.jpg",
+              "alt": "Proyek pembangunan rumah dua lantai",
+              "caption": "Pembangunan Rumah"
+            }
+          ]
+        },
+        {
+          "title": "Layanan Perawatan Bangunan",
+          "images": [
+            {
+              "image": "gallery/perawatan-01.jpg",
+              "alt": "Teknisi rope access membersihkan kaca gedung",
+              "caption": "Pembersihan Kaca Gedung"
+            },
+            {
+              "image": "gallery/perawatan-02.jpg",
+              "alt": "Tim rope access di fasad gedung bertingkat",
+              "caption": "Perawatan Fasad"
+            },
+            {
+              "image": "services/hero-rope-access-kaca.jpg",
+              "alt": "Teknisi membersihkan panel kaca gedung",
+              "caption": "Rope Access"
+            },
+            {
+              "image": "kaca/hero-pembersihan-kaca.jpg",
+              "alt": "Tim pembersih kaca di gedung kaca tinggi",
+              "caption": "Gedung Kaca Tinggi"
+            },
+            {
+              "image": "kaca/fasad-louver.jpg",
+              "alt": "Teknisi di fasad louver gedung",
+              "caption": "Fasad Louver"
+            },
+            {
+              "image": "sealant/aplikasi-sealant.jpg",
+              "alt": "Teknisi mengaplikasikan sealant kaca",
+              "caption": "Aplikasi Sealant"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Hubungi Kami untuk Konsultasi",
+      "text": "Jika Anda memiliki pertanyaan atau ingin berkonsultasi mengenai proyek yang sedang direncanakan, jangan ragu untuk menghubungi kami. Kami siap membantu Anda mewujudkan visi dan impian Anda.",
+      "button": {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp"
+      }
+    }
+  ]
 }

@@ -25,5 +25,102 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "service-cards",
+      "title": "Layanan Rope Access Kami",
+      "items": [
+        {
+          "icon": "rope",
+          "title": "Pembersihan Kaca Gedung",
+          "text": "Pembersihan kaca dan fasad gedung tinggi tanpa scaffolding."
+        },
+        {
+          "icon": "shield",
+          "title": "Sealant Kaca Gedung",
+          "text": "Penggantian dan perbaikan sealant untuk mengatasi kebocoran kaca."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Perawatan & Perbaikan Fasad",
+          "text": "Pengecatan, perbaikan ACP, dan inspeksi fasad di ketinggian."
+        }
+      ],
+      "eyebrow": "Rope Access",
+      "intro": "Akses tali (rope access) adalah metode kerja di ketinggian yang aman, cepat, dan hemat biaya untuk berbagai pekerjaan gedung."
+    },
+    {
+      "type": "accordion-media",
+      "title": "Keunggulan Metode Akses Tali",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Teknisi rope access di fasad louver gedung",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Efisien dan Cepat",
+          "text": "Metode akses tali memungkinkan teknisi kami untuk bergerak lebih leluasa di sekitar gedung, menghemat waktu yang biasanya dibutuhkan untuk pemasangan dan pembongkaran scaffolding. Ini membuat proses pembersihan lebih cepat tanpa mengurangi kualitas hasil."
+        },
+        {
+          "title": "Keamanan Terjamin",
+          "text": "Teknisi bersertifikat bekerja dengan peralatan standar keselamatan dan sistem tali ganda."
+        },
+        {
+          "title": "Menghemat Biaya",
+          "text": "Tanpa scaffolding atau gondola tambahan, biaya pekerjaan menjadi lebih efisien."
+        },
+        {
+          "title": "Fleksibel untuk Berbagai Jenis Gedung",
+          "text": "Cocok untuk gedung perkantoran, apartemen, hotel, hingga fasad dengan bentuk rumit."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Pembersihan dengan Metode Akses Tali",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Teknisi rope access berseragam oranye bekerja di ketinggian",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Survey Lokasi dan Konsultasi",
+          "text": "Kami akan melakukan survei terhadap kondisi gedung untuk menilai kebutuhan pembersihan, jenis permukaan yang akan dibersihkan, dan menentukan alat serta teknik terbaik yang akan digunakan."
+        },
+        {
+          "title": "Perencanaan dan Jadwal Pembersihan",
+          "text": "Jadwal disusun agar tidak mengganggu aktivitas gedung."
+        },
+        {
+          "title": "Pembersihan dengan Metode Akses Tali",
+          "text": "Teknisi bekerja sistematis dari atas ke bawah dengan peralatan dan bahan pembersih yang aman."
+        },
+        {
+          "title": "Pengawasan dan Kontrol Kualitas",
+          "text": "Supervisor memeriksa hasil di setiap area."
+        },
+        {
+          "title": "Penyelesaian dan Laporan Pembersihan",
+          "text": "Laporan dan dokumentasi pekerjaan diserahkan kepada pengelola gedung."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Keamanan adalah Prioritas Kami",
+      "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Inland menerapkan standar keselamatan tertinggi dalam setiap proyek pembersihan gedung yang kami lakukan. Teknisi kami dibekali dengan peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat untuk memastikan keselamatan mereka dan lingkungan di sekitarnya."
+    },
+    {
+      "type": "cta",
+      "title": "Butuh Pekerjaan di Ketinggian?",
+      "text": "Konsultasikan kebutuhan gedung Anda dengan tim rope access bersertifikat Inland. Survei dan penawaran harga gratis.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

@@ -63,8 +63,47 @@ export const sectionSchema = z.discriminatedUnion('type', [
     type: z.literal('service-cards'),
     ...sectionHeading,
     items: z.array(
-      z.object({ icon, title: z.string(), text: z.string(), href: z.string().optional(), links: z.array(link).default([]) }),
+      z.object({ icon: icon.optional(), title: z.string(), text: z.string(), href: z.string().optional(), links: z.array(link).default([]) }),
     ),
+  }),
+  z.object({
+    type: z.literal('value-cards'),
+    ...sectionHeading,
+    title: z.string().optional(),
+    items: z.array(
+      z.object({
+        title: z.string(),
+        text: z.string().optional(),
+        bullets: z.array(z.object({ title: z.string(), text: z.string() })).default([]),
+      }),
+    ),
+  }),
+  z.object({
+    type: z.literal('service-detail'),
+    title: z.string(),
+    text: z.string(),
+    bars: z.array(z.object({ label: z.string(), value: z.number().min(0).max(100) })).default([]),
+    cards: z.array(z.object({ title: z.string(), text: z.string(), cta: link.optional() })).min(1),
+  }),
+  z.object({
+    type: z.literal('banner'),
+    title: z.string(),
+    text: z.string(),
+    button: link.optional(),
+  }),
+  z.object({
+    type: z.literal('gallery'),
+    groups: z.array(
+      z.object({ title: z.string(), images: z.array(z.object({ image: z.string(), alt: z.string(), caption: z.string().optional() })).min(1) }),
+    ),
+  }),
+  z.object({
+    type: z.literal('contact'),
+    infoTitle: z.string(),
+    socialTitle: z.string(),
+    socialText: z.string(),
+    formTitle: z.string(),
+    formText: z.string(),
   }),
   z.object({
     type: z.literal('accordion-media'),

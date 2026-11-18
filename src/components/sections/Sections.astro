@@ -9,6 +9,11 @@ import GalleryTeaser from './GalleryTeaser.astro';
 import Testimonials from './Testimonials.astro';
 import LatestPosts from './LatestPosts.astro';
 import Cta from './Cta.astro';
+import ValueCards from './ValueCards.astro';
+import ServiceDetail from './ServiceDetail.astro';
+import Banner from './Banner.astro';
+import Gallery from './Gallery.astro';
+import Contact from './Contact.astro';
 
 interface Props { sections: Section[]; locale: Locale }
 const { sections, locale } = Astro.props;
@@ -23,5 +28,10 @@ const { sections, locale } = Astro.props;
     case 'testimonials': return <Testimonials {...s} />;
     case 'latest-posts': return <LatestPosts {...s} locale={locale} />;
     case 'cta': return <Cta {...s} locale={locale} />;
+    case 'value-cards': return <ValueCards {...s} />;
+    case 'service-detail': return <ServiceDetail {...s} locale={locale} />;
+    case 'banner': return <Banner {...s} locale={locale} />;
+    case 'gallery': return <Gallery {...s} />;
+    case 'contact': return <Contact {...s} locale={locale} />;
   }
 })}

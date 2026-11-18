@@ -25,5 +25,130 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Jasa Arsitek",
+      "text": "Membangun atau merenovasi sebuah bangunan memerlukan perencanaan yang matang, terutama dalam hal desain. Sebagai penyedia jasa arsitek berpengalaman, Inland menawarkan solusi desain arsitektur yang modern dan fungsional, sesuai dengan visi dan kebutuhan Anda. Kami menggabungkan kreativitas, estetika, dan teknologi untuk menciptakan bangunan yang tidak hanya indah dipandang, tetapi juga nyaman dan efisien.",
+      "bars": [
+        {
+          "label": "Desain Arsitektur Rumah",
+          "value": 98
+        },
+        {
+          "label": "Desain Arsitektur Kantor",
+          "value": 95
+        },
+        {
+          "label": "Desain Arsitektur Gedung",
+          "value": 93
+        },
+        {
+          "label": "Desain Interior",
+          "value": 97
+        },
+        {
+          "label": "Desain Eksterior",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Desain Interior",
+          "text": "Desain interior kami berfokus pada estetika dan kenyamanan, menciptakan suasana ruang yang selaras dengan gaya hidup atau kebutuhan bisnis Anda. Kami memberikan solusi kustom yang sesuai dengan selera dan karakter setiap klien, mulai dari konsep awal hingga penyelesaian.",
+          "cta": {
+            "label": "Lihat Layanan Desain Interior",
+            "href": "service-interior"
+          }
+        },
+        {
+          "title": "Jasa Desain Rumah",
+          "text": "Kami mendesain rumah yang tidak hanya indah dipandang, tetapi juga nyaman dan efisien untuk ditinggali. Setiap desain disesuaikan dengan keinginan Anda, apakah itu gaya modern, minimalis, klasik, atau tropis. Kami memastikan desain arsitektur yang fungsional dan sesuai dengan kondisi lingkungan setempat.",
+          "cta": {
+            "label": "Lihat Layanan Desain Rumah",
+            "href": "service-house-design"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-detail",
+      "title": "Jasa Kontraktor",
+      "text": "Mewujudkan desain menjadi kenyataan memerlukan eksekusi yang tepat dan profesional. Sebagai kontraktor berpengalaman, Inland menawarkan layanan konstruksi yang komprehensif, mulai dari pembangunan rumah hingga renovasi. Kami berkomitmen untuk menghadirkan bangunan berkualitas tinggi, dengan ketepatan waktu dan anggaran yang sesuai dengan kebutuhan klien. Inland adalah mitra ideal untuk mewujudkan proyek konstruksi impian Anda.",
+      "bars": [
+        {
+          "label": "Jasa Pembangunan Rumah",
+          "value": 98
+        },
+        {
+          "label": "Jasa Renovasi Rumah",
+          "value": 97
+        },
+        {
+          "label": "Jasa Pembangunan Gedung",
+          "value": 93
+        },
+        {
+          "label": "Perbaikan dan Perawatan Struktur",
+          "value": 96
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Pembangunan Rumah",
+          "text": "Kami menangani pembangunan rumah dari nol hingga siap huni, memastikan setiap detail dikerjakan sesuai dengan standar yang telah disepakati. Proses kami transparan, mulai dari perencanaan, pelaksanaan, hingga penyelesaian, sehingga Anda dapat mengikuti setiap perkembangan proyek.",
+          "cta": {
+            "label": "Lihat Layanan Pembangunan Rumah",
+            "href": "service-house-construction"
+          }
+        },
+        {
+          "title": "Jasa Renovasi Rumah",
+          "text": "Ingin memperbarui atau memperbesar rumah Anda? Layanan renovasi rumah kami menawarkan solusi untuk mengubah hunian Anda menjadi lebih nyaman dan berkelas. Kami memastikan setiap renovasi dilakukan dengan perhatian penuh terhadap kualitas dan ketepatan waktu.",
+          "cta": {
+            "label": "Lihat Layanan Renovasi Rumah",
+            "href": "service-renovation"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-detail",
+      "title": "Jasa Maintenance Profesional",
+      "text": "Perawatan yang tepat sangat penting untuk menjaga kondisi dan nilai bangunan Anda. Inland menyediakan layanan maintenance yang komprehensif untuk memastikan bahwa properti Anda tetap dalam kondisi terbaik, aman, dan nyaman untuk digunakan. Kami menawarkan solusi pemeliharaan yang dirancang khusus untuk memenuhi kebutuhan berbagai jenis bangunan, dari hunian hingga gedung komersial.",
+      "bars": [
+        {
+          "label": "Pembersihan Kaca Gedung",
+          "value": 98
+        },
+        {
+          "label": "Perawatan Dinding Eksterior",
+          "value": 97
+        },
+        {
+          "label": "Pengecatan dan Perbaikan Interior",
+          "value": 93
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Pembersihan Kaca Gedung",
+          "text": "Pembersihan kaca gedung adalah salah satu layanan unggulan kami. Kami menggunakan peralatan modern dan metode yang aman untuk membersihkan kaca gedung Anda, menjaga kebersihannya serta meningkatkan estetika gedung. Baik untuk gedung perkantoran, apartemen, atau bangunan tinggi lainnya, tim kami siap memberikan hasil yang memuaskan.",
+          "cta": {
+            "label": "Lihat Layanan Pembersihan Kaca Gedung",
+            "href": "service-glass-cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Hubungi Kami untuk Konsultasi",
+      "text": "Jika Anda memiliki pertanyaan atau ingin berkonsultasi mengenai proyek yang sedang direncanakan, jangan ragu untuk menghubungi kami. Kami siap membantu Anda mewujudkan visi dan impian Anda.",
+      "button": {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp"
+      }
+    }
+  ]
 }

@@ -25,5 +25,123 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Memilih Inland untuk Renovasi Rumah Anda?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "pembangunan/struktur-bata.jpg",
+      "imageAlt": "Renovasi dan penambahan lantai rumah",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Pendekatan Personal",
+          "text": "Setiap proyek renovasi kami dimulai dengan memahami kebutuhan spesifik Anda. Apakah Anda menginginkan perbaikan ruang tamu, memperluas dapur, atau merombak total rumah? Kami selalu mendesain solusi yang tepat untuk kebutuhan Anda."
+        },
+        {
+          "title": "Transformasi dengan Kualitas Tinggi",
+          "text": "Kami menghadirkan hasil renovasi yang rapi dan tahan lama dengan material berkualitas."
+        },
+        {
+          "title": "Pengalaman dalam Berbagai Tipe Renovasi",
+          "text": "Dari renovasi ringan, fasad, dapur, hingga penambahan lantai dan perbaikan struktur."
+        },
+        {
+          "title": "Pekerjaan Tepat Waktu",
+          "text": "Jadwal kerja yang jelas dan pengawasan rutin menjaga renovasi selesai tepat waktu."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Layanan Renovasi Rumah yang Kami Tawarkan",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "pembangunan/hero-pengecoran-dak.jpg",
+      "imageAlt": "Pembesian dak beton untuk penambahan lantai",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Renovasi Interior",
+          "text": "Apakah Anda ingin mengubah tata letak ruang atau memperbarui desain interior? Kami menangani renovasi interior dengan fokus pada kenyamanan, fungsionalitas, dan estetika. Mulai dari dapur, kamar mandi, hingga ruang keluarga, kami hadirkan solusi renovasi yang sesuai dengan gaya hidup Anda."
+        },
+        {
+          "title": "Renovasi Eksterior",
+          "text": "Pembaruan fasad, teras, pagar, carport, dan atap untuk tampilan rumah yang lebih segar."
+        },
+        {
+          "title": "Penambahan Ruang",
+          "text": "Tambah kamar, perluasan dapur, atau penambahan lantai sesuai kebutuhan keluarga."
+        },
+        {
+          "title": "Perbaikan Struktural",
+          "text": "Perbaikan retak, kebocoran, dan perkuatan struktur agar rumah kembali aman."
+        },
+        {
+          "title": "Restorasi Rumah Lama",
+          "text": "Menghidupkan kembali rumah lama dengan tetap menjaga karakter aslinya."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Jenis Renovasi yang Kami Kerjakan",
+      "items": [
+        {
+          "title": "Renovasi Kecil hingga Besar",
+          "text": "Baik Anda ingin memperbarui satu ruangan atau merombak total rumah, kami siap membantu dengan solusi yang tepat."
+        },
+        {
+          "title": "Renovasi Fasad",
+          "text": "Membuat tampilan luar rumah Anda lebih modern dan menarik, dengan tetap mempertahankan struktur asli."
+        },
+        {
+          "title": "Renovasi Dapur dan Kamar Mandi",
+          "text": "Kami menangani perombakan dapur dan kamar mandi, dua area yang sering menjadi prioritas dalam proyek renovasi rumah."
+        },
+        {
+          "title": "Renovasi Rumah Lama",
+          "text": "Memberikan kehidupan baru bagi rumah tua dengan perbaikan struktural dan pembaruan interior serta eksterior tanpa menghilangkan karakter uniknya."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Renovasi Rumah di Inland",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "pembangunan/material-bata.jpg",
+      "imageAlt": "Material renovasi di lokasi proyek",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Awal",
+          "text": "Kami memulai dengan mengadakan konsultasi untuk memahami visi Anda mengenai renovasi. Kami mendiskusikan area yang ingin diperbarui, anggaran, dan tujuan yang ingin dicapai."
+        },
+        {
+          "title": "Pengembangan Rencana Renovasi",
+          "text": "Kami menyusun desain, rincian pekerjaan, dan rencana anggaran yang transparan."
+        },
+        {
+          "title": "Pelaksanaan Renovasi",
+          "text": "Tim kami bekerja sesuai jadwal dengan menjaga kebersihan dan keamanan area rumah."
+        },
+        {
+          "title": "Pemeriksaan Akhir dan Penyelesaian",
+          "text": "Hasil diperiksa bersama Anda sebelum serah terima."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Renovasi Rumah Impian Anda Dimulai di Sini",
+      "text": "Apakah Anda siap mengubah rumah Anda menjadi lebih baik? Inland memiliki tim profesional yang berpengalaman untuk membantu mewujudkan renovasi sesuai dengan visi Anda. Hubungi kami sekarang untuk mendapatkan konsultasi dan rencana renovasi yang sesuai dengan anggaran dan kebutuhan Anda.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

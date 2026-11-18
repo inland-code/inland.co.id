@@ -25,5 +25,118 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "accordion-media",
+      "title": "Mengapa Memilih Inland untuk Desain Interior Anda?",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "interior/ruang-keluarga.jpg",
+      "imageAlt": "Desain ruang keluarga modern dengan panel marmer",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Pendekatan Personal",
+          "text": "Setiap ruang memiliki cerita dan kebutuhan unik. Kami bekerja sama dengan Anda untuk memahami preferensi, gaya hidup, dan fungsi ruangan, sehingga desain yang kami buat sepenuhnya mencerminkan kepribadian dan kebutuhan Anda."
+        },
+        {
+          "title": "Desain Berkelas",
+          "text": "Kami memadukan tren desain terkini dengan prinsip estetika yang abadi untuk menghasilkan ruang yang elegan dan tidak lekang oleh waktu."
+        },
+        {
+          "title": "Material Berkualitas",
+          "text": "Kami memilih material yang tahan lama dan sesuai fungsi ruang, sehingga interior tetap indah dan mudah dirawat."
+        },
+        {
+          "title": "Detail yang Tepat",
+          "text": "Pencahayaan, warna, tekstur, hingga tata letak furnitur kami rancang dengan teliti agar setiap sudut terasa selaras."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Layanan yang Kami Tawarkan",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "interior/dapur-island.jpg",
+      "imageAlt": "Desain dapur dengan kitchen island marmer",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Desain",
+          "text": "Kami memulai setiap proyek dengan memahami kebutuhan Anda melalui konsultasi yang mendalam. Kami akan membantu Anda merumuskan konsep desain yang sesuai dengan visi dan tujuan Anda."
+        },
+        {
+          "title": "Desain Konseptual",
+          "text": "Kami menyusun moodboard, palet warna, dan konsep tata ruang sebagai arah desain yang jelas sebelum detail dikerjakan."
+        },
+        {
+          "title": "3D Visualisasi",
+          "text": "Anda dapat melihat gambaran nyata ruangan melalui visualisasi 3D sebelum pengerjaan dimulai, sehingga keputusan lebih mudah dan tepat."
+        },
+        {
+          "title": "Pengadaan Furnitur dan Dekorasi",
+          "text": "Kami membantu memilih dan mengadakan furnitur, pencahayaan, serta dekorasi yang sesuai dengan konsep desain."
+        },
+        {
+          "title": "Pengawasan Proyek",
+          "text": "Tim kami mengawasi pelaksanaan di lapangan agar hasil akhir sesuai desain, standar kualitas, dan jadwal."
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Ruang yang Kami Desain",
+      "items": [
+        {
+          "icon": "home",
+          "title": "Rumah Tinggal",
+          "text": "Dari ruang tamu, kamar tidur, hingga dapur, kami menghadirkan desain yang menyatu dengan gaya hidup Anda."
+        },
+        {
+          "icon": "office",
+          "title": "Kantor",
+          "text": "Menciptakan lingkungan kerja yang produktif dan inspiratif melalui desain interior yang fungsional dan menarik."
+        },
+        {
+          "icon": "store",
+          "title": "Ruang Komersial",
+          "text": "Baik untuk toko, kafe, atau restoran, kami mendesain ruang komersial yang menarik perhatian pelanggan dan meningkatkan pengalaman mereka."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Proses Kami",
+      "tone": "brand",
+      "imageSide": "right",
+      "image": "interior/meja-kopi.jpg",
+      "imageAlt": "Detail meja kopi hitam mengilap di ruang keluarga",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi Awal",
+          "text": "Kami mendengarkan visi dan kebutuhan Anda serta mendiskusikan gaya dan konsep desain yang diinginkan."
+        },
+        {
+          "title": "Perancangan dan Visualisasi",
+          "text": "Kami menyusun desain detail dan visualisasi 3D, lalu menyempurnakannya bersama Anda hingga sesuai harapan."
+        },
+        {
+          "title": "Pelaksanaan Desain",
+          "text": "Desain diwujudkan oleh tim berpengalaman dengan pengawasan ketat hingga ruang siap digunakan."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Konsultasi Desain Interior Sekarang",
+      "text": "Ingin mewujudkan ruang impian Anda? Mulai perjalanan Anda bersama kami. Hubungi tim Inland untuk mendapatkan konsultasi desain interior yang kustom dan berkualitas.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }

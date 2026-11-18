@@ -25,5 +25,71 @@
       }
     ]
   },
-  "sections": []
+  "sections": [
+    {
+      "type": "service-detail",
+      "title": "Jasa Maintenance Profesional",
+      "text": "Perawatan yang tepat sangat penting untuk menjaga kondisi dan nilai bangunan Anda. Inland menyediakan layanan maintenance yang komprehensif untuk memastikan bahwa properti Anda tetap dalam kondisi terbaik, aman, dan nyaman untuk digunakan. Kami menawarkan solusi pemeliharaan yang dirancang khusus untuk memenuhi kebutuhan berbagai jenis bangunan, dari hunian hingga gedung komersial.",
+      "bars": [
+        {
+          "label": "Pembersihan Kaca Gedung",
+          "value": 98
+        },
+        {
+          "label": "Perawatan Dinding Eksterior",
+          "value": 97
+        },
+        {
+          "label": "Pengecatan dan Perbaikan Interior",
+          "value": 93
+        }
+      ],
+      "cards": [
+        {
+          "title": "Jasa Pembersihan Kaca Gedung",
+          "text": "Pembersihan kaca gedung adalah salah satu layanan unggulan kami. Kami menggunakan peralatan modern dan metode yang aman untuk membersihkan kaca gedung Anda, menjaga kebersihannya serta meningkatkan estetika gedung. Baik untuk gedung perkantoran, apartemen, atau bangunan tinggi lainnya, tim kami siap memberikan hasil yang memuaskan.",
+          "cta": {
+            "label": "Lihat Layanan Pembersihan Kaca Gedung",
+            "href": "service-glass-cleaning"
+          }
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "title": "Layanan Perawatan Kami",
+      "items": [
+        {
+          "icon": "rope",
+          "title": "Pembersihan Kaca Gedung",
+          "text": "Pembersihan kaca gedung tinggi dengan metode rope access yang aman dan efisien."
+        },
+        {
+          "icon": "shield",
+          "title": "Perawatan Dinding Eksterior",
+          "text": "Pembersihan dan perawatan fasad agar bangunan tetap terawat dan bernilai."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Pengecatan & Perbaikan Interior",
+          "text": "Pengecatan ulang dan perbaikan ringan untuk menjaga kenyamanan ruang."
+        }
+      ]
+    },
+    {
+      "type": "banner",
+      "title": "Keamanan adalah Prioritas Kami",
+      "text": "Kami memahami pentingnya keselamatan dalam pekerjaan di ketinggian. Teknisi kami dibekali peralatan pelindung lengkap dan selalu mematuhi prosedur keamanan yang ketat."
+    },
+    {
+      "type": "cta",
+      "title": "Jadwalkan Perawatan Gedung Anda",
+      "text": "Hubungi kami untuk survei lokasi dan penawaran harga terbaik.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ]
 }
