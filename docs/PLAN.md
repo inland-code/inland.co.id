@@ -87,14 +87,17 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Formulir kontak: Worker + Cloudflare Turnstile → simpan ke D1 → buka WhatsApp dengan pesan terisi (nama, kebutuhan, pesan). Riwayat tampil di dashboard.
 - Perbaikan konten: judul salah di halaman Renovasi, tipografi halaman Sealant, konsistensi nomor telepon (NAP).
 
-### Fase 4 — SEO lanjutan
+### Fase 4 — SEO lanjutan ✅
+- ✅ FAQPage + Service JSON-LD, RSS `/feed.xml`, audit SEO otomatis di setiap build (`scripts/seo-audit.mjs`).
 - Meta, canonical, `hreflang` (id, en, x-default), Open Graph, Twitter Card.
 - Gambar OG otomatis per halaman/artikel saat build.
 - JSON-LD: `Organization`, `LocalBusiness`/`GeneralContractor`, `WebSite`, `Service`, `Article`, `BreadcrumbList`, `FAQPage`, `ImageObject`.
 - Sitemap index terpisah per tipe & bahasa, robots.txt, RSS.
 - Audit otomatis di CI: duplikat judul/deskripsi, alt kosong, link rusak.
 
-### Fase 5 — GEO / optimasi LLM
+### Fase 5 — GEO / optimasi LLM ✅
+- ✅ Versi Markdown tiap halaman (`/tentang-inland.md`, dll.; `noindex` agar tidak duplikat di Google), `llms.txt` menautkan ke versi Markdown, `llms-full.txt` berisi seluruh konten.
+- ⏳ Saat deploy: matikan "Block AI bots" / AI Crawl Control di dashboard Cloudflare agar crawler AI tidak diblokir di level edge.
 - `/llms.txt` & `/llms-full.txt` otomatis dari konten.
 - Versi Markdown tiap halaman (`/halaman/index.md`).
 - Blok fakta entitas konsisten (siapa, layanan, area Jabodetabek, kontak).

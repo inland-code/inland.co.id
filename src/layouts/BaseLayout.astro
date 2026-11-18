@@ -10,6 +10,7 @@ import { t } from '@/i18n/ui';
 import { isProduction } from '@/lib/env';
 import { absoluteUrl, graph, organizationSchema, websiteSchema } from '@/lib/seo';
 import site from '@/data/site.json';
+import { markdownPath } from '@/lib/markdown';
 
 interface Props {
   locale: Locale;
@@ -70,6 +71,7 @@ const structured = graph(organizationSchema(), websiteSchema(locale), ...jsonLd)
     <meta name="twitter:card" content="summary_large_image" />
 
     <link rel="alternate" type="text/plain" title="LLMs" href="/llms.txt" />
+    {path !== '/404/' && !noindex && <link rel="alternate" type="text/markdown" href={markdownPath(path)} />}
     <link rel="sitemap" type="application/xml" href="/sitemap_index.xml" />
     <link rel="alternate" type="application/rss+xml" title="Inland — Artikel" href="/feed.xml" />
     <script type="application/ld+json" set:html={JSON.stringify(structured)} />
