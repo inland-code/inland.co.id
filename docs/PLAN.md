@@ -1,6 +1,6 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir diperbarui: 2026-11-18
+Status: **LIVE di https://inland.co.id** (Fase 9 selesai) · Terakhir diperbarui: 2026-11-19
 
 ## Keputusan yang sudah diambil
 
@@ -12,7 +12,7 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 | 4   | URL Bahasa Indonesia | **Sama persis** dengan situs WordPress saat ini, termasuk trailing slash, di root tanpa prefix                                                                                                |
 | 5   | Formulir kontak      | **Diarahkan ke WhatsApp** (pesan terisi otomatis) **dan tercatat di dashboard** (Worker `/api/contact` → Cloudflare D1 → redirect `wa.me`). D1 hanya untuk data formulir; media tetap di repo |
 | 6   | Font                 | **Roboto** (self-hosted, variable woff2)                                                                                                                                                      |
-| 7   | DNS domain           | Nameserver **belum** di Cloudflare. Pengembangan & uji di subdomain `*.workers.dev` (noindex); domain disambungkan di Fase 9 setelah semua selesai                                            |
+| 7   | DNS domain           | Nameserver di **Cloudflare** (registrar IDwebhost). Custom domain Worker: `inland.co.id` + `www`. Email tetap Hostinger (MX/SPF/DKIM DNS only)                                                |
 | 8   | Pengguna dashboard   | **Hanya pemilik.** Login dengan akun GitHub (OAuth App, gratis) — Cloudflare Zero Trust tidak dipakai karena mewajibkan kartu kredit                                                          |
 
 ---
@@ -150,6 +150,16 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 1. Staging: verifikasi 100% URL, Lighthouse, Rich Results Test, uji multi-perangkat.
 2. Cutover: salin semua DNS record (**termasuk MX email**), pasang custom domain, hapus `noindex`.
 3. Pasca-live: submit sitemap ke Google Search Console & Bing (IndexNow), pantau 404 selama 2–4 minggu.
+
+**Status cutover (2026-11-19) — selesai:**
+
+- ✅ Nameserver IDwebhost → `kia`/`peter.ns.cloudflare.com`; record MX, SPF, DMARC, DKIM Hostinger dipertahankan (DNS only).
+- ✅ Custom domain Worker `inland.co.id` & `www.inland.co.id`; record A/AAAA/CNAME WordPress lama dihapus.
+- ✅ Mode produksi otomatis untuk build Workers Builds dari `main` (`src/lib/env.ts`).
+- ✅ Redirect Rules 301: `www` → root; tambah trailing slash (kecuali file ber-titik & `/api/`).
+- ✅ GitHub OAuth App: redirect URI `inland.co.id` ditambahkan (workers.dev tetap ada).
+- ✅ Google Search Console (properti Domain, verifikasi TXT via Cloudflare) + `sitemap_index.xml` dikirim ulang: berhasil.
+- ⏳ Pantau laporan Halaman → 404 di Search Console 2–4 minggu; Bing Webmaster (impor dari GSC) opsional.
 
 ## Pengembangan konten kompetitif (setelah Fase 8)
 
