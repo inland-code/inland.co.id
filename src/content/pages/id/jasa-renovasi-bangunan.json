@@ -2,6 +2,7 @@
   "translationKey": "reno-building",
   "slug": "jasa-renovasi-bangunan",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

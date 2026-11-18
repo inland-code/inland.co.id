@@ -2,6 +2,7 @@
   "translationKey": "reno-living-room",
   "slug": "jasa-renovasi-ruang-tamu",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

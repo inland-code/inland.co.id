@@ -7,6 +7,7 @@ import Breadcrumbs from '@/components/Breadcrumbs.astro';
 import PostCard from '@/components/PostCard.astro';
 import { alternatesFor, getRoutes, hrefFor, type Route } from '@/lib/routes';
 import { imageFor } from '@/lib/media';
+import { relatedForPost } from '@/lib/related';
 import { ogPath } from '@/lib/og';
 import { absoluteUrl, breadcrumbSchema, faqSchema, ORG_ID } from '@/lib/seo';
 import { t } from '@/i18n/ui';
@@ -28,15 +29,8 @@ const crumbs = [
 const { Content, headings } = await render(route.entry);
 const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const showToc = toc.filter((h) => h.depth === 2).length >= 3;
-// Artikel terkait: kategori sama lebih dulu, lalu artikel terbaru lain (bahasa sama).
-const related = (await getRoutes())
-  .filter((r): r is PostRoute => r.kind === 'post' && r.locale === locale && r.path !== route.path)
-  .sort(
-    (a, b) =>
-      Number(b.entry.data.category === data.category) - Number(a.entry.data.category === data.category) ||
-      b.entry.data.publishedAt.getTime() - a.entry.data.publishedAt.getTime(),
-  )
-  .slice(0, 3);
+// Artikel terkait: dihitung dari tautan bersama, saling-tautan, lalu kategori (lihat lib/related.ts).
+const related = relatedForPost(route, await getRoutes(), await hrefFor('contact', locale));
 const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
 
 const jsonLd: object[] = [
@@ -53,6 +47,16 @@ const jsonLd: object[] = [
     dateModified: (data.updatedAt ?? data.publishedAt).toISOString(),
     author: { '@type': 'Organization', name: data.author, url: absoluteUrl('/') },
     publisher: { '@id': ORG_ID },
+    ...(data.sources.length
+      ? {
+          citation: data.sources.map((c) => ({
+            '@type': 'CreativeWork',
+            name: c.title,
+            url: c.url,
+            ...(c.publisher ? { publisher: c.publisher } : {}),
+          })),
+        }
+      : {}),
   },
   breadcrumbSchema(crumbs),
   ...(data.faq.length ? [faqSchema(data.faq)] : []),
@@ -114,6 +118,24 @@ const jsonLd: object[] = [
       <div class="space-y-5 text-lg leading-relaxed text-ink [&_a]:text-accent-strong [&_a]:underline [&_blockquote]:border-l-4 [&_blockquote]:border-brand-500 [&_blockquote]:bg-surface-alt [&_blockquote]:px-5 [&_blockquote]:py-3 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-heading [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-heading [&_li]:mt-1.5 [&_ol]:list-decimal [&_ol]:pl-6 [&_table]:block [&_table]:w-full [&_table]:overflow-x-auto [&_table]:rounded-xl [&_table]:text-base [&_table]:ring-1 [&_table]:ring-line [&_td]:border-t [&_td]:border-line [&_td]:px-4 [&_td]:py-3 [&_th]:bg-brand-50 [&_th]:px-4 [&_th]:py-3 [&_th]:text-left [&_th]:text-heading [&_ul]:list-disc [&_ul]:pl-6">
         <Content />
       </div>
+      {data.sources.length > 0 && (
+        <aside class="mt-12 rounded-card bg-surface-alt p-6 ring-1 ring-line" aria-labelledby="sources-heading">
+          <h2 id="sources-heading" class="text-xl font-bold text-heading">
+            {t(locale, 'post.sources')}
+          </h2>
+          <p class="mt-2 text-sm text-muted">{t(locale, 'post.sourcesNote')}</p>
+          <ol class="mt-4 list-decimal space-y-2 pl-6 text-base">
+            {data.sources.map((c) => (
+              <li>
+                <a href={c.url} target="_blank" rel="noopener external" class="text-accent-strong underline hover:no-underline">
+                  {c.title}
+                </a>
+                {c.publisher && <span class="text-muted"> — {c.publisher}</span>}
+              </li>
+            ))}
+          </ol>
+        </aside>
+      )}
     </div>
     {related.length > 0 && (
       <section class="container-site mt-20" aria-labelledby="related-heading">

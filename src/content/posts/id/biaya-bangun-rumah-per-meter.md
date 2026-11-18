@@ -17,6 +17,16 @@ faq:
     a: Dengan asumsi Rp3,5–4,5 juta per m², rumah tipe 36 (36 m²) membutuhkan sekitar Rp126–162 juta untuk bangunannya saja.
   - q: Apakah rumah 2 lantai lebih mahal per meter?
     a: Ya. Rumah 2 lantai membutuhkan struktur lebih kuat (kolom, balok, dak, tangga), sehingga biaya per m² umumnya lebih tinggi dibanding rumah 1 lantai dengan spesifikasi sama.
+sources:
+  - title: "Permen PUPR Nomor 8 Tahun 2023 tentang Pedoman Penyusunan Perkiraan Biaya Pekerjaan Konstruksi (AHSP)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
+  - title: "SIMBG — Sistem Informasi Manajemen Bangunan Gedung (pengajuan PBG & SLF)"
+    publisher: "Kementerian Pekerjaan Umum"
+    url: https://simbg.pu.go.id/
 ---
 
 Sebelum membangun rumah, langkah paling penting adalah memperkirakan anggaran secara realistis. Panduan ini membahas **biaya bangun rumah 2026 per meter persegi** di Jabodetabek, simulasi untuk rumah tipe 36, 45, dan 70, serta biaya tambahan yang sering luput diperhitungkan.
@@ -99,3 +109,7 @@ Pertimbangan lain:
 ## Bangun Rumah Bersama Inland
 
 Inland menyediakan [jasa pembangunan rumah](/jasa-pembangunan-rumah/) dari nol hingga siap huni, termasuk [desain rumah](/jasa-desain-rumah/) dan penyusunan RAB rinci. [Konsultasikan rencana Anda](/kontak-inland/) dan dapatkan estimasi biaya sesuai desain dan lokasi.
+
+Inland melayani pembangunan dan [renovasi rumah](/jasa-renovasi-rumah/) di [Jakarta](/jasa-renovasi-rumah-jakarta/), [Depok](/jasa-renovasi-rumah-depok/), [Bekasi](/jasa-renovasi-rumah-bekasi/), [Bogor](/jasa-renovasi-rumah-bogor/), [Tangerang](/jasa-renovasi-rumah-tangerang/), [Tangerang Selatan](/jasa-renovasi-rumah-tangerang-selatan/), dan [BSD](/jasa-renovasi-rumah-bsd/).
+
+**Baca juga:** [Biaya renovasi rumah per meter](/biaya-renovasi-rumah-per-meter/) · [Desain rumah tropis modern](/rumah-tropis-modern/) · [Syarat dan alur PBG](/pbg-pengganti-imb/)

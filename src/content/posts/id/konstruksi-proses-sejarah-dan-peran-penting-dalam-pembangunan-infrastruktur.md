@@ -16,6 +16,16 @@ faq:
     a: "Tahapannya meliputi perencanaan, desain dan penyusunan RAB, pengadaan, pelaksanaan pekerjaan, pengawasan dan kontrol kualitas, serta serah terima dan pemeliharaan."
   - q: "Apa itu beton bertulang?"
     a: "Beton bertulang adalah beton yang diperkuat tulangan baja sehingga mampu menahan gaya tekan sekaligus gaya tarik. Material ini menjadi dasar sebagian besar bangunan modern."
+sources:
+  - title: "UU Nomor 2 Tahun 2017 tentang Jasa Konstruksi"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
+  - title: "Permen PUPR Nomor 8 Tahun 2023 tentang Pedoman Penyusunan Perkiraan Biaya Pekerjaan Konstruksi (AHSP)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Konstruksi adalah rangkaian kegiatan untuk mewujudkan rancangan menjadi bangunan atau infrastruktur nyata — mulai dari rumah tinggal, gedung, jalan, hingga jembatan. Konstruksi yang baik memastikan bangunan aman, sesuai fungsi, selesai tepat waktu, dan sesuai anggaran.
@@ -71,3 +81,5 @@ Konstruksi adalah tulang punggung pembangunan. Infrastruktur yang baik membuka a
 ## Membangun Bersama Inland
 
 Inland menangani [pembangunan rumah](/jasa-pembangunan-rumah/) dari nol hingga siap huni, [renovasi rumah](/jasa-renovasi-rumah-inland/), serta [perawatan gedung](/jasa-perawatan-gedung/) dengan perencanaan matang, RAB transparan, dan pengawasan ketat. [Konsultasikan proyek Anda](/kontak-inland/) dengan tim kami.
+
+**Baca juga:** [RAB rumah](/rab-rumah/) · [Cara memilih kontraktor rumah](/cara-memilih-kontraktor-rumah/) · [PBG pengganti IMB](/pbg-pengganti-imb/) · Layanan terkait: [jasa kontraktor](/jasa-kontraktor/), [renovasi ruko](/jasa-renovasi-ruko/), dan [renovasi kantor](/jasa-renovasi-kantor/).

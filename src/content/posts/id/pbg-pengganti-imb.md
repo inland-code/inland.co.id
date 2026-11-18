@@ -17,11 +17,18 @@ faq:
     a: Pengajuan PBG dilakukan secara online melalui SIMBG (simbg.pu.go.id) dan diproses oleh pemerintah kabupaten/kota setempat.
   - q: Apakah renovasi ringan perlu PBG?
     a: Pekerjaan pemeliharaan seperti cat ulang, ganti keramik, atau perbaikan atap bocor tanpa mengubah struktur umumnya tidak memerlukan PBG.
+sources:
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
+  - title: "SIMBG — Sistem Informasi Manajemen Bangunan Gedung (pengajuan PBG & SLF)"
+    publisher: "Kementerian Pekerjaan Umum"
+    url: https://simbg.pu.go.id/
 ---
 
 Sejak terbitnya **PP Nomor 16 Tahun 2021** sebagai turunan UU Cipta Kerja, Izin Mendirikan Bangunan (IMB) digantikan oleh **Persetujuan Bangunan Gedung (PBG)**. Bagi Anda yang akan membangun atau merenovasi rumah, berikut hal-hal penting tentang PBG.
 
-*Catatan: ketentuan teknis dan retribusi dapat berbeda di setiap daerah. Selalu konfirmasi ke dinas terkait atau portal resmi SIMBG.*
+*Catatan: ketentuan teknis dan retribusi dapat berbeda di setiap daerah. Dasar hukumnya adalah [PP Nomor 16 Tahun 2021](https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021); selalu konfirmasi ke dinas terkait atau portal resmi SIMBG.*
 
 ## Apa Itu PBG?
 
@@ -49,7 +56,7 @@ IMB yang sudah terbit tetap berlaku. Pemilik tidak wajib mengganti IMB menjadi P
 
 ## Alur Mengurus PBG lewat SIMBG
 
-1. **Buat akun** di portal resmi SIMBG (simbg.pu.go.id).
+1. **Buat akun** di [portal resmi SIMBG](https://simbg.pu.go.id/).
 2. **Isi data** pemilik, tanah, dan bangunan (luas, jumlah lantai, ketinggian).
 3. **Unggah dokumen** administrasi dan teknis.
 4. **Verifikasi dan konsultasi teknis** oleh tim penilai dari pemerintah daerah.
@@ -89,3 +96,5 @@ Lama proses dan besaran retribusi berbeda di setiap kabupaten/kota, bergantung p
 ## Dibantu Inland
 
 Tim [jasa arsitek](/jasa-arsitek/) dan [desain rumah](/jasa-desain-rumah/) Inland menyiapkan gambar arsitektur dan struktur yang dibutuhkan untuk pengajuan PBG, baik untuk [pembangunan rumah](/jasa-pembangunan-rumah/) maupun [renovasi dan tambah lantai](/jasa-renovasi-rumah-inland/). [Konsultasikan rencana Anda](/kontak-inland/).
+
+**Baca juga:** [RAB rumah](/rab-rumah/) · [Biaya bangun rumah per meter](/biaya-bangun-rumah-per-meter/) · [Cara memilih kontraktor rumah](/cara-memilih-kontraktor-rumah/)

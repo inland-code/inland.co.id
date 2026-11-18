@@ -16,6 +16,13 @@ faq:
     a: "Arsitektur kuno umumnya memakai material lokal seperti batu, bata tanah liat, dan kayu, berorientasi pada iklim dan matahari, serta sarat makna simbolis dan keagamaan."
   - q: "Apa pengaruh arsitektur kuno pada rumah modern?"
     a: "Prinsip proporsi, simetri, kolom bergaya klasik, orientasi bangunan terhadap matahari, dan pemanfaatan material lokal masih banyak dipakai dalam desain rumah modern."
+sources:
+  - title: "Borobudur Temple Compounds"
+    publisher: "UNESCO World Heritage Centre"
+    url: https://whc.unesco.org/en/list/592
+  - title: "Prambanan Temple Compounds"
+    publisher: "UNESCO World Heritage Centre"
+    url: https://whc.unesco.org/en/list/642
 ---
 
 Arsitektur kuno adalah cermin peradaban. Dari piramida di tepi Sungai Nil hingga kuil-kuil batu di Asia, setiap bangunan menyimpan cerita tentang kepercayaan, teknologi, dan cara hidup masyarakat pembuatnya. Memahami arsitektur kuno membantu kita melihat bagaimana prinsip-prinsip desain yang masih dipakai hari ini — proporsi, orientasi bangunan, dan pemilihan material — lahir dari pengalaman ribuan tahun.
@@ -46,7 +53,7 @@ Romawi membuktikan bahwa inovasi material dan struktur membuka bentang bangunan 
 
 ## India dan Asia Selatan: Kuil Batu dan Ornamen
 
-Arsitektur India kuno melahirkan stupa Buddha, kuil-kuil Hindu yang dipahat dari batu, hingga kompleks gua seperti Ajanta dan Ellora. Ornamen yang kaya dan tata ruang yang sarat makna spiritual menjadi ciri khasnya. Pengaruhnya menyebar ke Asia Tenggara, termasuk ke Nusantara melalui candi-candi seperti Borobudur dan Prambanan.
+Arsitektur India kuno melahirkan stupa Buddha, kuil-kuil Hindu yang dipahat dari batu, hingga kompleks gua seperti Ajanta dan Ellora. Ornamen yang kaya dan tata ruang yang sarat makna spiritual menjadi ciri khasnya. Pengaruhnya menyebar ke Asia Tenggara, termasuk ke Nusantara melalui candi-candi seperti [Borobudur](https://whc.unesco.org/en/list/592) dan [Prambanan](https://whc.unesco.org/en/list/642) yang kini menjadi Warisan Dunia UNESCO.
 
 ## Tiongkok: Kayu, Atap, dan Harmoni
 
@@ -64,3 +71,5 @@ Peradaban Maya, Aztek, dan Teotihuacan membangun piramida bertingkat dengan tang
 4. **Bangun untuk jangka panjang.** Kualitas material dan pengerjaan menentukan umur bangunan.
 
 Di Inland, prinsip-prinsip tersebut kami terapkan dalam setiap proyek — dari [desain rumah](/jasa-desain-rumah/) dan [desain interior](/jasa-desain-interior/) hingga [pembangunan rumah](/jasa-pembangunan-rumah/). Ingin rumah yang indah, fungsional, dan tahan lama? [Konsultasikan dengan tim kami](/kontak-inland/).
+
+**Baca juga:** [Arsitektur: sejarah, elemen, dan perannya](/arsitektur-sejarah-elemen-dan-peranannya-dalam-perkembangan-peradaban-manusia/) · [Rumah tropis modern](/rumah-tropis-modern/)

@@ -17,6 +17,16 @@ faq:
     a: Aman bila dilakukan oleh teknisi terlatih dengan peralatan standar, sistem tali ganda, dan prosedur K3. Di Indonesia, pekerjaan di ketinggian diatur dalam Permenaker Nomor 9 Tahun 2016.
   - q: Pekerjaan apa saja yang bisa dikerjakan dengan rope access?
     a: Pembersihan kaca dan fasad, pemasangan dan perbaikan sealant, pengecatan eksterior, inspeksi fasad, serta perbaikan ringan pada bangunan tinggi.
+sources:
+  - title: "Permenaker Nomor 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "The IRATA System"
+    publisher: "IRATA International"
+    url: https://irata.org/page/the-irata-system
 ---
 
 Membersihkan kaca gedung pencakar langit, mengganti sealant di lantai 20, atau memeriksa fasad yang sulit dijangkau—semua ini kini lazim dikerjakan dengan **rope access**. Apa sebenarnya rope access, dan mengapa metode ini semakin dipilih pengelola gedung?
@@ -51,7 +61,7 @@ Membersihkan kaca gedung pencakar langit, mengganti sealant di lantai 20, atau m
 
 ## Standar Keselamatan Rope Access di Indonesia
 
-Pekerjaan di ketinggian di Indonesia diatur dalam **Permenaker Nomor 9 Tahun 2016** tentang Keselamatan dan Kesehatan Kerja dalam Pekerjaan pada Ketinggian. Regulasi ini mengatur kompetensi tenaga kerja, perencanaan, prosedur kerja, dan peralatan. Di tingkat internasional, asosiasi seperti **IRATA** juga menerbitkan sertifikasi teknisi rope access yang banyak diakui industri.
+Pekerjaan di ketinggian di Indonesia diatur dalam **[Permenaker Nomor 9 Tahun 2016](https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016)** tentang Keselamatan dan Kesehatan Kerja dalam Pekerjaan pada Ketinggian. Regulasi ini mengatur kompetensi tenaga kerja, perencanaan, prosedur kerja, dan peralatan. Di tingkat internasional, asosiasi seperti **IRATA** juga menerbitkan sertifikasi teknisi rope access yang banyak diakui industri.
 
 Prinsip keselamatan utama rope access:
 
@@ -96,3 +106,5 @@ Justru sebaliknya: karena tidak memerlukan struktur besar di sekitar gedung, are
 Rope access ideal untuk gedung perkantoran, apartemen, hotel, dan bangunan komersial yang tidak memiliki gondola atau memiliki fasad dengan bentuk rumit. Untuk mengetahui estimasi biayanya, baca [biaya pembersihan kaca gedung per m²](/biaya-pembersihan-kaca-gedung/).
 
 Inland menyediakan [jasa rope access](/jasa-rope-access/) untuk pembersihan kaca, sealant, dan perawatan fasad di Jabodetabek. [Hubungi kami](/kontak-inland/) untuk survei dan penawaran.
+
+**Baca juga:** [Biaya pembersihan kaca gedung](/biaya-pembersihan-kaca-gedung/) · [Penyebab kaca gedung bocor](/penyebab-kaca-gedung-bocor/) · Layanan terkait: [perawatan gedung](/jasa-perawatan-gedung/).

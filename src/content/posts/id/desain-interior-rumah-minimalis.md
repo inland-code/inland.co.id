@@ -17,6 +17,10 @@ faq:
     a: Warna terang dan netral seperti putih, krem, abu-abu muda, atau warna kayu muda membantu ruang terasa lebih luas, dengan satu atau dua warna aksen.
   - q: Berapa biaya desain interior rumah minimalis?
     a: Sebagai gambaran pasar, fee desain sekitar Rp150 ribu–Rp1 juta per m² atau 5–8% dari anggaran proyek, sedangkan paket desain dan produksi mulai sekitar Rp2,5 juta per m².
+sources:
+  - title: "Permenkes Nomor 2 Tahun 2023 tentang Peraturan Pelaksanaan PP Kesehatan Lingkungan"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/245563/permenkes-no-2-tahun2023
 ---
 
 Rumah dengan luas terbatas kini menjadi pilihan banyak keluarga di perkotaan. Kuncinya bukan memperbesar bangunan, tetapi **mendesain interior yang cerdas**. Berikut 12 ide **desain interior rumah minimalis** agar rumah kecil terasa lebih lega dan nyaman.
@@ -28,7 +32,7 @@ Putih, krem, abu-abu muda, dan kayu muda memantulkan cahaya sehingga ruangan ter
 Jendela lebar, pintu kaca, atau skylight membuat ruang lebih terang dan hemat listrik di siang hari.
 
 ## 3. Pilih Tata Ruang Terbuka
-Menggabungkan ruang tamu, ruang makan, dan dapur tanpa sekat membuat sirkulasi lebih lega.
+Menggabungkan [ruang tamu](/jasa-renovasi-ruang-tamu/), ruang makan, dan dapur tanpa sekat membuat sirkulasi lebih lega.
 
 ## 4. Furnitur Multifungsi
 Sofa bed, meja lipat, ranjang dengan laci, atau meja makan yang bisa diperpanjang menghemat ruang tanpa mengurangi fungsi.
@@ -89,3 +93,5 @@ Gunakan kaca partisi shower alih-alih tirai, keramik ukuran besar agar nat lebih
 ## Wujudkan Interior Minimalis Bersama Inland
 
 Tim [jasa desain interior](/jasa-desain-interior/) Inland membantu dari konsultasi, desain konseptual, visualisasi 3D, hingga pengawasan pelaksanaan. Ingin sekaligus merancang bangunannya? Lihat juga [jasa desain rumah](/jasa-desain-rumah/) dan inspirasi [rumah tropis modern](/rumah-tropis-modern/). [Hubungi kami](/kontak-inland/) untuk konsultasi.
+
+**Baca juga:** [Rumah tropis modern](/rumah-tropis-modern/) · [Biaya renovasi rumah per meter](/biaya-renovasi-rumah-per-meter/) · Layanan terkait: [renovasi kamar](/jasa-renovasi-kamar/), [renovasi apartemen](/jasa-renovasi-apartemen/), dan [jasa arsitek](/jasa-arsitek/).

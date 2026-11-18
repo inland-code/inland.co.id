@@ -92,6 +92,11 @@ export async function routeToMarkdown(route: Route): Promise<string> {
         `> ${d.excerpt}`,
         `URL: ${url}  \n${route.locale === 'id' ? 'Diterbitkan' : 'Published'}: ${d.publishedAt.toISOString().slice(0, 10)}`,
         (route.entry.body ?? '').trim(),
+        ...(d.sources.length
+          ? [
+              `## ${route.locale === 'id' ? 'Referensi' : 'References'}\n\n${d.sources.map((c) => `- [${c.title}](${c.url})${c.publisher ? ` — ${c.publisher}` : ''}`).join('\n')}`,
+            ]
+          : []),
         contactBlock(route.locale),
       ].join('\n\n') + '\n'
     );

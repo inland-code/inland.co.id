@@ -2,6 +2,7 @@
   "translationKey": "reno-yard",
   "slug": "jasa-renovasi-halaman-depan-belakang",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

@@ -2,6 +2,7 @@
   "translationKey": "reno-office",
   "slug": "jasa-renovasi-kantor",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

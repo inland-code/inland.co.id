@@ -3,8 +3,10 @@
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import PageHero from '@/components/PageHero.astro';
 import PostCard from '@/components/PostCard.astro';
+import RelatedLinks from '@/components/RelatedLinks.astro';
 import Sections from '@/components/sections/Sections.astro';
 import { alternatesFor, getRoutes, hrefFor, type Route } from '@/lib/routes';
+import { parentKeyOf, relatedForPage, siblingPages } from '@/lib/related';
 import { ogPath } from '@/lib/og';
 import { absoluteUrl, breadcrumbSchema, faqSchema, ORG_ID, serviceSchema } from '@/lib/seo';
 import { t } from '@/i18n/ui';
@@ -19,11 +21,33 @@ const data = route.entry.data;
 
 const alternates = await alternatesFor(route.translationKey);
 const homePath = await hrefFor('home', locale);
+const all = await getRoutes();
+
+// Breadcrumb berjenjang: Beranda › Layanan Kami › (induk) › halaman ini.
+const pageByKey = (key: string) => all.find((r): r is PageRoute => r.kind === 'page' && r.locale === locale && r.translationKey === key);
+const ancestors: PageRoute[] = [];
+for (let key = parentKeyOf(route), guard = 0; key && guard < 4; guard++) {
+  const p = pageByKey(key);
+  if (!p || p.path === route.path || ancestors.includes(p)) break;
+  ancestors.unshift(p);
+  key = parentKeyOf(p);
+}
+const crumbs = [
+  { name: t(locale, 'breadcrumb.home'), path: homePath },
+  ...ancestors.map((p) => ({ name: p.entry.data.hero.title, path: p.path })),
+  { name: data.hero.title, path: route.path },
+];
+
+// Interlinking: artikel & layanan terkait, disisipkan sebelum CTA penutup.
+const showRelated = data.template === 'service';
+const relatedPosts = showRelated ? relatedForPage(route, all) : [];
+const relatedPages = showRelated ? siblingPages(route, all) : [];
+const ctaAt = data.sections.findLastIndex((s) => s.type === 'cta');
+const [before, after] = ctaAt >= 0 ? [data.sections.slice(0, ctaAt), data.sections.slice(ctaAt)] : [data.sections, []];
 
 // Template "articles": daftar artikel bahasa aktif (fallback ID bila belum ada terjemahan).
 let posts: Extract<Route, { kind: 'post' }>[] = [];
 if (data.template === 'articles') {
-  const all = await getRoutes();
   const pick = (l: typeof locale) =>
     all
       .filter((r): r is Extract<Route, { kind: 'post' }> => r.kind === 'post' && r.locale === l)
@@ -43,14 +67,7 @@ const jsonLd: object[] = [
     isPartOf: { '@id': `${absoluteUrl('/')}#website` },
     about: { '@id': ORG_ID },
   },
-  ...(route.slug
-    ? [
-        breadcrumbSchema([
-          { name: t(locale, 'breadcrumb.home'), path: homePath },
-          { name: data.hero.title, path: route.path },
-        ]),
-      ]
-    : []),
+  ...(route.slug ? [breadcrumbSchema(crumbs)] : []),
   ...(faqs.length ? [faqSchema(faqs)] : []),
   ...(data.template === 'service'
     ? [serviceSchema({ name: data.hero.title, description: data.seo.description, path: route.path, locale })]
@@ -68,7 +85,7 @@ const jsonLd: object[] = [
   noindex={data.seo.noindex}
   jsonLd={jsonLd}
 >
-  <PageHero locale={locale} {...data.hero} />
+  <PageHero locale={locale} {...data.hero} crumbs={route.slug ? crumbs : undefined} />
   {data.template === 'articles' ? (
     <section class="container-site py-16">
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -88,6 +105,10 @@ const jsonLd: object[] = [
       </div>
     </section>
   ) : (
-    <Sections sections={data.sections} locale={locale} />
+    <>
+      <Sections sections={before} locale={locale} />
+      <RelatedLinks locale={locale} posts={relatedPosts} pages={relatedPages} />
+      <Sections sections={after} locale={locale} />
+    </>
   )}
 </BaseLayout>

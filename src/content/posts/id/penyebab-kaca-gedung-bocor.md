@@ -17,6 +17,16 @@ faq:
     a: Umurnya sangat bervariasi, umumnya antara 5 hingga 30 tahun, tergantung jenis dan kualitas sealant, pemasangan, pergerakan bangunan, dan paparan cuaca.
   - q: Apakah sealant lama harus dibongkar sebelum re-sealant?
     a: Ya. Sealant lama yang rusak sebaiknya dibersihkan dan permukaan disiapkan agar sealant baru menempel sempurna. Menimpa sealant lama biasanya tidak bertahan lama.
+sources:
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
+  - title: "Permenaker Nomor 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
 ---
 
 Noda air di dinding dalam, karpet basah di dekat jendela, atau rembesan setiap kali hujan deras—ini tanda klasik **kaca gedung bocor**. Kabar baiknya, sebagian besar kasus berasal dari satu sumber yang bisa diperbaiki: **sealant**.
@@ -92,3 +102,5 @@ Inspeksi dari dekat (dengan rope access) membantu menentukan pilihan paling efis
 Kebocoran kecil bisa merusak plafon, dinding, karpet, hingga instalasi listrik. Pemeriksaan sealant sebaiknya dijadwalkan bersama [pembersihan kaca gedung](/biaya-pembersihan-kaca-gedung/) secara rutin.
 
 Inland menangani [jasa sealant kaca gedung tinggi](/jasa-sealant-kaca-gedung-tinggi-profesional/) dan [sealant kaca gedung di Jakarta](/jasa-sealant-kaca-gedung-jakarta-profesional/) dengan metode rope access. [Hubungi kami](/kontak-inland/) untuk inspeksi dan penawaran.
+
+**Baca juga:** [Rope access adalah](/rope-access-adalah/) · [Biaya pembersihan kaca gedung](/biaya-pembersihan-kaca-gedung/) · Layanan terkait: [jasa rope access](/jasa-rope-access/) dan [perawatan gedung](/jasa-perawatan-gedung/).

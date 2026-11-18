@@ -2,6 +2,7 @@
   "translationKey": "reno-contractor",
   "slug": "jasa-kontraktor-renovasi-rumah",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

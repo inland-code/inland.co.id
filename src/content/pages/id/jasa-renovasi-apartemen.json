@@ -2,6 +2,7 @@
   "translationKey": "reno-apartment",
   "slug": "jasa-renovasi-apartemen",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

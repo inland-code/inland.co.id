@@ -2,6 +2,7 @@
   "translationKey": "reno-shophouse",
   "slug": "jasa-renovasi-ruko",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

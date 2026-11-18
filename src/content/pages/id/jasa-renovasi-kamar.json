@@ -2,6 +2,7 @@
   "translationKey": "reno-bedroom",
   "slug": "jasa-renovasi-kamar",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

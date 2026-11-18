@@ -2,6 +2,7 @@
   "translationKey": "reno-city-tangerang",
   "slug": "jasa-renovasi-rumah-tangerang",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

@@ -2,6 +2,7 @@
   "translationKey": "reno-house",
   "slug": "jasa-renovasi-rumah",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

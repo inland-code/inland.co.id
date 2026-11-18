@@ -17,6 +17,13 @@ faq:
     a: Bisa, misalnya karena perubahan desain atau kondisi lapangan. Perubahan sebaiknya dicatat sebagai pekerjaan tambah/kurang dan disetujui tertulis sebelum dikerjakan.
   - q: Berapa dana cadangan yang ideal dalam RAB?
     a: Umumnya 10–15% dari total anggaran, terutama untuk renovasi rumah lama yang berisiko menyimpan kerusakan tersembunyi.
+sources:
+  - title: "Permen PUPR Nomor 8 Tahun 2023 tentang Pedoman Penyusunan Perkiraan Biaya Pekerjaan Konstruksi (AHSP)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023
+  - title: "UU Nomor 2 Tahun 2017 tentang Jasa Konstruksi"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
 ---
 
 Banyak proyek rumah membengkak biayanya bukan karena harga material naik, tetapi karena sejak awal tidak ada perencanaan anggaran yang rinci. Di sinilah **RAB rumah** berperan.
@@ -27,7 +34,7 @@ RAB (Rencana Anggaran Biaya) adalah dokumen yang merinci perkiraan biaya setiap 
 
 > **Biaya pekerjaan = Volume pekerjaan × Harga satuan pekerjaan**
 
-Harga satuan pekerjaan sudah mencakup material, upah tenaga kerja, dan peralatan untuk satu satuan pekerjaan (misalnya per m² dinding atau per m³ beton).
+Harga satuan pekerjaan sudah mencakup material, upah tenaga kerja, dan peralatan untuk satu satuan pekerjaan (misalnya per m² dinding atau per m³ beton). Sebagai acuan, pemerintah menerbitkan pedoman Analisis Harga Satuan Pekerjaan (AHSP) dalam [Permen PUPR Nomor 8 Tahun 2023](https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023), yang memuat koefisien material, tenaga kerja, dan alat per jenis pekerjaan.
 
 ## Mengapa RAB Penting?
 
@@ -96,3 +103,5 @@ RAB renovasi perlu menambahkan beberapa pekerjaan yang tidak ada pada bangun bar
 ## RAB Transparan Bersama Inland
 
 Setiap proyek [pembangunan rumah](/jasa-pembangunan-rumah/) dan [renovasi rumah](/jasa-renovasi-rumah-inland/) Inland dimulai dengan survei dan RAB rinci per item pekerjaan, sehingga Anda tahu biaya sebelum pekerjaan dimulai. Baca juga [biaya bangun rumah per meter](/biaya-bangun-rumah-per-meter/) dan [biaya renovasi rumah per meter](/biaya-renovasi-rumah-per-meter/), atau [hubungi kami](/kontak-inland/) untuk konsultasi.
+
+**Baca juga:** [Biaya bangun rumah per meter](/biaya-bangun-rumah-per-meter/) · [Biaya renovasi rumah per meter](/biaya-renovasi-rumah-per-meter/) · Lihat juga layanan [renovasi bangunan](/jasa-renovasi-bangunan/) kami.

@@ -2,6 +2,7 @@
   "translationKey": "reno-city-tangerang-selatan",
   "slug": "jasa-renovasi-rumah-tangerang-selatan",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

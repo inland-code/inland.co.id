@@ -3,7 +3,9 @@
  * Audit SEO statis atas hasil build (dist/). Tanpa dependensi.
  * ERROR (build gagal): judul/deskripsi hilang, H1 ≠ 1, canonical hilang, <img> tanpa alt,
  *                       link internal rusak, judul ganda antar halaman.
- * WARN: judul > 65 karakter, deskripsi di luar 70–165 karakter, deskripsi ganda.
+ *                       link keluar non-HTTPS, target=_blank tanpa rel="noopener".
+ * WARN: judul > 65 karakter, deskripsi di luar 70–165 karakter, deskripsi ganda,
+ *       halaman yatim (< 2 link kontekstual masuk dari isi <main> halaman lain).
  */
 import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
@@ -29,6 +31,8 @@ const decode = (s) =>
 const errors = [];
 const warns = [];
 const titles = new Map();
+const inbound = new Map(); // path → Set halaman sumber (link di dalam <main>, bukan menu/footer)
+const external = new Map(); // host → jumlah link
 const descs = new Map();
 
 function exists(urlPath) {
@@ -61,15 +65,36 @@ for (const file of files) {
     if (href.startsWith('/api/')) continue;
     if (!exists(href) && !redirects.includes(href)) errors.push(`${page}: link rusak → ${href}`);
   }
+  const main = html.match(/<main\b[\s\S]*?<\/main>/)?.[0] ?? '';
+  for (const [tag, href] of main.matchAll(/<a\b[^>]*\shref="([^"#?]*)[^"]*"[^>]*>/g)) {
+    if (/^https?:\/\//.test(href)) {
+      external.set(new URL(href).host, (external.get(new URL(href).host) ?? 0) + 1);
+      continue;
+    }
+    if (href.startsWith('/') && href !== page) inbound.set(href, new Set([...(inbound.get(href) ?? []), page]));
+  }
+  for (const [tag, href] of html.matchAll(/<a\b[^>]*\shref="([^"]+)"[^>]*>/g)) {
+    if (href.startsWith('http://') && !href.startsWith('http://localhost')) errors.push(`${page}: link keluar tanpa HTTPS → ${href}`);
+    if (/target="_blank"/.test(tag) && !/rel="[^"]*noopener/.test(tag)) errors.push(`${page}: target=_blank tanpa rel=noopener → ${href}`);
+  }
   if (page !== '/404/') {
     if (title) titles.set(title, [...(titles.get(title) ?? []), page]);
     if (desc) descs.set(desc, [...(descs.get(desc) ?? []), page]);
   }
 }
 for (const [t, pages] of titles) if (pages.length > 1) errors.push(`Judul ganda "${t}": ${pages.join(', ')}`);
+for (const file of files) {
+  const page = '/' + relative(dist, file).replace(/index\.html$/, '');
+  if (page === '/' || page === '/en/' || page === '/404/') continue;
+  if (/<meta name="robots" content="[^"]*noindex/.test(readFileSync(file, 'utf8'))) continue;
+  const n = inbound.get(page)?.size ?? 0;
+  if (n < 2) warns.push(`${page}: hanya ${n} link kontekstual masuk (halaman yatim)`);
+}
 for (const [d, pages] of descs) if (pages.length > 1) warns.push(`Deskripsi ganda di ${pages.join(', ')}`);
 
-console.log(`\n[seo-audit] ${files.length} halaman diperiksa`);
+const linksIn = [...inbound.values()].reduce((a, s) => a + s.size, 0);
+console.log(`\n[seo-audit] ${files.length} halaman diperiksa · ${linksIn} relasi link internal · link keluar ke ${external.size} domain`);
+if (process.env.AUDIT_VERBOSE) for (const [h, n] of [...external].sort((a, b) => b[1] - a[1])) console.log(`    ↗ ${h} (${n})`);
 for (const w of warns) console.warn(`  ⚠ ${w}`);
 for (const e of errors) console.error(`  ✗ ${e}`);
 if (errors.length) {

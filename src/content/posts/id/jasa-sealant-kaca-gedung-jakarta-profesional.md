@@ -11,6 +11,16 @@ category: layanan
 image: articles/sealant-kaca-gedung-jakarta.jpg
 imageAlt: Teknisi rope access Inland mengaplikasikan sealant pada kaca gedung
 publishedAt: 2024-10-25
+sources:
+  - title: "Permenaker Nomor 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Kami menyediakan layanan sealant kaca gedung profesional yang dirancang khusus untuk gedung-gedung tinggi di Jakarta. Dengan teknik *rope access*, kami menjamin hasil yang aman, rapi, dan tahan lama tanpa mengganggu aktivitas sehari-hari di gedung Anda.
@@ -61,3 +71,5 @@ Setelah pekerjaan selesai, kami melakukan inspeksi menyeluruh untuk memastikan h
 
 ## Hubungi Kami untuk Jasa Sealant Kaca Gedung Jakarta
 Ingin memastikan gedung Anda terlindungi dari cuaca ekstrem Jakarta? Tim kami siap memberikan solusi terbaik dengan material berkualitas dan teknik kerja yang efisien. Hubungi kami sekarang untuk mendapatkan konsultasi gratis dan mulai lindungi gedung Anda dengan layanan *sealant* terbaik di Jakarta.
+
+**Baca juga:** [Penyebab kaca gedung bocor & solusinya](/penyebab-kaca-gedung-bocor/) · [Rope access adalah](/rope-access-adalah/) · [Jasa sealant kaca gedung tinggi](/jasa-sealant-kaca-gedung-tinggi-profesional/) · Layanan terkait: [jasa rope access](/jasa-rope-access/), [pembersihan kaca gedung](/jasa-pembersihan-kaca-gedung/), dan [perawatan gedung](/jasa-perawatan-gedung/).

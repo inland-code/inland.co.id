@@ -2,6 +2,7 @@
   "translationKey": "reno-city-depok",
   "slug": "jasa-renovasi-rumah-depok",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

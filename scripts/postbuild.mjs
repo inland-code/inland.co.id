@@ -2,7 +2,9 @@
 /**
  * Pasca-build:
  * 1) Content-Security-Policy dengan hash SHA-256 untuk setiap <script> inline (tanpa 'unsafe-inline' untuk skrip).
- * 2) Build non-produksi (staging/preview): tambahkan X-Robots-Tag: noindex ke semua respons.
+ * 2) Link keluar (http/https ke domain lain) tanpa target → target="_blank" rel="noopener external".
+ *    Tetap dofollow: tautan ke sumber resmi/kredibel adalah sinyal kualitas. Admin dilewati.
+ * 3) Build non-produksi (staging/preview): tambahkan X-Robots-Tag: noindex ke semua respons.
  */
 import { createHash } from 'node:crypto';
 import { readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
@@ -19,6 +21,18 @@ const html = [];
     else if (n.endsWith('.html')) html.push(p);
   }
 })(dist);
+
+let externalTagged = 0;
+for (const file of html) {
+  if (file.includes('/admin/')) continue;
+  const src = readFileSync(file, 'utf8');
+  const out = src.replace(/<a\b([^>]*?)\shref="(https?:\/\/[^"]+)"([^>]*)>/g, (tag, pre, href, post) => {
+    if (/^https?:\/\/(www\.)?inland\.co\.id(\/|$)/.test(href) || /\starget=/.test(pre + post)) return tag;
+    externalTagged++;
+    return `<a${pre} href="${href}" target="_blank" rel="noopener external"${post}>`;
+  });
+  if (out !== src) writeFileSync(file, out);
+}
 
 const hashes = new Set();
 for (const file of html) {
@@ -58,4 +72,5 @@ if (process.env.PUBLIC_SITE_ENV === 'production') {
   console.log('[postbuild] staging: X-Robots-Tag noindex ditambahkan.');
 }
 writeFileSync(headersFile, headers);
+console.log(`[postbuild] ${externalTagged} link keluar ditandai target=_blank rel="noopener external".`);
 console.log(`[postbuild] CSP: ${hashes.size} hash skrip inline dari ${html.length} file HTML.`);

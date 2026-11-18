@@ -17,6 +17,16 @@ faq:
     a: Renovasi ringan tanpa mengubah struktur umumnya tidak memerlukan PBG. Renovasi yang mengubah struktur, menambah luas, atau menambah lantai umumnya memerlukan PBG perubahan.
   - q: Lebih hemat renovasi bertahap atau sekaligus?
     a: Renovasi sekaligus biasanya lebih efisien karena biaya mobilisasi dan pembongkaran tidak berulang. Renovasi bertahap cocok bila anggaran terbatas, asalkan urutannya direncanakan sejak awal.
+sources:
+  - title: "Permen PUPR Nomor 8 Tahun 2023 tentang Pedoman Penyusunan Perkiraan Biaya Pekerjaan Konstruksi (AHSP)"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/262345/permen-pupr-no-8-tahun-2023
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
+  - title: "SIMBG — Sistem Informasi Manajemen Bangunan Gedung (pengajuan PBG & SLF)"
+    publisher: "Kementerian Pekerjaan Umum"
+    url: https://simbg.pu.go.id/
 ---
 
 Renovasi rumah adalah cara paling realistis untuk mendapatkan hunian yang lebih nyaman tanpa harus pindah. Pertanyaan pertama yang hampir selalu muncul adalah: **berapa biaya renovasi rumah per meter?** Artikel ini merangkum kisaran harga pasar di Jabodetabek tahun 2026, faktor yang memengaruhinya, dan cara agar anggaran tetap terkendali.
@@ -101,3 +111,7 @@ Ini jenis renovasi dengan biaya per m² tertinggi karena melibatkan pemeriksaan 
 ## Renovasi Rumah Bersama Inland
 
 Tim [jasa renovasi rumah Inland](/jasa-renovasi-rumah-inland/) melakukan survei, menyusun RAB transparan per item pekerjaan, dan mengerjakan renovasi interior, fasad, tambah ruang, hingga perbaikan struktur di seluruh Jabodetabek—termasuk [Jakarta](/jasa-renovasi-rumah-jakarta/), [Depok](/jasa-renovasi-rumah-depok/), dan [Tangerang Selatan](/jasa-renovasi-rumah-tangerang-selatan/). [Hubungi kami](/kontak-inland/) untuk konsultasi dan survei gratis.
+
+**Jenis renovasi lain yang kami tangani:** [renovasi kamar](/jasa-renovasi-kamar/), [ruang tamu](/jasa-renovasi-ruang-tamu/), [halaman depan & belakang](/jasa-renovasi-halaman-depan-belakang/), [apartemen](/jasa-renovasi-apartemen/), [rumah kontrakan](/jasa-renovasi-kontrakan/), [ruko](/jasa-renovasi-ruko/), dan [kantor](/jasa-renovasi-kantor/). Area layanan meliputi [Jakarta](/jasa-renovasi-rumah-jakarta/), [Depok](/jasa-renovasi-rumah-depok/), [Bekasi](/jasa-renovasi-rumah-bekasi/), [Bogor](/jasa-renovasi-rumah-bogor/), [Tangerang](/jasa-renovasi-rumah-tangerang/), [Tangerang Selatan](/jasa-renovasi-rumah-tangerang-selatan/), dan [BSD](/jasa-renovasi-rumah-bsd/).
+
+**Baca juga:** [RAB rumah dan cara menyusunnya](/rab-rumah/) · [Cara memilih kontraktor rumah](/cara-memilih-kontraktor-rumah/) · [Apakah renovasi perlu PBG?](/pbg-pengganti-imb/)

@@ -17,6 +17,13 @@ faq:
     a: Desainnya merespons iklim panas, lembap, dan curah hujan tinggi sehingga rumah lebih sejuk, terang, dan hemat energi tanpa terlalu bergantung pada AC.
   - q: Apakah rumah tropis modern mahal?
     a: Tidak harus. Banyak prinsipnya—orientasi bangunan, ventilasi silang, teritisan—adalah keputusan desain, bukan material mahal, dan justru menghemat biaya listrik jangka panjang.
+sources:
+  - title: "Permenkes Nomor 2 Tahun 2023 tentang Peraturan Pelaksanaan PP Kesehatan Lingkungan"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/245563/permenkes-no-2-tahun2023
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Indonesia beriklim tropis: panas, lembap, dengan curah hujan tinggi. Desain rumah yang meniru gaya negara empat musim sering membuat rumah terasa pengap dan boros listrik. Solusinya adalah **rumah tropis modern**—tampilan kekinian yang dirancang khusus untuk iklim kita.
@@ -88,3 +95,5 @@ Tidak harus membangun dari nol. Banyak prinsip tropis bisa diterapkan pada rumah
 ## Rancang Rumah Tropis Modern Bersama Inland
 
 Tim [jasa desain rumah](/jasa-desain-rumah/) Inland merancang rumah minimalis, modern, klasik, dan tropis yang sesuai kondisi lahan Anda, lengkap dengan visualisasi 3D dan gambar kerja—dan siap dilanjutkan ke tahap [pembangunan rumah](/jasa-pembangunan-rumah/). [Konsultasikan desain Anda](/kontak-inland/).
+
+**Baca juga:** [Desain interior rumah minimalis](/desain-interior-rumah-minimalis/) · [Biaya bangun rumah per meter](/biaya-bangun-rumah-per-meter/) · [Arsitektur: sejarah, elemen, dan perannya](/arsitektur-sejarah-elemen-dan-peranannya-dalam-perkembangan-peradaban-manusia/) · Layanan terkait: [renovasi halaman depan & belakang](/jasa-renovasi-halaman-depan-belakang/).

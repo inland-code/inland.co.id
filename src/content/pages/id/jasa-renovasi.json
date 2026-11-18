@@ -2,6 +2,7 @@
   "translationKey": "reno-general",
   "slug": "jasa-renovasi",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

@@ -1,5 +1,6 @@
 ---
 import { Picture } from 'astro:assets';
+import Breadcrumbs from './Breadcrumbs.astro';
 import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 import type { Locale } from '@/i18n/config';
 import { imageFor } from '@/lib/media';
@@ -13,8 +14,9 @@ interface Props {
   image: string;
   imageAlt: string;
   ctas?: { label: string; href: string; variant: 'light' | 'dark' | 'whatsapp' | 'outline' }[];
+  crumbs?: { name: string; path: string }[];
 }
-const { locale, title, tagline, body, image, imageAlt, ctas = [] } = Astro.props;
+const { locale, title, tagline, body, image, imageAlt, ctas = [], crumbs } = Astro.props;
 const resolved = await Promise.all(
   ctas.map(async (c) => ({ ...c, url: await resolveHref(c.href, locale), external: c.href === '#whatsapp' })),
 );
@@ -40,6 +42,11 @@ const cls = { light: 'btn-light', dark: 'btn-dark', whatsapp: 'btn-dark', outlin
   </div>
   <div class="flex items-center lg:col-span-7">
     <div class="w-full px-5 py-12 sm:px-10 lg:px-14 lg:py-20 xl:px-20">
+      {crumbs && (
+        <div class="mb-5 [&_*]:text-white/80 [&_a:hover]:text-white">
+          <Breadcrumbs items={crumbs} />
+        </div>
+      )}
       <h1 class="text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl xl:text-5xl">{title}</h1>
       {tagline && <p class="mt-4 text-lg font-semibold text-white/95 italic">{tagline}</p>}
       <p class="mt-5 max-w-3xl text-base leading-relaxed text-pretty text-white/90 sm:text-lg">{body}</p>

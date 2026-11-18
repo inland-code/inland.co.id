@@ -2,6 +2,7 @@
   "translationKey": "reno-city-bekasi",
   "slug": "jasa-renovasi-rumah-bekasi",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

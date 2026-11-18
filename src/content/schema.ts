@@ -278,6 +278,14 @@ export const pageSchema = z.object({
   seo: seoSchema,
   hero: heroSchema,
   sections: z.array(sectionSchema).default([]).meta({ title: 'Section' }),
+  parent: s(
+    'Halaman induk (kunci terjemahan)',
+    'Untuk breadcrumb & layanan terkait. Kosong = "services" untuk halaman layanan.',
+  ).optional(),
+  relatedPosts: z
+    .array(s('Slug artikel'))
+    .default([])
+    .meta({ title: 'Artikel terkait', description: 'Ditampilkan lebih dulu; sisanya otomatis dari artikel yang menautkan halaman ini.' }),
   updatedAt: z.string().meta({ title: 'Terakhir diperbarui', widget: 'date' }).optional(),
 });
 
@@ -301,6 +309,18 @@ export const postSchema = z.object({
     .array(z.object({ q: s('Pertanyaan'), a: text('Jawaban') }).meta({ title: 'Tanya-jawab' }))
     .default([])
     .meta({ title: 'FAQ (rich result)' }),
+  sources: z
+    .array(
+      z
+        .object({
+          title: s('Judul sumber'),
+          publisher: s('Penerbit / lembaga').optional(),
+          url: z.url().meta({ title: 'URL (https://…)' }),
+        })
+        .meta({ title: 'Sumber' }),
+    )
+    .default([])
+    .meta({ title: 'Referensi (link keluar ke sumber kredibel)' }),
 });
 
 const hours = z

@@ -2,6 +2,7 @@
   "translationKey": "reno-city-bsd",
   "slug": "jasa-renovasi-rumah-bsd",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

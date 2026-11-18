@@ -17,6 +17,16 @@ faq:
     a: Umumnya setiap 3–6 bulan. Gedung di dekat jalan raya padat, kawasan industri, atau pesisir sebaiknya lebih sering.
   - q: Kenapa kaca gedung berjamur lebih mahal dibersihkan?
     a: Jamur dan kerak air membutuhkan bahan pembersih khusus, pengerjaan berulang, dan waktu lebih lama dibanding kotoran debu biasa.
+sources:
+  - title: "Permenaker Nomor 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Kaca gedung yang kusam membuat bangunan terlihat tidak terawat dan menurunkan citra bisnis di dalamnya. Pengelola gedung biasanya bertanya: **berapa biaya pembersihan kaca gedung**, dan seberapa sering perlu dilakukan? Berikut panduannya.
@@ -84,3 +94,5 @@ Sebelum membandingkan harga, pastikan lingkup pekerjaan yang ditawarkan sama:
 ## Pembersihan Kaca Gedung Bersama Inland
 
 Inland menyediakan [jasa pembersihan kaca gedung](/jasa-pembersihan-kaca-gedung/) dengan [metode akses tali](/jasa-pembersihan-kaca-gedung-dengan-metode-akses-tali-rope-access/) untuk perkantoran, apartemen, hotel, dan gedung komersial di Jabodetabek. [Hubungi kami](/kontak-inland/) untuk survei dan penawaran harga.
+
+**Baca juga:** [Rope access adalah: cara kerja & standar K3](/rope-access-adalah/) · [Penyebab kaca gedung bocor](/penyebab-kaca-gedung-bocor/) · Layanan terkait: [jasa rope access](/jasa-rope-access/) dan [perawatan gedung](/jasa-perawatan-gedung/).

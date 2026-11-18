@@ -17,6 +17,16 @@ faq:
     a: Lingkup pekerjaan, gambar kerja dan RAB, jadwal, nilai dan termin pembayaran, spesifikasi material, garansi, ketentuan perubahan pekerjaan, serta denda atau sanksi bila terlambat.
   - q: Apa tanda kontraktor yang perlu dihindari?
     a: Meminta pembayaran besar di muka, tidak mau membuat RAB rinci, tidak punya portofolio yang bisa dicek, dan menolak kontrak tertulis.
+sources:
+  - title: "UU Nomor 2 Tahun 2017 tentang Jasa Konstruksi"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017
+  - title: "Lembaga Pengembangan Jasa Konstruksi (LPJK) — informasi sertifikasi badan usaha & tenaga kerja konstruksi"
+    publisher: "Kementerian Pekerjaan Umum"
+    url: https://lpjk.pu.go.id/
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Memilih kontraktor adalah keputusan terpenting dalam membangun atau merenovasi rumah. Kontraktor yang tepat membuat proyek berjalan lancar; kontraktor yang salah bisa membuat biaya membengkak, kualitas buruk, bahkan proyek mangkrak. Berikut **10 hal yang wajib dicek sebelum memilih kontraktor rumah**.
@@ -28,7 +38,7 @@ Minta contoh proyek sejenis—rumah tinggal, renovasi, atau tambah lantai—leng
 Tanyakan langsung kepada klien lama: apakah proyek selesai tepat waktu, sesuai anggaran, dan bagaimana kontraktor menangani masalah.
 
 ## 3. Legalitas dan alamat kantor yang jelas
-Kontraktor dengan badan usaha, alamat kantor, dan kontak yang jelas lebih mudah dimintai tanggung jawab. Sertifikat kompetensi konstruksi menjadi nilai tambah.
+Kontraktor dengan badan usaha, alamat kantor, dan kontak yang jelas lebih mudah dimintai tanggung jawab. Sertifikat kompetensi konstruksi menjadi nilai tambah. Untuk badan usaha jasa konstruksi, status sertifikasinya dapat ditelusuri melalui [LPJK Kementerian PU](https://lpjk.pu.go.id/), sesuai ketentuan [UU Nomor 2 Tahun 2017 tentang Jasa Konstruksi](https://peraturan.bpk.go.id/Details/37637/uu-no-2-tahun-2017).
 
 ## 4. Survei lokasi sebelum memberi harga
 Kontraktor yang serius akan survei lebih dulu. Harga yang diberikan tanpa melihat lokasi biasanya tidak akurat dan berujung tambahan biaya.
@@ -87,3 +97,5 @@ Jangan hanya membandingkan total harga. Samakan dulu **lingkup pekerjaan dan spe
 ## Pilih Kontraktor yang Transparan
 
 Inland sebagai [jasa kontraktor](/jasa-kontraktor/) di Jabodetabek bekerja dengan survei lokasi, RAB rinci, kontrak tertulis, dan laporan progres berkala—baik untuk [pembangunan rumah](/jasa-pembangunan-rumah/) maupun [renovasi rumah](/jasa-renovasi-rumah-inland/). [Hubungi kami](/kontak-inland/) untuk konsultasi gratis.
+
+**Baca juga:** [Biaya bangun rumah per meter](/biaya-bangun-rumah-per-meter/) · [Biaya renovasi rumah per meter](/biaya-renovasi-rumah-per-meter/) · Butuh tim tepercaya? Lihat [jasa kontraktor renovasi rumah](/jasa-kontraktor-renovasi-rumah/) dan [jasa pembangunan & renovasi terpercaya](/jasa-pembangunan-dan-renovasi-terpercaya/).

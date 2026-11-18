@@ -2,6 +2,7 @@
   "translationKey": "reno-city-jakarta",
   "slug": "jasa-renovasi-rumah-jakarta",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

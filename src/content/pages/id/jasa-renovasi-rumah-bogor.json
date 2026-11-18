@@ -2,6 +2,7 @@
   "translationKey": "reno-city-bogor",
   "slug": "jasa-renovasi-rumah-bogor",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {

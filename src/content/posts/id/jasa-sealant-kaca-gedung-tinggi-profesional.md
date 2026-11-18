@@ -16,6 +16,16 @@ faq:
     a: Ya, metode rope access yang kami gunakan sudah teruji aman dan efisien, memungkinkan tim kami menjangkau area yang sulit tanpa memerlukan perancah.
   - q: Berapa lama sealant kaca dapat bertahan?
     a: Sealant berkualitas yang dipasang oleh tim Inland dapat bertahan antara 5 hingga 30 tahun, tergantung pada kondisi lingkungan dan jenis sealant yang digunakan.
+sources:
+  - title: "Permenaker Nomor 9 Tahun 2016 tentang K3 dalam Pekerjaan pada Ketinggian"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/146109/permenaker-no-9-tahun-2016
+  - title: "What is Rope Access?"
+    publisher: "IRATA International"
+    url: https://irata.org/page/what-is-rope-access
+  - title: "PP Nomor 16 Tahun 2021 tentang Peraturan Pelaksanaan UU Bangunan Gedung"
+    publisher: "JDIH BPK RI"
+    url: https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021
 ---
 
 Temukan jasa sealant kaca gedung terbaik dengan Inland. Kami menawarkan solusi profesional untuk perbaikan dan pemasangan sealant kaca gedung tinggi dengan metode rope access, memastikan perlindungan dari kebocoran dan cuaca ekstrem. Hubungi kami untuk konsultasi gratis sekarang!
@@ -72,3 +82,5 @@ Ya, metode *rope access* yang kami gunakan sudah teruji aman dan efisien, memung
 
 ### Berapa lama sealant kaca dapat bertahan?
 Sealant berkualitas yang dipasang oleh tim **Inland** dapat bertahan antara 5 hingga 30 tahun, tergantung pada kondisi lingkungan dan jenis sealant yang digunakan.
+
+**Baca juga:** [Penyebab kaca gedung bocor & solusinya](/penyebab-kaca-gedung-bocor/) · [Rope access adalah](/rope-access-adalah/) · [Jasa sealant kaca gedung Jakarta](/jasa-sealant-kaca-gedung-jakarta-profesional/) · Layanan terkait: [jasa rope access](/jasa-rope-access/), [pembersihan kaca gedung](/jasa-pembersihan-kaca-gedung/), dan [perawatan gedung](/jasa-perawatan-gedung/).

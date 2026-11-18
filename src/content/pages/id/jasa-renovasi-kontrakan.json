@@ -2,6 +2,7 @@
   "translationKey": "reno-rental",
   "slug": "jasa-renovasi-kontrakan",
   "template": "service",
+  "parent": "service-renovation",
   "slugVerified": true,
   "contentStatus": "draft",
   "seo": {
