@@ -11,10 +11,8 @@ export default defineConfig({
     inlineStylesheets: 'auto',
   },
   compressHTML: true,
-  prefetch: {
-    prefetchAll: false,
-    defaultStrategy: 'hover',
-  },
+  // Prefetch Astro (JS) dimatikan: navigasi instan ditangani Speculation Rules di <head> tanpa JavaScript.
+  prefetch: false,
   image: {
     layout: 'constrained',
     // Dimatikan: CSS bawaan Astro tidak ber-layer sehingga mengalahkan utility Tailwind.

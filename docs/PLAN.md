@@ -1,6 +1,6 @@
 # Rencana Rebuild inland.co.id — Astro + Cloudflare
 
-Status: **Fase 3 selesai** · Terakhir diperbarui: 2026-11-18
+Status: **Fase 6 selesai** · Terakhir diperbarui: 2026-11-18
 
 ## Keputusan yang sudah diambil
 
@@ -104,7 +104,11 @@ Identitas & warna tetap, tampilan dimodernkan:
 - FAQ di tiap halaman layanan, tanggal "terakhir diperbarui", profil penulis.
 - Izinkan bot AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) di robots.txt **dan** setting Cloudflare ("Block AI bots" harus dinonaktifkan).
 
-### Fase 6 — Performa & cache
+### Fase 6 — Performa & cache ✅
+- ✅ Lighthouse (build produksi, mobile & desktop): **100 / 100 / 100 / 100** di Beranda, Galeri, Pembersihan Kaca, dan halaman EN. Mobile FCP 0,8 dtk, LCP 1,6 dtk (simulasi 4G lambat); desktop LCP 0,4 dtk; CLS 0; TBT 0 ms.
+- ✅ **0 KB JavaScript** di halaman publik (prefetch Astro dimatikan, digantikan Speculation Rules).
+- ✅ Foto besar dalam AVIF + WebP (`<picture>`), ukuran halaman ±80–145 KB.
+- ✅ Kontras warna teks & urutan heading diperbaiki (aksesibilitas 100).
 - Target: Lighthouse 100×4, LCP < 1,2 dtk, CLS 0, JS ≈ 0 di halaman publik.
 - Font self-hosted woff2 subset + preload; CSS kritis inline.
 - Gambar AVIF/WebP, `srcset`, width/height eksplisit, hero `fetchpriority="high"`, lainnya lazy.

@@ -49,8 +49,8 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
               href={item.href}
               aria-current={currentPath === item.href ? 'page' : undefined}
               class:list={[
-                'inline-flex items-center gap-1 rounded-md px-3 py-2 text-[0.95rem] font-medium transition hover:text-brand-600',
-                isActive(item.href, item.groups) ? 'text-brand-600' : 'text-ink',
+                'inline-flex items-center gap-1 rounded-md px-3 py-2 text-[0.95rem] font-medium transition hover:text-brand-700',
+                isActive(item.href, item.groups) ? 'text-brand-700' : 'text-ink',
               ]}
             >
               {item.label}
@@ -127,7 +127,7 @@ const isActive = (href: string, groups?: { href: string; items: { href: string }
                 </div>
               </details>
             ) : (
-              <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined} class="block rounded-lg px-3 py-3 font-medium hover:bg-brand-50 aria-[current=page]:text-brand-600">
+              <a href={item.href} aria-current={currentPath === item.href ? 'page' : undefined} class="block rounded-lg px-3 py-3 font-medium hover:bg-brand-50 aria-[current=page]:text-brand-700">
                 {item.label}
               </a>
             )}

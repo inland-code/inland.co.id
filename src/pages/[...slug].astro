@@ -95,6 +95,7 @@ if (route.kind === 'page') {
               imageAlt={p.entry.data.imageAlt}
               category={p.entry.data.category}
               date={p.entry.data.publishedAt}
+              headingLevel={2}
             />
           ))}
         </div>
@@ -159,7 +160,7 @@ if (route.kind === 'page') {
               <Image src={imageFor(route.entry.data.image)} alt={route.entry.data.imageAlt} priority width={720} sizes="(min-width: 1024px) 40vw, 100vw" class="aspect-[4/3] w-full rounded-card object-cover shadow-card" />
             </div>
           </header>
-          <div class="container-site mt-12 max-w-3xl space-y-5 text-lg leading-relaxed text-ink [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-espresso-900 [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-espresso-900 [&_a]:text-brand-700 [&_a]:underline">
+          <div class="container-site mt-12 max-w-3xl space-y-5 text-lg leading-relaxed text-ink [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-espresso-900 [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-espresso-900 [&_a]:text-brand-800 [&_a]:underline">
             {toc.filter((h) => h.depth === 2).length >= 3 && (
               <details open class="not-prose rounded-card bg-surface-alt p-5 text-base ring-1 ring-brand-100">
                 <summary class="cursor-pointer font-semibold text-espresso-900">{locale === 'id' ? 'Daftar Isi' : 'Table of Contents'}</summary>

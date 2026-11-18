@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import Icon from '@/components/icons/Icon.astro';
 import SectionHeading from './SectionHeading.astro';
 import type { Section } from '@/content.config';
@@ -37,6 +37,6 @@ const group = `acc-${index}`;
     </div>
   </div>
   <div class:list={['relative min-h-80 lg:col-span-5', imageSide === 'left' && 'lg:order-1']}>
-    <Image src={imageFor(image)} alt={imageAlt} width={900} sizes="(min-width: 1024px) 42vw, 100vw" class="absolute inset-0 size-full object-cover" />
+    <Picture formats={["avif", "webp"]} src={imageFor(image)} alt={imageAlt} width={900} sizes="(min-width: 1024px) 42vw, 100vw" class="absolute inset-0 size-full object-cover" />
   </div>
 </section>

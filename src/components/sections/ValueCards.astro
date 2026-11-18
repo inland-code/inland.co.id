@@ -3,6 +3,8 @@ import SectionHeading from './SectionHeading.astro';
 import type { Section } from '@/content.config';
 type Props = Extract<Section, { type: 'value-cards' }>;
 const { eyebrow, title, intro, items } = Astro.props;
+// Tanpa judul section, judul kartu menjadi H2 agar urutan heading tetap benar.
+const H = title ? 'h3' : 'h2';
 ---
 <section class="py-20 sm:py-24">
   <div class="container-site">
@@ -11,7 +13,7 @@ const { eyebrow, title, intro, items } = Astro.props;
       {items.map((c) => (
         <article class="relative flex flex-col overflow-hidden rounded-card bg-brand-gradient p-8 text-white shadow-card">
           <div class="pointer-events-none absolute -top-14 -right-14 size-40 rounded-full bg-white/10" aria-hidden="true"></div>
-          <h3 class="relative text-2xl font-bold">{c.title}</h3>
+          <H class="relative text-2xl font-bold">{c.title}</H>
           {c.text && <p class="relative mt-4 leading-relaxed text-white/90">{c.text}</p>}
           {c.bullets.length > 0 && (
             <ul class="relative mt-5 space-y-4">

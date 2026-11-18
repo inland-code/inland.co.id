@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets';
+import { Picture } from 'astro:assets';
 import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 import type { Locale } from '@/i18n/config';
 import { imageFor } from '@/lib/media';
@@ -23,7 +23,7 @@ const cls = { light: 'btn-light', dark: 'btn-dark', whatsapp: 'btn-dark', outlin
 <section class="relative grid overflow-hidden bg-brand-gradient lg:min-h-[min(85vh,52rem)] lg:grid-cols-12">
   <div class="relative aspect-[4/3] sm:aspect-[16/9] lg:col-span-5 lg:aspect-auto">
     <!-- Gambar LCP: priority = loading eager + fetchpriority high. -->
-    <Image
+    <Picture formats={["avif", "webp"]}
       src={imageFor(image)}
       alt={imageAlt}
       priority
