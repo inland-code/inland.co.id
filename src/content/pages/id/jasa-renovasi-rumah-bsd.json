@@ -59,16 +59,7 @@
       "eyebrow": "Area Layanan",
       "title": "Wilayah yang Kami Layani di BSD",
       "intro": "Melayani kawasan BSD City dan sekitarnya, dekat dengan kantor Inland di Pamulang.",
-      "areas": [
-        "BSD City",
-        "Serpong",
-        "Serpong Utara",
-        "Setu",
-        "Pagedangan",
-        "Cisauk",
-        "Gading Serpong",
-        "Alam Sutera"
-      ],
+      "areas": ["BSD City", "Serpong", "Serpong Utara", "Setu", "Pagedangan", "Cisauk", "Gading Serpong", "Alam Sutera"],
       "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
     },
     {

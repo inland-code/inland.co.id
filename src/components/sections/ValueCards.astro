@@ -6,6 +6,7 @@ const { eyebrow, title, intro, items } = Astro.props;
 // Tanpa judul section, judul kartu menjadi H2 agar urutan heading tetap benar.
 const H = title ? 'h3' : 'h2';
 ---
+
 <section class="py-20 sm:py-24">
   <div class="container-site">
     {title && <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />}
@@ -20,7 +21,9 @@ const H = title ? 'h3' : 'h2';
               {c.bullets.map((b) => (
                 <li class="flex gap-3">
                   <span class="mt-1 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-white/20" aria-hidden="true">
-                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5" /></svg>
+                    <svg class="size-3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                      <path d="M20 6 9 17l-5-5" />
+                    </svg>
                   </span>
                   <span>
                     <span class="block font-semibold">{b.title}</span>

@@ -13,12 +13,19 @@ const files = [];
 (function walk(dir) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
-    if (statSync(p).isDirectory()) { if (name !== '_astro' && name !== 'admin') walk(p); }
-    else if (name === 'index.html') files.push(p);
+    if (statSync(p).isDirectory()) {
+      if (name !== '_astro' && name !== 'admin') walk(p);
+    } else if (name === 'index.html') files.push(p);
   }
 })(dist);
 
-const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
+const decode = (s) =>
+  s
+    .replace(/&amp;/g, '&')
+    .replace(/&#39;/g, "'")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>');
 const errors = [];
 const warns = [];
 const titles = new Map();
@@ -31,7 +38,10 @@ function exists(urlPath) {
   if (clean.endsWith('/')) return existsSync(join(target, 'index.html'));
   return existsSync(target) || existsSync(join(target, 'index.html'));
 }
-const redirects = readFileSync(join(dist, '_redirects'), 'utf8').split('\n').map((l) => l.trim().split(/\s+/)[0]).filter((s) => s && !s.startsWith('#'));
+const redirects = readFileSync(join(dist, '_redirects'), 'utf8')
+  .split('\n')
+  .map((l) => l.trim().split(/\s+/)[0])
+  .filter((s) => s && !s.startsWith('#'));
 
 for (const file of files) {
   const page = '/' + relative(dist, file).replace(/index\.html$/, '');
@@ -62,5 +72,8 @@ for (const [d, pages] of descs) if (pages.length > 1) warns.push(`Deskripsi gand
 console.log(`\n[seo-audit] ${files.length} halaman diperiksa`);
 for (const w of warns) console.warn(`  ⚠ ${w}`);
 for (const e of errors) console.error(`  ✗ ${e}`);
-if (errors.length) { console.error(`[seo-audit] ✗ ${errors.length} error`); process.exit(1); }
+if (errors.length) {
+  console.error(`[seo-audit] ✗ ${errors.length} error`);
+  process.exit(1);
+}
 console.log(`[seo-audit] ✓ 0 error, ${warns.length} peringatan\n`);

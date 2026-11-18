@@ -131,27 +131,11 @@
     {
       "type": "table",
       "title": "Estimasi Biaya Jasa Desain Interior",
-      "columns": [
-        "Model biaya",
-        "Kisaran harga pasar*",
-        "Keterangan"
-      ],
+      "columns": ["Model biaya", "Kisaran harga pasar*", "Keterangan"],
       "rows": [
-        [
-          "Fee desain per m²",
-          "Rp150.000 – Rp1.000.000 / m²",
-          "Tergantung kompleksitas dan tingkat kemewahan"
-        ],
-        [
-          "Persentase dari RAB",
-          "5% – 8% dari RAB",
-          "Acuan standar fee HDII, umum untuk proyek besar"
-        ],
-        [
-          "Desain + produksi (terima jadi)",
-          "Mulai ±Rp2,5 juta / m²",
-          "Termasuk furnitur custom dan instalasi"
-        ]
+        ["Fee desain per m²", "Rp150.000 – Rp1.000.000 / m²", "Tergantung kompleksitas dan tingkat kemewahan"],
+        ["Persentase dari RAB", "5% – 8% dari RAB", "Acuan standar fee HDII, umum untuk proyek besar"],
+        ["Desain + produksi (terima jadi)", "Mulai ±Rp2,5 juta / m²", "Termasuk furnitur custom dan instalasi"]
       ],
       "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi.",
       "eyebrow": "Biaya"

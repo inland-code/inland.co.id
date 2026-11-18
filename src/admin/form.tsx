@@ -45,7 +45,12 @@ function Counter({ value, s }: { value: string; s: JsonSchema }) {
   if (!s.maxLength && !s.minLength) return null;
   const n = value.length;
   const bad = (s.maxLength && n > s.maxLength) || (s.minLength && n < s.minLength);
-  return <span class={`ml-2 text-xs ${bad ? 'text-red-600' : 'text-muted'}`}>{n}{s.maxLength ? `/${s.maxLength}` : ''}</span>;
+  return (
+    <span class={`ml-2 text-xs ${bad ? 'text-red-600' : 'text-muted'}`}>
+      {n}
+      {s.maxLength ? `/${s.maxLength}` : ''}
+    </span>
+  );
 }
 
 function LinkField({ value, onChange }: { value: string; onChange: OnChange }) {
@@ -64,7 +69,19 @@ function LinkField({ value, onChange }: { value: string; onChange: OnChange }) {
   );
 }
 
-export function Field({ schema, value, onChange, name, required = true }: { schema: JsonSchema; value: Val; onChange: OnChange; name: string; required?: boolean }) {
+export function Field({
+  schema,
+  value,
+  onChange,
+  name,
+  required = true,
+}: {
+  schema: JsonSchema;
+  value: Val;
+  onChange: OnChange;
+  name: string;
+  required?: boolean;
+}) {
   const title = label(schema, name);
 
   // Field opsional yang belum diisi → tombol tambah.
@@ -114,7 +131,12 @@ export function Field({ schema, value, onChange, name, required = true }: { sche
   if (schema.type === 'boolean') {
     return (
       <label class="flex items-center gap-2 text-sm font-medium text-espresso-900">
-        <input type="checkbox" class="size-4 accent-brand-600" checked={Boolean(value)} onChange={(e) => onChange((e.target as HTMLInputElement).checked)} />
+        <input
+          type="checkbox"
+          class="size-4 accent-brand-600"
+          checked={Boolean(value)}
+          onChange={(e) => onChange((e.target as HTMLInputElement).checked)}
+        />
         {title}
       </label>
     );
@@ -124,7 +146,14 @@ export function Field({ schema, value, onChange, name, required = true }: { sche
       <label class="block text-sm font-medium text-espresso-900">
         {title}
         {removeBtn}
-        <input type="number" class={input} value={value as number} min={schema.minimum} max={schema.maximum} onInput={(e) => onChange(Number((e.target as HTMLInputElement).value))} />
+        <input
+          type="number"
+          class={input}
+          value={value as number}
+          min={schema.minimum}
+          max={schema.maximum}
+          onInput={(e) => onChange(Number((e.target as HTMLInputElement).value))}
+        />
       </label>
     );
   }
@@ -153,7 +182,19 @@ export function Field({ schema, value, onChange, name, required = true }: { sche
   );
 }
 
-export function ObjectFields({ schema, value, onChange, hide = [], only }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange; hide?: string[]; only?: string[] }) {
+export function ObjectFields({
+  schema,
+  value,
+  onChange,
+  hide = [],
+  only,
+}: {
+  schema: JsonSchema;
+  value: Record<string, Val>;
+  onChange: OnChange;
+  hide?: string[];
+  only?: string[];
+}) {
   const req = new Set(schema.required ?? []);
   return (
     <div class="space-y-4">
@@ -199,12 +240,33 @@ function ArrayField({ schema, value, onChange, title }: { schema: JsonSchema; va
             <div class="mb-2 flex items-center justify-between gap-2 text-xs text-muted">
               <span class="font-semibold">
                 {itemTitle} {i + 1}
-                {isUnion && ` — ${(variants(item)!.find((x) => typeName(x) === (v as { type?: string }).type)?.title) ?? ''}`}
+                {isUnion && ` — ${variants(item)!.find((x) => typeName(x) === (v as { type?: string }).type)?.title ?? ''}`}
               </span>
               <span class="flex gap-1">
-                <button type="button" class="rounded px-2 py-1 hover:bg-white disabled:opacity-30" disabled={i === 0} onClick={() => move(i, -1)} aria-label="Naik">↑</button>
-                <button type="button" class="rounded px-2 py-1 hover:bg-white disabled:opacity-30" disabled={i === value.length - 1} onClick={() => move(i, 1)} aria-label="Turun">↓</button>
-                <button type="button" class="rounded px-2 py-1 text-red-600 hover:bg-white disabled:opacity-30" disabled={value.length <= (schema.minItems ?? 0)} onClick={() => onChange(value.filter((_, j) => j !== i))}>
+                <button
+                  type="button"
+                  class="rounded px-2 py-1 hover:bg-white disabled:opacity-30"
+                  disabled={i === 0}
+                  onClick={() => move(i, -1)}
+                  aria-label="Naik"
+                >
+                  ↑
+                </button>
+                <button
+                  type="button"
+                  class="rounded px-2 py-1 hover:bg-white disabled:opacity-30"
+                  disabled={i === value.length - 1}
+                  onClick={() => move(i, 1)}
+                  aria-label="Turun"
+                >
+                  ↓
+                </button>
+                <button
+                  type="button"
+                  class="rounded px-2 py-1 text-red-600 hover:bg-white disabled:opacity-30"
+                  disabled={value.length <= (schema.minItems ?? 0)}
+                  onClick={() => onChange(value.filter((_, j) => j !== i))}
+                >
                   Hapus
                 </button>
               </span>
@@ -213,7 +275,9 @@ function ArrayField({ schema, value, onChange, title }: { schema: JsonSchema; va
           </li>
         ))}
       </ol>
-      {(!schema.maxItems || value.length < schema.maxItems) && <AddItem schema={item} onAdd={(nv) => onChange([...value, nv])} label={itemTitle} />}
+      {(!schema.maxItems || value.length < schema.maxItems) && (
+        <AddItem schema={item} onAdd={(nv) => onChange([...value, nv])} label={itemTitle} />
+      )}
     </div>
   );
 }
@@ -224,19 +288,31 @@ function AddItem({ schema, onAdd, label: l }: { schema: JsonSchema; onAdd: (v: V
   if (vs?.length) {
     return (
       <div class="mt-3 flex flex-wrap items-center gap-2">
-        <select class="rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15" value={pick} onChange={(e) => setPick((e.target as HTMLSelectElement).value)}>
+        <select
+          class="rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15"
+          value={pick}
+          onChange={(e) => setPick((e.target as HTMLSelectElement).value)}
+        >
           {vs.map((v) => (
             <option value={typeName(v)}>{v.title ?? typeName(v)}</option>
           ))}
         </select>
-        <button type="button" class="rounded-lg bg-espresso-900 px-3 py-2 text-sm font-semibold text-white" onClick={() => onAdd(defaultFor(vs.find((v) => typeName(v) === pick)!))}>
+        <button
+          type="button"
+          class="rounded-lg bg-espresso-900 px-3 py-2 text-sm font-semibold text-white"
+          onClick={() => onAdd(defaultFor(vs.find((v) => typeName(v) === pick)!))}
+        >
           + Tambah section
         </button>
       </div>
     );
   }
   return (
-    <button type="button" class="mt-3 rounded-lg bg-white px-3 py-2 text-sm font-semibold text-espresso-900 ring-1 ring-black/15 hover:bg-brand-50" onClick={() => onAdd(defaultFor(schema))}>
+    <button
+      type="button"
+      class="mt-3 rounded-lg bg-white px-3 py-2 text-sm font-semibold text-espresso-900 ring-1 ring-black/15 hover:bg-brand-50"
+      onClick={() => onAdd(defaultFor(schema))}
+    >
       + {l}
     </button>
   );
@@ -248,11 +324,23 @@ function UnionField({ schema, value, onChange }: { schema: JsonSchema; value: Re
 }
 
 /** Kolom teknis (slug, kunci terjemahan, dll.) dilipat agar tidak terubah tanpa sengaja. */
-export function TechnicalFields({ schema, value, onChange, keys }: { schema: JsonSchema; value: Record<string, Val>; onChange: OnChange; keys: string[] }) {
+export function TechnicalFields({
+  schema,
+  value,
+  onChange,
+  keys,
+}: {
+  schema: JsonSchema;
+  value: Record<string, Val>;
+  onChange: OnChange;
+  keys: string[];
+}) {
   return (
     <details class="mt-6 rounded-xl border border-amber-200 bg-amber-50/60 p-4">
       <summary class="cursor-pointer text-sm font-semibold text-amber-900">Pengaturan teknis (jangan diubah tanpa perlu)</summary>
-      <p class="mt-2 text-xs text-amber-900/80">Mengubah slug akan mengubah alamat URL halaman dan bisa merusak SEO. Kunci terjemahan menghubungkan versi ID &amp; EN.</p>
+      <p class="mt-2 text-xs text-amber-900/80">
+        Mengubah slug akan mengubah alamat URL halaman dan bisa merusak SEO. Kunci terjemahan menghubungkan versi ID &amp; EN.
+      </p>
       <div class="mt-4">
         <ObjectFields schema={schema} value={value} onChange={onChange} only={keys} />
       </div>

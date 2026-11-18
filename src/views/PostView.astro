@@ -1,0 +1,109 @@
+---
+/** Tampilan artikel (konten dari src/content/posts). */
+import { Image } from 'astro:assets';
+import { render } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Breadcrumbs from '@/components/Breadcrumbs.astro';
+import { alternatesFor, hrefFor, type Route } from '@/lib/routes';
+import { imageFor } from '@/lib/media';
+import { ogPath } from '@/lib/og';
+import { absoluteUrl, breadcrumbSchema, faqSchema, ORG_ID } from '@/lib/seo';
+import { t } from '@/i18n/ui';
+
+type PostRoute = Extract<Route, { kind: 'post' }>;
+interface Props {
+  route: PostRoute;
+}
+const { route } = Astro.props;
+const { locale } = route;
+const data = route.entry.data;
+
+const alternates = await alternatesFor(route.translationKey);
+const crumbs = [
+  { name: t(locale, 'breadcrumb.home'), path: await hrefFor('home', locale) },
+  { name: t(locale, 'nav.articles'), path: await hrefFor('articles', locale) },
+  { name: data.title, path: route.path },
+];
+const { Content, headings } = await render(route.entry);
+const toc = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const showToc = toc.filter((h) => h.depth === 2).length >= 3;
+const fmt = new Intl.DateTimeFormat(locale === 'id' ? 'id-ID' : 'en-US', { dateStyle: 'long' });
+
+const jsonLd: object[] = [
+  {
+    '@type': 'BlogPosting',
+    '@id': `${absoluteUrl(route.path)}#article`,
+    headline: data.title,
+    description: data.seo.description,
+    url: absoluteUrl(route.path),
+    mainEntityOfPage: absoluteUrl(route.path),
+    image: absoluteUrl(ogPath(route.path)),
+    inLanguage: locale === 'id' ? 'id-ID' : 'en',
+    datePublished: data.publishedAt.toISOString(),
+    dateModified: (data.updatedAt ?? data.publishedAt).toISOString(),
+    author: { '@type': 'Organization', name: data.author, url: absoluteUrl('/') },
+    publisher: { '@id': ORG_ID },
+  },
+  breadcrumbSchema(crumbs),
+  ...(data.faq.length ? [faqSchema(data.faq)] : []),
+];
+---
+
+<BaseLayout
+  locale={locale}
+  title={data.seo.title}
+  description={data.seo.description}
+  path={route.path}
+  alternates={alternates}
+  ogImageUrl={ogPath(route.path)}
+  ogType="article"
+  noindex={data.seo.noindex}
+  publishedTime={data.publishedAt}
+  modifiedTime={data.updatedAt}
+  jsonLd={jsonLd}
+>
+  <article class="pb-20">
+    <header class="bg-brand-gradient">
+      <div class="container-site grid items-center gap-10 py-12 lg:grid-cols-2 lg:py-16">
+        <div>
+          <div class="[&_*]:text-white/80 [&_a:hover]:text-white">
+            <Breadcrumbs items={crumbs} />
+          </div>
+          <h1 class="mt-5 text-3xl font-bold tracking-tight text-balance text-white sm:text-4xl">{data.title}</h1>
+          <p class="mt-4 text-white/90">{data.excerpt}</p>
+          <p class="mt-5 text-sm text-white/80">
+            {t(locale, 'post.publishedOn')} <time datetime={data.publishedAt.toISOString()}>{fmt.format(data.publishedAt)}</time> ·{' '}
+            {data.author}
+          </p>
+        </div>
+        <Image
+          src={imageFor(data.image)}
+          alt={data.imageAlt}
+          priority
+          width={720}
+          sizes="(min-width: 1024px) 40vw, 100vw"
+          class="aspect-[4/3] w-full rounded-card object-cover shadow-card"
+        />
+      </div>
+    </header>
+    <div class="container-site mt-12 max-w-3xl">
+      {showToc && (
+        <details open class="mb-8 rounded-card bg-surface-alt p-5 ring-1 ring-brand-100">
+          <summary class="cursor-pointer font-semibold text-espresso-900">{t(locale, 'post.toc')}</summary>
+          <ol class="mt-3 space-y-1.5">
+            {toc.map((h) => (
+              <li class:list={[h.depth === 3 && 'ml-5 text-sm']}>
+                <a href={`#${h.slug}`} class="text-muted hover:text-brand-800">
+                  {h.text}
+                </a>
+              </li>
+            ))}
+          </ol>
+        </details>
+      )}
+      <div class="space-y-5 text-lg leading-relaxed text-ink [&_a]:text-brand-800 [&_a]:underline [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-espresso-900 [&_h3]:mt-8 [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-espresso-900">
+        <Content />
+      </div>
+    </div>
+  </article>
+</BaseLayout>

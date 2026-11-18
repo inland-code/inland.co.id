@@ -11,7 +11,16 @@ import { listImages } from '@/lib/media';
 export const GET: APIRoute = async () => {
   const opts = { io: 'input', unrepresentable: 'any' } as const;
   const routes = await getRoutes();
-  const links = [...new Map(routes.filter((r) => r.locale === 'id').map((r) => [r.translationKey, { key: r.translationKey, title: r.kind === 'page' ? r.entry.data.hero.title : r.entry.data.title, path: r.path }])).values()];
+  const links = [
+    ...new Map(
+      routes
+        .filter((r) => r.locale === 'id')
+        .map((r) => [
+          r.translationKey,
+          { key: r.translationKey, title: r.kind === 'page' ? r.entry.data.hero.title : r.entry.data.title, path: r.path },
+        ]),
+    ).values(),
+  ];
   const body = {
     page: z.toJSONSchema(pageSchema, opts),
     post: z.toJSONSchema(postSchema, opts),

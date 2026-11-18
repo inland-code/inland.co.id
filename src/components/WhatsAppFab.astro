@@ -3,9 +3,12 @@ import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 import type { Locale } from '@/i18n/config';
 import { t } from '@/i18n/ui';
 import { whatsappUrl } from '@/lib/links';
-interface Props { locale: Locale }
+interface Props {
+  locale: Locale;
+}
 const { locale } = Astro.props;
 ---
+
 <a
   href={whatsappUrl(locale)}
   target="_blank"

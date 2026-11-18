@@ -59,15 +59,7 @@
       "eyebrow": "Area Layanan",
       "title": "Wilayah yang Kami Layani di Tangerang Selatan",
       "intro": "Kantor Inland berada di Pamulang, sehingga survei di Tangerang Selatan bisa dijadwalkan dengan cepat.",
-      "areas": [
-        "Pamulang",
-        "Ciputat",
-        "Ciputat Timur",
-        "Pondok Aren",
-        "Serpong",
-        "Serpong Utara",
-        "Setu"
-      ],
+      "areas": ["Pamulang", "Ciputat", "Ciputat Timur", "Pondok Aren", "Serpong", "Serpong Utara", "Setu"],
       "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
     },
     {

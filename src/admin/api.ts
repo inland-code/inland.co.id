@@ -1,7 +1,10 @@
 /** Klien API dashboard. Semua panggilan ke Worker /api/admin/* (dilindungi login GitHub + cookie sesi). */
 
 export class ApiError extends Error {
-  constructor(message: string, readonly status: number) {
+  constructor(
+    message: string,
+    readonly status: number,
+  ) {
     super(message);
   }
 }
@@ -18,7 +21,19 @@ export type FileEntry = { path: string; sha: string; size: number };
 export type FileData = { path: string; sha: string; content: string };
 export type Me = { email: string; repo: string; branch: string; github: boolean; db: boolean };
 export type Run = { id: number; status: string; conclusion: string | null; created_at: string; html_url: string; head_commit: string };
-export type Message = { id: number; created_at: string; locale: string; page: string | null; name: string; phone: string | null; service: string | null; message: string; status: string; country: string | null; city: string | null };
+export type Message = {
+  id: number;
+  created_at: string;
+  locale: string;
+  page: string | null;
+  name: string;
+  phone: string | null;
+  service: string | null;
+  message: string;
+  status: string;
+  country: string | null;
+  city: string | null;
+};
 
 export const api = {
   me: () => call<Me>('/me'),
@@ -39,9 +54,14 @@ export const api = {
     fd.set('folder', folder);
     return call<{ path: string; image: string }>('/media', { method: 'POST', body: fd });
   },
-  messages: (status?: string) => call<{ items: Message[]; counts: Record<string, number>; db: boolean }>(`/messages${status ? `?status=${status}` : ''}`),
+  messages: (status?: string) =>
+    call<{ items: Message[]; counts: Record<string, number>; db: boolean }>(`/messages${status ? `?status=${status}` : ''}`),
   setMessageStatus: (id: number, status: string) =>
-    call<{ ok: true }>(`/messages/${id}`, { method: 'PATCH', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ status }) }),
+    call<{ ok: true }>(`/messages/${id}`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ status }),
+    }),
 };
 
 export const rawImageUrl = (image: string) => `/api/admin/media/raw?path=${encodeURIComponent(`src/assets/images/${image}`)}`;

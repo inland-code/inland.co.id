@@ -24,12 +24,21 @@ const links = Object.entries(site.social)
   .filter(([key, url]) => url && icons[key])
   .map(([key, url]) => ({ url, ...icons[key]! }));
 ---
+
 {links.length > 0 && (
   <ul class="flex gap-2">
     {links.map((l) => (
       <li>
-        <a href={l.url} target="_blank" rel="noopener me" aria-label={l.label} class="inline-flex size-10 items-center justify-center rounded-lg bg-white/10 text-white transition hover:bg-brand-500">
-          <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d={l.path} /></svg>
+        <a
+          href={l.url}
+          target="_blank"
+          rel="noopener me"
+          aria-label={l.label}
+          class="inline-flex size-10 items-center justify-center rounded-lg bg-white/10 text-white transition hover:bg-brand-500"
+        >
+          <svg class="size-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d={l.path} />
+          </svg>
         </a>
       </li>
     ))}

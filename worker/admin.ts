@@ -8,11 +8,20 @@ import { GitHub, GitHubError, bytesToBase64 } from './github';
  */
 
 const json = (data: unknown, status = 200) =>
-  new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' } });
+  new Response(JSON.stringify(data), {
+    status,
+    headers: { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
 
 const MAX_UPLOAD = 8 * 1024 * 1024;
 const slugify = (s: string) =>
-  s.toLowerCase().normalize('NFKD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'gambar';
+  s
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+    .slice(0, 60) || 'gambar';
 
 export async function handleAdmin(request: Request, env: Env, url: URL): Promise<Response> {
   // Cegah CSRF: permintaan yang mengubah data harus dari origin yang sama.
@@ -60,7 +69,12 @@ export async function handleAdmin(request: Request, env: Env, url: URL): Promise
             return json({ error: 'JSON tidak valid' }, 400);
           }
         }
-        const res = await gh.write(path, { text: body.content, sha: body.sha, message: body.message || `Dashboard: perbarui ${path}`, author: email });
+        const res = await gh.write(path, {
+          text: body.content,
+          sha: body.sha,
+          message: body.message || `Dashboard: perbarui ${path}`,
+          author: email,
+        });
         return json(res);
       }
       if (request.method === 'DELETE') {
@@ -79,7 +93,9 @@ export async function handleAdmin(request: Request, env: Env, url: URL): Promise
       const folder = slugify(String(form.get('folder') ?? 'uploads'));
       if (!(file instanceof File)) return json({ error: 'File wajib' }, 400);
       if (file.size > MAX_UPLOAD) return json({ error: 'Maksimal 8 MB per gambar' }, 413);
-      const ext = ({ 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/avif': 'avif' } as Record<string, string>)[file.type];
+      const ext = ({ 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/avif': 'avif' } as Record<string, string>)[
+        file.type
+      ];
       if (!ext) return json({ error: 'Format harus JPG, PNG, WebP, atau AVIF' }, 415);
       const base = slugify(String(form.get('name') ?? file.name.replace(/\.[^.]+$/, '')));
       let path = `src/assets/images/${folder}/${base}.${ext}`;

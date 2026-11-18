@@ -3,13 +3,21 @@ import type { Env } from './env';
 /** Klien GitHub minimal (REST) untuk membaca & meng-commit konten repo. */
 
 export class GitHubError extends Error {
-  constructor(message: string, readonly status: number) {
+  constructor(
+    message: string,
+    readonly status: number,
+  ) {
     super(message);
   }
 }
 
 /** Hanya path ini yang boleh dibaca/ditulis dari dashboard. */
-const ALLOWED = [/^src\/content\/(pages|posts)\/(id|en)\/[a-z0-9-]+\.(json|md)$/, /^src\/assets\/images\/[a-z0-9-]+\/[a-z0-9-]+\.(jpg|jpeg|png|webp|avif)$/, /^src\/data\/site\.json$/, /^public\/_redirects$/];
+const ALLOWED = [
+  /^src\/content\/(pages|posts)\/(id|en)\/[a-z0-9-]+\.(json|md)$/,
+  /^src\/assets\/images\/[a-z0-9-]+\/[a-z0-9-]+\.(jpg|jpeg|png|webp|avif)$/,
+  /^src\/data\/site\.json$/,
+  /^public\/_redirects$/,
+];
 export function assertAllowed(path: string): void {
   if (path.includes('..') || !ALLOWED.some((re) => re.test(path))) throw new GitHubError(`Path tidak diizinkan: ${path}`, 400);
 }
@@ -52,7 +60,9 @@ export class GitHub {
     const res = await this.call(`/git/trees/${encodeURIComponent(this.env.GITHUB_BRANCH)}?recursive=1`);
     if (res.status === 404) return [];
     const data = (await res.json()) as { tree: { path: string; type: string; sha: string; size?: number }[] };
-    return data.tree.filter((t) => t.type === 'blob' && t.path.startsWith(prefix)).map((t) => ({ path: t.path, sha: t.sha, size: t.size ?? 0 }));
+    return data.tree
+      .filter((t) => t.type === 'blob' && t.path.startsWith(prefix))
+      .map((t) => ({ path: t.path, sha: t.sha, size: t.size ?? 0 }));
   }
 
   async read(path: string): Promise<{ path: string; sha: string; content: string } | null> {
@@ -69,7 +79,10 @@ export class GitHub {
   }
 
   /** Commit satu file. `sha` wajib untuk update (mencegah menimpa perubahan orang lain). */
-  async write(path: string, opts: { text?: string; base64?: string; sha?: string; message: string; author: string }): Promise<{ sha: string; commit: string }> {
+  async write(
+    path: string,
+    opts: { text?: string; base64?: string; sha?: string; message: string; author: string },
+  ): Promise<{ sha: string; commit: string }> {
     assertAllowed(path);
     const res = await this.call(`/contents/${path}`, {
       method: 'PUT',
@@ -90,16 +103,37 @@ export class GitHub {
     assertAllowed(path);
     await this.call(`/contents/${path}`, {
       method: 'DELETE',
-      body: JSON.stringify({ message, sha, branch: this.env.GITHUB_BRANCH, committer: { name: 'Inland Dashboard', email: 'dashboard@inland.co.id' } }),
+      body: JSON.stringify({
+        message,
+        sha,
+        branch: this.env.GITHUB_BRANCH,
+        committer: { name: 'Inland Dashboard', email: 'dashboard@inland.co.id' },
+      }),
     });
   }
 
-  async runs(): Promise<{ id: number; status: string; conclusion: string | null; created_at: string; html_url: string; head_commit: string }[]> {
+  async runs(): Promise<
+    { id: number; status: string; conclusion: string | null; created_at: string; html_url: string; head_commit: string }[]
+  > {
     const res = await this.call(`/actions/runs?branch=${encodeURIComponent(this.env.GITHUB_BRANCH)}&per_page=8`);
     if (res.status === 404) return [];
     const data = (await res.json()) as {
-      workflow_runs: { id: number; status: string; conclusion: string | null; created_at: string; html_url: string; head_commit?: { message?: string } }[];
+      workflow_runs: {
+        id: number;
+        status: string;
+        conclusion: string | null;
+        created_at: string;
+        html_url: string;
+        head_commit?: { message?: string };
+      }[];
     };
-    return data.workflow_runs.map((r) => ({ id: r.id, status: r.status, conclusion: r.conclusion, created_at: r.created_at, html_url: r.html_url, head_commit: (r.head_commit?.message ?? '').split('\n')[0] ?? '' }));
+    return data.workflow_runs.map((r) => ({
+      id: r.id,
+      status: r.status,
+      conclusion: r.conclusion,
+      created_at: r.created_at,
+      html_url: r.html_url,
+      head_commit: (r.head_commit?.message ?? '').split('\n')[0] ?? '',
+    }));
   }
 }

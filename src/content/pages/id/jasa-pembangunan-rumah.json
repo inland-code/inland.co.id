@@ -132,32 +132,12 @@
     {
       "type": "table",
       "title": "Estimasi Biaya Bangun Rumah per m²",
-      "columns": [
-        "Kelas bangunan",
-        "Kisaran harga pasar*",
-        "Gambaran spesifikasi"
-      ],
+      "columns": ["Kelas bangunan", "Kisaran harga pasar*", "Gambaran spesifikasi"],
       "rows": [
-        [
-          "Standar",
-          "Rp3 – 4,5 juta / m²",
-          "Material standar, finishing sederhana"
-        ],
-        [
-          "Menengah",
-          "Rp4,5 – 5,5 juta / m²",
-          "Material menengah, finishing lebih rapi"
-        ],
-        [
-          "Premium",
-          "Rp6 – 7 juta / m²",
-          "Desain modern/kustom, material premium"
-        ],
-        [
-          "Borongan tenaga saja",
-          "Rp1,3 – 1,5 juta / m²",
-          "Tanpa material (material disediakan pemilik)"
-        ]
+        ["Standar", "Rp3 – 4,5 juta / m²", "Material standar, finishing sederhana"],
+        ["Menengah", "Rp4,5 – 5,5 juta / m²", "Material menengah, finishing lebih rapi"],
+        ["Premium", "Rp6 – 7 juta / m²", "Desain modern/kustom, material premium"],
+        ["Borongan tenaga saja", "Rp1,3 – 1,5 juta / m²", "Tanpa material (material disediakan pemilik)"]
       ],
       "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi. Belum termasuk harga tanah, desain, dan perizinan (PBG).",
       "eyebrow": "Biaya"

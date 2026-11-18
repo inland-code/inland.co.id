@@ -52,14 +52,27 @@
   body {
     @apply bg-surface font-sans text-ink antialiased;
   }
-  img, svg, video { max-width: 100%; }
-  img { height: auto; }
+  img,
+  svg,
+  video {
+    max-width: 100%;
+  }
+  img {
+    height: auto;
+  }
   :focus-visible {
     @apply outline-2 outline-offset-2 outline-brand-500;
   }
   @media (prefers-reduced-motion: reduce) {
-    html { scroll-behavior: auto; }
-    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation: none !important;
+      transition: none !important;
+    }
   }
 }
 
@@ -80,7 +93,9 @@
   width: 100%;
   max-width: var(--container-site);
   padding-inline: 1rem;
-  @media (width >= 40rem) { padding-inline: 1.5rem; }
+  @media (width >= 40rem) {
+    padding-inline: 1.5rem;
+  }
 }
 
 @utility btn {
@@ -93,7 +108,10 @@
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
-  transition: background-color 150ms, color 150ms, transform 150ms;
+  transition:
+    background-color 150ms,
+    color 150ms,
+    transform 150ms;
 }
 @utility btn-light {
   @apply btn bg-white text-brand-900 shadow-sm hover:bg-brand-50;

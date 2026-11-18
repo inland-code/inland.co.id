@@ -8,7 +8,8 @@ import { markdownPath } from '@/lib/markdown';
 export const GET: APIRoute = async () => {
   const routes = (await getRoutes()).filter((r) => !r.entry.data.seo.noindex);
   // Tautan ke versi Markdown (lebih ringkas untuk LLM); HTML ada di URL yang sama tanpa .md.
-  const line = (r: (typeof routes)[number]) => `- [${r.entry.data.seo.title}](${absoluteUrl(markdownPath(r.path))}): ${r.entry.data.seo.description}`;
+  const line = (r: (typeof routes)[number]) =>
+    `- [${r.entry.data.seo.title}](${absoluteUrl(markdownPath(r.path))}): ${r.entry.data.seo.description}`;
   const body = [
     `# ${site.name}`,
     '',

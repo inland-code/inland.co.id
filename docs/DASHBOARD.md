@@ -20,28 +20,32 @@ Worker /api/admin/*  ── verifikasi cookie sesi bertanda tangan + akun GitHub
   Dashboard juga memvalidasi dengan skema yang sama sebelum menyimpan.
 - **Halaman publik tetap 0 KB JavaScript.** Kode dashboard hanya dimuat di `/admin`.
 
-| Menu | Fungsi |
-|---|---|
-| Ringkasan | Jumlah pesan baru, status build & deploy terakhir |
-| Halaman | Edit SEO, hero, dan section (tambah/hapus/urutkan) semua halaman ID & EN |
-| Artikel | Buat, edit (Markdown + pratinjau), hapus artikel; FAQ untuk rich result |
-| Media | Unggah gambar (otomatis dikompres maks 2560px/WebP di browser), salin path |
-| Pesan Masuk | Riwayat formulir kontak, ubah status, balas langsung via WhatsApp |
-| Data Bisnis | Nama, telepon, WhatsApp, alamat, jam buka, media sosial |
-| Redirect | Kelola `public/_redirects` (301) dengan validasi format |
+| Menu        | Fungsi                                                                     |
+| ----------- | -------------------------------------------------------------------------- |
+| Ringkasan   | Jumlah pesan baru, status build & deploy terakhir                          |
+| Halaman     | Edit SEO, hero, dan section (tambah/hapus/urutkan) semua halaman ID & EN   |
+| Artikel     | Buat, edit (Markdown + pratinjau), hapus artikel; FAQ untuk rich result    |
+| Media       | Unggah gambar (otomatis dikompres maks 2560px/WebP di browser), salin path |
+| Pesan Masuk | Riwayat formulir kontak, ubah status, balas langsung via WhatsApp          |
+| Data Bisnis | Nama, telepon, WhatsApp, alamat, jam buka, media sosial                    |
+| Redirect    | Kelola `public/_redirects` (301) dengan validasi format                    |
 
 ## Setup (sekali saja)
 
 ### 1. Database D1 — ✅ sudah dibuat (`inland-db`, APAC) dan terhubung di `wrangler.jsonc`.
 
 ### 2. Token GitHub untuk menyimpan perubahan
+
 GitHub → Settings → Developer settings → **Fine-grained personal access tokens** → Generate new token
+
 - Resource owner: `inland-code` · Repository access: **Only select repositories** → `inland.co.id`
 - Permissions: **Contents: Read and write**, **Actions: Read-only**
 - Expiration: maks. 1 tahun — catat tanggalnya untuk diperpanjang.
 
 ### 3. OAuth App GitHub untuk login dashboard (gratis, tanpa kartu kredit)
+
 GitHub → Settings → Developer settings → **OAuth Apps** → **New OAuth App**
+
 - Application name: `Inland Dashboard`
 - Homepage URL: `https://inland-co-id.inlandgrup.workers.dev`
 - Authorization callback URL: `https://inland-co-id.inlandgrup.workers.dev/api/auth/callback`
@@ -50,31 +54,36 @@ GitHub → Settings → Developer settings → **OAuth Apps** → **New OAuth Ap
 Setelah domain pindah ke `inland.co.id`, ganti kedua URL di atas ke domain baru.
 
 ### 4. Secret di Cloudflare
+
 Workers & Pages → `inland-co-id` → Settings → Variables and Secrets → **Add** (pilih tipe **Secret** untuk semuanya):
 
-| Nama | Isi |
-|---|---|
-| `GITHUB_TOKEN` | token dari langkah 2 |
-| `GITHUB_OAUTH_CLIENT_ID` | Client ID dari langkah 3 |
-| `GITHUB_OAUTH_CLIENT_SECRET` | Client secret dari langkah 3 |
-| `SESSION_SECRET` | teks acak panjang (≥ 32 karakter) |
-| `ADMIN_EMAIL` | email akun GitHub pemilik (opsional; akun `inland-code` sudah diizinkan lewat `ADMIN_GITHUB_USERS`) |
+| Nama                         | Isi                                                                                                 |
+| ---------------------------- | --------------------------------------------------------------------------------------------------- |
+| `GITHUB_TOKEN`               | token dari langkah 2                                                                                |
+| `GITHUB_OAUTH_CLIENT_ID`     | Client ID dari langkah 3                                                                            |
+| `GITHUB_OAUTH_CLIENT_SECRET` | Client secret dari langkah 3                                                                        |
+| `SESSION_SECRET`             | teks acak panjang (≥ 32 karakter)                                                                   |
+| `ADMIN_EMAIL`                | email akun GitHub pemilik (opsional; akun `inland-code` sudah diizinkan lewat `ADMIN_GITHUB_USERS`) |
 
 Akun yang diizinkan diatur di `wrangler.jsonc` → `ADMIN_GITHUB_USERS` (dipisah koma).
 
 ### 5. Deploy
+
 Cloudflare Workers Builds sudah terhubung ke repo: setiap push ke `main` otomatis di-build & di-deploy.
 Saat pindah ke domain asli, tambahkan build variable `PUBLIC_SITE_ENV=production`.
 
 ## Pengembangan lokal
+
 ```bash
 npm run build
 npx wrangler dev --var ADMIN_DEV_BYPASS:1 --var GITHUB_TOKEN:<token-uji>
 # buka http://localhost:8787/admin/
 ```
+
 `ADMIN_DEV_BYPASS` hanya berlaku untuk host `localhost`/`127.0.0.1`, tidak pernah di produksi.
 
 ## Keamanan
+
 - API menolak semua permintaan tanpa cookie sesi yang valid (HMAC-SHA256, kedaluwarsa 7 hari, HttpOnly, Secure, SameSite=Lax).
 - Login hanya untuk akun GitHub di `ADMIN_GITHUB_USERS` atau email terverifikasi di `ADMIN_EMAIL`; parameter `state` OAuth mencegah login palsu.
 - Permintaan yang mengubah data wajib dari origin yang sama (anti-CSRF).

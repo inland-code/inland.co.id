@@ -8,7 +8,9 @@ import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const dist = new URL('../dist/', import.meta.url).pathname;
-const csv = readFileSync(new URL('../migration/url-inventory.csv', import.meta.url), 'utf8').trim().split('\n');
+const csv = readFileSync(new URL('../migration/url-inventory.csv', import.meta.url), 'utf8')
+  .trim()
+  .split('\n');
 const header = csv.shift().split(',');
 const rows = csv.map((line) => Object.fromEntries(line.split(',').map((v, i) => [header[i], v])));
 

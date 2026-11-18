@@ -4,13 +4,17 @@ import type { Section } from '@/content.config';
 type Props = Extract<Section, { type: 'areas' }>;
 const { eyebrow, title, intro, areas, note } = Astro.props;
 ---
+
 <section class="bg-surface-alt py-20 sm:py-24">
   <div class="container-site max-w-5xl">
     <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />
     <ul class="mt-10 flex flex-wrap justify-center gap-3">
       {areas.map((a) => (
         <li class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-espresso-900 shadow-sm ring-1 ring-black/5">
-          <svg class="size-4 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" /><circle cx="12" cy="9.5" r="2.5" /></svg>
+          <svg class="size-4 text-brand-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" />
+            <circle cx="12" cy="9.5" r="2.5" />
+          </svg>
           {a}
         </li>
       ))}

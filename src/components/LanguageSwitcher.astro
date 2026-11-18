@@ -14,6 +14,7 @@ const links = locales.map((l) => ({
   href: alternates.find((a) => a.locale === l)?.path ?? localePath(l, ''),
 }));
 ---
+
 <nav aria-label={t(locale, 'lang.switch')} class="flex items-center rounded-full border border-black/10 p-0.5 text-xs font-semibold">
   {links.map((l) => (
     <a
@@ -23,7 +24,6 @@ const links = locales.map((l) => ({
       aria-current={l.locale === locale ? 'true' : undefined}
       title={localeMeta[l.locale].label}
       class:list={['rounded-full px-2.5 py-1 transition', l.locale === locale ? 'bg-espresso-900 text-white' : 'text-muted hover:text-ink']}
-     
     >
       {localeMeta[l.locale].short}
     </a>

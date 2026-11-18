@@ -32,11 +32,25 @@ export async function getRoutes(): Promise<Route[]> {
   const routes: Route[] = [
     ...pages.map((entry) => {
       const locale = localeOf(entry.id);
-      return { kind: 'page' as const, locale, translationKey: entry.data.translationKey, slug: entry.data.slug, path: localePath(locale, entry.data.slug), entry };
+      return {
+        kind: 'page' as const,
+        locale,
+        translationKey: entry.data.translationKey,
+        slug: entry.data.slug,
+        path: localePath(locale, entry.data.slug),
+        entry,
+      };
     }),
     ...posts.map((entry) => {
       const locale = localeOf(entry.id);
-      return { kind: 'post' as const, locale, translationKey: entry.data.translationKey, slug: entry.data.slug, path: localePath(locale, entry.data.slug), entry };
+      return {
+        kind: 'post' as const,
+        locale,
+        translationKey: entry.data.translationKey,
+        slug: entry.data.slug,
+        path: localePath(locale, entry.data.slug),
+        entry,
+      };
     }),
   ];
 

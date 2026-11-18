@@ -136,31 +136,13 @@
     {
       "type": "table",
       "title": "What Determines Renovation Cost",
-      "columns": [
-        "Factor",
-        "Effect on cost"
-      ],
+      "columns": ["Factor", "Effect on cost"],
       "rows": [
-        [
-          "Area and scope of work",
-          "A single-room refresh differs greatly from a full renovation or added storey"
-        ],
-        [
-          "Condition of the existing building",
-          "Cracks, seepage, or weak structure must be fixed first"
-        ],
-        [
-          "Material specification",
-          "Tiles, sanitaryware, frames, and paint vary widely in price"
-        ],
-        [
-          "Structural changes / added storey",
-          "Requires structural calculation and usually a permit (PBG)"
-        ],
-        [
-          "Site access and estate rules",
-          "Narrow roads or cluster rules affect schedule and haulage cost"
-        ]
+        ["Area and scope of work", "A single-room refresh differs greatly from a full renovation or added storey"],
+        ["Condition of the existing building", "Cracks, seepage, or weak structure must be fixed first"],
+        ["Material specification", "Tiles, sanitaryware, frames, and paint vary widely in price"],
+        ["Structural changes / added storey", "Requires structural calculation and usually a permit (PBG)"],
+        ["Site access and estate rules", "Narrow roads or cluster rules affect schedule and haulage cost"]
       ],
       "note": "Inland prepares a detailed cost plan after the site survey, so you know the cost of each item before work begins.",
       "eyebrow": "Cost"

@@ -26,7 +26,11 @@ for (const file of html) {
   for (const m of src.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)) {
     const attrs = m[1] ?? '';
     if (/\bsrc=/.test(attrs) || /type="application\/(ld\+)?json"/.test(attrs)) continue; // data block / skrip eksternal
-    hashes.add(`'sha256-${createHash('sha256').update(m[2] ?? '').digest('base64')}'`);
+    hashes.add(
+      `'sha256-${createHash('sha256')
+        .update(m[2] ?? '')
+        .digest('base64')}'`,
+    );
   }
 }
 

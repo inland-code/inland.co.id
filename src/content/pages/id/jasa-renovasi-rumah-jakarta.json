@@ -59,13 +59,7 @@
       "eyebrow": "Area Layanan",
       "title": "Wilayah yang Kami Layani di Jakarta",
       "intro": "Tim Inland melayani renovasi rumah di seluruh wilayah administrasi DKI Jakarta.",
-      "areas": [
-        "Jakarta Selatan",
-        "Jakarta Timur",
-        "Jakarta Barat",
-        "Jakarta Utara",
-        "Jakarta Pusat"
-      ],
+      "areas": ["Jakarta Selatan", "Jakarta Timur", "Jakarta Barat", "Jakarta Utara", "Jakarta Pusat"],
       "note": "Lokasi Anda tidak tercantum? Hubungi kami — area di sekitarnya umumnya tetap bisa kami layani."
     },
     {

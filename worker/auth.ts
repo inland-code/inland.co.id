@@ -15,8 +15,21 @@ const SESSION_DAYS = 7;
 export class AuthError extends Error {}
 
 const enc = new TextEncoder();
-const b64url = (bytes: Uint8Array) => btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-const fromB64url = (s: string) => Uint8Array.from(atob(s.replace(/-/g, '+').replace(/_/g, '/').padEnd(Math.ceil(s.length / 4) * 4, '=')), (c) => c.charCodeAt(0));
+const b64url = (bytes: Uint8Array) =>
+  btoa(String.fromCharCode(...bytes))
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/, '');
+const fromB64url = (s: string) =>
+  Uint8Array.from(
+    atob(
+      s
+        .replace(/-/g, '+')
+        .replace(/_/g, '/')
+        .padEnd(Math.ceil(s.length / 4) * 4, '='),
+    ),
+    (c) => c.charCodeAt(0),
+  );
 
 async function hmac(secret: string, data: string): Promise<string> {
   const key = await crypto.subtle.importKey('raw', enc.encode(secret), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
@@ -44,10 +57,22 @@ function cookies(request: Request): Record<string, string> {
 const cookie = (name: string, value: string, maxAge: number, secure: boolean) =>
   `${name}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${maxAge}${secure ? '; Secure' : ''}`;
 
-const list = (s?: string) => (s ?? '').split(',').map((x) => x.trim().toLowerCase()).filter(Boolean);
+const list = (s?: string) =>
+  (s ?? '')
+    .split(',')
+    .map((x) => x.trim().toLowerCase())
+    .filter(Boolean);
 
 function configured(env: Env): boolean {
-  return Boolean(env.GITHUB_OAUTH_CLIENT_ID && env.GITHUB_OAUTH_CLIENT_SECRET && env.SESSION_SECRET && (env.ADMIN_GITHUB_USERS || env.ADMIN_EMAIL));
+  return Boolean(
+    env.GITHUB_OAUTH_CLIENT_ID && env.GITHUB_OAUTH_CLIENT_SECRET && env.SESSION_SECRET && (env.ADMIN_GITHUB_USERS || env.ADMIN_EMAIL),
+  );
+}
+
+/** Buat nilai cookie sesi bertanda tangan: base64url(payload).hmac */
+export async function createSession(secret: string, login: string, days = SESSION_DAYS): Promise<string> {
+  const payload = b64url(enc.encode(JSON.stringify({ login, exp: Math.floor(Date.now() / 1000) + days * 86400 })));
+  return `${payload}.${await hmac(secret, payload)}`;
 }
 
 /** Kembalikan identitas admin (username GitHub) atau lempar AuthError. */
@@ -84,7 +109,10 @@ export async function handleAuth(request: Request, env: Env, url: URL): Promise<
     auth.searchParams.set('scope', 'read:user user:email');
     auth.searchParams.set('state', state);
     auth.searchParams.set('allow_signup', 'false');
-    return new Response(null, { status: 302, headers: { Location: auth.toString(), 'Set-Cookie': cookie(STATE_COOKIE, state, 600, secure) } });
+    return new Response(null, {
+      status: 302,
+      headers: { Location: auth.toString(), 'Set-Cookie': cookie(STATE_COOKIE, state, 600, secure) },
+    });
   }
 
   if (url.pathname === '/api/auth/callback') {
@@ -96,12 +124,19 @@ export async function handleAuth(request: Request, env: Env, url: URL): Promise<
     const tokenRes = await fetch(`${web}/login/oauth/access_token`, {
       method: 'POST',
       headers: { Accept: 'application/json', 'Content-Type': 'application/json', 'User-Agent': 'inland-dashboard' },
-      body: JSON.stringify({ client_id: env.GITHUB_OAUTH_CLIENT_ID, client_secret: env.GITHUB_OAUTH_CLIENT_SECRET, code, redirect_uri: redirectUri }),
+      body: JSON.stringify({
+        client_id: env.GITHUB_OAUTH_CLIENT_ID,
+        client_secret: env.GITHUB_OAUTH_CLIENT_SECRET,
+        code,
+        redirect_uri: redirectUri,
+      }),
     });
     const token = ((await tokenRes.json()) as { access_token?: string }).access_token;
     if (!token) return back('?login=token');
     const gh = (path: string) =>
-      fetch(`${apiBase}${path}`, { headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'inland-dashboard' } });
+      fetch(`${apiBase}${path}`, {
+        headers: { Authorization: `Bearer ${token}`, Accept: 'application/vnd.github+json', 'User-Agent': 'inland-dashboard' },
+      });
 
     const user = (await (await gh('/user')).json()) as { login?: string };
     const login = (user.login ?? '').toLowerCase();
@@ -113,8 +148,7 @@ export async function handleAuth(request: Request, env: Env, url: URL): Promise<
     }
     if (!allowed) return back('?login=denied');
 
-    const payload = b64url(enc.encode(JSON.stringify({ login: user.login, exp: Math.floor(Date.now() / 1000) + SESSION_DAYS * 86400 })));
-    const session = `${payload}.${await hmac(env.SESSION_SECRET!, payload)}`;
+    const session = await createSession(env.SESSION_SECRET!, user.login!, SESSION_DAYS);
     const headers = new Headers({ Location: '/admin/' });
     headers.append('Set-Cookie', cookie(COOKIE, session, SESSION_DAYS * 86400, secure));
     headers.append('Set-Cookie', cookie(STATE_COOKIE, '', 0, secure));

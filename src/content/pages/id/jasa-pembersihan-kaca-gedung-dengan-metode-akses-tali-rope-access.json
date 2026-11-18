@@ -115,27 +115,11 @@
     {
       "type": "table",
       "title": "Estimasi Biaya Pembersihan Kaca Gedung",
-      "columns": [
-        "Jenis pekerjaan",
-        "Kisaran harga pasar*",
-        "Keterangan"
-      ],
+      "columns": ["Jenis pekerjaan", "Kisaran harga pasar*", "Keterangan"],
       "rows": [
-        [
-          "Pembersihan kaca rutin (rope access)",
-          "Rp15.000 – Rp25.000 / m²",
-          "Gedung ±5–20 lantai, kotoran ringan–sedang"
-        ],
-        [
-          "Gedung tinggi / akses sulit",
-          "Rp25.000 – Rp50.000 / m²",
-          "Ketinggian ekstrem, fasad bertingkat atau berlekuk"
-        ],
-        [
-          "Kaca berjamur / berkerak",
-          "Rp50.000 – Rp80.000 / m²",
-          "Butuh bahan khusus dan pengerjaan berulang"
-        ]
+        ["Pembersihan kaca rutin (rope access)", "Rp15.000 – Rp25.000 / m²", "Gedung ±5–20 lantai, kotoran ringan–sedang"],
+        ["Gedung tinggi / akses sulit", "Rp25.000 – Rp50.000 / m²", "Ketinggian ekstrem, fasad bertingkat atau berlekuk"],
+        ["Kaca berjamur / berkerak", "Rp50.000 – Rp80.000 / m²", "Butuh bahan khusus dan pengerjaan berulang"]
       ],
       "note": "*Kisaran umum harga pasar di Jabodetabek tahun 2026 yang dihimpun dari berbagai penyedia, bukan penawaran resmi Inland. Harga pasti diberikan setelah survei lokasi. Faktor penentu: total luas kaca, tingkat kotoran, ketinggian, bentuk fasad, dan jadwal kerja.",
       "eyebrow": "Biaya"

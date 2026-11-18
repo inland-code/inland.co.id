@@ -5,6 +5,7 @@ import type { Section } from '@/content.config';
 type Props = Extract<Section, { type: 'faq' }> & { index: number };
 const { eyebrow, title, intro, items, index } = Astro.props;
 ---
+
 <section class="bg-surface-alt py-20 sm:py-24">
   <div class="container-site max-w-4xl">
     <SectionHeading eyebrow={eyebrow} title={title} intro={intro} />

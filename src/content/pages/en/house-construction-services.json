@@ -132,32 +132,12 @@
     {
       "type": "table",
       "title": "House Construction Cost per m²",
-      "columns": [
-        "Build class",
-        "Market range*",
-        "Typical specification"
-      ],
+      "columns": ["Build class", "Market range*", "Typical specification"],
       "rows": [
-        [
-          "Standard",
-          "IDR 3 – 4.5 million / m²",
-          "Standard materials, simple finishing"
-        ],
-        [
-          "Mid-range",
-          "IDR 4.5 – 5.5 million / m²",
-          "Mid-grade materials, neater finishing"
-        ],
-        [
-          "Premium",
-          "IDR 6 – 7 million / m²",
-          "Modern/custom design, premium materials"
-        ],
-        [
-          "Labour only",
-          "IDR 1.3 – 1.5 million / m²",
-          "Materials supplied by the owner"
-        ]
+        ["Standard", "IDR 3 – 4.5 million / m²", "Standard materials, simple finishing"],
+        ["Mid-range", "IDR 4.5 – 5.5 million / m²", "Mid-grade materials, neater finishing"],
+        ["Premium", "IDR 6 – 7 million / m²", "Modern/custom design, premium materials"],
+        ["Labour only", "IDR 1.3 – 1.5 million / m²", "Materials supplied by the owner"]
       ],
       "note": "*General Greater Jakarta market ranges for 2026 compiled from various providers — not an official Inland quote. Exact pricing follows a site survey. Excludes land, design, and building approval (PBG).",
       "eyebrow": "Cost"

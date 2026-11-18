@@ -66,11 +66,21 @@ export function Uploader({ onDone, folder: initial = 'uploads' }: { onDone: (ima
     <div class="flex flex-wrap items-end gap-3 rounded-xl bg-brand-50 p-4">
       <label class="text-sm font-medium text-espresso-900">
         Folder
-        <input class="mt-1 block w-40 rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15" value={folder} onInput={(e) => setFolder((e.target as HTMLInputElement).value)} />
+        <input
+          class="mt-1 block w-40 rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15"
+          value={folder}
+          onInput={(e) => setFolder((e.target as HTMLInputElement).value)}
+        />
       </label>
       <label class="cursor-pointer rounded-lg bg-espresso-900 px-4 py-2 text-sm font-semibold text-white">
         {busy ? 'Mengunggah…' : 'Unggah gambar'}
-        <input type="file" accept="image/jpeg,image/png,image/webp,image/avif" class="sr-only" disabled={busy} onChange={(e) => onFile((e.target as HTMLInputElement).files?.[0])} />
+        <input
+          type="file"
+          accept="image/jpeg,image/png,image/webp,image/avif"
+          class="sr-only"
+          disabled={busy}
+          onChange={(e) => onFile((e.target as HTMLInputElement).files?.[0])}
+        />
       </label>
       <p class="text-xs text-muted">Otomatis dikompres (maks 2560px, WebP). Gambar baru tampil di situs setelah build selesai.</p>
     </div>
@@ -87,7 +97,11 @@ export function ImageField({ value, onChange }: { value: string; onChange: (v: s
     <div class="mt-1 flex items-center gap-3">
       {value ? <Thumb image={value} class="size-16 rounded-lg" /> : <div class="size-16 rounded-lg bg-sand" />}
       <div class="min-w-0 flex-1">
-        <input class="block w-full rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15" value={value} onInput={(e) => onChange((e.target as HTMLInputElement).value)} />
+        <input
+          class="block w-full rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15"
+          value={value}
+          onInput={(e) => onChange((e.target as HTMLInputElement).value)}
+        />
         <button type="button" class="mt-1 text-xs font-semibold text-brand-800 hover:underline" onClick={() => setOpen(true)}>
           Pilih / unggah gambar
         </button>
@@ -97,7 +111,9 @@ export function ImageField({ value, onChange }: { value: string; onChange: (v: s
           <div class="max-h-[90vh] w-full max-w-4xl overflow-auto rounded-2xl bg-white p-6" onClick={(e) => e.stopPropagation()}>
             <div class="mb-4 flex items-center justify-between">
               <h3 class="text-lg font-bold text-espresso-900">Pilih gambar</h3>
-              <button type="button" class="text-sm text-muted" onClick={() => setOpen(false)}>Tutup</button>
+              <button type="button" class="text-sm text-muted" onClick={() => setOpen(false)}>
+                Tutup
+              </button>
             </div>
             <MediaGrid
               onPick={(img) => {
@@ -125,7 +141,12 @@ export function MediaGrid({ onPick }: { onPick?: (image: string) => void }) {
           onPick?.(img);
         }}
       />
-      <input class="block w-full rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15" placeholder="Cari gambar…" value={q} onInput={(e) => setQ((e.target as HTMLInputElement).value)} />
+      <input
+        class="block w-full rounded-lg bg-white px-3 py-2 text-sm ring-1 ring-black/15"
+        placeholder="Cari gambar…"
+        value={q}
+        onInput={(e) => setQ((e.target as HTMLInputElement).value)}
+      />
       <ul class="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
         {shown.map((img) => (
           <li>

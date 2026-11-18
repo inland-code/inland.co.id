@@ -41,7 +41,11 @@ export function organizationSchema() {
 }
 
 function dayName(d: string): string {
-  return ({ Mo: 'Monday', Tu: 'Tuesday', We: 'Wednesday', Th: 'Thursday', Fr: 'Friday', Sa: 'Saturday', Su: 'Sunday' } as Record<string, string>)[d] ?? d;
+  return (
+    (
+      { Mo: 'Monday', Tu: 'Tuesday', We: 'Wednesday', Th: 'Thursday', Fr: 'Friday', Sa: 'Saturday', Su: 'Sunday' } as Record<string, string>
+    )[d] ?? d
+  );
 }
 
 export function websiteSchema(locale: Locale) {

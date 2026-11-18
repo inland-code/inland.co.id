@@ -9,7 +9,7 @@
     "binding": "ASSETS",
     "html_handling": "force-trailing-slash",
     "not_found_handling": "404-page",
-    "run_worker_first": ["/api/*"]
+    "run_worker_first": ["/api/*"],
   },
   // Jangan hapus variable yang diatur lewat dashboard Cloudflare saat deploy otomatis.
   "keep_vars": true,
@@ -19,13 +19,18 @@
     "GITHUB_REPO": "inland-code/inland.co.id",
     "GITHUB_BRANCH": "main",
     // Akun GitHub yang boleh masuk dashboard (dipisah koma).
-    "ADMIN_GITHUB_USERS": "inland-code"
+    "ADMIN_GITHUB_USERS": "inland-code",
     // Diisi di Cloudflare → Settings → Variables and Secrets (lihat docs/DASHBOARD.md):
     //   GITHUB_OAUTH_CLIENT_ID (text), GITHUB_OAUTH_CLIENT_SECRET, SESSION_SECRET, GITHUB_TOKEN, ADMIN_EMAIL (secret)
   },
   // Pesan formulir kontak (riwayat di dashboard). Migrasi baru: `npm run db:migrate`.
   "d1_databases": [
-    { "binding": "DB", "database_name": "inland-db", "database_id": "d30f651e-4725-4bae-9a12-3bb54a703856", "migrations_dir": "migrations" }
+    {
+      "binding": "DB",
+      "database_name": "inland-db",
+      "database_id": "d30f651e-4725-4bae-9a12-3bb54a703856",
+      "migrations_dir": "migrations",
+    },
   ],
-  "observability": { "enabled": true }
+  "observability": { "enabled": true },
 }

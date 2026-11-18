@@ -21,30 +21,15 @@
     "postalCode": "15418",
     "country": "ID"
   },
-  "areaServed": [
-    "Jakarta",
-    "Bogor",
-    "Depok",
-    "Tangerang",
-    "Tangerang Selatan",
-    "Bekasi"
-  ],
+  "areaServed": ["Jakarta", "Bogor", "Depok", "Tangerang", "Tangerang Selatan", "Bekasi"],
   "openingHours": [
     {
-      "days": [
-        "Mo",
-        "Tu",
-        "We",
-        "Th",
-        "Fr"
-      ],
+      "days": ["Mo", "Tu", "We", "Th", "Fr"],
       "opens": "08:00",
       "closes": "17:00"
     },
     {
-      "days": [
-        "Sa"
-      ],
+      "days": ["Sa"],
       "opens": "08:00",
       "closes": "13:00"
     }

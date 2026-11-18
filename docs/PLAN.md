@@ -4,16 +4,16 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 
 ## Keputusan yang sudah diambil
 
-| # | Topik | Keputusan |
-|---|---|---|
-| 1 | Slug Bahasa Inggris | **Diterjemahkan** (contoh: `/en/about-us/`, `/en/services/interior-design/`), dihubungkan via `hreflang` |
-| 2 | Sumber konten | **Dibuat dari nol berdasarkan screenshot** yang diberikan; foto di-crop dari screenshot. Slug URL dari sitemap Rank Math asli (lihat `migration/url-inventory.csv`) |
-| 3 | Penyimpanan media | **Di repo** (`src/assets/`), dioptimasi saat build — bukan di Cloudflare R2 |
-| 4 | URL Bahasa Indonesia | **Sama persis** dengan situs WordPress saat ini, termasuk trailing slash, di root tanpa prefix |
-| 5 | Formulir kontak | **Diarahkan ke WhatsApp** (pesan terisi otomatis) **dan tercatat di dashboard** (Worker `/api/contact` → Cloudflare D1 → redirect `wa.me`). D1 hanya untuk data formulir; media tetap di repo |
-| 6 | Font | **Roboto** (self-hosted, variable woff2) |
-| 7 | DNS domain | Nameserver **belum** di Cloudflare. Pengembangan & uji di subdomain `*.workers.dev` (noindex); domain disambungkan di Fase 9 setelah semua selesai |
-| 8 | Pengguna dashboard | **Hanya pemilik.** Login dengan akun GitHub (OAuth App, gratis) — Cloudflare Zero Trust tidak dipakai karena mewajibkan kartu kredit |
+| #   | Topik                | Keputusan                                                                                                                                                                                     |
+| --- | -------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Slug Bahasa Inggris  | **Diterjemahkan** (contoh: `/en/about-us/`, `/en/services/interior-design/`), dihubungkan via `hreflang`                                                                                      |
+| 2   | Sumber konten        | **Dibuat dari nol berdasarkan screenshot** yang diberikan; foto di-crop dari screenshot. Slug URL dari sitemap Rank Math asli (lihat `migration/url-inventory.csv`)                           |
+| 3   | Penyimpanan media    | **Di repo** (`src/assets/`), dioptimasi saat build — bukan di Cloudflare R2                                                                                                                   |
+| 4   | URL Bahasa Indonesia | **Sama persis** dengan situs WordPress saat ini, termasuk trailing slash, di root tanpa prefix                                                                                                |
+| 5   | Formulir kontak      | **Diarahkan ke WhatsApp** (pesan terisi otomatis) **dan tercatat di dashboard** (Worker `/api/contact` → Cloudflare D1 → redirect `wa.me`). D1 hanya untuk data formulir; media tetap di repo |
+| 6   | Font                 | **Roboto** (self-hosted, variable woff2)                                                                                                                                                      |
+| 7   | DNS domain           | Nameserver **belum** di Cloudflare. Pengembangan & uji di subdomain `*.workers.dev` (noindex); domain disambungkan di Fase 9 setelah semua selesai                                            |
+| 8   | Pengguna dashboard   | **Hanya pemilik.** Login dengan akun GitHub (OAuth App, gratis) — Cloudflare Zero Trust tidak dipakai karena mewajibkan kartu kredit                                                          |
 
 ---
 
@@ -33,12 +33,14 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 - Alur publish dashboard: Simpan → commit → build otomatis → live ±1–3 menit.
 
 ### Aturan media di repo
+
 - Batas: GitHub 100 MB/file (repo idealnya < 1 GB); Cloudflare 25 MiB/aset.
 - Dashboard mengompres gambar sebelum commit (maks 2560px). Repo menyimpan 1 master; Astro membuat AVIF/WebP multi-ukuran saat build.
 - Tanpa Git LFS. Build di **GitHub Actions** dengan cache hasil optimasi gambar.
 - Video besar → embed YouTube.
 
 ### Kebijakan URL
+
 - `trailingSlash: 'always'`, `build.format: 'directory'`.
 - ID di root, EN di `/en/` dengan slug terjemahan; peta pasangan slug ID↔EN disimpan di frontmatter (`translationKey`).
 - `/sitemap_index.xml` tetap tersedia di path yang sama.
@@ -50,6 +52,7 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 ## B. Tahapan
 
 ### Fase 0 — Ekstraksi konten ✅ (dari screenshot)
+
 1. ✅ Inventaris URL `migration/url-inventory.csv`: 40 URL (35 halaman + 5 artikel) dari sitemap Rank Math asli, semuanya terverifikasi.
    - 20 halaman tidak ada di screenshot (landing renovasi per kota/jenis, landing pembersihan kaca, dll.) → konten sementara ditulis ulang, ditandai `contentStatus: draft`, hanya versi ID.
 2. ✅ 28 foto di-crop dari screenshot ke `src/assets/images/`.
@@ -59,15 +62,17 @@ Status: **Fase 8 selesai** · Fase 9 menunggu setup akun Cloudflare · Terakhir 
 5. ⏳ Teks lengkap per section ditranskripsi dari screenshot di Fase 3.
 
 ### Fase 1 — Fondasi proyek ✅
+
 - Astro terbaru, TypeScript, Tailwind v4, Content Collections dengan skema tervalidasi.
 - i18n (ID tanpa prefix, EN `/en/` slug terjemahan).
 - CI GitHub Actions: lint, type-check, build, cek link rusak, verifikasi URL.
 - Deploy Cloudflare Workers static assets; staging dengan `X-Robots-Tag: noindex`.
 
 ### Fase 2 — Desain sistem & mockup (perlu persetujuan)
+
 - ✅ Palet diturunkan dari logo: oranye `#F2821F`, coklat `#704020`, espresso `#482818` (menggantikan navy situs lama), netral krem hangat.
 - ✅ Section statistik di Beranda. **Angka sementara** (8+ tahun, 250+ proyek, 180+ klien, 6 kota) — ganti di `src/content/pages/{id,en}/home.json` atau dashboard.
-Identitas & warna tetap, tampilan dimodernkan:
+  Identitas & warna tetap, tampilan dimodernkan:
 - Header sticky transparan → solid saat scroll; menu mobile rapi.
 - Hero: tipografi tegas, angka kepercayaan (tahun pengalaman, jumlah proyek), badge layanan.
 - Kartu layanan: ikon line konsisten, hover halus.
@@ -77,6 +82,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Mockup Beranda dulu → disetujui → diterapkan ke semua halaman.
 
 ### Fase 3 — Pembangunan halaman ✅
+
 - ✅ 35 halaman ID + 15 halaman EN dengan section lengkap; 5 artikel (2 artikel sealant lengkap, 3 lainnya masih ringkasan).
 - ✅ Formulir kontak: Worker `/api/contact` → D1 → WhatsApp. **Butuh** `wrangler d1 create inland-db` + migrasi saat deploy.
 - ✅ Artikel EN tersedia (Fase 8).
@@ -88,6 +94,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Perbaikan konten: judul salah di halaman Renovasi, tipografi halaman Sealant, konsistensi nomor telepon (NAP).
 
 ### Fase 4 — SEO lanjutan ✅
+
 - ✅ FAQPage + Service JSON-LD, RSS `/feed.xml`, audit SEO otomatis di setiap build (`scripts/seo-audit.mjs`).
 - Meta, canonical, `hreflang` (id, en, x-default), Open Graph, Twitter Card.
 - Gambar OG otomatis per halaman/artikel saat build.
@@ -96,6 +103,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Audit otomatis di CI: duplikat judul/deskripsi, alt kosong, link rusak.
 
 ### Fase 5 — GEO / optimasi LLM ✅
+
 - ✅ Versi Markdown tiap halaman (`/tentang-inland.md`, dll.; `noindex` agar tidak duplikat di Google), `llms.txt` menautkan ke versi Markdown, `llms-full.txt` berisi seluruh konten.
 - ⏳ Saat deploy: matikan "Block AI bots" / AI Crawl Control di dashboard Cloudflare agar crawler AI tidak diblokir di level edge.
 - `/llms.txt` & `/llms-full.txt` otomatis dari konten.
@@ -105,6 +113,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Izinkan bot AI (GPTBot, ClaudeBot, PerplexityBot, Google-Extended) di robots.txt **dan** setting Cloudflare ("Block AI bots" harus dinonaktifkan).
 
 ### Fase 6 — Performa & cache ✅
+
 - ✅ Lighthouse (build produksi, mobile & desktop): **100 / 100 / 100 / 100** di Beranda, Galeri, Pembersihan Kaca, dan halaman EN. Mobile FCP 0,8 dtk, LCP 1,6 dtk (simulasi 4G lambat); desktop LCP 0,4 dtk; CLS 0; TBT 0 ms.
 - ✅ **0 KB JavaScript** di halaman publik (prefetch Astro dimatikan, digantikan Speculation Rules).
 - ✅ Foto besar dalam AVIF + WebP (`<picture>`), ukuran halaman ±80–145 KB.
@@ -116,6 +125,7 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Cache: `/_astro/*` immutable 1 tahun; HTML di-cache di edge dengan purge otomatis per deploy; Early Hints, HTTP/3, Brotli, Tiered Cache.
 
 ### Fase 7 — Dashboard custom `/admin` ✅ (kode selesai, perlu setup akun — lihat `docs/DASHBOARD.md`)
+
 - ✅ Preact SPA hanya di `/admin`; form dibuat otomatis dari skema zod (`src/content/schema.ts`) → validasi sama dengan build.
 - ✅ API Worker `/api/admin/*`: login GitHub OAuth + cookie sesi bertanda tangan, commit via GitHub fine-grained token, media upload, pesan D1, status deploy.
 - ✅ Diuji end-to-end (Playwright + mock GitHub): edit halaman, validasi, artikel baru, unggah gambar, pesan masuk, data bisnis, redirect; konten hasil dashboard lolos build.
@@ -130,16 +140,19 @@ Identitas & warna tetap, tampilan dimodernkan:
 - Draft (branch) → URL preview → Publish.
 
 ### Fase 8 — Terjemahan Bahasa Inggris ✅
+
 - ✅ 15 halaman EN (Fase 3) + 5 artikel EN dengan slug terjemahan, hreflang ID↔EN, FAQPage schema, label kategori per bahasa.
 - ✅ 3 artikel ID yang sebelumnya ringkasan kini berisi teks lengkap + FAQ.
 - Draf terjemahan EN semua halaman + slug terjemahan; review di dashboard.
 
 ### Fase 9 — QA & peluncuran
+
 1. Staging: verifikasi 100% URL, Lighthouse, Rich Results Test, uji multi-perangkat.
 2. Cutover: salin semua DNS record (**termasuk MX email**), pasang custom domain, hapus `noindex`.
 3. Pasca-live: submit sitemap ke Google Search Console & Bing (IndexNow), pantau 404 selama 2–4 minggu.
 
 ## Pengembangan konten kompetitif (setelah Fase 8)
+
 - ✅ Riset kompetitor 5 kata kunci (renovasi Jakarta, pembersihan kaca rope access, sealant kaca, desain interior, bangun rumah Tangsel).
 - ✅ Tabel estimasi biaya (kisaran **pasar** Jabodetabek 2026, bukan penawaran Inland) + FAQ harga di: pembersihan kaca (2 halaman), pembangunan rumah, desain interior (ID & EN); tabel faktor biaya di renovasi.
 - ✅ 7 halaman kota: daftar wilayah/kecamatan, pertimbangan lokal unik per kota, FAQ lokal.

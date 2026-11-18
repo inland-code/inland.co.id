@@ -21,7 +21,13 @@ function clean(value: FormValue, max: number): string {
 }
 
 function cleanMultiline(value: FormValue, max: number): string {
-  return typeof value === 'string' ? value.replace(/\r\n?/g, '\n').replace(/\n{3,}/g, '\n\n').trim().slice(0, max) : '';
+  return typeof value === 'string'
+    ? value
+        .replace(/\r\n?/g, '\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim()
+        .slice(0, max)
+    : '';
 }
 
 function redirect(location: string): Response {
@@ -71,7 +77,17 @@ async function handleContact(request: Request, env: Env, ctx: ExecutionContext):
       `INSERT INTO contact_messages (locale, page, name, phone, service, message, country, city, user_agent)
        VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7, ?8, ?9)`,
     )
-      .bind(locale, page, name, phone || null, service || null, message, cf?.country ?? null, cf?.city ?? null, (request.headers.get('user-agent') ?? '').slice(0, 300))
+      .bind(
+        locale,
+        page,
+        name,
+        phone || null,
+        service || null,
+        message,
+        cf?.country ?? null,
+        cf?.city ?? null,
+        (request.headers.get('user-agent') ?? '').slice(0, 300),
+      )
       .run()
       .catch((err: unknown) => console.error('D1 insert gagal', err));
     // Jangan tahan pengunjung menunggu database; WhatsApp tetap terbuka.

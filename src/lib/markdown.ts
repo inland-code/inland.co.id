@@ -35,7 +35,9 @@ async function sectionToMd(s: Section, locale: Locale): Promise<string> {
       return (
         h(s.title) +
         s.items
-          .map((i) => [`### ${i.title}`, i.text, i.bullets.map((b) => `- **${b.title}** — ${b.text}`).join('\n')].filter(Boolean).join('\n\n'))
+          .map((i) =>
+            [`### ${i.title}`, i.text, i.bullets.map((b) => `- **${b.title}** — ${b.text}`).join('\n')].filter(Boolean).join('\n\n'),
+          )
           .join('\n\n')
       );
     case 'accordion-media':
@@ -84,27 +86,31 @@ export async function routeToMarkdown(route: Route): Promise<string> {
   const url = absoluteUrl(route.path);
   if (route.kind === 'post') {
     const d = route.entry.data;
-    return [
-      `# ${d.title}`,
-      `> ${d.excerpt}`,
-      `URL: ${url}  \n${route.locale === 'id' ? 'Diterbitkan' : 'Published'}: ${d.publishedAt.toISOString().slice(0, 10)}`,
-      (route.entry.body ?? '').trim(),
-      contactBlock(route.locale),
-    ].join('\n\n') + '\n';
+    return (
+      [
+        `# ${d.title}`,
+        `> ${d.excerpt}`,
+        `URL: ${url}  \n${route.locale === 'id' ? 'Diterbitkan' : 'Published'}: ${d.publishedAt.toISOString().slice(0, 10)}`,
+        (route.entry.body ?? '').trim(),
+        contactBlock(route.locale),
+      ].join('\n\n') + '\n'
+    );
   }
   const d = route.entry.data;
   const parts = await Promise.all(d.sections.map((s) => sectionToMd(s, route.locale)));
-  return [
-    `# ${d.hero.title}`,
-    `> ${d.seo.description}`,
-    `URL: ${url}`,
-    d.hero.tagline ? `*${d.hero.tagline}*` : '',
-    d.hero.body,
-    ...parts,
-    contactBlock(route.locale),
-  ]
-    .filter(Boolean)
-    .join('\n\n') + '\n';
+  return (
+    [
+      `# ${d.hero.title}`,
+      `> ${d.seo.description}`,
+      `URL: ${url}`,
+      d.hero.tagline ? `*${d.hero.tagline}*` : '',
+      d.hero.body,
+      ...parts,
+      contactBlock(route.locale),
+    ]
+      .filter(Boolean)
+      .join('\n\n') + '\n'
+  );
 }
 
 /** "/" -> "/index.md", "/a/" -> "/a.md", "/en/" -> "/en/index.md" */
