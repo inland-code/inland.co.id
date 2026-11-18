@@ -14,6 +14,7 @@ import Sections from '@/components/sections/Sections.astro';
 import { Image } from 'astro:assets';
 import { getRoutes, alternatesFor, hrefFor, type Route } from '@/lib/routes';
 import { imageFor } from '@/lib/media';
+import { ogPath } from '@/lib/og';
 import { breadcrumbSchema, absoluteUrl, ORG_ID, faqSchema, serviceSchema } from '@/lib/seo';
 import { t } from '@/i18n/ui';
 
@@ -63,7 +64,7 @@ if (route.kind === 'page') {
     description={route.entry.data.seo.description}
     path={route.path}
     alternates={alternates}
-    ogImage={imageFor(route.entry.data.seo.ogImage ?? route.entry.data.hero.image)}
+    ogImageUrl={ogPath(route.path)}
     noindex={route.entry.data.seo.noindex}
     jsonLd={[
       {
@@ -117,7 +118,7 @@ if (route.kind === 'page') {
     description={route.entry.data.seo.description}
     path={route.path}
     alternates={alternates}
-    ogImage={imageFor(route.entry.data.image)}
+    ogImageUrl={ogPath(route.path)}
     ogType="article"
     noindex={route.entry.data.seo.noindex}
     publishedTime={route.entry.data.publishedAt}
