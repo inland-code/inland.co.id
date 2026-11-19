@@ -168,3 +168,30 @@ Status: **LIVE di https://inland.co.id** (Fase 9 selesai) · Terakhir diperbarui
 - ✅ 7 halaman kota: daftar wilayah/kecamatan, pertimbangan lokal unik per kota, FAQ lokal.
 - ✅ Gambar OG bermerek, CSP dengan hash, Turnstile opsional, redirect media WordPress lama.
 - ⏳ Perlu data pemilik: harga Inland sendiri, garansi, sertifikasi (K3/IRATA), legalitas, foto proyek asli, angka statistik.
+
+## Grup Inland × Rope Access Center (2026-11-19)
+
+- ✅ Inland dan Rope Access Center (RAC, https://ropeaccesscenter.id) saling menautkan sebagai satu grup:
+  link "Rope Access Center (grup Inland)" di footer, CTA pelatihan Kemnaker di halaman jasa rope access,
+  pembersihan kaca, dan tentang Inland (ID & EN), serta link di artikel rope access.
+- ✅ JSON-LD organisasi Inland mencantumkan RAC sebagai `subOrganization`; RAC mencantumkan Inland sebagai `parentOrganization`.
+- Inland & RAC boleh bersaing di kata kunci yang sama (keputusan pemilik).
+
+## Halaman layanan Sealant Kaca Gedung (2026-11-19)
+
+- ✅ `/jasa-sealant-kaca-gedung-jakarta-profesional/` (ID) dan `/en/building-glass-sealant-jakarta/` (EN) diubah dari
+  **artikel** menjadi **halaman layanan** (`template: service`, `translationKey: service-glass-sealant`).
+  URL, judul SEO, dan meta description **tidak diubah** dan **tanpa redirect**, karena URL ini sudah halaman 1 Google.
+  Pengindeksan ulang sudah diminta di Search Console.
+- ✅ Masuk menu **Layanan → Jasa Maintenance**, kartu di Layanan Kami / Services, dan kartu Sealant di halaman Jasa Rope Access.
+- ✅ `/jasa-sealant-kaca-gedung-tinggi-profesional/` (juga halaman 1) **tetap artikel** sebagai pendukung, tampil sebagai
+  artikel terkait di halaman layanan. Jangan jadikan keduanya halaman layanan (isi mirip → saling bersaing di Google).
+- ⏳ Pantau posisi kedua URL di Search Console → Kinerja → filter Halaman selama 1–2 minggu.
+- Aturan umum: artikel yang sudah peringkat bagus boleh dijadikan halaman layanan **dengan slug yang sama**
+  (hapus file di `src/content/posts/`, buat file di `src/content/pages/` dengan `slug` sama, ubah jenis di
+  `migration/url-inventory.csv` menjadi `page`).
+
+## Media sosial
+
+- ✅ Instagram `@inland_id` dan TikTok `@inland_id` (`src/data/site.json` → `social`; tampil di footer, halaman kontak,
+  dan JSON-LD `sameAs`). Simpan URL profil tanpa parameter pelacak (`?_r=…&_t=…`). Bisa diubah lewat dashboard.

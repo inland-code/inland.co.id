@@ -71,6 +71,9 @@ Akun yang diizinkan diatur di `wrangler.jsonc` → `ADMIN_GITHUB_USERS` (dipisah
 
 Cloudflare Workers Builds sudah terhubung ke repo: setiap push ke `main` otomatis di-build & di-deploy.
 Domain asli sudah terpasang: build `main` di Workers Builds otomatis mode produksi (boleh diindeks).
+Build preview untuk branch selain `main` **dimatikan** (Settings → Builds → tab Previews Base → Disable builds),
+jadi PR tidak lagi menampilkan cek ❌ "Workers Builds: inland-co-id". Pemeriksaan kode tetap lewat cek GitHub `check`.
+Setelah merge ke `main`, tunggu 2–5 menit sampai deploy selesai; cek dengan `https://inland.co.id/?cek=1` agar tidak memakai cache browser.
 
 ## Pengembangan lokal
 
