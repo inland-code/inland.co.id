@@ -38,7 +38,8 @@
         {
           "icon": "shield",
           "title": "Glass Sealant",
-          "text": "Replacing and repairing sealant to stop glass leaks."
+          "text": "Replacing and repairing sealant to stop glass leaks.",
+          "href": "service-glass-sealant"
         },
         {
           "icon": "maintenance",

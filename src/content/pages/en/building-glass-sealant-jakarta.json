@@ -1,0 +1,220 @@
+{
+  "translationKey": "service-glass-sealant",
+  "slug": "building-glass-sealant-jakarta",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "final",
+  "seo": {
+    "title": "Building Glass Sealant Services in Jakarta | Inland",
+    "description": "Building glass sealant services in Jakarta using rope access — leak repair, re-sealing, and extra waterproofing for high-rise buildings."
+  },
+  "hero": {
+    "title": "Professional Building Glass Sealant Services in Jakarta",
+    "body": "Inland provides glass sealant services for high-rise and multi-storey buildings in Jakarta and Greater Jakarta. Carried out by certified rope access technicians: safe, tidy, and long-lasting, with no scaffolding and no disruption to building activity.",
+    "image": "sealant/hero-sealant.jpg",
+    "imageAlt": "Inland rope access technician applying sealant to building glass",
+    "ctas": [
+      {
+        "label": "Free Consultation",
+        "href": "#whatsapp",
+        "variant": "dark"
+      },
+      {
+        "label": "Rope Access Services",
+        "href": "service-rope-access",
+        "variant": "light"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "shield",
+          "title": "Certified Technicians",
+          "text": "Work at height to OHS standards"
+        },
+        {
+          "icon": "rope",
+          "title": "No Scaffolding",
+          "text": "Rope access is faster and more economical"
+        },
+        {
+          "icon": "sparkle",
+          "title": "Neat & Watertight",
+          "text": "Sealants built for tropical weather"
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "eyebrow": "Services",
+      "title": "Building Glass Sealant Services in Jakarta",
+      "intro": "Cracked, brittle, or detached glass joints are the main cause of building glass leaks. We handle sealant work from inspection to complete re-sealing.",
+      "items": [
+        {
+          "icon": "shield",
+          "title": "Glass Re-Sealing",
+          "text": "Removing damaged old sealant, cleaning the joints, then applying new sealant so the glass is watertight again."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Glass Leak Repair",
+          "text": "Tracing leak points on curtain walls, windows, and ACP joints, then repairing the problem areas."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Curtain Wall & ACP Sealant",
+          "text": "Sealant for glass facades, curtain walls, canopies, and ACP panels on offices, apartments, hotels, and malls."
+        },
+        {
+          "icon": "rope",
+          "title": "Waterproofing Vulnerable Areas",
+          "text": "Extra protection for areas prone to seepage, such as facade corners, window trims, and glass-to-wall joints."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Signs Your Glass Sealant Needs Replacing",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "sealant/aplikasi-sealant.jpg",
+      "imageAlt": "Sealant being applied to a building glass joint",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Water Seeps In When It Rains",
+          "text": "Water stains, bubbling paint, or wet ceilings around windows mean the glass joints are no longer watertight."
+        },
+        {
+          "title": "Cracked, Brittle, or Peeling Sealant",
+          "text": "Jakarta's heat and UV exposure harden and crack sealant over time."
+        },
+        {
+          "title": "Condensation or Dust Inside the Glass",
+          "text": "Air and dust getting through gaps show the joints have loosened."
+        },
+        {
+          "title": "Wind Noise and Weaker Air Conditioning",
+          "text": "Gaps in the joints let outside air in and increase the load on air conditioning."
+        }
+      ],
+      "cta": {
+        "label": "Read: why building glass leaks",
+        "href": "/en/why-building-glass-leaks/"
+      }
+    },
+    {
+      "type": "accordion-media",
+      "title": "Why Choose Inland for Glass Sealant",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Rope access technician working on a high-rise facade",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Experience with Jakarta Buildings",
+          "text": "We understand the challenges of buildings in dense urban Jakarta: limited access, building operating hours, and fast-changing weather."
+        },
+        {
+          "title": "High-Quality Materials",
+          "text": "We use sealants that withstand heat, high humidity, and pollution, chosen to suit your building's glass and frames."
+        },
+        {
+          "title": "Efficient and Cost-Effective Rope Access",
+          "text": "With no scaffolding to erect, work is faster, costs are lower, and the area around the building stays undisturbed."
+        },
+        {
+          "title": "Safety Guaranteed",
+          "text": "Certified technicians work on twin-rope systems with full protective equipment, in line with Minister of Manpower Regulation No. 9 of 2016."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Our Glass Sealant Process",
+      "tone": "light",
+      "imageSide": "left",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Glass facade of a multi-storey building",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Consultation and Site Survey",
+          "text": "We inspect the glass joints and leak points directly at your building, then prepare a work plan."
+        },
+        {
+          "title": "Material Selection",
+          "text": "We recommend the sealant type that suits the glass, frames, and Jakarta's weather."
+        },
+        {
+          "title": "Removal and Joint Cleaning",
+          "text": "Old sealant is stripped, then the joints are cleaned and dried so the new sealant bonds properly."
+        },
+        {
+          "title": "Sealant Application by Rope Access",
+          "text": "Technicians apply new sealant neatly from top to bottom without disrupting building activity."
+        },
+        {
+          "title": "Final Inspection and Warranty",
+          "text": "Results are thoroughly inspected, documented, and handed over with a workmanship warranty."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "eyebrow": "Cost",
+      "title": "What Determines the Cost of Glass Sealant Work",
+      "columns": ["Factor", "Effect on cost"],
+      "rows": [
+        ["Joint length (linear metres)", "The longer the joints to be worked on, the larger the job."],
+        ["Condition of old sealant", "Sealant that must be fully removed takes longer than spot repairs."],
+        ["Facade height and shape", "Tall, sloped, or curved facades need more complex access rigging."],
+        ["Type of sealant", "Material is chosen to suit the glass, frames, and weather exposure."]
+      ],
+      "note": "An exact price is given after a site survey. Surveys and quotes are free in Jakarta and Greater Jakarta."
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Glass Sealant Service FAQ",
+      "items": [
+        {
+          "q": "How long does building glass sealant last?",
+          "a": "It depends on the material and weather exposure. Quality sealant installed correctly usually lasts for years and should be inspected regularly."
+        },
+        {
+          "q": "Does sealant work disrupt building activity?",
+          "a": "No. With rope access the work is done from outside the building, scheduled together with building management."
+        },
+        {
+          "q": "Is rope access safe for high-rise buildings?",
+          "a": "Yes. Technicians work on twin-rope systems with standard safety equipment and work-at-height procedures in line with OHS regulations."
+        },
+        {
+          "q": "Which areas do you serve?",
+          "a": "Jakarta, Bogor, Depok, Tangerang, South Tangerang, and Bekasi."
+        },
+        {
+          "q": "Is there a warranty?",
+          "a": "Yes, every sealant project comes with a workmanship warranty. Details are explained in the quotation."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Protect Your Building from Leaks",
+      "text": "Inland's glass sealant team is ready to help your building in Jakarta and Greater Jakarta. Contact us for a free consultation and survey.",
+      "button": {
+        "label": "Consult Now",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ],
+  "relatedPosts": ["high-rise-glass-sealant-services", "why-building-glass-leaks", "what-is-rope-access"],
+  "updatedAt": "2026-11-19"
+}

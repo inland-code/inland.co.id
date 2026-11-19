@@ -47,6 +47,7 @@ export const mainNav: NavItem[] = [
         items: [
           { key: 'service-glass-cleaning', icon: 'sparkle', label: { id: 'Jasa Pembersihan Kaca Gedung', en: 'Building Glass Cleaning' } },
           { key: 'service-rope-access', icon: 'rope', label: { id: 'Jasa Rope Access', en: 'Rope Access' } },
+          { key: 'service-glass-sealant', icon: 'shield', label: { id: 'Jasa Sealant Kaca Gedung', en: 'Building Glass Sealant' } },
         ],
       },
     ],

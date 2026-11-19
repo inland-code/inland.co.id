@@ -1,0 +1,220 @@
+{
+  "translationKey": "service-glass-sealant",
+  "slug": "jasa-sealant-kaca-gedung-jakarta-profesional",
+  "template": "service",
+  "slugVerified": true,
+  "contentStatus": "final",
+  "seo": {
+    "title": "Jasa Sealant Kaca Gedung Jakarta Profesional & Terpercaya",
+    "description": "Jasa sealant kaca gedung di Jakarta dengan teknik rope access. Perbaikan kebocoran, re-sealant, dan waterproofing untuk gedung tinggi."
+  },
+  "hero": {
+    "title": "Jasa Sealant Kaca Gedung Jakarta Profesional dan Terpercaya",
+    "body": "Inland menyediakan jasa sealant kaca gedung untuk gedung tinggi dan bertingkat di Jakarta dan Jabodetabek. Dikerjakan teknisi rope access bersertifikat: aman, rapi, tahan lama, tanpa scaffolding dan tanpa mengganggu aktivitas gedung.",
+    "image": "sealant/hero-sealant.jpg",
+    "imageAlt": "Teknisi rope access Inland mengaplikasikan sealant pada kaca gedung",
+    "ctas": [
+      {
+        "label": "Konsultasi Gratis",
+        "href": "#whatsapp",
+        "variant": "dark"
+      },
+      {
+        "label": "Jasa Rope Access",
+        "href": "service-rope-access",
+        "variant": "light"
+      }
+    ]
+  },
+  "sections": [
+    {
+      "type": "trust",
+      "items": [
+        {
+          "icon": "shield",
+          "title": "Teknisi Bersertifikat",
+          "text": "Bekerja di ketinggian sesuai standar K3"
+        },
+        {
+          "icon": "rope",
+          "title": "Tanpa Scaffolding",
+          "text": "Metode rope access lebih cepat dan hemat"
+        },
+        {
+          "icon": "sparkle",
+          "title": "Rapi & Kedap Air",
+          "text": "Material sealant tahan cuaca tropis"
+        }
+      ]
+    },
+    {
+      "type": "service-cards",
+      "eyebrow": "Layanan",
+      "title": "Layanan Jasa Sealant Kaca Gedung di Jakarta",
+      "intro": "Sambungan kaca yang retak, getas, atau lepas adalah penyebab utama kaca gedung bocor. Kami menangani pekerjaan sealant dari pemeriksaan hingga pengerjaan ulang.",
+      "items": [
+        {
+          "icon": "shield",
+          "title": "Re-Sealant Kaca Gedung",
+          "text": "Pembongkaran sealant lama yang rusak, pembersihan sambungan, lalu aplikasi sealant baru agar kaca kembali kedap air."
+        },
+        {
+          "icon": "maintenance",
+          "title": "Perbaikan Kebocoran Kaca",
+          "text": "Penelusuran titik bocor pada curtain wall, jendela, dan sambungan ACP, kemudian perbaikan pada titik yang bermasalah."
+        },
+        {
+          "icon": "sparkle",
+          "title": "Sealant Curtain Wall & ACP",
+          "text": "Aplikasi sealant untuk fasad kaca, curtain wall, kanopi, dan panel ACP pada gedung perkantoran, apartemen, hotel, dan mal."
+        },
+        {
+          "icon": "rope",
+          "title": "Waterproofing Area Rawan",
+          "text": "Perlindungan tambahan untuk area yang sering rembes, seperti sudut fasad, list jendela, dan pertemuan kaca dengan dinding."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Tanda Sealant Kaca Gedung Perlu Diganti",
+      "tone": "brand",
+      "imageSide": "left",
+      "image": "sealant/aplikasi-sealant.jpg",
+      "imageAlt": "Aplikasi sealant pada sambungan kaca gedung",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Air Merembes Saat Hujan",
+          "text": "Noda air, cat menggelembung, atau plafon basah di sekitar jendela adalah tanda sambungan kaca sudah tidak kedap."
+        },
+        {
+          "title": "Sealant Retak, Getas, atau Mengelupas",
+          "text": "Paparan panas dan sinar UV di Jakarta membuat sealant mengeras dan retak seiring waktu."
+        },
+        {
+          "title": "Kaca Berembun atau Berdebu di Dalam",
+          "text": "Udara dan debu yang masuk lewat celah menandakan sambungan sudah longgar."
+        },
+        {
+          "title": "Suara Angin dan AC Kurang Dingin",
+          "text": "Celah pada sambungan kaca membuat udara luar masuk sehingga beban AC bertambah."
+        }
+      ],
+      "cta": {
+        "label": "Baca: penyebab kaca gedung bocor",
+        "href": "/penyebab-kaca-gedung-bocor/"
+      }
+    },
+    {
+      "type": "accordion-media",
+      "title": "Keunggulan Jasa Sealant Kaca Gedung dari Inland",
+      "tone": "light",
+      "imageSide": "right",
+      "image": "kaca/teknisi-rope-access.jpg",
+      "imageAlt": "Teknisi rope access bekerja di fasad gedung tinggi",
+      "numbered": false,
+      "items": [
+        {
+          "title": "Pengalaman di Gedung Jakarta",
+          "text": "Tim kami memahami tantangan gedung di lingkungan perkotaan Jakarta yang padat: akses terbatas, jam operasional gedung, dan cuaca yang berubah cepat."
+        },
+        {
+          "title": "Material Berkualitas Tinggi",
+          "text": "Kami memakai sealant yang tahan panas, kelembapan tinggi, dan polusi, dipilih sesuai jenis kaca dan bingkai gedung Anda."
+        },
+        {
+          "title": "Efisien dan Hemat Biaya dengan Rope Access",
+          "text": "Tanpa pemasangan scaffolding, pekerjaan lebih cepat, biaya lebih efisien, dan area sekitar gedung tidak terganggu."
+        },
+        {
+          "title": "Keselamatan Kerja Terjamin",
+          "text": "Teknisi bersertifikat bekerja dengan sistem tali ganda dan peralatan pelindung lengkap sesuai Permenaker No. 9 Tahun 2016."
+        }
+      ]
+    },
+    {
+      "type": "accordion-media",
+      "title": "Langkah Kerja Sealant Kaca Gedung",
+      "tone": "light",
+      "imageSide": "left",
+      "image": "kaca/fasad-louver.jpg",
+      "imageAlt": "Fasad kaca gedung bertingkat",
+      "numbered": true,
+      "items": [
+        {
+          "title": "Konsultasi dan Survei Lokasi",
+          "text": "Kami memeriksa kondisi sambungan kaca dan titik bocor langsung di gedung Anda, lalu menyusun rencana kerja."
+        },
+        {
+          "title": "Pemilihan Material",
+          "text": "Kami merekomendasikan jenis sealant yang sesuai dengan kaca, bingkai, dan kondisi cuaca Jakarta."
+        },
+        {
+          "title": "Pembongkaran dan Pembersihan Sambungan",
+          "text": "Sealant lama dikupas, lalu sambungan dibersihkan dan dikeringkan agar sealant baru melekat sempurna."
+        },
+        {
+          "title": "Aplikasi Sealant dengan Rope Access",
+          "text": "Teknisi mengaplikasikan sealant baru dengan rapi dari atas ke bawah tanpa mengganggu aktivitas gedung."
+        },
+        {
+          "title": "Inspeksi Akhir dan Garansi",
+          "text": "Hasil diperiksa menyeluruh, didokumentasikan, dan diserahkan bersama garansi hasil kerja."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "eyebrow": "Biaya",
+      "title": "Faktor yang Menentukan Biaya Sealant Kaca Gedung",
+      "columns": ["Faktor", "Pengaruh pada biaya"],
+      "rows": [
+        ["Panjang sambungan (meter lari)", "Semakin panjang sambungan yang dikerjakan, semakin besar volume pekerjaan."],
+        ["Kondisi sealant lama", "Sealant yang harus dibongkar total butuh waktu lebih lama daripada perbaikan titik."],
+        ["Ketinggian dan bentuk fasad", "Fasad tinggi, miring, atau berlekuk memerlukan pengaturan akses yang lebih rumit."],
+        ["Jenis material sealant", "Material dipilih sesuai kebutuhan kaca, bingkai, dan paparan cuaca."]
+      ],
+      "note": "Harga pasti diberikan setelah survei lokasi. Survei dan penawaran harga gratis untuk area Jakarta dan Jabodetabek."
+    },
+    {
+      "type": "faq",
+      "eyebrow": "FAQ",
+      "title": "Pertanyaan tentang Jasa Sealant Kaca Gedung",
+      "items": [
+        {
+          "q": "Berapa lama sealant kaca gedung bisa bertahan?",
+          "a": "Tergantung jenis material dan paparan cuaca. Sealant berkualitas yang dipasang dengan benar umumnya bertahan bertahun-tahun, dan sebaiknya diperiksa secara berkala."
+        },
+        {
+          "q": "Apakah pekerjaan sealant mengganggu aktivitas gedung?",
+          "a": "Tidak. Dengan rope access, pekerjaan dilakukan dari luar gedung dan jadwalnya disusun bersama pengelola gedung."
+        },
+        {
+          "q": "Apakah rope access aman untuk gedung tinggi?",
+          "a": "Ya. Teknisi bekerja dengan sistem tali ganda, peralatan keselamatan standar, dan prosedur kerja di ketinggian sesuai regulasi K3."
+        },
+        {
+          "q": "Area mana saja yang dilayani?",
+          "a": "Jakarta, Bogor, Depok, Tangerang, Tangerang Selatan, dan Bekasi."
+        },
+        {
+          "q": "Apakah ada garansi?",
+          "a": "Ya, setiap proyek sealant disertai garansi hasil kerja. Detail garansi dijelaskan di penawaran."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "title": "Lindungi Gedung Anda dari Kebocoran",
+      "text": "Tim sealant kaca gedung Inland siap membantu gedung Anda di Jakarta dan Jabodetabek. Hubungi kami untuk konsultasi dan survei gratis.",
+      "button": {
+        "label": "Konsultasi Sekarang",
+        "href": "#whatsapp"
+      },
+      "tone": "light"
+    }
+  ],
+  "relatedPosts": ["jasa-sealant-kaca-gedung-tinggi-profesional", "penyebab-kaca-gedung-bocor", "rope-access-adalah"],
+  "updatedAt": "2026-11-19"
+}

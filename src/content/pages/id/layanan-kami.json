@@ -138,6 +138,14 @@
             "label": "Lihat Layanan Pembersihan Kaca Gedung",
             "href": "service-glass-cleaning"
           }
+        },
+        {
+          "title": "Jasa Sealant Kaca Gedung",
+          "text": "Kaca gedung bocor saat hujan? Kami melakukan re-sealant dan perbaikan kebocoran sambungan kaca, curtain wall, dan ACP pada gedung tinggi dengan metode rope access, tanpa scaffolding dan tanpa mengganggu aktivitas gedung.",
+          "cta": {
+            "label": "Lihat Layanan Sealant Kaca Gedung",
+            "href": "service-glass-sealant"
+          }
         }
       ]
     },
