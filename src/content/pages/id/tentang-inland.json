@@ -143,6 +143,16 @@
     },
     {
       "type": "cta",
+      "title": "Teknisi Bersertifikat & Pelatihan Kemnaker",
+      "text": "Butuh pelatihan TKPK/TKBT bersertifikat Kemnaker RI untuk tim Anda, standby rescue, atau tambahan teknisi akses tali? Hubungi Rope Access Center (RAC), brand pelatihan dan jasa rope access dari grup Inland.",
+      "button": {
+        "label": "Kunjungi Rope Access Center",
+        "href": "https://ropeaccesscenter.id/pelatihan/"
+      },
+      "tone": "brand"
+    },
+    {
+      "type": "cta",
       "title": "Mulai Konsultasi Sekarang",
       "text": "Siap memulai proyek Anda? Klik tombol di bawah ini untuk berkonsultasi langsung dengan tim kami dan dapatkan solusi yang Anda butuhkan.",
       "button": {
