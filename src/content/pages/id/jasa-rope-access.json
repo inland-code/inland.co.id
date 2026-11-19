@@ -38,7 +38,8 @@
         {
           "icon": "shield",
           "title": "Sealant Kaca Gedung",
-          "text": "Penggantian dan perbaikan sealant untuk mengatasi kebocoran kaca."
+          "text": "Penggantian dan perbaikan sealant untuk mengatasi kebocoran kaca.",
+          "href": "service-glass-sealant"
         },
         {
           "icon": "maintenance",

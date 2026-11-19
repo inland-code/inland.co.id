@@ -138,6 +138,14 @@
             "label": "View Glass Cleaning",
             "href": "service-glass-cleaning"
           }
+        },
+        {
+          "title": "Building Glass Sealant Services",
+          "text": "Building glass leaking when it rains? We re-seal and repair leaking glass, curtain wall, and ACP joints on high-rise buildings using rope access, with no scaffolding and no disruption to building activity.",
+          "cta": {
+            "label": "View Glass Sealant Services",
+            "href": "service-glass-sealant"
+          }
         }
       ]
     },
