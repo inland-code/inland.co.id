@@ -195,3 +195,13 @@ Status: **LIVE di https://inland.co.id** (Fase 9 selesai) · Terakhir diperbarui
 
 - ✅ Instagram `@inland_id` dan TikTok `@inland_id` (`src/data/site.json` → `social`; tampil di footer, halaman kontak,
   dan JSON-LD `sameAs`). Simpan URL profil tanpa parameter pelacak (`?_r=…&_t=…`). Bisa diubah lewat dashboard.
+
+## IndexNow otomatis (2026-11-22)
+
+- ✅ Kunci publik `public/b9a7809eb75f8024c29bde6be4b81bbb.txt`. Saat build, `scripts/indexnow-manifest.mjs` menulis
+  `dist/indexnow-manifest.json` (hash isi `<main>` tiap URL di sitemap; hanya build produksi yang ditandai `production: true`).
+- ✅ Cron Worker tiap jam (menit ke-41, `wrangler.jsonc` → `triggers.crons`) membandingkan manifest dengan tabel D1
+  `indexnow_urls`, lalu mengirim **hanya URL baru/berubah** ke `api.indexnow.org` (Bing, Yandex, Seznam, Naver, dll.).
+  Kiriman pertama berisi semua URL. Tabel dibuat otomatis oleh Worker (`migrations/0002_indexnow.sql` untuk catatan).
+- Google tidak memakai IndexNow; Google tetap membaca `sitemap_index.xml`.
+- Cek hasil: Cloudflare → Workers → inland-co-id → **Logs** (cari `[indexnow]`), atau Bing Webmaster Tools → IndexNow.
